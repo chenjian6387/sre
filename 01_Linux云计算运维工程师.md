@@ -22,7 +22,7 @@
 
 IT互联网发展至今，人们几乎很少会问`“Linux是什么了”。
 
-<img src="C:\Users\admin\Desktop\ajian\1.gif" alt="image" style="zoom:50%;" />
+<img src="\ajian\1.gif" alt="image" style="zoom:50%;" />
 
 <img src="C:\Users\admin\Desktop\ajian\2.gif" alt="image" style="zoom:67%;" />
 
