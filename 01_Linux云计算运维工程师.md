@@ -24,7 +24,7 @@ IT互联网发展至今，人们几乎很少会问`“Linux是什么了”。
 
 <img src="\ajian\1.gif" alt="image" style="zoom:50%;" />
 
-<img src="C:\Users\admin\Desktop\ajian\2.gif" alt="image" style="zoom:67%;" />
+<img src="\ajian\2.gif" alt="image" style="zoom:67%;" />
 
 
 
@@ -53,7 +53,7 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 > 这些、都是很明显的，我们在享受互联网的福利。
 >
-> <img src="C:\Users\admin\Desktop\ajian\9.jpg" alt="image" style="zoom:33%;" />
+> <img src="\ajian\9.jpg" alt="image" style="zoom:33%;" />
 >
 > 
 
@@ -61,11 +61,11 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 
 
-<img src="C:\Users\admin\Desktop\ajian\4.jpeg" alt="img" style="zoom:50%;" />
+<img src="\ajian\4.jpeg" alt="img" style="zoom:50%;" />
 
 1994年的你，会乐此不疲地收藏着偶像的磁带和画册，然后把贴纸贴满课桌和铁皮文具盒，即使墙上的海报早已泛黄斑驳也舍不得拆。
 
-<img src="C:\Users\admin\Desktop\ajian\5.jpeg" alt="image" style="zoom: 67%;" />
+<img src="\ajian\5.jpeg" alt="image" style="zoom: 67%;" />
 
 2019年的你，不再需要为见不到偶像而发愁。
 
@@ -83,7 +83,7 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 2019年的你，已经无需往返于各大书店，你只需下载一个`微信读书`，几秒钟的时间，就能看到你想要书籍。
 
-<img src="C:\Users\admin\Desktop\ajian\7.jpg" alt="image" style="zoom:50%;" />
+<img src="\ajian\7.jpg" alt="image" style="zoom:50%;" />
 
 ### 互联网社交
 
@@ -97,7 +97,7 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 即使素不相识的陌生人、表情包一出手，马上就可以称兄道弟，有网络就有社交。
 
-<img src="C:\Users\admin\Desktop\ajian\8.gif" alt="image" style="zoom:50%;" />
+<img src="\ajian\8.gif" alt="image" style="zoom:50%;" />
 
 
 
@@ -105,11 +105,11 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 1994年的你，在电话机还不普及的年代，去大街小巷里找到一个电话亭，然后按耐不住兴奋插入电话卡拨通号码的那一刻，应该是比吃了一罐糖果还要甜蜜。
 
-<img src="C:\Users\admin\Desktop\ajian\10.jpeg" alt="image" style="zoom:50%;" />
+<img src="\ajian\10.jpeg" alt="image" style="zoom:50%;" />
 
 2019年的你，已经不再需要寻找电话亭，拨通微信视频，有网络的地方，就能见到你心爱的人，通过光纤谈恋爱！
 
-<img src="C:\Users\admin\Desktop\ajian\11.gif" style="zoom:67%;" />
+<img src="\ajian\11.gif" style="zoom:67%;" />
 
 ### 互联网购物
 
@@ -117,7 +117,7 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 2019年，你只需要躺在家里，点点手指头就可以浏览千万商品，而且各种各样的促销，好嗨哦~~
 
-![](C:\Users\admin\Desktop\ajian\12.gif)
+![image](\ajian\12.gif)
 
 ### 互联网订票
 
@@ -125,7 +125,7 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 2019年的你，基本上告别了传统售票大厅，只需要通过12306的手机APP下单，或是`携程网`、`飞猪网`可以随时随地订到任何想去的车票，一张身份证走遍了天下。
 
-<img src="C:\Users\admin\Desktop\ajian\13.gif" style="zoom:67%;" />
+<img src="\ajian\13.gif" style="zoom:67%;" />
 
 
 
@@ -142,15 +142,15 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 你是否知道这样的事情：
 
-### 微博背后的Linux运维<img src="C:\Users\admin\Desktop\ajian\14.jpg" style="zoom: 50%;" />
+### 微博背后的Linux运维<img src="\ajian\14.jpg" style="zoom: 50%;" />
 
 
 
-<img src="C:\Users\admin\Desktop\ajian\image-20211229105552629.png" style="zoom:50%;" />
+<img src="\ajian\image-20211229105552629.png" style="zoom:50%;" />
 
 ### 对于瞬时流量的运维思考
 
-<img src="C:\Users\admin\Desktop\ajian\image-20211229105928536.png" style="zoom: 33%;" />
+<img src="\ajian\image-20211229105928536.png" style="zoom: 33%;" />
 
 - 你的服务器架构，是否可以承载平日平缓流量
   - 对流量分析、访问每一种资源的时间、频率、正确率（状态码）、绿色流量（恶意流量、爬虫）
@@ -161,9 +161,9 @@ Linux就是一个`操作系统`，如同各位所了解的Windows XP、7、10和
 
 ### 淘宝背后的Linux运维
 
-如今的时代，双十一大促已然是热爱网购用户的大日子，在这一天，很多东西都会搞优惠，用户量暴增，对于淘宝公司背后的程序员来说，他们可得累坏了。<img src="C:\Users\admin\Desktop\ajian\16.jpg" style="zoom:50%;" />
+如今的时代，双十一大促已然是热爱网购用户的大日子，在这一天，很多东西都会搞优惠，用户量暴增，对于淘宝公司背后的程序员来说，他们可得累坏了。<img src="\ajian\16.jpg" style="zoom:50%;" />
 
-双十一注定是一场硬战，必须得保证淘宝网的正常运转，用户正常的网购消费。<img src="C:\Users\admin\Desktop\ajian\18.jpg" style="zoom:50%;" /><img src="C:\Users\admin\Desktop\ajian\17.jpg" style="zoom: 50%;" />
+双十一注定是一场硬战，必须得保证淘宝网的正常运转，用户正常的网购消费。<img src="\ajian\18.jpg" style="zoom:50%;" /><img src="\ajian\17.jpg" style="zoom: 50%;" />
 
 ## Linux运维是什么
 
@@ -187,7 +187,7 @@ Linux和众所周知的windows一样就是一个操作系统而已，只不过Wi
 
 而Linux主要应用在企业端，由专业`Linux运维工程师`使用，我们所使用很便捷的各种互联网应用、娱乐、支付、聊天的背后，看似简单。
 
-越是简单的应用，背后有着极其复杂的数据请求和响应。。。。。。。<img src="C:\Users\admin\Desktop\ajian\19.gif" alt="image" style="zoom: 200%;" />
+越是简单的应用，背后有着极其复杂的数据请求和响应。。。。。。。<img src="\ajian\19.gif" alt="image" style="zoom: 200%;" />
 
 在腾讯、新浪、百度、苹果互联网公司的服务器机房里，至少千万台Linux服务器，去处理众多用户的请求。
 
@@ -203,7 +203,7 @@ Linux和众所周知的windows一样就是一个操作系统而已，只不过Wi
 使用Linux服务器的公司
 ```
 
-<img src="C:\Users\admin\Desktop\ajian\39.png"  />
+<img src="\ajian\39.png"  />
 
 
 
@@ -216,14 +216,14 @@ Linux和众所周知的windows一样就是一个操作系统而已，只不过Wi
 - 最新正版Windows10官方售价￥888
 - Linux几乎免费（更多人愿意钻研开源软件，而收费的产品出现更多的盗版）
 
-![](C:\Users\admin\Desktop\ajian\21.jpg)
+![image](\ajian\21.jpg)
 
 ```
 软件与支持
 ```
 
 - Windows平台：数量和质量的优势，不过大部分为收费软件；由微软提供技术支持和服务
-- Linux平台：大多为开源软件，用户可以修改定制与发布，由于免费没有资金支持，部分软件质量可能欠缺<img src="C:\Users\admin\Desktop\ajian\22.png" style="zoom:150%;" />
+- Linux平台：大多为开源软件，用户可以修改定制与发布，由于免费没有资金支持，部分软件质量可能欠缺<img src="\ajian\22.png" style="zoom:150%;" />
 
 ```
 安全稳定性
@@ -239,11 +239,11 @@ Linux和众所周知的windows一样就是一个操作系统而已，只不过Wi
 使用习惯
 
 - Windows：普通用户基本依靠图形界面操作，鼠标和键盘完成一切需求，上手简单容易
-- Linux：兼具图形界面（需要带有桌面环境的发行版Linux）和完全命令行操作，无法使用鼠标，新手入门困难，需要学习后方可使用，熟练后效率极高！![](C:\Users\admin\Desktop\ajian\26.png)
+- Linux：兼具图形界面（需要带有桌面环境的发行版Linux）和完全命令行操作，无法使用鼠标，新手入门困难，需要学习后方可使用，熟练后效率极高！![](\ajian\26.png)
 
 ### Linux学习难吗
 
-Windows的使用由于美观，便捷，早已深入人心，但是也仅限在PC端耀武扬威，由于Linux的开源、稳定、安全性、开发灵活性，同时因为WIndows系统的自身缺陷，也奠定了Linux操作系统在服务端的位置。<img src="C:\Users\admin\Desktop\ajian\28.jpeg" style="zoom:150%;" />
+Windows的使用由于美观，便捷，早已深入人心，但是也仅限在PC端耀武扬威，由于Linux的开源、稳定、安全性、开发灵活性，同时因为WIndows系统的自身缺陷，也奠定了Linux操作系统在服务端的位置。<img src="\ajian\28.jpeg" style="zoom:150%;" />
 
 虽说如此，普通用户想要转变Windows的使用，转变使用Linux还是比较费劲的，因为你曾经的点点点...全部变成了`命令行`形式。
 
@@ -264,7 +264,7 @@ Linux是一个全面、丰富多彩的生态圈，主流的IT技术都是各路�
 
 运维工程师的职责`保障服务器运行稳定，网站7*24小时正常运转，负责Linux服务器部署、不断学习互联网相关运维技术、通过有效手段不断解决运维问题，是集网络、数据库、Web开发、运维、安全等诸多技能的工程师`
 
-<img src="C:\Users\admin\Desktop\ajian\31.jpg" style="zoom:80%;" />
+<img src="\ajian\31.jpg" style="zoom:80%;" />
 
 运维领域不同于其他岗位，涉及专业领域较宽、技能知识可以深度挖掘：
 
@@ -279,7 +279,7 @@ Linux是一个全面、丰富多彩的生态圈，主流的IT技术都是各路�
 
 数据来源：[职友集](https://www.jobui.com/salary/?cityKw=北京&jobKw=运维)
 
-![](C:\Users\admin\Desktop\ajian\image-20211229113702416.png)
+![iamge](\ajian\image-20211229113702416.png)
 
 ### 我适合学Linux吗
 
@@ -293,7 +293,7 @@ Linux是一个全面、丰富多彩的生态圈，主流的IT技术都是各路�
 
 ### 如何快速学习Linux
 
-### ![](C:\Users\admin\Desktop\ajian\32.jpeg)
+### ![iamge](\ajian\32.jpeg)
 
 成功本没有捷径，如果真要说`捷径`，那就是走一条正确的道路，少走弯路。
 
@@ -350,7 +350,7 @@ Docker 是一个开源的应用容器引擎，通常包括客户端、守护进�
 
 这就是最早的运维。
 
-后来只懂设备维护、维修的运维，就成了企业里招聘的helpdesk，桌面运维。<img src="C:\Users\admin\Desktop\ajian\image-20211229173943920.png" style="zoom: 50%;" />
+后来只懂设备维护、维修的运维，就成了企业里招聘的helpdesk，桌面运维。<img src="\ajian\image-20211229173943920.png" style="zoom: 50%;" />
 
 ##  运维的未来展望
 
@@ -358,9 +358,9 @@ Docker 是一个开源的应用容器引擎，通常包括客户端、守护进�
 - 同样的，大行业的红利对个人而言就是技能要求会更高，福利待遇也会更好，你都无法想象一些有钱公司，给的年终奖有多高，阳光普照奖都是人手一个Iphone 13 pro max 256G。那么对公司架构最熟悉的这个人，公司也必然是重金留住。
 - 上面说了运维工程师是越老越吃香，运维经验很重要，是因为运维岗需要接触的面很广，也更容易发现自己最擅长的一个方向，比如喜欢数据库，喜欢高并发架构，喜欢自动化运维，喜欢云原生，你可以继续深入学习，成为领域专家。
 
-<img src="C:\Users\admin\Desktop\ajian\image-20211229182253647.png" style="zoom: 33%;" />
+<img src="\ajian\image-20211229182253647.png" style="zoom: 33%;" />
 
-# 互联网工作模式![](C:\Users\admin\Desktop\ajian\image-20211229182732334.png)
+# 互联网工作模式![](\ajian\image-20211229182732334.png)
 
 软件生命周期又称为软件生存周期或系统开发生命周期，是软件的产生直到报废的生命周期。
 
