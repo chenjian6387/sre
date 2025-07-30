@@ -1,6 +1,6 @@
 # vmware安装Linux
 
-![img](\ajian/166.jpg)
+![img](/ajian/166.jpg)
 
 ## Linux安装方式
 
