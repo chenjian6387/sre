@@ -1,6 +1,6 @@
 # vmware安装Linux
 
-![img](C:\Users\admin\Desktop\test\ajian/166.jpg)
+![img](\ajian/166.jpg)
 
 ## Linux安装方式
 
@@ -51,7 +51,7 @@ VMWare是真正“同时”运行，多个操作系统在主系统的平台上�
 
 安装包向于超老师索要即可。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20211231173011399.png" alt="image-20211231173011399" style="zoom:33%;" />
+<img src="\ajian/image-20211231173011399.png" alt="image-20211231173011399" style="zoom:33%;" />
 
 ### 配置VMware
 
@@ -59,11 +59,11 @@ VMWare是真正“同时”运行，多个操作系统在主系统的平台上�
 
 win键+r 输入services.msc
 
-<img src="C:\Users\admin\Desktop\test\ajian/168.jpg" alt="img" style="zoom:50%;" />
+<img src="\ajian/168.jpg" alt="img" style="zoom:50%;" />
 
 - 发现如果缺少虚拟网卡，vmnet1/8，可以选择重新安装vmware或是点击虚拟网卡修复
 
-<img src="C:\Users\admin\Desktop\test\ajian/169.jpg" alt="img" style="zoom: 25%;" />
+<img src="\ajian/169.jpg" alt="img" style="zoom: 25%;" />
 
 安装配置详细博客：https://www.cnblogs.com/pyyu/articles/9313587.html
 
@@ -73,7 +73,7 @@ win键+r 输入services.msc
 
 在 VMware 软件中，单击左上角的“文件”，在下拉菜单中选择“新建虚拟机”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/170.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/170.jpg" alt="img" style="zoom:33%;" />
 
 在弹出的“新建虚拟机向导”选项卡里面，选择“自定义(高级)”。
 
@@ -81,7 +81,7 @@ win键+r 输入services.msc
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/171.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/171.jpg" alt="img" style="zoom:33%;" />
 
 **选择虚拟机硬件兼容性**===**购买主机箱**
 
@@ -89,7 +89,7 @@ win键+r 输入services.msc
 
 如果使用的是 VMware14 版本，那此处就选择 Workstation14.0。 选择完毕后，点击“下一步”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/172.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/172.jpg" alt="img" style="zoom:33%;" />
 
 **安装客户机操作系统**
 
@@ -97,7 +97,7 @@ win键+r 输入services.msc
 
 选择完毕后，点击“下一步”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/173.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/173.jpg" alt="img" style="zoom:33%;" />
 
 **选择客户机操作系统**===**安装什么样的系统**
 
@@ -107,7 +107,7 @@ win键+r 输入services.msc
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/174.jpg" alt="img" style="zoom: 25%;" />
+<img src="\ajian/174.jpg" alt="img" style="zoom: 25%;" />
 
 **命名虚拟机**===**专业规范**
 
@@ -121,7 +121,7 @@ win键+r 输入services.msc
 
 选择完毕后，点击“下一步”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/176.jpg" alt="img" style="zoom:25%;" />
+<img src="\ajian/176.jpg" alt="img" style="zoom:25%;" />
 
 **内存配置**
 
@@ -131,7 +131,7 @@ win键+r 输入services.msc
 
 选择完毕后，点击“下一步”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/177.jpg" alt="img" style="zoom:25%;" />
+<img src="\ajian/177.jpg" alt="img" style="zoom:25%;" />
 
 **选择网络类型**
 
@@ -141,7 +141,7 @@ win键+r 输入services.msc
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/178.jpg" alt="img" style="zoom:25%;" />
+<img src="\ajian/178.jpg" alt="img" style="zoom:25%;" />
 
 - VMware虚拟机常见的网络类型有`bridged(桥接)`、`**NAT**(地址转换`)、`host-only(仅主机)`3种，在分析如何选择之前，先要简单和大家介绍下这三种网络类型。
 
@@ -163,7 +163,7 @@ NAT(Network Address Translation)，网络地址转换，NAT模式是比较简单
 
 VMWare DHCP Service 负责为虚拟机分配 IP 地址。NAT 网络类型的原理逻辑图如图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/179.jpg" alt="img" style="zoom:25%;" />
+<img src="\ajian/179.jpg" alt="img" style="zoom:25%;" />
 
 NAT 网络特别适合于家庭里电脑直接连接网线的情况，当然办公室的局域网环境也是适合的，优势就是不会和其他物理主机 IP 冲突，且在没有路由器的环境下也可以通过 SSH NAT 连接虚拟机学习，换了网络环境虚拟机 IP 等不影响，这是推荐的选择。
 
@@ -179,7 +179,7 @@ NAT 网络特别适合于家庭里电脑直接连接网线的情况，当然办�
 
 Bridged 网络类型的原理逻辑图如图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/180.jpg" alt="img" style="zoom:25%;" />
+<img src="\ajian/180.jpg" alt="img" style="zoom:25%;" />
 
 Bridged网络类型适合的场景:
 
@@ -192,7 +192,7 @@ Bridged网络类型适合的场景:
 
 Host-only 网络类型的原理逻辑图如图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/181.jpg" alt="img" style="zoom:25%;" />
+<img src="\ajian/181.jpg" alt="img" style="zoom:25%;" />
 
 ------
 
@@ -204,7 +204,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/182.jpg" alt="img" style="zoom: 33%;" />
+<img src="\ajian/182.jpg" alt="img" style="zoom: 33%;" />
 
 **选择磁盘类型**
 
@@ -214,7 +214,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/183.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/183.jpg" alt="img" style="zoom:33%;" />
 
 **选择磁盘**
 
@@ -224,7 +224,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 选择完毕后，点击“下一步”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/184.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/184.jpg" alt="img" style="zoom:33%;" />
 
 **指定磁盘容量**
 
@@ -236,7 +236,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/185.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/185.jpg" alt="img" style="zoom:33%;" />
 
 **指定磁盘文件===存放vwware虚拟机系统文件**
 
@@ -246,7 +246,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/186.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/186.jpg" alt="img" style="zoom:33%;" />
 
 **挂载 CentOS 镜像====光驱放入了DVD系统光盘**
 
@@ -258,7 +258,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/187.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/187.jpg" alt="img" style="zoom:33%;" />
 
 **完成创建虚拟机----完成配置准备付款购买**
 
@@ -276,15 +276,15 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 虚拟机开机后，选择“Install CentOS7”这一项。此时鼠标是不好用的，都是使用键盘的上下箭头来进行操作的，选好后按键盘上的回车键即可。
 
-<img src="C:\Users\admin\Desktop\test\ajian/190.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/190.jpg" alt="img" style="zoom:33%;" />
 
-<img src="C:\Users\admin\Desktop\test\ajian/191.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/191.jpg" alt="img" style="zoom:33%;" />
 
 **选择安装使用的语言**
 
 作为一个 linux 的学习者，要适应英文环境，所以强烈建议此处选择英文，而不选择中文。 选择完毕后，点击“Continue”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/192.jpg" alt="img" style="zoom: 33%;" />
+<img src="\ajian/192.jpg" alt="img" style="zoom: 33%;" />
 
 **设置时区**
 
@@ -292,11 +292,11 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/193.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/193.jpg" alt="img" style="zoom:33%;" />
 
 我们生活在中国嘛，所以时区选择“亚洲-上海”。时间不用管，待装完系统后，同步一下即可。 选择完毕后，点击“Done”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/194.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/194.jpg" alt="img" style="zoom:33%;" />
 
 **最小化安装系统**
 
@@ -304,7 +304,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/195.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/195.jpg" alt="img" style="zoom:33%;" />
 
 安装 linux 系统，一般都采用最小化安装的原则，在初始时，只选择必要的几个软件包即可。
 
@@ -312,13 +312,13 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 选择完毕后，点击“Done”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/196.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/196.jpg" alt="img" style="zoom:33%;" />
 
 **关闭KDUMP**
 
 配置“KDUMP”，这是一个内核崩溃时使用的东西，暂时不需要开启，把它关闭掉。
 
-<img src="C:\Users\admin\Desktop\test\ajian/197.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/197.jpg" alt="img" style="zoom:33%;" />
 
 把“Enable kdump”的勾选去掉即可。
 
@@ -326,7 +326,7 @@ Host-only 网络类型的原理逻辑图如图所示。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/198.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/198.jpg" alt="img" style="zoom:33%;" />
 
 #### 磁盘分区（初学直接自动分区）
 
@@ -374,7 +374,7 @@ Ubuntu考虑到系统需要休眠，
 
 配置磁盘，`点击“INSTALLATION DESTTINATION”。`
 
-<img src="C:\Users\admin\Desktop\test\ajian/199.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/199.jpg" alt="img" style="zoom:33%;" />
 
 选中磁盘后，选择“I will configure partitioning”。
 
@@ -382,13 +382,13 @@ Ubuntu考虑到系统需要休眠，
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/200.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/200.jpg" alt="img" style="zoom:33%;" />
 
 **分区方式**
 
 在左侧中间的下拉菜单里面，选择“Standard Partition”。然后点击左下方的“+”号，添加/boot 分 区。
 
-<img src="C:\Users\admin\Desktop\test\ajian/201.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/201.jpg" alt="img" style="zoom:33%;" />
 
 在弹出的对话框中，请按照下图中的内容配置。
 
@@ -396,13 +396,13 @@ Ubuntu考虑到系统需要休眠，
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/202.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/202.jpg" alt="img" style="zoom:33%;" />
 
 再次点击左下角的“+”号，添加 swap 分区。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/203.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/203.jpg" alt="img" style="zoom:33%;" />
 
 在弹出的对话框中，请按照下图中的内容配置。
 
@@ -410,13 +410,13 @@ Ubuntu考虑到系统需要休眠，
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/204.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/204.jpg" alt="img" style="zoom:33%;" />
 
 再次点击左下角的“+”号，添加根分区。
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/205.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/205.jpg" alt="img" style="zoom:33%;" />
 
 在弹出的对话框中，请按照下图中的内容配置。
 
@@ -424,13 +424,13 @@ Ubuntu考虑到系统需要休眠，
 
 如下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/206.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/206.jpg" alt="img" style="zoom:33%;" />
 
 /boot、/、swap 三个分区都添加完毕后，检查确认无误，就可以写入磁盘了。
 
 确认完毕后，点击“Done”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/207.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/207.jpg" alt="img" style="zoom:33%;" />
 
 **最终结果**
 
@@ -438,7 +438,7 @@ Ubuntu考虑到系统需要休眠，
 
 选择完毕后，点击“Accept Changes”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/208.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/208.jpg" alt="img" style="zoom:33%;" />
 
 提示 这里采用的是生产环境中集群节点下的节点服务器的分区方式，即系统坏掉后硬盘数据不需要保留。此分区方式也适合大多数生产环境的服务器，如果是数据库以及存储等有重要数据的特殊业务服务，一般会单独分存放数据的分区如 /data。
 
@@ -454,7 +454,7 @@ Ubuntu考虑到系统需要休眠，
 
 配置网络，点击“NETWORK$HOSTNAME”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/209.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/209.jpg" alt="img" style="zoom:33%;" />
 
 **选择完毕后，点击“Begin Installation”。**
 
@@ -462,7 +462,7 @@ Ubuntu考虑到系统需要休眠，
 
 给 root 用户设置密码，点击“ROOT PASSWORD”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/210.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/210.jpg" alt="img" style="zoom:33%;" />
 
 学习期间为了练习方便，root 用户的密码简单的设置为 123456 即可。
 
@@ -470,7 +470,7 @@ Ubuntu考虑到系统需要休眠，
 
 配置完毕后，点击“Done”。
 
-<img src="C:\Users\admin\Desktop\test\ajian/211.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/211.jpg" alt="img" style="zoom:33%;" />
 
 提示:如果是生产环境，root 口令要尽量复杂。比如，设置 8 位以上包含数字字母大小写甚至是特殊字符的口令。在企业运维工作中安全是至关重要的一环，安全要从每一件小事做起。
 
@@ -486,13 +486,13 @@ Ubuntu考虑到系统需要休眠，
 
 其中需要注意的一点是，输入密码时屏幕没有任何反应，这是正常现象，不要怀疑自己，勇敢的敲正确的密码即可，输入完密码之后按回车键。
 
-<img src="C:\Users\admin\Desktop\test\ajian/212.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/212.jpg" alt="img" style="zoom:33%;" />
 
 # Vmware无法开机的问题
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20200330134803441.png" alt="image-20200330134803441" style="zoom:33%;" />
+<img src="\ajian/image-20200330134803441.png" alt="image-20200330134803441" style="zoom:33%;" />
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20200330134815337.png" alt="image-20200330134815337" style="zoom:33%;" />
+<img src="\ajian/image-20200330134815337.png" alt="image-20200330134815337" style="zoom:33%;" />
 
 # Linux远程连接
 
@@ -500,9 +500,9 @@ Ubuntu考虑到系统需要休眠，
 
 因此在装好Linux系统之后，使用的第一步应该是配置好客户端软件**（ssh软件进行连接）**连接Linux系统。
 
-<img src="C:\Users\admin\Desktop\test\ajian/222.png" alt="img" style="zoom:50%;" />
+<img src="\ajian/222.png" alt="img" style="zoom:50%;" />
 
-<img src="C:\Users\admin\Desktop\test\ajian/223.png" alt="img" style="zoom:50%;" />
+<img src="\ajian/223.png" alt="img" style="zoom:50%;" />
 
 ### 远程连接软件
 
@@ -526,7 +526,7 @@ Ubuntu考虑到系统需要休眠，
 
 ### 1.拍摄快照
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104110924066.png" alt="image-20220104110924066" style="zoom:33%;" />
+<img src="\ajian/image-20220104110924066.png" alt="image-20220104110924066" style="zoom:33%;" />
 
 ### 2.恢复/管理快照
 
@@ -534,7 +534,7 @@ Ubuntu考虑到系统需要休眠，
 
 回到某个时间点。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104111119737.png" alt="image-20220104111119737" style="zoom: 25%;" />
+<img src="\ajian/image-20220104111119737.png" alt="image-20220104111119737" style="zoom: 25%;" />
 
 ## 克隆虚拟机
 
@@ -544,25 +544,25 @@ Ubuntu考虑到系统需要休眠，
 
 关机>克隆>管理
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104111420479.png" alt="image-20220104111420479" style="zoom:33%;" />
+<img src="\ajian/image-20220104111420479.png" alt="image-20220104111420479" style="zoom:33%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104111443366.png" alt="image-20220104111443366" style="zoom:33%;" />
+<img src="\ajian/image-20220104111443366.png" alt="image-20220104111443366" style="zoom:33%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104111500758.png" alt="image-20220104111500758" style="zoom:33%;" />
+<img src="\ajian/image-20220104111500758.png" alt="image-20220104111500758" style="zoom:33%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104111517073.png" alt="image-20220104111517073" style="zoom:33%;" />
+<img src="\ajian/image-20220104111517073.png" alt="image-20220104111517073" style="zoom:33%;" />
 
 ------
 
 克隆完成
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104111608452.png" alt="image-20220104111608452" style="zoom:33%;" />
+<img src="\ajian/image-20220104111608452.png" alt="image-20220104111608452" style="zoom:33%;" />
 
 克隆是完全复制，两台机器的信息一模一样，这会导致一些问题，比如网络信息不能重复，就好比吧超哥克隆一份，身份证ID得换一换。
 
