@@ -6,6 +6,7 @@
   - [03_计算机基础](03_计算机基础.md)
   - [04_操作系统概述](04_操作系统概述.md)
   - [05_Linux系统搭建](05_Linux系统搭建.md)
+  - [06_vmware安装Linux](vmware安装Linux.md)
 * [02-系统核心服务](README.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
