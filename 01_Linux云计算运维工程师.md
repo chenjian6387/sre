@@ -279,7 +279,7 @@ Linux是一个全面、丰富多彩的生态圈，主流的IT技术都是各路�
 
 数据来源：[职友集](https://www.jobui.com/salary/?cityKw=北京&jobKw=运维)
 
-![iamge](\ajian\image-20211229113702416.png)
+![image](\ajian\image-20211229113702416.png)
 
 ### 我适合学Linux吗
 
@@ -293,7 +293,7 @@ Linux是一个全面、丰富多彩的生态圈，主流的IT技术都是各路�
 
 ### 如何快速学习Linux
 
-### ![iamge](\ajian\32.jpeg)
+### ![image](\ajian\32.jpeg)
 
 成功本没有捷径，如果真要说`捷径`，那就是走一条正确的道路，少走弯路。
 
