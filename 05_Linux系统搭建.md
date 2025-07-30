@@ -4,7 +4,7 @@
 
 操作系统：是一个人与计算机硬件的中介。
 
-没有用的砖头===>可以玩的砖头<img src="C:\Users\admin\Desktop\test\ajian/242.gif" alt="img" style="zoom: 67%;" />
+没有用的砖头===>可以玩的砖头<img src="\ajian/242.gif" alt="img" style="zoom: 67%;" />
 
 操作系统，英文名称 Operating System，简称 OS，是计算机系统中必不可少的基础系统软件，它是 应用程序运行以及用户操作必备的基础环境支撑，是计算机系统的核心。
 
@@ -14,13 +14,13 @@
 
 同时，它也负责对计算 机系统中各类软件资源的管理。例如各类应用软件的安装、运行环境设置等。下图给出了操作系统 与计算机硬件、软件之间的关系示意图。
 
-<img src="C:\Users\admin\Desktop\test\ajian/147.jpg" alt="img" style="zoom: 25%;" />
+<img src="\ajian/147.jpg" alt="img" style="zoom: 25%;" />
 
 操作系统就是处于用户与计算机硬件之间用于传递信息的系统程序软件。
 
 操作系统在接收到用户输入后，将其传递给计算机系统硬件核心进行处理，然后再讲计算机硬件的处理结果返回给用户。
 
-<img src="C:\Users\admin\Desktop\test\ajian/148.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/148.jpg" alt="img" style="zoom:33%;" />
 
 ## 常见操作系统
 
@@ -73,7 +73,7 @@ Linux主要用在服务器端、嵌入式开发和个人PC桌面中，服务器�
 - 可自由传播，无任何商业化版权制约;
 - 适合 Intel 等 x86 CPU 系列架构的计算机，可移植性很高
 
-<img src="C:\Users\admin\Desktop\test\ajian/155.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/155.jpg" alt="img" style="zoom:33%;" />
 
 ## Unix的历史
 
@@ -85,7 +85,7 @@ Unix系统在1969年的AT&T的贝尔实验室诞生，20世纪70年代，它逐�
 - IBM公司的AIX
 - HP公司的HP UNIX
 
-<img src="C:\Users\admin\Desktop\test\ajian/151.jpg" alt="img" style="zoom: 33%;" />
+<img src="\ajian/151.jpg" alt="img" style="zoom: 33%;" />
 
 在上图中可以看到，本章的“主人公”Linux 系统，诞生于 1991 年左右，因此，可以说 Linux 是从 Unix 发展而来的。
 
@@ -112,7 +112,7 @@ Unix系统在1969年的AT&T的贝尔实验室诞生，20世纪70年代，它逐�
 >
 > 这个 GNU 系统后来没有流行起来。现在的 GNU 系统通常是使用 Linux 系统的内核， 以及使用了GNU项目贡献的一些组件加上其它相关程序组成，这样的组合被称为 `GNU/Linux`操作系统。
 
-<img src="C:\Users\admin\Desktop\test\ajian/156.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/156.jpg" alt="img" style="zoom:33%;" />
 
 ## Linux系统诞生
 
@@ -122,13 +122,13 @@ Unix系统在1969年的AT&T的贝尔实验室诞生，20世纪70年代，它逐�
 >
 > 然后git又火遍了全世界，猿来这就是大佬吗。
 
-<img src="C:\Users\admin\Desktop\test\ajian/149.jpeg" alt="img" style="zoom: 50%;" />
+<img src="\ajian/149.jpeg" alt="img" style="zoom: 50%;" />
 
 Linux 系统的诞生开始于芬兰赫尔辛基大学的一位计算机系的学生，名字为 Linus Torvalds。
 
 Linux 的标志和吉祥物为一只名字叫作Tux的企鹅——Torvalds’Unix，下图所示。
 
-<img src="C:\Users\admin\Desktop\test\ajian/150.jpg" alt="img" style="zoom: 50%;" />
+<img src="\ajian/150.jpg" alt="img" style="zoom: 50%;" />
 
 Linux Torvalds 林纳斯·托瓦兹1988年进入赫尔辛基大学选读计算机科学，他在学校接触到Unix这个操作系统，当时的Unix只提供16个终端，早期的计算机只有运算功能，终端提供输入输出，光是等待Unix的时间就很长，林纳斯这样的大神就决定自己开发一个操作系统！
 
@@ -162,7 +162,7 @@ Linux Torvalds 林纳斯·托瓦兹1988年进入赫尔辛基大学选读计算�
 
 我们一定要向前辈们致以深深地敬意，没有他们，就没有今天的 Linux 优秀系统存在了(下图所示)。
 
-<img src="C:\Users\admin\Desktop\test\ajian/152.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/152.jpg" alt="img" style="zoom:33%;" />
 
 ## Linux核心概念知识
 
@@ -188,7 +188,7 @@ FSF 的主要项目是 GNU 项目。
 
 GNU系统本身产生的主要软件包括:`Emacs 编辑软件`、`gcc 编译软件`、`bash命令解释程序`和`编程语言`，以及 `gawk (GNU’s awk)`等。
 
-<img src="C:\Users\admin\Desktop\test\ajian/157.jpeg" alt="img" style="zoom:50%;" />
+<img src="\ajian/157.jpeg" alt="img" style="zoom:50%;" />
 
 ## GNU知识
 
@@ -202,7 +202,7 @@ GNU，GNU 计划，又称革奴计划，是由Richard Stallman 在 1984 年公�
 
 在 Linus Torvalds 和其他开发人员的努力下， GNU 项目的部分组件又运行到了 Linux 内核之上，例 如:GNU 项目里的 Emacs、gcc、bash、gawk 等，至今都是 Linux 系统中很重要的基础软件。
 
-<img src="C:\Users\admin\Desktop\test\ajian/158.jpeg" alt="img" style="zoom:33%;" />
+<img src="\ajian/158.jpeg" alt="img" style="zoom:33%;" />
 
 ## GPL知识
 
@@ -259,7 +259,7 @@ Linux 作为企业级服务器的应用十分广泛，利用 Linux 系统可以�
 
 例如，在`智能手机领域`，`Android Linux` 已经在智能手机 开发平台牢牢地占据了一席之地。
 
-<img src="C:\Users\admin\Desktop\test\ajian/159.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/159.jpg" alt="img" style="zoom:33%;" />
 
 ## 个人桌面 Linux应用领域
 
@@ -274,7 +274,7 @@ Linux 作为企业级服务器的应用十分广泛，利用 Linux 系统可以�
 
 虽然 Linux 个人桌面系统的支持已经很广泛了，但是在当前的桌面市场份额还远远无法与 Windows系统竞争，这其中的障碍可能不在于 Linux 桌面系统产品本身，而在于用户的使用观念、操作习惯 和应用技能，以及曾经在 Windows 上开发的软件的移植问题。
 
-<img src="C:\Users\admin\Desktop\test\ajian/160.gif" alt="img" style="zoom: 50%;" />
+<img src="\ajian/160.gif" alt="img" style="zoom: 50%;" />
 
 # Linux的发行版本介绍
 
@@ -286,11 +286,11 @@ Linux 的发行商包括 Slackware、Redhat、Debian、Fedora、TurboLinux、Man
 
 **Red Hat**：Red Hat Linux 9.0 的内核为 2.4.20。在版本 9.0 后，Red Hat 不再遵循 GPL 协议，成为收费 产品(但仍开源)，发展的新版本依次为 Red Hat 3.x、Red Hat 4.x、Red Hat 5.x、Red Hat 6.x、Red Hat 7.x、Red Hat Enterprise 6.x。
 
-<img src="C:\Users\admin\Desktop\test\ajian/161.jpeg" alt="img" style="zoom:50%;" />
+<img src="\ajian/161.jpeg" alt="img" style="zoom:50%;" />
 
 **Fedora**:为 Red Hat 的一个分支，仍遵循 GPL 协议，可以认为是 Red Hat 预发布版。(游戏公测)
 
-<img src="C:\Users\admin\Desktop\test\ajian/162.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/162.jpg" alt="img" style="zoom:33%;" />
 
 **CentOS (Community Enterprise Operating System)**：与 redhat 做到二进制级别的一模一样。
 
@@ -318,7 +318,7 @@ CentOS Linux 是国内互联网公司使用最多的 Linux 系统版本，后面
 
 ## 你用的操作系统发行版是？
 
-<img src="C:\Users\admin\Desktop\test\ajian/163.jpg" alt="img" style="zoom: 25%;" />
+<img src="\ajian/163.jpg" alt="img" style="zoom: 25%;" />
 
 ## 下载CentOS系统ISO镜像
 
@@ -352,7 +352,7 @@ CentOS Linux 是国内互联网公司使用最多的 Linux 系统版本，后面
 
 当然，此时 32位的操作系统是无法发挥64位硬件性能的。
 
-<img src="C:\Users\admin\Desktop\test\ajian/164.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/164.jpg" alt="img" style="zoom:33%;" />
 
 - 运算速度不同
 
@@ -364,7 +364,7 @@ CentOS Linux 是国内互联网公司使用最多的 Linux 系统版本，后面
 
 也就是说处理器一次可提取 64 位数据(只要两个指令，一次提取 8 个字节的数 据)，比 32位提高了一倍(32位需要四个指令，一次只能提取 4 个字节的数据)，性能会相应提升。
 
-<img src="C:\Users\admin\Desktop\test\ajian/165.jpg" alt="img" style="zoom:50%;" />
+<img src="\ajian/165.jpg" alt="img" style="zoom:50%;" />
 
 - 寻址能力不同
 
