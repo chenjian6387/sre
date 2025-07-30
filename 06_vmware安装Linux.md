@@ -570,4 +570,4 @@ Ubuntu考虑到系统需要休眠，
 
 快照，给当前机器添加一个还原文件，依然是1台机器。快速， 适合做一些不确定的操作，保护系统安全。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104111907889.png" alt="image-20220104111907889" style="zoom:50%;" />
+<img src="\ajian/image-20220104111907889.png" alt="image-20220104111907889" style="zoom:50%;" />
