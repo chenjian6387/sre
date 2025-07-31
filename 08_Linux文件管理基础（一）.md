@@ -319,7 +319,7 @@ rm: remove directory ‘yuchao-linux/’? y
 hehe.txt
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220105145905810.png" alt="image-20220105145905810" style="zoom: 33%;" />
+<img src="\ajian/image-20220105145905810.png" alt="image-20220105145905810" style="zoom: 33%;" />
 
 ### cp总结
 
