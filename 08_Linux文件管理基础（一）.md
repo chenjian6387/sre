@@ -1198,7 +1198,7 @@ ctrl + up 和down 相对，向上5行。
 简写的指令
 :noh
 ```
-
+<img src="\ajian/image-20220106172326901.png" alt="image-20220106172326901" style="zoom:66%;" /><img src="\ajian/image-20220106200458589.png" alt="image-20220106200458589" style="zoom:66%;" />
 ![image-20220106172326901](\ajian/image-20220106172326901.png)
 ![image-20220106200458589](\ajian/image-20220106200458589.png)
 
