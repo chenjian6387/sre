@@ -398,7 +398,7 @@ linux01
 
 > tar命令在linux系统里，可以实现对多个文件进行，压缩、打包、解包
 
-<img src="C:\Users\admin\Desktop\test\ajian/304.jpg" alt="img"  />
+<img src="\ajian/304.jpg" alt="img"  />
 
 *打包*
 
@@ -408,7 +408,7 @@ linux01
 
 将大文件压缩成小文件，节省磁盘空间。
 
-<img src="C:\Users\admin\Desktop\test\ajian/305.jpg" alt="img" style="zoom: 33%;" />
+<img src="\ajian/305.jpg" alt="img" style="zoom: 33%;" />
 
 ```
 yuchao.txt 5MB
@@ -641,15 +641,15 @@ total 132M
 
 ### tar总结
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220105184455838.png" alt="image-20220105184455838" style="zoom:50%;" />
+<img src="\ajian/image-20220105184455838.png" alt="image-20220105184455838" style="zoom:50%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220105190013728.png" alt="image-20220105190013728" style="zoom: 33%;" />
+<img src="\ajian/image-20220105190013728.png" alt="image-20220105190013728" style="zoom: 33%;" />
 
 > 教你一招，tar还能让你更省心
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220105190314280.png" alt="image-20220105190314280" style="zoom:50%;" />
+<img src="\ajian/image-20220105190314280.png" alt="image-20220105190314280" style="zoom:50%;" />
 
 ### 思考题
 
@@ -809,11 +809,11 @@ vi（visual editor）编辑器通常被简称为vi，它是Linux和Unix系统上
 
 > windows下的文本编辑器
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106134819825.png" alt="image-20220106134819825" style="zoom:50%;" />
+<img src="\ajian/image-20220106134819825.png" alt="image-20220106134819825" style="zoom:50%;" />
 
 > linux下的文本编辑器，vi
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106135033158.png" alt="image-20220106135033158" style="zoom: 33%;" />
+<img src="\ajian/image-20220106135033158.png" alt="image-20220106135033158" style="zoom: 33%;" />
 
 由于是linux环境，不像windows那样操作简单，点点就可以使用编辑器，写入数据，保存文件。
 
@@ -846,7 +846,7 @@ vim 则可以说是程序开发者的一项很好用的工具。
 >
 > 2.如果你是跟着超哥安装的linux系统步骤，那已经装好了vim了。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106140819758.png" alt="image-20220106140819758" style="zoom: 50%;" />
+<img src="\ajian/image-20220106140819758.png" alt="image-20220106140819758" style="zoom: 50%;" />
 
 验证是否有vim，在命令行输入vim即可。
 
@@ -878,11 +878,11 @@ command not found # 命令找不到
 
 ## 4、图解vim使用流程
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106142359321.png" alt="image-20220106142359321" style="zoom:33%;" />
+<img src="\ajian/image-20220106142359321.png" alt="image-20220106142359321" style="zoom:33%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106143755744.png" alt="image-20220106143755744" style="zoom:33%;" />
+<img src="\ajian/image-20220106143755744.png" alt="image-20220106143755744" style="zoom:33%;" />
 
 ## 5、vim实践
 
@@ -925,7 +925,7 @@ command not found # 命令找不到
 
 此时就进入了命令模式
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106152059806.png" alt="image-20220106152059806" style="zoom: 50%;" />
+<img src="\ajian/image-20220106152059806.png" alt="image-20220106152059806" style="zoom: 50%;" />
 
 ### 5.2 vim保存且退出
 
@@ -940,11 +940,11 @@ w  write 写入
 q  quit 退出
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106152208963.png" alt="image-20220106152208963" style="zoom:50%;" />
+<img src="\ajian/image-20220106152208963.png" alt="image-20220106152208963" style="zoom:50%;" />
 
 ### 5.3 vim不保存且退出
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106152259685.png" alt="image-20220106152259685" style="zoom:50%;" />
+<img src="\ajian/image-20220106152259685.png" alt="image-20220106152259685" style="zoom:50%;" />
 
 当你写错了，不想保存，就直接退出即可。但是一般要加上感叹号，强制该操作。
 
@@ -987,11 +987,11 @@ good good study, day day up !!
 
 方法1：光标移动、上下左右
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106154106996.png" alt="image-20220106154106996" style="zoom:50%;" />
+<img src="\ajian/image-20220106154106996.png" alt="image-20220106154106996" style="zoom:50%;" />
 
 方法2：四个字母 h、j、k、l，防止有的键盘没有上下左右
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106154916593.png" alt="image-20220106154916593" style="zoom:50%;" />
+<img src="\ajian/image-20220106154916593.png" alt="image-20220106154916593" style="zoom:50%;" />
 
 #### 行首、行尾
 
@@ -1027,7 +1027,7 @@ G　　　　移动光标到文档尾行  【按下 shitf + g】
 
 一屏就显示10行，翻半页，每次翻5行，理解半页。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106160155882.png" alt="image-20220106160155882" style="zoom:50%;" />
+<img src="\ajian/image-20220106160155882.png" alt="image-20220106160155882" style="zoom:50%;" />
 
 ctrl + up 和down 相对，向上5行。
 
@@ -1035,7 +1035,7 @@ ctrl + up 和down 相对，向上5行。
 
 整页翻页，保留2行信息。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106160601140.png" alt="image-20220106160601140" style="zoom:50%;" />
+<img src="\ajian/image-20220106160601140.png" alt="image-20220106160601140" style="zoom:50%;" />
 
 #### 定位到指定行（重点）
 
@@ -1043,7 +1043,7 @@ ctrl + up 和down 相对，向上5行。
 
 比如如下报错
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106160935650.png" alt="image-20220106160935650" style="zoom:50%;" />
+<img src="\ajian/image-20220106160935650.png" alt="image-20220106160935650" style="zoom:50%;" />
 
 就是告诉你，第50行出错了。
 
@@ -1051,7 +1051,7 @@ ctrl + up 和down 相对，向上5行。
 >
 > 按下，行号 + G，即可快速跳转
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106161114505.png" alt="image-20220106161114505" style="zoom:50%;" />
+<img src="\ajian/image-20220106161114505.png" alt="image-20220106161114505" style="zoom:50%;" />
 
 ### 6.3 复制、粘贴
 
@@ -1063,7 +1063,7 @@ ctrl + up 和down 相对，向上5行。
 >
 > 作用：移动光标到你想要粘贴的行，按下p，将粘贴到下一行，按下大写P，粘贴到上一行。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106161603252.png" alt="image-20220106161603252" style="zoom:50%;" />
+<img src="\ajian/image-20220106161603252.png" alt="image-20220106161603252" style="zoom:50%;" />
 
 ### 6.4 剪切、删除
 
@@ -1084,23 +1084,23 @@ ctrl + up 和down 相对，向上5行。
 
 > dd
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106165113784.png" alt="image-20220106165113784" style="zoom:33%;" /><img src="C:\Users\admin\Desktop\test\ajian/image-20220106165202389.png" alt="image-20220106165202389" style="zoom: 50%;" />
+<img src="\ajian/image-20220106165113784.png" alt="image-20220106165113784" style="zoom:33%;" /><img src="\ajian/image-20220106165202389.png" alt="image-20220106165202389" style="zoom: 50%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106165210225.png" alt="image-20220106165210225" style="zoom: 67%;" />
+<img src="\ajian/image-20220106165210225.png" alt="image-20220106165210225" style="zoom: 67%;" />
 
 > 2dd
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106165251440.png" alt="image-20220106165251440"  />
+<img src="\ajian/image-20220106165251440.png" alt="image-20220106165251440"  />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106165358608.png" alt="image-20220106165358608" style="zoom:67%;" />
+<img src="\ajian/image-20220106165358608.png" alt="image-20220106165358608" style="zoom:67%;" />
 
 > D
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106165434444.png" alt="image-20220106165434444" style="zoom:80%;" />
+<img src="\ajian/image-20220106165434444.png" alt="image-20220106165434444" style="zoom:80%;" />
 
 ### 6.5 撤销、恢复
 
@@ -1108,17 +1108,17 @@ ctrl + up 和down 相对，向上5行。
 
 恢复：ctrl + r 恢复（你撤销后，又后悔了？redo 重做）
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106165757316.png" alt="image-20220106165757316" style="zoom:67%;" />
+<img src="\ajian/image-20220106165757316.png" alt="image-20220106165757316" style="zoom:67%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106165820389.png" alt="image-20220106165820389" style="zoom:67%;" />
+<img src="\ajian/image-20220106165820389.png" alt="image-20220106165820389" style="zoom:67%;" />
 
 ## 7. vim底线模式（重点）
 
 ### 7.1 进入底线模式
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106170038656.png" alt="image-20220106170038656" style="zoom:67%;" />
+<img src="\ajian/image-20220106170038656.png" alt="image-20220106170038656" style="zoom:67%;" />
 
 进入底线模式流程
 
@@ -1136,13 +1136,13 @@ ctrl + up 和down 相对，向上5行。
     :w /tmp/yuchao.txt  另存为文件
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106170715849.png" alt="image-20220106170715849" style="zoom:67%;" />
+<img src="\ajian/image-20220106170715849.png" alt="image-20220106170715849" style="zoom:67%;" />
 
 ------
 
 另存为
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106170950491.png" alt="image-20220106170950491" style="zoom:67%;" />
+<img src="\ajian/image-20220106170950491.png" alt="image-20220106170950491" style="zoom:67%;" />
 
 ### 7.3 退出quit
 
@@ -1151,11 +1151,11 @@ ctrl + up 和down 相对，向上5行。
     :q 退出文件，不保存操作
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106171131689.png" alt="image-20220106171131689" style="zoom:67%;" />
+<img src="\ajian/image-20220106171131689.png" alt="image-20220106171131689" style="zoom:67%;" />
 
 想退出，必须添加感叹号。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106171157375.png" alt="image-20220106171157375" style="zoom:67%;" />
+<img src="\ajian/image-20220106171157375.png" alt="image-20220106171157375" style="zoom:67%;" />
 
 ### 7.4 保存且退出（重点）
 
@@ -1165,7 +1165,7 @@ ctrl + up 和down 相对，向上5行。
 输入 :wq
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106171526013.png" alt="image-20220106171526013" style="zoom:67%;" />
+<img src="\ajian/image-20220106171526013.png" alt="image-20220106171526013" style="zoom:67%;" />
 
 ### 7.5 强制，感叹号
 
@@ -1176,7 +1176,7 @@ ctrl + up 和down 相对，向上5行。
 :q!
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106171836886.png" alt="image-20220106171836886" style="zoom:67%;" />
+<img src="\ajian/image-20220106171836886.png" alt="image-20220106171836886" style="zoom:67%;" />
 
 ### 7.6 搜索、查找
 
@@ -1189,7 +1189,7 @@ ctrl + up 和down 相对，向上5行。
 /yuchao
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106172107668.png" alt="image-20220106172107668" style="zoom:67%;" />
+<img src="\ajian/image-20220106172107668.png" alt="image-20220106172107668" style="zoom:67%;" />
 
 > 取消查找的高亮，输入指令
 
@@ -1199,7 +1199,7 @@ ctrl + up 和down 相对，向上5行。
 :noh
 ```
 
-![image-20220106172326901](C:\Users\admin\Desktop\test\ajian/image-20220106172326901.png)![image-20220106200458589](C:\Users\admin\Desktop\test\ajian/image-20220106200458589.png)
+![image-20220106172326901](\ajian/image-20220106172326901.png)![image-20220106200458589](\ajian/image-20220106200458589.png)
 
 ### 7.7 替换
 
@@ -1216,13 +1216,13 @@ ctrl + up 和down 相对，向上5行。
 
 替换前
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106173446110.png" alt="image-20220106173446110" style="zoom:67%;" />
+<img src="\ajian/image-20220106173446110.png" alt="image-20220106173446110" style="zoom:67%;" />
 
 ------
 
 替换后
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106173531016.png" alt="image-20220106173531016" style="zoom:67%;" />
+<img src="\ajian/image-20220106173531016.png" alt="image-20220106173531016" style="zoom:67%;" />
 
 发现的确就替换了一次
 
@@ -1233,7 +1233,7 @@ ctrl + up 和down 相对，向上5行。
 :s/源内容/新内容/g
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106174005102.png" alt="image-20220106174005102" style="zoom:80%;" />
+<img src="\ajian/image-20220106174005102.png" alt="image-20220106174005102" style="zoom:80%;" />
 
 #### 全篇替换
 
@@ -1251,11 +1251,11 @@ ctrl + up 和down 相对，向上5行。
 
 全篇替换，只替换每一行找到的第一个
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106174817541.png" alt="image-20220106174817541" style="zoom:80%;" />
+<img src="\ajian/image-20220106174817541.png" alt="image-20220106174817541" style="zoom:80%;" />
 
 全篇替换，真正的全文替换。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106175055301.png" alt="image-20220106175055301" style="zoom:80%;" />
+<img src="\ajian/image-20220106175055301.png" alt="image-20220106175055301" style="zoom:80%;" />
 
 比如你修改一个脚本，有一个变量名字多次被调用，名字得改，可以利用全篇替换。
 
@@ -1269,7 +1269,7 @@ ctrl + up 和down 相对，向上5行。
 表示 set number
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106175747564.png" alt="image-20220106175747564" style="zoom:80%;" />
+<img src="\ajian/image-20220106175747564.png" alt="image-20220106175747564" style="zoom:80%;" />
 
 取消行号，比如你要复制多行的数据，不想要行号了
 
@@ -1278,7 +1278,7 @@ ctrl + up 和down 相对，向上5行。
 表示 set nonumber 就是不要number了
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106175932550.png" alt="image-20220106175932550" style="zoom:80%;" />
+<img src="\ajian/image-20220106175932550.png" alt="image-20220106175932550" style="zoom:80%;" />
 
 ### 7.9 paste模式
 
@@ -1318,11 +1318,11 @@ spec:
 
 1.进入粘贴模式
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106181818368.png" alt="image-20220106181818368" style="zoom:80%;" />
+<img src="\ajian/image-20220106181818368.png" alt="image-20220106181818368" style="zoom:80%;" />
 
 2.复制粘贴
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106181859565.png" alt="image-20220106181859565" style="zoom:80%;" />
+<img src="\ajian/image-20220106181859565.png" alt="image-20220106181859565" style="zoom:80%;" />
 
 3.保存退出即可。
 
@@ -1357,23 +1357,23 @@ ctrl + v
 
 在你想复制的地方，光标所在的地方，按下ctrl + v，从光标处进入可视化模式
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106182736484.png" alt="image-20220106182736484" style="zoom:80%;" />
+<img src="\ajian/image-20220106182736484.png" alt="image-20220106182736484" style="zoom:80%;" />
 
 ------
 
 复制你想要的区域
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106182923801.png" alt="image-20220106182923801" style="zoom:80%;" />
+<img src="\ajian/image-20220106182923801.png" alt="image-20220106182923801" style="zoom:80%;" />
 
 p粘贴
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106183014536.png" alt="image-20220106183014536" style="zoom:80%;" />
+<img src="\ajian/image-20220106183014536.png" alt="image-20220106183014536" style="zoom:80%;" />
 
 ------
 
 ### 9.2 选中删除
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106183138853.png" alt="image-20220106183138853" style="zoom:80%;" />
+<img src="\ajian/image-20220106183138853.png" alt="image-20220106183138853" style="zoom:80%;" />
 
 ### 9.3 批量添加注释
 
@@ -1392,19 +1392,19 @@ print("hello world")
 
 2.选中你想添加注释的行
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106184300876.png" alt="image-20220106184300876" style="zoom:80%;" />
+<img src="\ajian/image-20220106184300876.png" alt="image-20220106184300876" style="zoom:80%;" />
 
 3.按下大写的字母`I`键，进入插入模式
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106184710799.png" alt="image-20220106184710799" style="zoom:80%;" />
+<img src="\ajian/image-20220106184710799.png" alt="image-20220106184710799" style="zoom:80%;" />
 
 4.输入井号，#
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106184755632.png" alt="image-20220106184755632" style="zoom:80%;" />
+<img src="\ajian/image-20220106184755632.png" alt="image-20220106184755632" style="zoom:80%;" />
 
 5.按下ESC键，自动就出现了多行注释 #
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106184844461.png" alt="image-20220106184844461" style="zoom:80%;" />
+<img src="\ajian/image-20220106184844461.png" alt="image-20220106184844461" style="zoom:80%;" />
 
 ### 9.4 删除多行注释
 
@@ -1416,7 +1416,7 @@ print("hello world")
 
 3.批量选中注释符，删除
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106195141755.png" alt="image-20220106195141755" style="zoom:80%;" />
+<img src="\ajian/image-20220106195141755.png" alt="image-20220106195141755" style="zoom:80%;" />
 
 ## 10.彩色vim模式
 
@@ -1424,11 +1424,11 @@ print("hello world")
 
 比如
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106195537917.png" alt="image-20220106195537917" style="zoom:80%;" />
+<img src="\ajian/image-20220106195537917.png" alt="image-20220106195537917" style="zoom:80%;" />
 
 又比如
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106195641399.png" alt="image-20220106195641399" style="zoom:80%;" />
+<img src="\ajian/image-20220106195641399.png" alt="image-20220106195641399" style="zoom:80%;" />
 
 加上颜色，是编辑器提供的功能，对一些关键字进行颜色高亮标识，就能让我们很容易的区分出，哪些是默认的关键字，哪些是我们自己写的程序。
 
@@ -1444,7 +1444,7 @@ vim是vi编辑器的升级版，很多大牛程序员能够直接在linux下使�
 :syntax off 语法颜色关闭
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106200458589.png" alt="image-20220106200458589" style="zoom:67%;" />
+<img src="\ajian/image-20220106200458589.png" alt="image-20220106200458589" style="zoom:67%;" />
 
 打开颜色
 
@@ -1452,17 +1452,17 @@ vim是vi编辑器的升级版，很多大牛程序员能够直接在linux下使�
 :syntax on
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106200706880.png" alt="image-20220106200706880" style="zoom:67%;" />
+<img src="\ajian/image-20220106200706880.png" alt="image-20220106200706880" style="zoom:67%;" />
 
 ### 10.2 python
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106201154621.png" alt="image-20220106201154621" style="zoom:80%;" />
+<img src="\ajian/image-20220106201154621.png" alt="image-20220106201154621" style="zoom:80%;" />
 
 ## 11.vim故障处理
 
 当咱使用vim编辑器时，会遇见这样的一个错误界面，且很常见。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106201620288.png" alt="image-20220106201620288" style="zoom:80%;" />
+<img src="\ajian/image-20220106201620288.png" alt="image-20220106201620288" style="zoom:80%;" />
 
 > 什么时候会出现这个故障
 >
@@ -1475,7 +1475,7 @@ vim是vi编辑器的升级版，很多大牛程序员能够直接在linux下使�
 
 解决办法其实vim都有告诉你
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106202944711.png" alt="image-20220106202944711" style="zoom: 50%;" />
+<img src="\ajian/image-20220106202944711.png" alt="image-20220106202944711" style="zoom: 50%;" />
 
 但是或许大家还不清楚怎么解决
 
@@ -1523,7 +1523,7 @@ vim chaoge.txt
 >
 > 2.使用vim提供的指令，忽略，删除swp文件。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220106204015798.png" alt="image-20220106204015798" style="zoom:67%;" />
+<img src="\ajian/image-20220106204015798.png" alt="image-20220106204015798" style="zoom:67%;" />
 
 ### vim关于swp总结
 
