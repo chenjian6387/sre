@@ -467,11 +467,11 @@ VMware Tools 是一套可以提高虚拟机客户机操作系统性能并改善�
 
 1.点击，选择安装vmware tools
 
-<img src="\ajian/image-20220105102838837.png" alt="image-20220105102838837" style="zoom: 67%;" />
+<img src="\ajian/image-20220105102838837.png" alt="image-20220105102838837" style="zoom: 25%;" />
 
 2.打开命令行终端
 
-<img src="\ajian/image-20220105105303421.png" alt="image-20220105105303421" style="zoom:67%;" />
+<img src="\ajian/image-20220105105303421.png" alt="image-20220105105303421" style="zoom: 25%;" />
 
 1. 进入vmware tools安装路径，把文件复制出来
 
