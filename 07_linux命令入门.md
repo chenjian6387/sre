@@ -949,4 +949,4 @@ Linux下特别注意文件名/路径的写法，可以将所谓的路径(path)�
 
 ### Linux软件安装到哪
 
-<img src=\ajian\image-20220118183630133.png" style="zoom:33%;" />
+<img src=\ajian/image-20220118183630133.png" style="zoom:33%;" />
