@@ -15,31 +15,31 @@
 
 **可能是看我骨骼惊奇吧！！**
 
-<img src="C:\Users\admin\Desktop\test\ajian/253.png" alt="img" style="zoom:33%;" />
+<img src="\ajian/253.png" alt="img" style="zoom:33%;" />
 
 ## 打开终端，输入命令
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104175259752.png" alt="image-20220104175259752" style="zoom:33%;" />
+<img src="\ajian/image-20220104175259752.png" alt="image-20220104175259752" style="zoom:33%;" />
 
 终端就是一个可以让你操作的地方，你打开终端，就可以输入指令，发给操作系统。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104180116480.png" alt="image-20220104180116480" style="zoom:33%;" />
+<img src="\ajian/image-20220104180116480.png" alt="image-20220104180116480" style="zoom:33%;" />
 
 ## 什么是linux命令
 
 就是你在linux系统里，输入linux系统才能识别的一些指令，你输入的一些固定存在的单词字母，就是命令。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104180341275.png" alt="image-20220104180341275" style="zoom:33%;" />
+<img src=\ajian/image-20220104180341275.png" alt="image-20220104180341275" style="zoom:33%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/243.png" alt="img" style="zoom:33%;" />
+<img src="\ajian/243.png" alt="img" style="zoom:33%;" />
 
 前面咱们已经成功安装了Linux系统--centos7，那么现在跟着超哥奔向Linux命令行的世界。
 
 ## Linux命令格式
 
-<img src="C:\Users\admin\Desktop\test\ajian/244.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/244.jpg" alt="img" style="zoom:33%;" />
 
 1.一般情况下，【参数】是可选的，一些情况下【文件或路径】也是可选的
 
@@ -57,7 +57,7 @@
 
 ## Linux命令提示符
 
-<img src="C:\Users\admin\Desktop\test\ajian/245.png" alt="img" style="zoom: 50%;" />
+<img src="\ajian/245.png" alt="img" style="zoom: 50%;" />
 
 ```
 命令提示符
@@ -89,11 +89,11 @@ export PS1='\[\033[01;35m\][\[\033[01;32m\]\h\[\033[01;31m\] \u \w\[\033[31m\]\[
 
 ## Tab命令补全
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104200252888.png" alt="image-20220104200252888" style="zoom: 33%;" />
+<img src="\ajian/image-20220104200252888.png" alt="image-20220104200252888" style="zoom: 33%;" />
 
 linux终端里，系统为了让你更省心，不用记忆那么多内容，可以让你输入Tab键，可以快速列出你想要的内容，你只需要输入一个命令的开头即可，它一般可以补全linux命令，以及文件路径。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104181435847.png" alt="image-20220104181435847" style="zoom:50%;" />
+<img src="\ajian/image-20220104181435847.png" alt="image-20220104181435847" style="zoom:50%;" />
 
 ```
 [yuchao@localhost Desktop]$ ls
@@ -109,7 +109,7 @@ lsattr    lscgroup  lsdiff    lsinitrd  lslocks   lsmcli    lsmem     lsns      
 
 如windows的用户切换，从老王用户，切换到小李用户。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104181947377.png" alt="image-20220104181947377" style="zoom:50%;" />
+<img src="\ajian/image-20220104181947377.png" alt="image-20220104181947377" style="zoom:50%;" />
 
 linux用户的切换，并且我们直接切换到超级用户，切换到皇帝身份。
 
@@ -295,7 +295,7 @@ history 命令可以用来显示曾执行过的命令，且显示条目有数量
 
 ### w命令
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220308194534805.png" alt="image-20220308194534805" style="zoom:50%;" />
+<img src="\ajian/image-20220308194534805.png" alt="image-20220308194534805" style="zoom:50%;" />
 
 ### hostnamectl命令
 
@@ -467,11 +467,11 @@ VMware Tools 是一套可以提高虚拟机客户机操作系统性能并改善�
 
 1.点击，选择安装vmware tools
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220105102838837.png" alt="image-20220105102838837" style="zoom: 67%;" />
+<img src="\ajian/image-20220105102838837.png" alt="image-20220105102838837" style="zoom: 67%;" />
 
 2.打开命令行终端
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220105105303421.png" alt="image-20220105105303421" style="zoom:67%;" />
+<img src="\ajian/image-20220105105303421.png" alt="image-20220105105303421" style="zoom:67%;" />
 
 1. 进入vmware tools安装路径，把文件复制出来
 
@@ -534,7 +534,7 @@ anaconda-ks.cfg  initial-setup-ks.cfg  VMwareTools-10.3.10-13959562.tar.gz
 
 /proc/cpuinfo:关于处理器的信息，如类型，厂家，型号，性能等
 
-<img src="C:\Users\admin\Desktop\test\ajian/252.jpg" alt="img" style="zoom: 33%;" />
+<img src="\ajian/252.jpg" alt="img" style="zoom: 33%;" />
 
 /proc/loadavg:系统负载信息，uptime 的结果
 
@@ -561,17 +561,17 @@ ctrl   shift   +   放大字体
 ctrl  -    缩小字体
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107135032207.png" alt="image-20220107135032207" style="zoom:67%;" />
+<img src="\ajian/image-20220107135032207.png" alt="image-20220107135032207" style="zoom:67%;" />
 
 ## 1.严格区分大小写
 
 windows：不区分大小写，比如你创建文件夹，输入大写，小写，windows都认为是同一个。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104112314933.png" alt="image-20220104112314933" style="zoom:50%;" />
+<img src="\ajian/image-20220104112314933.png" alt="image-20220104112314933" style="zoom:50%;" />
 
 linux严格区分大小写，文件夹的名字，大小写不同，就是不同的文件夹，文件也一样，因此我们后续对文件，文本操作，要注意大小写的区分处理。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107135032207.png" alt="image-20220107135032207" style="zoom:67%;" />
+<img src="\ajian/image-20220107135032207.png" alt="image-20220107135032207" style="zoom:67%;" />
 
 可以看到，仅有一个字母的大小写不同，也是3个文件夹。
 
@@ -581,11 +581,11 @@ linux严格区分大小写，文件夹的名字，大小写不同，就是不同
 
 Windows是依赖扩展名，区分不同的文件类型。比如
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104112923872.png" alt="image-20220104112923872" style="zoom:50%;" />
+<img src="\ajian/image-20220104112923872.png" alt="image-20220104112923872" style="zoom:50%;" />
 
 ------
 
-![image-20220104113039579](C:\Users\admin\Desktop\test\ajian/image-20220104113039579.png)
+![image-20220104113039579](\ajian/image-20220104113039579.png)
 
 ```
 .txt 是普通文本，一般是记事本这样的编辑器打开
@@ -595,11 +595,11 @@ Windows是依赖扩展名，区分不同的文件类型。比如
 
 > windows下修改文件名，是会修改文件类型的，会修改文件属性。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104113652453.png" alt="image-20220104113652453" style="zoom:50%;" />
+<img src="\ajian/image-20220104113652453.png" alt="image-20220104113652453" style="zoom:50%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104113705995.png" alt="image-20220104113705995" style="zoom:50%;" />
+<img src="\ajian/image-20220104113705995.png" alt="image-20220104113705995" style="zoom:50%;" />
 
 ### linux
 
@@ -609,11 +609,11 @@ Windows是依赖扩展名，区分不同的文件类型。比如
   - 但其实是该文件类型在创建时已经定义好，文件名只是用于显示，不像windows下有实际意义。
   - 即使你修改linux的文件名，也不会修改文件的类型。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104113943464.png" alt="image-20220104113943464" style="zoom:50%;" />
+<img src="\ajian/image-20220104113943464.png" alt="image-20220104113943464" style="zoom:50%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104114021021.png" alt="image-20220104114021021" style="zoom: 33%;" />
+<img src="\ajian/image-20220104114021021.png" alt="image-20220104114021021" style="zoom: 33%;" />
 
 ### 扩展名小结
 
@@ -640,11 +640,11 @@ Windows是依赖扩展名，区分不同的文件类型。比如
 
 > 这张图下展示了大多的linux后缀格式
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104114901241.png" alt="image-20220104114901241" style="zoom:50%;" />
+<img src="\ajian/image-20220104114901241.png" alt="image-20220104114901241" style="zoom:50%;" />
 
 ## 3.Linux一切皆文件
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104135614494.png" alt="image-20220104135614494" style="zoom: 33%;" />
+<img src="\ajian/image-20220104135614494.png" alt="image-20220104135614494" style="zoom: 33%;" />
 
 > 使用linux，记住一句话，linux一切皆文件，linux上所有的内容，都以文件的形式保存。
 >
@@ -652,11 +652,11 @@ Windows是依赖扩展名，区分不同的文件类型。比如
 >
 > 以查看进程为例，进程指的是系统上运行的一个程序，如windows下的进程，这是一段程序，通过任务管理器，才能找到它的信息。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104135923206.png" alt="image-20220104135923206" style="zoom: 33%;" />
+<img src="\ajian/image-20220104135923206.png" alt="image-20220104135923206" style="zoom: 33%;" />
 
 > linux读取进程信息，可以直接找到进程的文件
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104161003471.png" alt="image-20220104161003471" style="zoom: 25%;" />
+<img src="\ajian/image-20220104161003471.png" alt="image-20220104161003471" style="zoom: 25%;" />
 
 ### linux普通文件/文件夹
 
@@ -667,13 +667,13 @@ Windows是依赖扩展名，区分不同的文件类型。比如
 - 编辑器直接打开
 - 写入，修改，保存，查看内容
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104161540042.png" alt="image-20220104161540042" style="zoom:33%;" />
+<img src="\ajian/image-20220104161540042.png" alt="image-20220104161540042" style="zoom:33%;" />
 
 > linux普通文件，如何区分，我们知道没法通过后缀名直接判断
 >
 > 有办法
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104161937197.png" alt="image-20220104161937197" style="zoom:33%;" />
+<img src="\ajian/image-20220104161937197.png" alt="image-20220104161937197" style="zoom:33%;" />
 
 ### linux可执行文件
 
@@ -681,11 +681,11 @@ Windows是依赖扩展名，区分不同的文件类型。比如
 
 windows，肉眼可以通过不同的后缀，一般可以得知，是什么文件类型，如下是常见的可执行类型。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104162300660.png" alt="image-20220104162300660" style="zoom: 67%;" />
+<img src="\ajian/image-20220104162300660.png" alt="image-20220104162300660" style="zoom: 67%;" />
 
 linux，是否可执行，就不是后缀决定的，而依然是通过文件属性查看的。（这个属性，在你创建该文件时就决定了，以不同的linux命令决定）
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104170830243.png" alt="image-20220104170830243" style="zoom: 33%;" />
+<img src="\ajian/image-20220104170830243.png" alt="image-20220104170830243" style="zoom: 33%;" />
 
 ### linux文件夹
 
@@ -693,7 +693,7 @@ linux，是否可执行，就不是后缀决定的，而依然是通过文件属
 
 文件夹用于管理一堆文件，以及子文件夹。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104171007469.png" alt="image-20220104171007469" style="zoom: 33%;" />
+<img src="\ajian/image-20220104171007469.png" alt="image-20220104171007469" style="zoom: 33%;" />
 
 windows的文件夹就不多说了。
 
@@ -705,7 +705,7 @@ windows的文件夹就不多说了。
 >
 > windows操作系统给硬盘加上了标记，我们通过C盘，盘符，即可找到C盘里的数据。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104172559463.png" alt="image-20220104172559463" style="zoom:50%;" />
+<img src="\ajian/image-20220104172559463.png" alt="image-20220104172559463" style="zoom:50%;" />
 
 > linux里没有提供这样的字母，盘符。
 >
@@ -717,7 +717,7 @@ windows的文件夹就不多说了。
 
 ### 图解linux挂载
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104183304532.png" alt="image-20220104183304532" style="zoom: 33%;" />
+<img src="\ajian/image-20220104183304532.png" alt="image-20220104183304532" style="zoom: 33%;" />
 
 windows
 
@@ -772,7 +772,7 @@ linux/unix下的哲学核心思想是‘一切皆文件’。
 - windows特点:E:\学习视频\高清视频\
 - Linux目录特点:/etc/hosts /root/data/yuchao.txt
 
-<img src="C:\Users\admin\Desktop\test\ajian/248.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/248.jpg" alt="img" style="zoom:33%;" />
 
 **Linux** 系统目录结构基本特点：
 
@@ -788,11 +788,11 @@ linux/unix下的哲学核心思想是‘一切皆文件’。
 
 *windows平台命令行目录分隔符*
 
-<img src="C:\Users\admin\Desktop\test\ajian/246.png" alt="img" style="zoom:33%;" />
+<img src="\ajian/246.png" alt="img" style="zoom:33%;" />
 
 *Linux平台命令行目录分隔符*
 
-<img src="C:\Users\admin\Desktop\test\ajian/247.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/247.jpg" alt="img" style="zoom:33%;" />
 
 ### Linux与Windows的目录结构比较
 
@@ -806,7 +806,7 @@ ls /
 
 查看结果如下图：
 
-<img src="C:\Users\admin\Desktop\test\ajian/250.jpg" alt="img" style="zoom:50%;" />
+<img src="\ajian/250.jpg" alt="img" style="zoom:50%;" />
 
 在Linux底下，所有的文件与目录都是由根目录开始，是目录与文件的源头，然后一个个的分支下来，如同树枝状，因此称为这种目录配置为：**目录树**。
 
@@ -822,7 +822,7 @@ ls /
 
 对于Linux系统来说，一切接文件，所有文件都放在以`根目录`为起点的树形目录结构中，任何硬件设备也都是文件形式
 
-<img src="C:\Users\admin\Desktop\test\ajian/321.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/321.jpg" alt="img" style="zoom:33%;" />
 
 如图所示，是U盘存储设备和Linux系统自己的文件系统结构，此时Linux想要使用U盘的硬件设备，必须将Linux`本身的目录`和硬件设备的文件目录合二为一，此过程就称之为`挂载`。
 
@@ -831,7 +831,7 @@ ls /
 挂载之后，这个目录被称为挂载点
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/322.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/322.jpg" alt="img" style="zoom:33%;" />
 
 此时U盘文件系统已经是Linux文件系统的一部分，访问/sdb-u文件夹，即是访问访问U盘系统中的文件夹。
 
@@ -850,7 +850,7 @@ $符号后面跟上PATH,表示输出PATH的变量
 
 PATH(一定是大写的)这个变量是由一堆目录组成，分隔符是":"号，而不同于windows的";"号。
 
-<img src="C:\Users\admin\Desktop\test\ajian/278.jpg" alt="img" style="zoom: 50%;" />
+<img src="\ajian/278.jpg" alt="img" style="zoom: 50%;" />
 
 ### 绝对路径与相对路径
 
@@ -863,7 +863,7 @@ Linux下特别注意文件名/路径的写法，可以将所谓的路径(path)�
 
 > 因此你必须了解，相对路径是：**以你当前所在路径的相对路径来表示的。**
 
-![img](C:\Users\admin\Desktop\test\ajian/279.png)
+![img](\ajian/279.png)
 
 例如你现在在/home 这个目录下，如要进入/var/log这个路径，如何写呢？
 
@@ -877,15 +877,15 @@ Linux下特别注意文件名/路径的写法，可以将所谓的路径(path)�
 - . :代表当前的目录，也可以用./ 来表示，注意结尾的斜线，目录分隔符。
 - .. :代表上一层的目录，也可以用../来表示
 
-<img src="C:\Users\admin\Desktop\test\ajian/280.png" alt="img" style="zoom:50%;" />
+<img src="\ajian/280.png" alt="img" style="zoom:50%;" />
 
 ### 图解绝对/相对路径
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220104182559992.png" alt="image-20220104182559992" style="zoom:33%;" />
+<img src="\ajian/image-20220104182559992.png" alt="image-20220104182559992" style="zoom:33%;" />
 
 ### Linux常见目录作用
 
-<img src="C:\Users\admin\Desktop\test\ajian/251.png" alt="img" style="zoom:50%;" />
+<img src="\ajian/251.png" alt="img" style="zoom:50%;" />
 
 - **/bin**：bin是Binary的缩写, 这个目录存放着最经常使用的命令。
 
@@ -949,4 +949,4 @@ Linux下特别注意文件名/路径的写法，可以将所谓的路径(path)�
 
 ### Linux软件安装到哪
 
-<img src="C:\Users\admin\Desktop\test\ajian\image-20220118183630133.png" style="zoom:33%;" />
+<img src=\ajian\image-20220118183630133.png" style="zoom:33%;" />
