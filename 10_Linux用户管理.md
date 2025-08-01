@@ -29,7 +29,7 @@ Root用户登录系统后可以做很多事
 
 ## *多用户多任务*
 
-![img](http://book.bikongge.com/sre/2024-linux/300.jpg)
+![img](\ajian/300.jpg)
 
 多个用户使用同一个操作系统，每个人做自己的事。
 
