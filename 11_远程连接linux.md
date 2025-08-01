@@ -6,7 +6,7 @@
 
 它表现出来的形式将==前面每一个进程的输出（stdout）直接作为下一个进程的输入（stdin）==。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108154759598.png" alt="image-20220108154759598" style="zoom:50%;" />
+<img src="\ajian/image-20220108154759598.png" alt="image-20220108154759598" style="zoom:50%;" />
 
 管道符使用很频繁的场景就是结合grep命令，对数据进行过滤。
 
@@ -188,7 +188,7 @@ total 0
 
 ### 图解xargs
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108170211488.png" alt="image-20220108170211488" style="zoom:50%;" />
+<img src="\ajian/image-20220108170211488.png" alt="image-20220108170211488" style="zoom:50%;" />
 
 ------
 
@@ -228,7 +228,7 @@ xargs把文件中读出的数据，传递给了echo进行打印，每一个字�
 ls -l   chaoge.txt  yuchao.txt cc.txt
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108172010330.png" alt="image-20220108172010330" style="zoom:50%;" />
+<img src="\ajian/image-20220108172010330.png" alt="image-20220108172010330" style="zoom:50%;" />
 
 #### 限制单行参数格式 -n
 
@@ -272,7 +272,7 @@ ifconfig命令的英文全称是`“network interfaces configuring”`，即用�
 
 用ifconfig命令配置的网卡信息，在网卡重启后机器重启后，配置就不存在，需要写入配置文件，方可永久生效。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108173026466.png" alt="image-20220108173026466" style="zoom: 33%;" />
+<img src="\ajian/image-20220108173026466.png" alt="image-20220108173026466" style="zoom: 33%;" />
 
 ```
 作用，获取网络设备信息
@@ -284,7 +284,7 @@ linux
 
 ## 虚拟机是怎么有网络的
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108173454457.png" alt="image-20220108173454457" style="zoom:33%;" />
+<img src="\ajian/image-20220108173454457.png" alt="image-20220108173454457" style="zoom:33%;" />
 
 ## linux的网络信息
 
@@ -341,7 +341,7 @@ virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 ## 配置文件详解
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108175923203.png" alt="image-20220108175923203" style="zoom:33%;" />
+<img src="\ajian/image-20220108175923203.png" alt="image-20220108175923203" style="zoom:33%;" />
 
 ## 管理network服务
 
@@ -366,23 +366,23 @@ systemctl start/stop/status 服务名
 # 看到active状态，
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108180800205.png" alt="image-20220108180800205" style="zoom: 50%;" />
+<img src="\ajian/image-20220108180800205.png" alt="image-20220108180800205" style="zoom: 50%;" />
 
 ### 网络启停
 
 停止网络服务，IP丢失
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108181450714.png" alt="image-20220108181450714" style="zoom:50%;" />
+<img src="\ajian/image-20220108181450714.png" alt="image-20220108181450714" style="zoom:50%;" />
 
 启动网络，IP打开
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108181531184.png" alt="image-20220108181531184" style="zoom:50%;" />
+<img src="\ajian/image-20220108181531184.png" alt="image-20220108181531184" style="zoom:50%;" />
 
 重启网络服务，（当你修改了网卡配置文件，就需要重启了）
 
 如果你配置文件写错了，服务可能就会重启失败！！错误原因基本都是配置文件写错了。!!
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108181738925.png" alt="image-20220108181738925" style="zoom: 33%;" />
+<img src="\ajian/image-20220108181738925.png" alt="image-20220108181738925" style="zoom: 33%;" />
 
 # 远程连接Linux
 
@@ -390,11 +390,11 @@ systemctl start/stop/status 服务名
 
 因此在装好Linux系统之后，使用的第一步应该是配置好客户端软件**（ssh软件进行连接）**连接Linux系统。
 
-<img src="C:\Users\admin\Desktop\test\ajian/222.png" alt="img" style="zoom:50%;" />
+<img src="\ajian/222.png" alt="img" style="zoom:50%;" />
 
 ------
 
-<img src="C:\Users\admin\Desktop\test\ajian/223.png" alt="img" style="zoom:50%;" />
+<img src="\ajian/223.png" alt="img" style="zoom:50%;" />
 
 ## ssh命令
 
@@ -440,7 +440,7 @@ PuTTY为一开放源代码软件，主要由Simon Tatham维护，使用MIT licen
 
 你是选择坐在机房里头，搬过去显示器，键盘，桌子，凳子，穿上羽绒服吗？肯定不是。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108200841601.png" alt="image-20220108200841601" style="zoom:50%;" />
+<img src="\ajian/image-20220108200841601.png" alt="image-20220108200841601" style="zoom:50%;" />
 
 ------
 
@@ -464,33 +464,33 @@ ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 > 4.打开xshell，创建连接
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108202739223.png" alt="image-20220108202739223" style="zoom: 33%;" />
+<img src="\ajian/image-20220108202739223.png" alt="image-20220108202739223" style="zoom: 33%;" />
 
 ------
 
 > 5.接收、信任该主机的指纹（确保连接的是你要的这台服务器）
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108202826435.png" alt="image-20220108202826435" style="zoom: 33%;" />
+<img src="\ajian/image-20220108202826435.png" alt="image-20220108202826435" style="zoom: 33%;" />
 
 ------
 
 > 6.连接该服务器
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108202931851.png" alt="image-20220108202931851" style="zoom:33%;" />
+<img src="\ajian/image-20220108202931851.png" alt="image-20220108202931851" style="zoom:33%;" />
 
 ------
 
 > 7.成功远程登录
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108203554340.png" alt="image-20220108203554340" style="zoom: 50%;" />
+<img src="\ajian/image-20220108203554340.png" alt="image-20220108203554340" style="zoom: 50%;" />
 
 ------
 
 > 8.配置复制、粘贴
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108203713122.png" alt="image-20220108203713122" style="zoom:50%;" />
+<img src="\ajian/image-20220108203713122.png" alt="image-20220108203713122" style="zoom:50%;" />
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108203749761.png" alt="image-20220108203749761" style="zoom:50%;" />
+<img src="\ajian/image-20220108203749761.png" alt="image-20220108203749761" style="zoom:50%;" />
 
 ### 2.高效配置
 
@@ -498,7 +498,7 @@ ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 IT工程师有时需要更为快速的登陆服务器，需要将常用服务器会话保存到XSHELL界面。其操作如下，用户首先登陆到对应的服务器上，如下图所示点击创建快速登陆按钮，则会出现服务器登陆的快速按钮，以后只需要点击此按钮就可以登陆服务器了。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108204126384.png" alt="image-20220108204126384" style="zoom:50%;" />
+<img src="\ajian/image-20220108204126384.png" alt="image-20220108204126384" style="zoom:50%;" />
 
 以后点一下就直接连接服务器了。
 
@@ -508,19 +508,19 @@ IT工程师有时需要更为快速的登陆服务器，需要将常用服务器
 
 也可以直接双击会话，也可以。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108204325545.png" alt="image-20220108204325545" style="zoom:50%;" />
+<img src="\ajian/image-20220108204325545.png" alt="image-20220108204325545" style="zoom:50%;" />
 
 > 一窗多会话
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108204443638.png" alt="image-20220108204443638" style="zoom:33%;" />
+<img src="\ajian/image-20220108204443638.png" alt="image-20220108204443638" style="zoom:33%;" />
 
 多窗口操作，你可以同时做三件事
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108204651204.png" alt="image-20220108204651204" style="zoom: 33%;" />
+<img src="\ajian/image-20220108204651204.png" alt="image-20220108204651204" style="zoom: 33%;" />
 
 > 多窗口，同时操作
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108204815383.png" alt="image-20220108204815383" style="zoom:33%;" />
+<img src="\ajian/image-20220108204815383.png" alt="image-20220108204815383" style="zoom:33%;" />
 
 > 快捷键，退出登录
 
@@ -532,11 +532,11 @@ ctrl + d ，快速退出会话
 
 XSHELL可以根据服务器中的文件属性显示不同的颜色，如文件还是目录，普通文件还是可执行文件，文件特定的后缀(如归档文件，压缩文档的)等等。这使IT工程师根据文件颜色快速识别文件类型。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108205034138.png" alt="image-20220108205034138" style="zoom:33%;" />
+<img src="\ajian/image-20220108205034138.png" alt="image-20220108205034138" style="zoom:33%;" />
 
 颜色区分
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108205949482.png" alt="image-20220108205949482" style="zoom:33%;" />
+<img src="\ajian/image-20220108205949482.png" alt="image-20220108205949482" style="zoom:33%;" />
 
 ### 4.快捷键
 
@@ -594,8 +594,8 @@ alt + 数字键 操作的次数
 
 > 导出配置
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108211045321.png" alt="image-20220108211045321" style="zoom:50%;" />
+<img src="\ajian/image-20220108211045321.png" alt="image-20220108211045321" style="zoom:50%;" />
 
 > 导入配置
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108211146150.png" alt="image-20220108211146150" style="zoom:50%;" />
+<img src="\ajian/image-20220108211146150.png" alt="image-20220108211146150" style="zoom:50%;" />
