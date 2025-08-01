@@ -91,7 +91,7 @@ more 命令的执行会打开一个交互界面，下面是一些常用交互命
 | q 或 Q    | 退出 more。                        |
 | 上下移动  | 没有该功能                         |
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107100210644.png" alt="image-20220107100210644" style="zoom:67%;" />
+![image-20220107100210644](http://book.bikongge.com/sre/2024-linux/image-20220107100210644.png)
 
 ### less命令
 
@@ -202,7 +202,7 @@ tail -f yuchao777.log
 50
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107104543047.png" alt="image-20220107104543047" style="zoom:50%;" />
+![image-20220107104543047](http://book.bikongge.com/sre/2024-linux/image-20220107104543047.png)
 
 退出`tail -f`
 
@@ -228,11 +228,11 @@ tail -f yuchao777.log
 
 用法
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107105043775.png" alt="image-20220107105043775" style="zoom:50%;" />
+![image-20220107105043775](http://book.bikongge.com/sre/2024-linux/image-20220107105043775.png)
 
 增加字符，没有换行
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107105925382.png" alt="image-20220107105925382" style="zoom:50%;" />
+![image-20220107105925382](http://book.bikongge.com/sre/2024-linux/image-20220107105925382.png)
 
 ### du命令
 
@@ -286,9 +286,9 @@ total 198M
 201828    .
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107110733945.png" alt="image-20220107110733945" style="zoom:50%;" />
+![image-20220107110733945](http://book.bikongge.com/sre/2024-linux/image-20220107110733945.png)
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107111210243.png" alt="image-20220107111210243" style="zoom:50%;" />
+![image-20220107111210243](http://book.bikongge.com/sre/2024-linux/image-20220107111210243.png)
 
 1.工作里，经常可能会因为某些文件过大，导致磁盘空间不够
 
@@ -357,19 +357,19 @@ find命令参数特别多，我们逐步深入学习，先了解最常用的参�
 
 > 小范围搜索、找出yu.txt
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107113934662.png" alt="image-20220107113934662" style="zoom:50%;" />
+![image-20220107113934662](http://book.bikongge.com/sre/2024-linux/image-20220107113934662.png)
 
 ------
 
 > 大范围搜索，从根目录搜索，找出yu3.txt
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107114054789.png" alt="image-20220107114054789" style="zoom:50%;" />
+![image-20220107114054789](http://book.bikongge.com/sre/2024-linux/image-20220107114054789.png)
 
 ------
 
 > 限定搜索文件的类型，加上-type参数
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107114532523.png" alt="image-20220107114532523" style="zoom:50%;" />
+![image-20220107114532523](http://book.bikongge.com/sre/2024-linux/image-20220107114532523.png)
 
 #### 复杂用法
 
@@ -379,23 +379,23 @@ find命令参数特别多，我们逐步深入学习，先了解最常用的参�
 
 > 全系统搜索，模糊搜索，找出系统里的txt文件，注意得有类型限制
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107114830509.png" alt="image-20220107114830509" style="zoom:50%;" />
+![image-20220107114830509](http://book.bikongge.com/sre/2024-linux/image-20220107114830509.png)
 
 ------
 
 > 加上类型限制，找出系统上所有txt文件。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107115105133.png" alt="image-20220107115105133" style="zoom:50%;" />
+![image-20220107115105133](http://book.bikongge.com/sre/2024-linux/image-20220107115105133.png)
 
 ------
 
 > 同理，找出系统上所有log类型，日志文件
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107115543079.png" alt="image-20220107115543079" style="zoom:50%;" />
+![image-20220107115543079](http://book.bikongge.com/sre/2024-linux/image-20220107115543079.png)
 
 > 找出某个路径下，所有的文件夹
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107115724955.png" alt="image-20220107115724955" style="zoom:50%;" />
+![image-20220107115724955](http://book.bikongge.com/sre/2024-linux/image-20220107115724955.png)
 
 > 找出某个路径下，所有的文件
 
@@ -445,23 +445,23 @@ My phone number is 15233334444.
 
 大写字母
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107121537435.png" alt="image-20220107121537435" style="zoom:50%;" />
+![image-20220107121537435](http://book.bikongge.com/sre/2024-linux/image-20220107121537435.png)
 
 小写字母
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107133129380.png" alt="image-20220107133129380" style="zoom:50%;" />
+![image-20220107133129380](http://book.bikongge.com/sre/2024-linux/image-20220107133129380.png)
 
 > 搜索系统日志文件
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107135319519.png" alt="image-20220107135319519" style="zoom:50%;" />
+![image-20220107135319519](http://book.bikongge.com/sre/2024-linux/image-20220107135319519.png)
 
 > 在多个文件中，搜索信息
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107135613563.png" alt="image-20220107135613563" style="zoom:50%;" />
+![image-20220107135613563](http://book.bikongge.com/sre/2024-linux/image-20220107135613563.png)
 
 > 忽略大小写 -i参数
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107135956110.png" alt="image-20220107135956110" style="zoom:50%;" />
+![image-20220107135956110](http://book.bikongge.com/sre/2024-linux/image-20220107135956110.png)
 
 ## 5、输出重定向
 
@@ -494,7 +494,7 @@ My phone number is 15233334444.
 >
 > 命令执行多次，结果反复被覆盖。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107140753384.png" alt="image-20220107140753384" style="zoom:50%;" />
+![image-20220107140753384](http://book.bikongge.com/sre/2024-linux/image-20220107140753384.png)
 
 > 追加输出重定向，俩大于号
 
@@ -516,10 +516,10 @@ chaoge linux 666
 
 > echo 一般用于把文本信息，写入到文件中（可自动创建文件）
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107142334092.png" alt="image-20220107142334092" style="zoom:50%;" />
+![image-20220107142334092](http://book.bikongge.com/sre/2024-linux/image-20220107142334092.png)
 
 ------
 
 > 看图回答
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107142415301.png" alt="image-20220107142415301" style="zoom:50%;" />
+![image-20220107142415301](http://book.bikongge.com/sre/2024-linux/image-20220107142415301.png)
