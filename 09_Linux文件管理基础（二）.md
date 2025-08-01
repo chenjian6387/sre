@@ -91,7 +91,7 @@ more 命令的执行会打开一个交互界面，下面是一些常用交互命
 | q 或 Q    | 退出 more。                        |
 | 上下移动  | 没有该功能                         |
 
-![image-20220107100210644](http://book.bikongge.com/sre/2024-linux/image-20220107100210644.png)
+![image-20220107100210644](/ajian/image-20220107100210644.png)
 
 ### less命令
 
