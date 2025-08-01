@@ -13,6 +13,7 @@
 # 用户管理篇
 
 ![img](/ajian/299.gif)
+
 Root用户登录系统后可以做很多事
 
 - 写文档
@@ -50,11 +51,11 @@ Root用户登录系统后可以做很多事
 
 用户就是你管理系统的一个账号。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107164134131.png" alt="image-20220107164134131" style="zoom:50%;" />
+<img src="\ajian/image-20220107164134131.png" alt="image-20220107164134131" style="zoom:50%;" />
 
 > linux服务器
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107164427294.png" alt="image-20220107164427294" style="zoom:50%;" />
+<img src="/ajian/image-20220107164427294.png" alt="image-20220107164427294" style="zoom:50%;" />
 
 ## 为什么要说用户管理？
 
@@ -81,7 +82,7 @@ linux也是一样，是你登录系统的一个账号，代表了你在该机器
 - 还有计算机程序默认创建的用户，如ftp，nobody等等
 - 用户信息存放在/etc/passwd文件中
 
-<img src="C:\Users\admin\Desktop\test\ajian/301.jpg" alt="img" style="zoom: 33%;" />
+<img src="\ajian/301.jpg" alt="img" style="zoom: 33%;" />
 
 ### 用户角色划分
 
@@ -105,7 +106,7 @@ root用户所在的组称为root组。
 
 ### 系统中的file.txt属于谁？
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107171650587.png" alt="image-20220107171650587" style="zoom:33%;" />
+<img src="\ajian/image-20220107171650587.png" alt="image-20220107171650587" style="zoom:33%;" />
 
 ------
 
@@ -113,7 +114,7 @@ root用户所在的组称为root组。
 
 手机比喻的是系统上的`file.txt`文件概念。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107173337354.png" alt="image-20220107173337354" style="zoom:33%;" />
+<img src="\ajian/image-20220107173337354.png" alt="image-20220107173337354" style="zoom:33%;" />
 
 # linux的用户、用户组
 
@@ -152,7 +153,7 @@ yuchao
 
 ### windows下的管理员
 
-<img src="C:\Users\admin\Desktop\test\ajian/308.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/308.jpg" alt="img" style="zoom:33%;" />
 
 ### linux下管理员
 
@@ -160,7 +161,7 @@ Linux/unix是一个多用户、多任务的操作系统。
 
 root：默认在Unix/linux操作系统中拥有最高的管理权限。可以理解为qq群的群主⬇️⬇️⬇️
 
-<img src="C:\Users\admin\Desktop\test\ajian/309.jpg" alt="img" style="zoom:33%;" />
+<img src="\ajian/309.jpg" alt="img" style="zoom:33%;" />
 
 ### 普通用户
 
@@ -176,7 +177,7 @@ root：默认在Unix/linux操作系统中拥有最高的管理权限。可以理
 
 > 例如，可以通过对技术部门设置权限，使得只有技术部门的员工可以访问公司的 数据库信息等。
 
-<img src="C:\Users\admin\Desktop\test\ajian/307.jpeg" alt="img" style="zoom:50%;" />
+<img src="\ajian/307.jpeg" alt="img" style="zoom:50%;" />
 
 ### linux的用户组
 
@@ -187,7 +188,7 @@ root：默认在Unix/linux操作系统中拥有最高的管理权限。可以理
 
 ## 用户和组的关系
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107175835501.png" alt="image-20220107175835501" style="zoom: 33%;" />
+<img src="\ajian/image-20220107175835501.png" alt="image-20220107175835501" style="zoom: 33%;" />
 
 - 一对一，一个用户可以存在一个组里，组里就一个成员
 - 一对多，一个用户呆在多个组里面
@@ -196,21 +197,21 @@ root：默认在Unix/linux操作系统中拥有最高的管理权限。可以理
 
 ## （重点）图解linux用户和文件权限
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220309183224490.png" alt="image-20220309183224490" style="zoom: 33%;" />
+<img src="\ajian/image-20220309183224490.png" alt="image-20220309183224490" style="zoom: 33%;" />
 
 ### 主组/附加组
 
 什么是附加组
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220309185632011.png" alt="image-20220309185632011" style="zoom:50%;" />
+<img src="\ajian/image-20220309185632011.png" alt="image-20220309185632011" style="zoom:50%;" />
 
 > 主组：linux用户创建时会自动创建一个同名的组，称之为主组，且主组只能有一个。.
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107180042382.png" alt="image-20220107180042382" style="zoom: 50%;" />
+<img src="\ajian/image-20220107180042382.png" alt="image-20220107180042382" style="zoom: 50%;" />
 
 > 附加组：除了主组外，用户还可以加入到其他组，属于多个组，额外添加的组，就叫附加组，且可以获得附加组的权限。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107180534969.png" alt="image-20220107180534969" style="zoom:50%;" />
+<img src="\ajian/image-20220107180534969.png" alt="image-20220107180534969" style="zoom:50%;" />
 
 # root的权利
 
@@ -247,7 +248,7 @@ uid=0(root) gid=0(root) groups=0(root)
 
 > /etc/passwd
 
-<img src="C:\Users\admin\Desktop\test\ajian/310.jpg" alt="img" style="zoom: 33%;" />
+<img src="\ajian/310.jpg" alt="img" style="zoom: 33%;" />
 
 ### /etc/passwd字段信息解释
 
@@ -354,7 +355,7 @@ devops:x:1004:
 
 如果你将yuchao用户，添加到devops这个组中，即可看到如下画面。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107182537507.png" alt="image-20220107182537507" style="zoom:33%;" />
+<img src="\ajian/image-20220107182537507.png" alt="image-20220107182537507" style="zoom:33%;" />
 
 ```
 字段解释：
@@ -364,7 +365,7 @@ devops:x:1004:
 附属组：比如yuchao用户，又加入了devops组
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220107183027871.png" alt="image-20220107183027871" style="zoom:50%;" />
+<img src="\ajian/image-20220107183027871.png" alt="image-20220107183027871" style="zoom:50%;" />
 
 ### groupmod组修改
 
@@ -474,13 +475,13 @@ useradd新建用户时，系统会自动创建一个同名组。
 
 ### 验证chaoge的创建
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108090432907.png" alt="image-20220108090432907" style="zoom:50%;" />
+<img src="\ajian/image-20220108090432907.png" alt="image-20220108090432907" style="zoom:50%;" />
 
 ### /etc/passwd文件解析
 
 这五个步骤里，passwd文件是重点要关注的
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108092106106.png" alt="image-20220108092106106" style="zoom:50%;" />
+<img src="\ajian/image-20220108092106106.png" alt="image-20220108092106106" style="zoom:50%;" />
 
 **用户名**：登录linux时使用的用户名
 
@@ -552,7 +553,7 @@ yuchao2
 [root@localhost opt]# useradd -G opslinux -u 9657 -s /sbin/nologin -c "user yuchao2" yuchao2
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108102953037.png" alt="image-20220108102953037" style="zoom: 33%;" />
+<img src="\ajian/image-20220108102953037.png" alt="image-20220108102953037" style="zoom: 33%;" />
 
 解释
 
@@ -578,11 +579,11 @@ useradd -G opslinux,devlinux,testlinux -u 9657 -s /sbin/nologin -c "user yuchao2
 
 作用：查看一个用户的一些基本信息（包含用户id，用户组id，附加组id…），该指令如果不指定用户则默认当前用户。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108104914329.png" alt="image-20220108104914329" style="zoom:50%;" />
+<img src="\ajian/image-20220108104914329.png" alt="image-20220108104914329" style="zoom:50%;" />
 
 指定查看用户信息
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108105301338.png" alt="image-20220108105301338" style="zoom: 67%;" />
+<img src="\ajian/image-20220108105301338.png" alt="image-20220108105301338" style="zoom: 67%;" />
 
 如何验证id命令看到的信息是否正常？
 
@@ -672,13 +673,13 @@ usermod -U yuchao3
 
 禁止登录
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108111211903.png" alt="image-20220108111211903" style="zoom: 50%;" />
+<img src="\ajian/image-20220108111211903.png" alt="image-20220108111211903" style="zoom: 50%;" />
 
 ------
 
 的确无法登录
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108111427051.png" alt="image-20220108111427051" style="zoom:50%;" />
+<img src="\ajian/image-20220108111427051.png" alt="image-20220108111427051" style="zoom:50%;" />
 
 ------
 
@@ -689,15 +690,15 @@ usermod -U yuchao3
 [root@localhost ~]# usermod -U yuchao3
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108111541125.png" alt="image-20220108111541125" style="zoom:50%;" />
+<img src="\ajian/image-20220108111541125.png" alt="image-20220108111541125" style="zoom:50%;" />
 
 > 修改xiaoyu用户属性，加入opslinux组，获得运维组的权限。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108111916401.png" alt="image-20220108111916401" style="zoom: 33%;" />
+<img src="\ajian/image-20220108111916401.png" alt="image-20220108111916401" style="zoom: 33%;" />
 
 查看组
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108112029799.png" alt="image-20220108112029799" style="zoom:50%;" />
+<img src="\ajian/image-20220108112029799.png" alt="image-20220108112029799" style="zoom:50%;" />
 
 ### passwd修改密码
 
@@ -713,7 +714,7 @@ passwd  用户名
 
 密码若是太简单，系统会给你些告警，工作里的密码是有复杂度的。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108112330807.png" alt="image-20220108112330807" style="zoom:50%;" />
+<img src="\ajian/image-20220108112330807.png" alt="image-20220108112330807" style="zoom:50%;" />
 
 #### 改他人密码
 
@@ -721,7 +722,7 @@ passwd  用户名
 
 `xiaoyu`可以改`yuchao3`的密码吗？你算老几。。凭什么。。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108112522678.png" alt="image-20220108112522678" style="zoom: 50%;" />
+<img src="\ajian/image-20220108112522678.png" alt="image-20220108112522678" style="zoom: 50%;" />
 
 权限不够
 
@@ -729,7 +730,7 @@ passwd  用户名
 passwd:只有root可以指定一个用户名。
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108112651021.png" alt="image-20220108112651021" style="zoom:50%;" />
+<img src="\ajian/image-20220108112651021.png" alt="image-20220108112651021" style="zoom:50%;" />
 
 ### 标准输入密码
 
@@ -940,7 +941,7 @@ testyu                                     **从未登录过**
 
 ## su命令
 
-<img src="C:\Users\admin\Desktop\test\ajian/312.jpg" alt="img" style="zoom: 50%;" />
+<img src="\ajian/312.jpg" alt="img" style="zoom: 50%;" />
 
 linux中用户登录后，可以切换角色，比如yuchao用户切换到chaoge用户。
 
@@ -962,7 +963,7 @@ su - yuchao666
 
 > 是否有横线的区别
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108144948745.png" alt="image-20220108144948745" style="zoom:50%;" />
+<img src="\ajian/image-20220108144948745.png" alt="image-20220108144948745" style="zoom:50%;" />
 
 ### 关于su是否加短横线
 
@@ -978,7 +979,7 @@ su - yuchao666
 # 4.root可以随意切换普通用户，反之不可以
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220108150207928.png" alt="image-20220108150207928" style="zoom: 33%;" />
+<img src="\ajian/image-20220108150207928.png" alt="image-20220108150207928" style="zoom: 33%;" />
 
 ### 通过环境变量查看
 
@@ -1028,7 +1029,7 @@ logout
 
 ## sudo命令
 
-<img src="C:\Users\admin\Desktop\test\ajian/313.jpeg" alt="img" style="zoom: 80%;" />
+<img src="\ajian/313.jpeg" alt="img" style="zoom: 80%;" />
 
 - **sudo命令**用来以其他身份来执行命令，预设的身份为root。在`/etc/sudoers`中设置了可执行sudo指令的用户。
 - 作用是让普通用户不需要root密码即可用root权限执行命令。
@@ -1207,11 +1208,11 @@ sudo su -   # 以root身份执行su -，要求该用户在sudoers文件里
 
 ## 图解sudo过程
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220309204025890.png" alt="image-20220309204025890" style="zoom: 33%;" />
+<img src="\ajian/image-20220309204025890.png" alt="image-20220309204025890" style="zoom: 33%;" />
 
 ## 关于sudo和重定向的坑
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220311175516910.png" alt="image-20220311175516910" style="zoom: 33%;" />
+<img src="\ajian/image-20220311175516910.png" alt="image-20220311175516910" style="zoom: 33%;" />
 
 # 用户管理命令补充
 
