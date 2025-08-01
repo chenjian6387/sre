@@ -12,7 +12,7 @@
 
 # 用户管理篇
 
-![img](C:\Users\admin\Desktop\test\ajian/299.gif)
+![img](/ajian/299.gif)
 
 Root用户登录系统后可以做很多事
 
