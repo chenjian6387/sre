@@ -38,7 +38,7 @@
 
 Discuz！ = Apache + PHP + MySQL
 
-![image-20220118112047256](http://book.bikongge.com/sre/2024-linux/image-20220118112047256.png)
+![image-20220118112047256](/ajian/image-20220118112047256.png)
 
 # 一、YUM概述
 
@@ -86,7 +86,7 @@ rpm软件包在安装的时候，由作者定义依赖关系
 >
 > 只能查询已安装的应用程序，依赖哪些其他软件。
 
-![image-20220118113420619](http://book.bikongge.com/sre/2024-linux/image-20220118113420619.png)
+![image-20220118113420619](/ajian/image-20220118113420619.png)
 
 > 其他检查rpm包依赖关系的方法，待会学完yum工具，再用
 
@@ -96,7 +96,7 @@ rpm软件包在安装的时候，由作者定义依赖关系
 /etc/yum.conf
 ```
 
-![image-20220118134001356](http://book.bikongge.com/sre/2024-linux/image-20220118134001356.png)
+![image-20220118134001356](/ajian/image-20220118134001356.png)
 
 系统默认的yum仓库文件
 
@@ -118,9 +118,9 @@ total 32
 
 比如windows的360软件管家
 
-![image-20220118135716473](http://book.bikongge.com/sre/2024-linux/image-20220118135716473.png)
+![image-20220118135716473](/ajian/image-20220118135716473.png)
 
-而Linux的软件管家是什么？就是yum ![image-20220118140849677](http://book.bikongge.com/sre/2024-linux/image-20220118140849677.png)
+而Linux的软件管家是什么？就是yum ![image-20220118140849677](/ajian/image-20220118140849677.png)
 
 ## 3、配置阿里yum源
 
@@ -128,7 +128,7 @@ total 32
 
 备份默认的yum源
 
-![image-20220118141234559](http://book.bikongge.com/sre/2024-linux/image-20220118141234559.png)
+![image-20220118141234559](/ajian/image-20220118141234559.png)
 
 下载新的阿里云yum网络源，当我们yum install 就能够自动去阿里云的yum仓库寻找rpm包，而不是centos官网了。
 
@@ -182,9 +182,9 @@ yum makecache
 
 此时的网络yum源配置文件，已经是来自于阿里云的了。
 
-![image-20220118141459634](http://book.bikongge.com/sre/2024-linux/image-20220118141459634.png)
+![image-20220118141459634](/ajian/image-20220118141459634.png)
 
-生成缓存 ![image-20220118141820358](http://book.bikongge.com/sre/2024-linux/image-20220118141820358.png)
+生成缓存 ![image-20220118141820358](/ajian/image-20220118141820358.png)
 
 ## 4、yum命令
 
@@ -217,15 +217,15 @@ firefox.i686 : Mozilla Firefox Web browser
 [root@yuchao-linux01 yum.repos.d]# yum install -y firefox
 ```
 
-![image-20220118142544780](http://book.bikongge.com/sre/2024-linux/image-20220118142544780.png)
+![image-20220118142544780](/ajian/image-20220118142544780.png)
 
 确保安装完毕
 
-![image-20220118142647681](http://book.bikongge.com/sre/2024-linux/image-20220118142647681.png)
+![image-20220118142647681](/ajian/image-20220118142647681.png)
 
 确保浏览器可用了
 
-![image-20220118142719465](http://book.bikongge.com/sre/2024-linux/image-20220118142719465.png)
+![image-20220118142719465](/ajian/image-20220118142719465.png)
 
 ### ③ 卸载操作
 
@@ -237,9 +237,9 @@ firefox.i686 : Mozilla Firefox Web browser
 [root@yuchao-linux01 yum.repos.d]# yum remove -y firefox
 ```
 
-![image-20220118142544780](http://book.bikongge.com/sre/2024-linux/image-20220118142544780.png)
+![image-20220118142544780](/ajian/image-20220118142544780.png)
 
-![image-20220118143037948](http://book.bikongge.com/sre/2024-linux/image-20220118143037948.png)
+![image-20220118143037948](/ajian/image-20220118143037948.png)
 
 ### ④ 更新操作
 
@@ -256,7 +256,7 @@ firefox.i686 : Mozilla Firefox Web browser
 [root@yuchao-linux01 yum.repos.d]# yum update -y vim
 ```
 
-![image-20220118143534621](http://book.bikongge.com/sre/2024-linux/image-20220118143534621.png)
+![image-20220118143534621](/ajian/image-20220118143534621.png)
 
 > 若是升级一个不存在的软件，则提示找不到
 
@@ -325,7 +325,7 @@ gzip.dot  output.png  tcpdump-4.9.2-4.el7_7.1.x86_64.rpm
 5.在图形化下查看png图片
 ```
 
-![image-20220118145652366](http://book.bikongge.com/sre/2024-linux/image-20220118145652366.png)
+![image-20220118145652366](/ajian/image-20220118145652366.png)
 
 > 同理，也可以查看firefox浏览器的安装，底层牵扯了哪些依赖，如果没有yum都得你自己去处理
 
@@ -358,11 +358,11 @@ Perl/Php/Python
 
 lamp
 
-![image-20200117165542095](http://book.bikongge.com/sre/2024-linux/image-20200117165542095.png)
+![image-20200117165542095](/ajian/image-20200117165542095.png)
 
 lnmp
 
-![image-20200212203206493](http://book.bikongge.com/sre/2024-linux/image-20200212203206493.png)
+![image-20200212203206493](/ajian/image-20200212203206493.png)
 
 ### Linux
 
@@ -384,7 +384,7 @@ Linux的特点是几乎所有的开发任务相关工具，都有很完善的支
 
 WIndows几乎都是图形化接口，而Linux几乎都是现有命令行，再由图形化操作接口，更容易实现自动化。
 
-![image-20200118163840299](http://book.bikongge.com/sre/2024-linux/image-20200118163840299.png)
+![image-20200118163840299](/ajian/image-20200118163840299.png)
 
 ### apache
 
@@ -402,7 +402,7 @@ PHP是全球知名的编程语言之一，程序员可以免费试用，PHP支�
 
 ==世界上最好的语言（梗）==
 
-![image-20220118152656853](http://book.bikongge.com/sre/2024-linux/image-20220118152656853.png)
+![image-20220118152656853](/ajian/image-20220118152656853.png)
 
 ### MySQL
 
@@ -424,11 +424,11 @@ LAMP（Linux-Apache-MySQL-PHP）网站架构是目前国际流行的Web框架，
 
 LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论是性能、质量还是价格都是企业搭建网站的首选平台。
 
-![image-20200203165504534](http://book.bikongge.com/sre/2024-linux/image-20200203165504534.png)
+![image-20200203165504534](/ajian/image-20200203165504534.png)
 
 我们是怎么访问网站的。
 
-![image-20220118153236113](http://book.bikongge.com/sre/2024-linux/image-20220118153236113.png)
+![image-20220118153236113](/ajian/image-20220118153236113.png)
 
 # 三、LAMP环境准备（阿里云）
 
@@ -454,53 +454,53 @@ LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论
 
 立即注册
 
-![image-20220118154229854](http://book.bikongge.com/sre/2024-linux/image-20220118154229854.png)
+![image-20220118154229854](/ajian/image-20220118154229854.png)
 
 账户密码注册
 
-![image-20220118155309260](http://book.bikongge.com/sre/2024-linux/image-20220118155309260.png)
+![image-20220118155309260](/ajian/image-20220118155309260.png)
 
 填入验证码注册
 
-![image-20220118155334409](http://book.bikongge.com/sre/2024-linux/image-20220118155334409.png)
+![image-20220118155334409](/ajian/image-20220118155334409.png)
 
 注册成功
 
-![image-20220118155436191](http://book.bikongge.com/sre/2024-linux/image-20220118155436191.png)
+![image-20220118155436191](/ajian/image-20220118155436191.png)
 
 ## 2、实名认证
 
 购买服务器要进行实名认证，用于后面的域名购买，域名备案。
 
-![image-20220118160112256](http://book.bikongge.com/sre/2024-linux/image-20220118160112256.png)
+![image-20220118160112256](/ajian/image-20220118160112256.png)
 
 进行个人实名认证
 
-![image-20220118160215380](http://book.bikongge.com/sre/2024-linux/image-20220118160215380.png)
+![image-20220118160215380](/ajian/image-20220118160215380.png)
 
 快捷使用支付宝实名认证
 
-![image-20220118160328676](http://book.bikongge.com/sre/2024-linux/image-20220118160328676.png)
+![image-20220118160328676](/ajian/image-20220118160328676.png)
 
 后续填写信息后，完整实名认证。
 
-![image-20220118160549935](http://book.bikongge.com/sre/2024-linux/image-20220118160549935.png)
+![image-20220118160549935](/ajian/image-20220118160549935.png)
 
 ## 3、进入管理控制台
 
-![image-20220118160906292](http://book.bikongge.com/sre/2024-linux/image-20220118160906292.png)
+![image-20220118160906292](/ajian/image-20220118160906292.png)
 
 找到阿里云服务器ECS功能
 
-![image-20220118160953559](http://book.bikongge.com/sre/2024-linux/image-20220118160953559.png)
+![image-20220118160953559](/ajian/image-20220118160953559.png)
 
 体验阿里云服务器
 
-![image-20220118161012052](http://book.bikongge.com/sre/2024-linux/image-20220118161012052.png)
+![image-20220118161012052](/ajian/image-20220118161012052.png)
 
 了解一下阿里云是什么ECS
 
-![image-20220118161106280](http://book.bikongge.com/sre/2024-linux/image-20220118161106280.png)
+![image-20220118161106280](/ajian/image-20220118161106280.png)
 
 进入ECS
 
@@ -513,11 +513,11 @@ LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论
 - 部署个人博客
 - 公司网站上线
 
-![image-20220118161341579](http://book.bikongge.com/sre/2024-linux/image-20220118161341579.png)
+![image-20220118161341579](/ajian/image-20220118161341579.png)
 
 ## 4、购买ECS
 
-![image-20220118161614444](http://book.bikongge.com/sre/2024-linux/image-20220118161614444.png)
+![image-20220118161614444](/ajian/image-20220118161614444.png)
 
 目前有活动、实名认证后，可以免费试用一个月。
 
@@ -525,11 +525,11 @@ LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论
 
 现在就等同于你在逛淘宝，选择机器的配置，内存，磁盘，CPU，以及既然是云服务器，要选择网络带宽（家里电脑要上网，要去装个电信网。）
 
-![image-20220118162021231](http://book.bikongge.com/sre/2024-linux/image-20220118162021231.png)
+![image-20220118162021231](/ajian/image-20220118162021231.png)
 
 准备创建
 
-![image-20220118162040648](http://book.bikongge.com/sre/2024-linux/image-20220118162040648.png)
+![image-20220118162040648](/ajian/image-20220118162040648.png)
 
 > 选择centos7.9版本
 >
@@ -537,13 +537,13 @@ LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论
 
 创建成功
 
-![image-20220118165958397](http://book.bikongge.com/sre/2024-linux/image-20220118165958397.png)
+![image-20220118165958397](/ajian/image-20220118165958397.png)
 
 ### 查看机器信息
 
 找到你的公网IP地址
 
-![image-20220118170136010](http://book.bikongge.com/sre/2024-linux/image-20220118170136010.png)
+![image-20220118170136010](/ajian/image-20220118170136010.png)
 
 ### 设置服务器连接密码
 
@@ -551,23 +551,23 @@ LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论
 
 密码设置的难一点，保护你的公网服务器。
 
-![image-20220118170624058](http://book.bikongge.com/sre/2024-linux/image-20220118170624058.png)
+![image-20220118170624058](/ajian/image-20220118170624058.png)
 
 > 重启中，修改密码后，需要重启服务器生效。
 
-![image-20220118170829341](http://book.bikongge.com/sre/2024-linux/image-20220118170829341.png)
+![image-20220118170829341](/ajian/image-20220118170829341.png)
 
 # 四、部署LAMP环境
 
 ## 1、登录阿里云服务器
 
-![image-20220118171645124](http://book.bikongge.com/sre/2024-linux/image-20220118171645124.png)
+![image-20220118171645124](/ajian/image-20220118171645124.png)
 
 创建连接
 
-![image-20220118171808783](http://book.bikongge.com/sre/2024-linux/image-20220118171808783.png)
+![image-20220118171808783](/ajian/image-20220118171808783.png)
 
-连接后，查看服务器基本信息 ![image-20220118172026009](http://book.bikongge.com/sre/2024-linux/image-20220118172026009.png)
+连接后，查看服务器基本信息 ![image-20220118172026009](/ajian/image-20220118172026009.png)
 
 修改主机名
 
@@ -579,7 +579,7 @@ LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论
 
 阿里云有提供公网防火墙（安全组）
 
-![image-20220118172228144](http://book.bikongge.com/sre/2024-linux/image-20220118172228144.png)
+![image-20220118172228144](/ajian/image-20220118172228144.png)
 
 > 在实验阶段，我们先临时关闭防火墙，我们会在后面网络安全篇，着重讲解防火墙规则
 >
@@ -587,7 +587,7 @@ LAMP具有通用、跨平台、高性能、低价格的优势，因此LAMP无论
 >
 > 才有了知识铺垫，然后进行安全流量控制。
 
-![image-20220118172835890](http://book.bikongge.com/sre/2024-linux/image-20220118172835890.png)
+![image-20220118172835890](/ajian/image-20220118172835890.png)
 
 ## 3、查看是否安装apache
 
@@ -646,7 +646,7 @@ linux中安装、使用软件，流程就是
 一般填入网站的域名，如果没有可以写入IP地址
 ```
 
-![image-20220118175955692](http://book.bikongge.com/sre/2024-linux/image-20220118175955692.png)
+![image-20220118175955692](/ajian/image-20220118175955692.png)
 
 ③ 使用systemctl命令重启httpd服务,使用netstat -ntlp命令，查看是否有80端口监听
 
@@ -662,19 +662,19 @@ tcp6       0      0 :::80                   :::*                    LISTEN      
 
 好比银行的一个窗口，开始营业，对外服务了，你可以去窗口办理业务，获取数据了！
 
-![image-20220118180333764](http://book.bikongge.com/sre/2024-linux/image-20220118180333764.png)
+![image-20220118180333764](/ajian/image-20220118180333764.png)
 
 ④ 设置httpd服务开机启动
 
-![image-20220118180415913](http://book.bikongge.com/sre/2024-linux/image-20220118180415913.png)
+![image-20220118180415913](/ajian/image-20220118180415913.png)
 
 ⑤ 查看本机的IP地址,阿里云服务器从控制台可以看到
 
-![image-20220118180516885](http://book.bikongge.com/sre/2024-linux/image-20220118180516885.png)
+![image-20220118180516885](/ajian/image-20220118180516885.png)
 
 阿里云可以看到公网IP地址
 
-![image-20220118180538382](http://book.bikongge.com/sre/2024-linux/image-20220118180538382.png)
+![image-20220118180538382](/ajian/image-20220118180538382.png)
 
 ⑥在浏览器中，输入本机IP地址，如下图所示：
 
@@ -684,15 +684,15 @@ tcp6       0      0 :::80                   :::*                    LISTEN      
 
 ## 7、打开阿里云安全组（图解）
 
-![image-20220118181219778](http://book.bikongge.com/sre/2024-linux/image-20220118181219778.png)
+![image-20220118181219778](/ajian/image-20220118181219778.png)
 
 阿里云安全组
 
-![image-20220118181310620](http://book.bikongge.com/sre/2024-linux/image-20220118181310620.png)
+![image-20220118181310620](/ajian/image-20220118181310620.png)
 
 添加规则
 
-![image-20220118181419766](http://book.bikongge.com/sre/2024-linux/image-20220118181419766.png)
+![image-20220118181419766](/ajian/image-20220118181419766.png)
 
 ## 8、成功访问apache
 
@@ -702,7 +702,7 @@ http://123.57.24.213/
 
 并且只要你有网络，其他人就可以访问这个网站。
 
-![image-20220118181447597](http://book.bikongge.com/sre/2024-linux/image-20220118181447597.png)
+![image-20220118181447597](/ajian/image-20220118181447597.png)
 
 ## 9、LAMP之MYSQL
 
@@ -714,11 +714,11 @@ http://123.57.24.213/
 yum -y install mysql-community-server
 ```
 
-![image-20220118181802313](http://book.bikongge.com/sre/2024-linux/image-20220118181802313.png)
+![image-20220118181802313](/ajian/image-20220118181802313.png)
 
 配置mysql的软件rpm源
 
-![image-20220118183535112](http://book.bikongge.com/sre/2024-linux/image-20220118183535112.png)
+![image-20220118183535112](/ajian/image-20220118183535112.png)
 
 这个教程去mysql官网即可
 
@@ -803,35 +803,35 @@ Bye
 
 这个repo文件，就是指定了一个rpm包的下载地址
 
-![image-20220118184049205](http://book.bikongge.com/sre/2024-linux/image-20220118184049205.png)
+![image-20220118184049205](/ajian/image-20220118184049205.png)
 
 安装完成
 
-![image-20220118184329677](http://book.bikongge.com/sre/2024-linux/image-20220118184329677.png)
+![image-20220118184329677](/ajian/image-20220118184329677.png)
 
 查看mysql服务的名字，已经启动mysql
 
-![image-20220118185011913](http://book.bikongge.com/sre/2024-linux/image-20220118185011913.png)
+![image-20220118185011913](/ajian/image-20220118185011913.png)
 
 查看进程
 
-![image-20220118185532624](http://book.bikongge.com/sre/2024-linux/image-20220118185532624.png)
+![image-20220118185532624](/ajian/image-20220118185532624.png)
 
 初始化数据库
 
-![image-20220118200937804](http://book.bikongge.com/sre/2024-linux/image-20220118200937804.png)
+![image-20220118200937804](/ajian/image-20220118200937804.png)
 
 连接mysql客户端
 
-![image-20220118201119721](http://book.bikongge.com/sre/2024-linux/image-20220118201119721.png)
+![image-20220118201119721](/ajian/image-20220118201119721.png)
 
 c/s模式
 
-![image-20220118201350679](http://book.bikongge.com/sre/2024-linux/image-20220118201350679.png)
+![image-20220118201350679](/ajian/image-20220118201350679.png)
 
 查看数据库
 
-![image-20220118201700369](http://book.bikongge.com/sre/2024-linux/image-20220118201700369.png)
+![image-20220118201700369](/ajian/image-20220118201700369.png)
 
 ## 10、LAMP安装PHP
 
@@ -841,11 +841,11 @@ c/s模式
 [root@yuchao-aliyun local]# yum install php -y
 ```
 
-![image-20220118201847866](http://book.bikongge.com/sre/2024-linux/image-20220118201847866.png)
+![image-20220118201847866](/ajian/image-20220118201847866.png)
 
 2、重启httpd服务
 
-![image-20220118202058584](http://book.bikongge.com/sre/2024-linux/image-20220118202058584.png)
+![image-20220118202058584](/ajian/image-20220118202058584.png)
 
 apache是需要和php结合起来工作的，我们这里主要练习yum工具，安装，部署网站，其中原理，超哥会在网站架构篇，详细，通透的讲解其中原理。
 
@@ -878,9 +878,9 @@ apache是需要和php结合起来工作的，我们这里主要练习yum工具�
 2.这里的意思是，我们访问apache，然后看到php脚本，脚本内的代码是打印一句话。
 ```
 
-![image-20220118202531456](http://book.bikongge.com/sre/2024-linux/image-20220118202531456.png)
+![image-20220118202531456](/ajian/image-20220118202531456.png)
 
-![image-20220118202923506](http://book.bikongge.com/sre/2024-linux/image-20220118202923506.png)
+![image-20220118202923506](/ajian/image-20220118202923506.png)
 
 > 此时我们已经能够正确访问到
 >
@@ -892,15 +892,15 @@ apache是需要和php结合起来工作的，我们这里主要练习yum工具�
 
 # 五、部署Discuz论坛
 
-![image-20220118203421260](http://book.bikongge.com/sre/2024-linux/image-20220118203421260.png)
+![image-20220118203421260](/ajian/image-20220118203421260.png)
 
 ## 点击下载
 
-![image-20220118203654404](http://book.bikongge.com/sre/2024-linux/image-20220118203654404.png)
+![image-20220118203654404](/ajian/image-20220118203654404.png)
 
 ## 码云下载Discuz下载
 
-![image-20220118203723417](http://book.bikongge.com/sre/2024-linux/image-20220118203723417.png)
+![image-20220118203723417](/ajian/image-20220118203723417.png)
 
 ## 上传到linux
 
@@ -939,29 +939,29 @@ LICENSE  readme  README.md  upload  utility
 # 最后异步，需要把/var/www/html/DiscuzX-master/upload下代码，全部移动到 /var/www/html 这个位置，且必须在这个位置
 ```
 
-![image-20220119092337444](http://book.bikongge.com/sre/2024-linux/image-20220119092337444.png)
+![image-20220119092337444](/ajian/image-20220119092337444.png)
 
 注意看，最终，Discuz论坛的代码，要放在哪里
 
-![image-20220119093239048](http://book.bikongge.com/sre/2024-linux/image-20220119093239048.png)
+![image-20220119093239048](/ajian/image-20220119093239048.png)
 
 # 六、访问Discuz论坛
 
-![image-20220119093745895](http://book.bikongge.com/sre/2024-linux/image-20220119093745895.png)
+![image-20220119093745895](/ajian/image-20220119093745895.png)
 
 此时再访问这个apache，也就是阿里云服务器的地址，就可以自动访问到discuz论坛安装界面了。
 
 > 安装环境监察
 
-![image-20220119094158104](http://book.bikongge.com/sre/2024-linux/image-20220119094158104.png)
+![image-20220119094158104](/ajian/image-20220119094158104.png)
 
 ------
 
-![image-20220119094219755](http://book.bikongge.com/sre/2024-linux/image-20220119094219755.png)
+![image-20220119094219755](/ajian/image-20220119094219755.png)
 
 发现少了一个关于mysql的连接驱动
 
-![image-20220119094716283](http://book.bikongge.com/sre/2024-linux/image-20220119094716283.png)
+![image-20220119094716283](/ajian/image-20220119094716283.png)
 
 ## 安装mysql连接驱动
 
@@ -977,7 +977,7 @@ linux运维的日常就是，根据手册，部署，遇见问题，1、看懂 2
 [root@yuchao-aliyun html]# yum install php-mysqli -y
 ```
 
-![image-20220119095042052](http://book.bikongge.com/sre/2024-linux/image-20220119095042052.png)
+![image-20220119095042052](/ajian/image-20220119095042052.png)
 
 一般有安装更新，软件都会重启，让其生效，我这里访问的是apache，因此重启httpd服务，让这个新驱动生效。
 
@@ -987,11 +987,11 @@ linux运维的日常就是，根据手册，部署，遇见问题，1、看懂 2
 
 再次访问Discuz安装界面，刷新即可。
 
-![image-20220119095326093](http://book.bikongge.com/sre/2024-linux/image-20220119095326093.png)
+![image-20220119095326093](/ajian/image-20220119095326093.png)
 
 ## 解决目录权限问题
 
-![image-20220119095508222](http://book.bikongge.com/sre/2024-linux/image-20220119095508222.png)
+![image-20220119095508222](/ajian/image-20220119095508222.png)
 
 1.确认我们的httpd目录，Discuz代码存放的目录
 
@@ -1038,31 +1038,31 @@ drwxr-xr-x 14 root root     4096 Jan 17 10:56 uc_server
 
 3.再次查看安装
 
-![image-20220119100013992](http://book.bikongge.com/sre/2024-linux/image-20220119100013992.png)
+![image-20220119100013992](/ajian/image-20220119100013992.png)
 
 ## 开始安装
 
-![image-20220119100103528](http://book.bikongge.com/sre/2024-linux/image-20220119100103528.png)
+![image-20220119100103528](/ajian/image-20220119100103528.png)
 
 ------
 
-![image-20220119100322669](http://book.bikongge.com/sre/2024-linux/image-20220119100322669.png)
+![image-20220119100322669](/ajian/image-20220119100322669.png)
 
 如果信息填入正常，php正确读取到mysql数据库，即刻自动安装，数据也会写入到数据库里。
 
-![image-20220119100417514](http://book.bikongge.com/sre/2024-linux/image-20220119100417514.png)
+![image-20220119100417514](/ajian/image-20220119100417514.png)
 
 登录admin管理员账户
 
-![image-20220119100503908](http://book.bikongge.com/sre/2024-linux/image-20220119100503908.png)
+![image-20220119100503908](/ajian/image-20220119100503908.png)
 
 ## 使用discuz发帖子
 
-![image-20220119101530287](http://book.bikongge.com/sre/2024-linux/image-20220119101530287.png)
+![image-20220119101530287](/ajian/image-20220119101530287.png)
 
 ------
 
-![image-20220119101636264](http://book.bikongge.com/sre/2024-linux/image-20220119101636264.png)
+![image-20220119101636264](/ajian/image-20220119101636264.png)
 
 > 至此，基于LAMP环境部署的DIscuz论坛，已经部署完毕了，你学废了吗？
 
