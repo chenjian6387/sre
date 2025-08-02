@@ -30,6 +30,7 @@
   - [3-13-Raid磁盘冗余阵列](3-13-Raid磁盘冗余阵列.md)
   - [3-14-lvm逻辑卷](3-14-lvm逻辑卷.md)
   - [3-15-通配符和特殊符号](3-15-通配符和特殊符号.md)
+  - [3-16-正则表达式和三剑客](3-16-正则表达式和三剑客.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
