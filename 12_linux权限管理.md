@@ -49,9 +49,6 @@
 ## 4、Linux的文件属于谁？
 
 > 图解linux文件权限，觉得超哥牛吗？
-
-![image-20220316143831009](http://book.bikongge.com/sre/2024-linux/image-20220316143831009.png)
-
 - linux中的每一个文件，都有自己的主人，并且有权限限制，限制主人的读、写、执行权限。
 - 限制其他人的读、写、执行权限。
 - 限制组内的r、w、x权限。
@@ -62,7 +59,7 @@
 - group、属组
 - other、其他人
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114095638662.png" alt="image-20220114095638662" style="zoom:67%;" />
+<img src="\ajian/image-20220114095638662.png" alt="image-20220114095638662" style="zoom:67%;" />
 
 ### user属主
 
@@ -86,7 +83,7 @@
 
 ### other其他用户
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114095933752.png" alt="image-20220114095933752" style="zoom:67%;" />
+<img src="\ajian/image-20220114095933752.png" alt="image-20220114095933752" style="zoom:67%;" />
 
 - 当前登录系统用户是yuchao，你想操作yuchao01.sh文件，权限自然是读、写、执行
 - 当前登录系统用户是，小鲁班，对于yuchao01.sh这个文件，权限怎么判定呢？
@@ -155,7 +152,7 @@ dr--r--r-- 2 yuchao01 yuchao01       6 Jan 13 18:25 chaoge-linux
 
 > 关于文件属性，如图所示
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114103053804.png" alt="image-20220114103053804" style="zoom: 50%;" />
+<img src="\ajian/image-20220114103053804.png" alt="image-20220114103053804" style="zoom: 50%;" />
 
 ### 2.1 文件权限（字母，数字表示）
 
@@ -208,11 +205,11 @@ chmod 选项  权限   文件
 
 > 给文件添加执行权限
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114105540158.png" alt="image-20220114105540158" style="zoom: 33%;" />
+<img src="\ajian/image-20220114105540158.png" alt="image-20220114105540158" style="zoom: 33%;" />
 
 > 扣除文件执行权限
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114105919740.png" alt="image-20220114105919740" style="zoom: 50%;" />
+<img src="\ajian/image-20220114105919740.png" alt="image-20220114105919740" style="zoom: 50%;" />
 
 > 为什么我们能使用ls，echo命令，因为他们都有x执行权限。
 
@@ -379,7 +376,7 @@ chmod u=rwx,g=rw,o=r yuyu666.txt
 | w    | 2        | 可写   |
 | x    | 1        | 可执行 |
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114140556897.png" alt="image-20220114140556897" style="zoom: 50%;" />
+<img src="\ajian/image-20220114140556897.png" alt="image-20220114140556897" style="zoom: 50%;" />
 
 > 关于数字权限和读、写、执行的参照，以及权限的组合表
 
@@ -621,7 +618,7 @@ yu.txt
 
 > 查看user，group
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114151746561.png" alt="image-20220114151746561" style="zoom:50%;" />
+<img src="\ajian/image-20220114151746561.png" alt="image-20220114151746561" style="zoom:50%;" />
 
 ## 2、chown命令
 
@@ -643,7 +640,7 @@ change owner
 >
 > /data/user_info.txt 存放部门用户信息，以前属于yuchao维护，可以读写执行，后来yuchao调部门了，换了个新运维sanpang来维护，主人就改变了。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114152705706.png" alt="image-20220114152705706" style="zoom:50%;" />
+<img src="\ajian/image-20220114152705706.png" alt="image-20220114152705706" style="zoom:50%;" />
 
 > 实践
 
@@ -661,7 +658,7 @@ drwx------ 2 yuchao01 yuchao01 20 Jan 14 15:10 hehe
 
 把hello.sh 属主，改为sanpang
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114153214934.png" alt="image-20220114153214934" style="zoom:50%;" />
+<img src="\ajian/image-20220114153214934.png" alt="image-20220114153214934" style="zoom:50%;" />
 
 此时怎么解读hello.sh的权限？
 
@@ -692,7 +689,7 @@ change group更改文件的属组
 [root@yuchao-linux01 yuchao01]# chgrp sanpang hello.sh
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114153842904.png" alt="image-20220114153842904" style="zoom:50%;" />
+<img src="\ajian/image-20220114153842904.png" alt="image-20220114153842904" style="zoom:50%;" />
 
 ## 4、chown同时修改属主，属组
 
@@ -702,7 +699,7 @@ change group更改文件的属组
 [root@yuchao-linux01 yuchao01]# chown yuchao01:yuchao01 hello.sh
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114154113183.png" alt="image-20220114154113183" style="zoom:50%;" />
+<img src="\ajian/image-20220114154113183.png" alt="image-20220114154113183" style="zoom:50%;" />
 
 # 四、特殊权限
 
@@ -752,7 +749,7 @@ sbit(sticky)
 
 ### 4.1.2 自定义文件设置suid
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220316165940150.png" alt="image-20220316165940150" style="zoom:50%;" />
+<img src="\ajian/image-20220316165940150.png" alt="image-20220316165940150" style="zoom:50%;" />
 
 ### 4.1.3 /usr/bin/passwd与suid
 
@@ -783,11 +780,11 @@ sbit(sticky)
 
 图解suid应用
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220316170604864.png" alt="image-20220316170604864" style="zoom: 33%;" />
+<img src="\ajian/image-20220316170604864.png" alt="image-20220316170604864" style="zoom: 33%;" />
 
 ## 4.2、实践SUID
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220316180833439.png" alt="image-20220316180833439" style="zoom: 33%;" />
+<img src="\ajian/image-20220316180833439.png" alt="image-20220316180833439" style="zoom: 33%;" />
 
 既然passwd有s权限，可以让用户修改自己的密码
 
@@ -802,7 +799,7 @@ sbit(sticky)
 -rwxr-xr-x. 1 root root 27832 Jun 10  2014 /usr/bin/passwd
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114161941995.png" alt="image-20220114161941995" style="zoom:50%;" />
+<img src="\ajian/image-20220114161941995.png" alt="image-20220114161941995" style="zoom:50%;" />
 
 > 如何再给SUID特殊权限加上去。
 
@@ -1014,7 +1011,7 @@ drwxrws--- 2 root adminuser 4096 3月  16 18:44 /home/admins/
 
 > 图解，为什么会用到sbit
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220316191847373.png" alt="image-20220316191847373" style="zoom: 33%;" />
+<img src="\ajian/image-20220316191847373.png" alt="image-20220316191847373" style="zoom: 33%;" />
 
 > sbit原理
 
@@ -1034,7 +1031,7 @@ drwxrwxrwt. 8 root root 4096 3月  16 18:54 /tmp/
 没有设置粘滞位，且目录是777权限时，也就是任意的user、group、other角色在这个目录下，可以进行读、写、执行任意文件。
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220316190436856.png" alt="image-20220316190436856" style="zoom: 33%;" />
+<img src="\ajian/image-20220316190436856.png" alt="image-20220316190436856" style="zoom: 33%;" />
 
 ------
 
@@ -1088,11 +1085,11 @@ drwxrwxrwt 2 root root 4096 3月  16 19:14 /test_sbit/
 - 在这个拥有了sbit权限的目录下，你可以自由存放自己的资料，别人也可以
 - 但是你只能操作你的文件，无法动别人的文件了。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220316193206458.png" alt="image-20220316193206458" style="zoom:33%;" />
+<img src="\ajian/image-20220316193206458.png" alt="image-20220316193206458" style="zoom:33%;" />
 
 别人设置，看都不让你看。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220316193554228.png" alt="image-20220316193554228" style="zoom:33%;" />
+<img src="\ajian/image-20220316193554228.png" alt="image-20220316193554228" style="zoom:33%;" />
 
 ### 4.3.1 sbit应用
 
@@ -1104,7 +1101,7 @@ drwxrwxrwt 2 root root 4096 3月  16 19:14 /test_sbit/
 
 root用户新建文件夹/work，并且新建两个文件root.txt和root1.txt，赋予/work文件夹和下面的文件777权限.
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220210185510949.png" alt="image-20220210185510949" style="zoom:50%;" />
+<img src="\ajian/image-20220210185510949.png" alt="image-20220210185510949" style="zoom:50%;" />
 
 ```
 [root@yuchao-linux01 ~]# mkdir /work
@@ -1153,13 +1150,13 @@ total 0
 [yuchao66@yuchao-linux01 work]$
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220210185650605.png" alt="image-20220210185650605" style="zoom: 50%;" />
+<img src="\ajian/image-20220210185650605.png" alt="image-20220210185650605" style="zoom: 50%;" />
 
 你看，这么一个公共目录，一个普通用户yuchao66就能随便删除人家的资料，这么是不对的。
 
 > 步骤3：给该公共目录添加粘滞位，再看看效果。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220210190114077.png" alt="image-20220210190114077" style="zoom:67%;" />
+<img src="\ajian/image-20220210190114077.png" alt="image-20220210190114077" style="zoom:67%;" />
 
 ```
 [root@yuchao-linux01 ~]# chmod o+t /work/
@@ -1175,7 +1172,7 @@ drwxrwxrwt 2 root root 23 Feb 10 18:56 /work/
 
 > 步骤4，使用yuchao66用户，再看下有什么权限
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220210190250608.png" alt="image-20220210190250608" style="zoom:80%;" />
+<img src="\ajian/image-20220210190250608.png" alt="image-20220210190250608" style="zoom:80%;" />
 
 ```
 [yuchao66@yuchao-linux01 work]$ 
@@ -1203,7 +1200,7 @@ mv: cannot move ‘root1.txt’ to ‘/opt/root1.txt’: Operation not permitted
 [root@yuchao-linux01 ~]# chmod o-t /work/
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220210190710987.png" alt="image-20220210190710987" style="zoom:67%;" />
+<img src="\ajian/image-20220210190710987.png" alt="image-20220210190710987" style="zoom:67%;" />
 
 ```
 [yuchao66@yuchao-linux01 opt]$ cd /work/
@@ -1239,7 +1236,7 @@ total 0
 
 但是在工作里的复杂环境下，这样的权限，已经不够用了。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114164145158.png" alt="image-20220114164145158" style="zoom:67%;" />
+<img src="\ajian/image-20220114164145158.png" alt="image-20220114164145158" style="zoom:67%;" />
 
 ## 5.1、ACL使用场景
 
@@ -1298,11 +1295,11 @@ Linux设置文件ACL权限是通过setfacl工具来设置的，通过getfacl工�
 
 ls -l工具可以查看到文件所属的九列权限，同时可以看到九列权限之后一位：如果是点（.）表示仅仅有九列权限，如果是+，表示除九列之外还有ACL权限，这时候就需要通过getfacl工具查看ACL权限
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114173451678.png" alt="image-20220114173451678" style="zoom:67%;" />
+<img src="\ajian/image-20220114173451678.png" alt="image-20220114173451678" style="zoom:67%;" />
 
 看看getfacl命令怎么用
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114173654102.png" alt="image-20220114173654102" style="zoom:67%;" />
+<img src="\ajian/image-20220114173654102.png" alt="image-20220114173654102" style="zoom:67%;" />
 
 - 前三行，以井号开头的，表示注释信息，不起作用
   - file，显示文件，目录名
@@ -1385,7 +1382,7 @@ total 0
 
 > 给chaoge用户添加acl权限
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114180238029.png" alt="image-20220114180238029" style="zoom:67%;" />
+<img src="\ajian/image-20220114180238029.png" alt="image-20220114180238029" style="zoom:67%;" />
 
 ### 测试权限（图解）
 
@@ -1398,11 +1395,11 @@ drwxr-x---+ 2 root ops 197 Jan 14 17:59 /data
 
 用yuchao01用户试试访问该目录，注意该目录，其他人是无权限的。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114180708751.png" alt="image-20220114180708751" style="zoom: 33%;" />
+<img src="\ajian/image-20220114180708751.png" alt="image-20220114180708751" style="zoom: 33%;" />
 
 ### 删除acl
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114181119984.png" alt="image-20220114181119984" style="zoom:33%;" />
+<img src="\ajian/image-20220114181119984.png" alt="image-20220114181119984" style="zoom:33%;" />
 
 规则删除后，chaoge用户也会在第一时间，丢失权限。
 
@@ -1417,7 +1414,7 @@ drwxr-x---+ 2 root ops 197 Jan 14 17:59 /data
 >
 > root用户和普通用户的，umask值不一样，创建文件的权限也不一样。
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114182237003.png" alt="image-20220114182237003" style="zoom: 33%;" />
+<img src="\ajian/image-20220114182237003.png" alt="image-20220114182237003" style="zoom: 33%;" />
 
 ```
 root用户创建的
@@ -1458,7 +1455,7 @@ umask默认配置在/etc/profile 61-64行
 - linux默认文件夹最大权限是777（文件夹必须、可读、可写、可执行）
 - linux文件默认最大权限是666（缺少x，因为x专门给可执行命令用，而不是普通文件）
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220114184606159.png" alt="image-20220114184606159" style="zoom:33%;" />
+<img src="\ajian/image-20220114184606159.png" alt="image-20220114184606159" style="zoom:33%;" />
 
 从这个表格来看
 
@@ -1680,7 +1677,7 @@ lsattr用于查看文件扩展的属性。
 
 ## 1.文件属性与inode查看
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220406190552608.png" alt="image-20220406190552608" style="zoom: 33%;" />
+<img src="\ajian/image-20220406190552608.png" alt="image-20220406190552608" style="zoom: 33%;" />
 
 ## 2.什么是inode
 
@@ -1712,7 +1709,7 @@ linux读取文件内容，其实是 以  文件名 > inode编号 > block 的顺�
 
 ## 3.图解，文件访问原理
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220406200031320.png" alt="image-20220406200031320" style="zoom: 33%;" />
+<img src="\ajian/image-20220406200031320.png" alt="image-20220406200031320" style="zoom: 33%;" />
 
 ## 4.文件、文件夹的关系
 
@@ -1722,11 +1719,11 @@ linux读取文件内容，其实是 以  文件名 > inode编号 > block 的顺�
 inode号里记录了文件数据所处的block位置，最终访问到数据
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220406200311447.png" alt="image-20220406200311447" style="zoom: 25%;" />
+<img src="\ajian/image-20220406200311447.png" alt="image-20220406200311447" style="zoom: 25%;" />
 
 ## 5.关于删除文件原理
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220406202813062.png" alt="image-20220406202813062" style="zoom: 33%;" />
+<img src="\ajian/image-20220406202813062.png" alt="image-20220406202813062" style="zoom: 33%;" />
 
 # 九、软连接、硬链接
 
@@ -1744,7 +1741,7 @@ inode号里记录了文件数据所处的block位置，最终访问到数据
 inode找到block，访问到数据
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220406203543404.png" alt="image-20220406203543404" style="zoom: 33%;" />
+<img src="\ajian/image-20220406203543404.png" alt="image-20220406203543404" style="zoom: 33%;" />
 
 ```
 软连接特点
@@ -1783,7 +1780,7 @@ ln 源文件 目标文件
 71295 /tmp/c2
 ```
 
-<img src="C:\Users\admin\Desktop\test\ajian/image-20220406204831924.png" alt="image-20220406204831924" style="zoom:50%;" />
+<img src="\ajian/image-20220406204831924.png" alt="image-20220406204831924" style="zoom:50%;" />
 
 ```
 硬链接特点
