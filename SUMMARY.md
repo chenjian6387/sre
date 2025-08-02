@@ -13,6 +13,7 @@
   - [10_Linux用户管理](10_Linux用户管理.md)
   - [11_远程连接linux](11_远程连接linux.md)
   - [12_linux权限管理](12_linux权限管理.md)
+  - [13_linux基础服务管理](13_linux基础服务管理.md)
 * [02-系统核心服务](README.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
