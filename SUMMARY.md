@@ -26,6 +26,7 @@
   - [3-1-软件包管理.md](3-1-软件包管理.md)
   - [3-10-黄金web架构之LAMP](3-10-黄金web架构之LAMP.md)
   - [3-11-磁盘管理](3-11-磁盘管理.md)
+  - [3-12-磁盘管理二](3-12-磁盘管理二.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
