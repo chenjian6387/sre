@@ -21,7 +21,7 @@
   - [18_OSI模型与TCP协议](18_OSI模型与TCP协议.md)
   - [19_Vmware网络配置](19_Vmware网络配置.md)
   - [20_centos网络配置](20_centos网络配置.md)
-* [02-系统核心服务](02-系统核心服务.md)
+* [02-系统核心服务](README.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
