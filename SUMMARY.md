@@ -24,6 +24,7 @@
 * [02-系统核心服务](02-系统核心服务.md)
   - [3-0-Linux重要命令](3-0-Linux重要命令.md)
   - [3-1-软件包管理.md](3-1-软件包管理.md)
+  - [3-10-黄金web架构之LAMP](3-10-黄金web架构之LAMP.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
