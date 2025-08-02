@@ -8,7 +8,7 @@
 >
 > （因此就没法使用yum安装，而是编译安装）
 
-![image-20220225170014592](http://book.bikongge.com/sre/2024-linux/image-20220225170014592.png)
+![image-20220225170014592](/ajian/image-20220225170014592.png)
 
 ## 什么是LAMP
 
@@ -25,7 +25,7 @@ Perl/Php/Python
 
 ### linux
 
-![image-20200118163840299](http://book.bikongge.com/sre/2024-linux/image-20200118163840299.png)
+![image-20200118163840299](/ajian/image-20200118163840299.png)
 
 作为运维人员，你可以一手使用windows、一手使用Linux，毕竟你的服务器运维工作，几乎都是Linux环境了。
 
@@ -39,11 +39,11 @@ Linux的特点是几乎所有的开发任务相关工具，都有很完善的支
 
 Apache Web Server虽然称之为`web服务器`，但是不是意味着他是一个`物理服务器`，它只是电脑软件中的一个软件而已，Web服务器的作用是将HTTP请求从前端转发到后端应用上。
 
-![image-20200118161748267](http://book.bikongge.com/sre/2024-linux/image-20200118161748267.png)
+![image-20200118161748267](/ajian/image-20200118161748267.png)
 
 ### php
 
-![image-20220225172755429](http://book.bikongge.com/sre/2024-linux/image-20220225172755429.png)
+![image-20220225172755429](/ajian/image-20220225172755429.png)
 
 PHP是一门服务端脚本编程语言，主要用于web开发，常用PHP脚本嵌入HTML源码中执行。
 
@@ -51,11 +51,11 @@ PHP是全球知名的编程语言之一，程序员可以免费试用，PHP支�
 
 国内众多网站，百度、雅虎、新浪都在大量使用PHP语言进行开发，知名的论坛软件Discuz也是由PHP开发且占据了80%的论坛软件市场。
 
-![image-20220225172844345](http://book.bikongge.com/sre/2024-linux/image-20220225172844345.png)
+![image-20220225172844345](/ajian/image-20220225172844345.png)
 
 ### mysql
 
-![image-20220225172904822](http://book.bikongge.com/sre/2024-linux/image-20220225172904822.png)
+![image-20220225172904822](/ajian/image-20220225172904822.png)
 
 Mysql是一款数据库管理系统，也就是一个存储数据的工具，用户可以自行对数据库进行增加、删除、修改、查询等操作。
 
@@ -258,7 +258,7 @@ cmake . \
 -DMYSQL_USER=mysql                                            用户身份mysql
 ```
 
-![image-20220226173554749](http://book.bikongge.com/sre/2024-linux/image-20220226173554749.png)
+![image-20220226173554749](/ajian/image-20220226173554749.png)
 
 #### ㈣ 编译并安装
 
@@ -274,7 +274,7 @@ ls: cannot access /usr/local/mysql: No such file or directory
 [root@lamp-241 mysql-5.6.50]# make && make install
 ```
 
-![image-20220226175034271](http://book.bikongge.com/sre/2024-linux/image-20220226175034271.png)
+![image-20220226175034271](/ajian/image-20220226175034271.png)
 
 #### ㈤ 安装mysql后续配置
 
@@ -336,7 +336,7 @@ drwx------. 2 mysql mysql     4096 Feb 26 17:53 performance_schema
 drwxr-xr-x. 2 mysql mysql       20 Feb 26 17:48 test
 ```
 
-![image-20220226175435367](http://book.bikongge.com/sre/2024-linux/image-20220226175435367.png)
+![image-20220226175435367](/ajian/image-20220226175435367.png)
 
 制作启动mysql脚本，系统提供好了模板
 
@@ -477,7 +477,7 @@ apr-1.5.2  apr-1.5.2.tar.bz2  apr-util-1.5.4  apr-util-1.5.4.tar.bz2  mysql-5.6.
 [root@lamp-241 apr-util-1.5.4]# make && make install
 ```
 
-![image-20220226190226258](http://book.bikongge.com/sre/2024-linux/image-20220226190226258.png)
+![image-20220226190226258](/ajian/image-20220226190226258.png)
 
 ```
 [root@lamp-241 apr-util-1.5.4]# ls /usr/local/apr/lib
@@ -732,7 +732,7 @@ yum -y install libcurl-devel
 [root@lamp-241 php-7.2.17]# make && make install
 ```
 
-![image-20220227131902735](http://book.bikongge.com/sre/2024-linux/image-20220227131902735.png)
+![image-20220227131902735](/ajian/image-20220227131902735.png)
 
 ## 五、结合php和apache配置
 
@@ -819,7 +819,7 @@ tcp6       0      0 :::80                   :::*                    LISTEN      
 
 访问你的apache服务器即可，默认是80端口，如果能看到php的页面，表示正常。
 
-![image-20220227143627153](http://book.bikongge.com/sre/2024-linux/image-20220227143627153.png)
+![image-20220227143627153](/ajian/image-20220227143627153.png)
 
 看到这就表示，你已经部署好了一个linux+apache+mysql+php的服务器，可以提供给开发人员，测试运行代码了。
 
@@ -916,7 +916,7 @@ tcp6       0      0 :::80                   :::*                    LISTEN      
 192.168.0.241 yuchao-wordpress.cc
 ```
 
-![image-20220227155200255](http://book.bikongge.com/sre/2024-linux/image-20220227155200255.png)
+![image-20220227155200255](/ajian/image-20220227155200255.png)
 
 发现提示Forbidden，也就是禁止访问了，这种是403错误，权限不足，并且你要知道，这是apache给与你的响应，你只要去找apache的配置就行。
 
@@ -937,19 +937,19 @@ tcp6       0      0 :::80                   :::*                    LISTEN      
 
 ### 1、正确结果
 
-![image-20220227160033138](http://book.bikongge.com/sre/2024-linux/image-20220227160033138.png)
+![image-20220227160033138](/ajian/image-20220227160033138.png)
 
 ------
 
-![image-20220227161059602](http://book.bikongge.com/sre/2024-linux/image-20220227161059602.png)
+![image-20220227161059602](/ajian/image-20220227161059602.png)
 
 ------
 
-![image-20220227161157170](http://book.bikongge.com/sre/2024-linux/image-20220227161157170.png)
+![image-20220227161157170](/ajian/image-20220227161157170.png)
 
 ### 2、写下第一篇文章
 
-![image-20220227161338195](http://book.bikongge.com/sre/2024-linux/image-20220227161338195.png)
+![image-20220227161338195](/ajian/image-20220227161338195.png)
 
 # 实战总结
 
@@ -1034,14 +1034,14 @@ iWebShop5.8.zip
 yuchao-webshop.cc 即可看到该电商网址（基于域名的虚拟主机）
 ```
 
-![image-20220227173753001](http://book.bikongge.com/sre/2024-linux/image-20220227173753001.png)
+![image-20220227173753001](/ajian/image-20220227173753001.png)
 
 ------
 
 完成部署结果
 
-![image-20220227174756214](http://book.bikongge.com/sre/2024-linux/image-20220227174756214.png)
+![image-20220227174756214](/ajian/image-20220227174756214.png)
 
 ------
 
-![image-20220227174907010](http://book.bikongge.com/sre/2024-linux/image-20220227174907010.png)
+![image-20220227174907010](/ajian/image-20220227174907010.png)
