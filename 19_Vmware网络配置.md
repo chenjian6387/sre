@@ -1,0 +1,144 @@
+# 2-2-Vmware网络配置
+
+# 虚拟网卡
+
+在我们安装好vmware之后，需要给vmware配置正确的网络环境。
+
+vmware是虚拟机，也就是虚拟出的硬件的设备以及操作系统，如何正确配置这些虚拟网络设备？
+
+> vmware默认安装了如下虚拟设备。
+
+VMware Network Adepter VMnet1：Host用于与Host-Only虚拟网络进行通信的虚拟网卡
+
+VMware Network Adepter VMnet8：Host用于与NAT虚拟网络进行通信的虚拟网卡
+
+![image-20220123174556675](http://book.bikongge.com/sre/2024-linux/image-20220123174556675.png)
+
+同时，在主机上对应的有VMware Network Adapter VMnet1和VMware Network Adapter VMnet8两块虚拟网卡，它们分别作用于仅主机模式与NAT模式下。
+
+在“网络连接”中我们可以看到这两块虚拟网卡，如果将这两块卸载了，可以在vmware的“编辑”下的“虚拟网络编辑器”中点击“还原默认设置”，可重新将虚拟网卡还原。
+
+# 虚拟交换机
+
+![image-20220124103040008](http://book.bikongge.com/sre/2024-linux/image-20220124103040008.png)
+
+打开vmware虚拟机，我们可以在选项栏的“编辑”下的“虚拟网络编辑器”中看到VMnet0（桥接模式）、VMnet1（仅主机模式）、VMnet8（NAT模式），那么这些都是有什么作用呢？
+
+其实，我们现在看到的VMnet0表示的是用于桥接模式下的虚拟交换机；VMnet1表示的是用于仅主机模式下的虚拟交换机；VMnet8表示的是用于NAT模式下的虚拟交换机。
+
+# 三种网络模式
+
+## 桥接网络
+
+什么是桥接模式？
+
+桥接模式就是将`主机网卡`与`虚拟机虚拟的网卡`利用虚拟网桥进行通信。
+
+在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。
+
+在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致。其网络结构如下图所示：
+
+> 1.确定虚拟机是桥接模式
+
+![image-20220123181351680](http://book.bikongge.com/sre/2024-linux/image-20220123181351680.png)
+
+> 2.确认网络连接状态
+
+![image-20220124095655607](http://book.bikongge.com/sre/2024-linux/image-20220124095655607.png)
+
+> 3.确认linux连接状态
+
+网卡配置文件
+
+![image-20220124095908558](http://book.bikongge.com/sre/2024-linux/image-20220124095908558.png)
+
+网络服务
+
+![image-20220124095934099](http://book.bikongge.com/sre/2024-linux/image-20220124095934099.png)
+
+> 4.查看IP地址
+
+![image-20220124095952672](http://book.bikongge.com/sre/2024-linux/image-20220124095952672.png)
+
+> 图解
+
+![image-20220124111105920](http://book.bikongge.com/sre/2024-linux/image-20220124111105920.png)
+
+桥接模式，是通过虚拟网桥，将主机上的网卡和虚拟机交换机Vmnet0连接在一起，虚拟机上的虚拟网卡也连接在这个虚拟交换机上，所以这个桥接模式下的虚拟机IP和宿主机是在同一个网络环境下。
+
+## NAT网络
+
+安装完毕vmware workstation之后，系统自动生成一个Vmnet8虚拟网卡。
+
+新建虚拟机可以使用该NAT网络。
+
+> 如果你的网络ip资源紧缺，但是你又希望你的虚拟机能够联网，这时候NAT模式是最好的选择。
+>
+> ==NAT模式借助虚拟NAT设备和虚拟DHCP服务器，使得虚拟机可以联网。==
+>
+> 使用NAT网络时，虚拟机不会占用外部网络的IP地址，主机内部生成了单独的专用网络，在默认配置下，虚拟机在这个内部专用网络通过DHCP服务器获取地址。
+
+当虚拟机使用NAT模式，虚拟机会连接到vmnet8虚拟交换机，并且
+
+- 虚拟机会将NAT设备、DHCP服务器连接到vmnet8
+- 虚拟机将vmware network Adapter Vmnet8也和vmnet8连接，作为通信网关，确保宿主机和虚拟机可以通信。
+
+==在NAT模式下，宿主机网卡和虚拟NAT设备直连，虚拟NAT和虚拟DHCP连接在，vmnet8交换机上，实现虚拟机可以直接访问互联网。==
+
+> 图解
+
+![image-20220124115014694](http://book.bikongge.com/sre/2024-linux/image-20220124115014694.png)
+
+> 1.确保你安装的vmware，生成了虚拟网卡vmnet8
+
+![image-20220124100458946](http://book.bikongge.com/sre/2024-linux/image-20220124100458946.png)
+
+> 2.确保你的vmnet8配置正确，虚拟网络编辑器（虚拟交换机）
+
+![image-20220124100802351](http://book.bikongge.com/sre/2024-linux/image-20220124100802351.png)
+
+> 3.确保linux虚拟机，网络连接方式修改，以及配置文件，网络服务状态
+
+![image-20220124100907870](http://book.bikongge.com/sre/2024-linux/image-20220124100907870.png)
+
+查看IP地址，已经是单独的一个虚拟子网了。
+
+![image-20220124100952712](http://book.bikongge.com/sre/2024-linux/image-20220124100952712.png)
+
+查看虚拟机和宿主机的通信。
+
+![image-20220124114601665](http://book.bikongge.com/sre/2024-linux/image-20220124114601665.png)
+
+### 查看vmnet8虚拟网卡作用
+
+禁用宿主机的虚拟网卡
+
+![image-20220124114727891](http://book.bikongge.com/sre/2024-linux/image-20220124114727891.png)
+
+查看虚拟机网络状态，一切正常
+
+![image-20220124115430096](http://book.bikongge.com/sre/2024-linux/image-20220124115430096.png)
+
+但是宿主机，和虚拟机无法通信。
+
+![image-20220124115506141](http://book.bikongge.com/sre/2024-linux/image-20220124115506141.png)
+
+重新打开虚拟网卡vmnet8
+
+![image-20220124115528259](http://book.bikongge.com/sre/2024-linux/image-20220124115528259.png)
+
+可以与虚拟机通信了。
+
+![image-20220124115539371](http://book.bikongge.com/sre/2024-linux/image-20220124115539371.png)
+
+## 仅主机模式
+
+Host-Only模式其实就是NAT模式去除了虚拟NAT设备，然后使用VMware Network Adapter VMnet1虚拟网卡连接VMnet1虚拟交换机来与虚拟机通信的。
+
+Host-Only模式将虚拟机与外网隔开，使得虚拟机成为一个独立的系统，只与主机相互通讯。
+
+如果要使得虚拟机能联网，我们可以将主机网卡共享给VMware Network Adapter VMnet1网卡，从而达到虚拟机联网的目的。
+
+它的网络结构如下图： ![image-20220124182838513](http://book.bikongge.com/sre/2024-linux/image-20220124182838513.png)
+
+这个没啥意义，想要和外网通信，还得额外处理，一般我们使用NAT模式最合适。
