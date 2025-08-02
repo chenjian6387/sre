@@ -23,6 +23,7 @@
   - [20_centos网络配置](20_centos网络配置.md)
 * [02-系统核心服务](02-系统核心服务.md)
   - [3-0-Linux重要命令](3-0-Linux重要命令.md)
+  - [3-1-软件包管理.md](3-1-软件包管理.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
