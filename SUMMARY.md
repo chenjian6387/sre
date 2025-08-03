@@ -45,6 +45,7 @@
   - [3-5-Inotify实时数据同步](3-5-Inotify实时数据同步.md)
   - [3-6-文件共享服务之FTP](3-6-文件共享服务之FTP.md)
   - [3-7-文件共享服务之Samba](3-7-文件共享服务之Samba.md)
+  - [3-8文件共享服务之NFS](3-8文件共享服务之NFS.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
