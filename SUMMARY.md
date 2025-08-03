@@ -59,7 +59,7 @@
   - [10-SSH进阶](10-SSH进阶.md)
   - [11-运维自动化Ansible](11-运维自动化Ansible.md)
   - [12-Ansible-playbook剧本](12-Ansible-playbook剧本.md)
-  - [12-Ansible-playbook剧本](12-Ansible-playbook剧本.md)
+  - [13-Ansible-playbook剧本](13-Ansible-playbook剧本进阶.md)
   - [14-ansible-role角色](14-ansible-role角色.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
