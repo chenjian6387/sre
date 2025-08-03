@@ -50,6 +50,7 @@
 * [03-网站集群架构](03-网站集群架构.md)
   - [00-淘宝网的十年架构](00-淘宝网的十年架构.md)
   - [01-综合架构开篇](01-综合架构开篇.md)
+  - [02-综合架构环境准备](02-综合架构环境准备.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
