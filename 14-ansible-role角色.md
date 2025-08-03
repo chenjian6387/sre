@@ -119,7 +119,7 @@ roles/                      # role规范目录结构
         vars/
 ```
 
-![img](http://book.bikongge.com/sre/2024-linux/20180420180928206.jpeg)
+![img](/ajian/20180420180928206.jpeg)
 
 # 实践1：部署rsyncd服务
 
@@ -736,7 +736,7 @@ server_ip: '172.16.1.0/24'
 
 ## 1.ansible总目录
 
-![image-20220514135803421](http://book.bikongge.com/sre/2024-linux/image-20220514135803421.png)
+![image-20220514135803421](/ajian/image-20220514135803421.png)
 
 ## 2.涉及的组件列表
 
@@ -746,7 +746,7 @@ server_ip: '172.16.1.0/24'
 - playbook语法、yaml、高级语法
 - role规范
 
-![image-20220514140646937](http://book.bikongge.com/sre/2024-linux/image-20220514140646937.png)
+![image-20220514140646937](/ajian/image-20220514140646937.png)
 
 ## 3.听超哥指挥，能打胜仗
 
@@ -760,4 +760,4 @@ server_ip: '172.16.1.0/24'
 
 ## 4.例如安装mysql的角色
 
-![image-20220514142724348](http://book.bikongge.com/sre/2024-linux/image-20220514142724348.png)
+![image-20220514142724348](/ajian/image-20220514142724348.png)
