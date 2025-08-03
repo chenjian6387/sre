@@ -47,7 +47,7 @@
   - [3-7-文件共享服务之Samba](3-7-文件共享服务之Samba.md)
   - [3-8文件共享服务之NFS](3-8文件共享服务之NFS.md)
   - [3-9-域名管理系统之DNS](3-9-域名管理系统之DNS.md)
-* [03-网站集群架构](README.md)
+* [03-网站集群架构](03-网站集群架构.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
