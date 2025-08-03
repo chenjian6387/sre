@@ -52,6 +52,7 @@
   - [01-综合架构开篇](01-综合架构开篇.md)
   - [02-综合架构环境准备](02-综合架构环境准备.md)
   - [05-备份工具rsync](05-备份工具rsync.md)
+  - [06-备份任务实战](06-备份任务实战.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
