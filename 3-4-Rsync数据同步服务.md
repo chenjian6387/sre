@@ -245,9 +245,6 @@ SYNOPSIS
 ![image-20220215181832398](/ajian/image-20220215181832398.png)
 
 > 同步，携带源目录本身
-
-![image-20220215142202077](http://book.bikongge.com/sre/02-%E7%B3%BB%E7%BB%9F%E6%A0%B8%E5%BF%83%E6%9C%8D%E5%8A%A1/pic/image-20220215142202077.png)
-
 > 同步后，删除目标目录下其他文件（慎用）
 
 ![image-20220215181749145](/ajian/image-20220215181749145.png)
