@@ -6,13 +6,13 @@
 
 类似cp命令拷贝，但是支持服务器之间的网络拷贝，且保证安全性。
 
-![image-20220211192614410](http://book.bikongge.com/sre/2024-linux/image-20220211192614410.png)
+![image-20220211192614410](/ajian/image-20220211192614410.png)
 
 # 学习背景
 
 超哥游戏公司要每天都要对代码备份。
 
-![image-20220211192323222](http://book.bikongge.com/sre/2024-linux/image-20220211192323222.png)
+![image-20220211192323222](/ajian/image-20220211192323222.png)
 
 # 任务需求
 
@@ -85,7 +85,7 @@ Rsync具备使本地和远程两台主机之间的`数据快速复制`，`远程
 
 ## 图解rsync增量备份
 
-![image-20220211194205966](http://book.bikongge.com/sre/2024-linux/image-20220211194205966.png)
+![image-20220211194205966](/ajian/image-20220211194205966.png)
 
 # 二、rsync语法
 
@@ -242,7 +242,7 @@ SYNOPSIS
 
 > 不包括源数据目录本身.
 
-![image-20220215181832398](http://book.bikongge.com/sre/2024-linux/image-20220215181832398.png)
+![image-20220215181832398](/ajian/image-20220215181832398.png)
 
 > 同步，携带源目录本身
 
@@ -250,7 +250,7 @@ SYNOPSIS
 
 > 同步后，删除目标目录下其他文件（慎用）
 
-![image-20220215181749145](http://book.bikongge.com/sre/2024-linux/image-20220215181749145.png)
+![image-20220215181749145](/ajian/image-20220215181749145.png)
 
 ### 2.远程同步
 
@@ -275,7 +275,7 @@ push: rsync -av local/path user@host:/path
 
 #### 拉取实践
 
-![image-20220215181733748](http://book.bikongge.com/sre/2024-linux/image-20220215181733748.png)
+![image-20220215181733748](/ajian/image-20220215181733748.png)
 
 > 同样要注意，是否在文件夹结尾，添加斜线，结果是不一样的。
 >
@@ -287,7 +287,7 @@ push: rsync -av local/path user@host:/path
 
 #### 推送实践
 
-![image-20220215181716824](http://book.bikongge.com/sre/2024-linux/image-20220215181716824.png)
+![image-20220215181716824](/ajian/image-20220215181716824.png)
 
 ### 思考
 
@@ -674,4 +674,4 @@ yuchao1.log  yuchao2.log  yuchao3.log  yuchao4.log  yuchao5.log
 [root@yuchao-backup01 bak_rsync]# export RSYNC_PASSWORD=yuchao666
 ```
 
-![image-20220215181638547](http://book.bikongge.com/sre/2024-linux/image-20220215181638547.png)
+![image-20220215181638547](/ajian/image-20220215181638547.png)
