@@ -57,6 +57,7 @@
   - [08-实时同步数据](08-实时同步数据.md)
   - [09-SSH安全登录](09-SSH安全登录.md)
   - [10-SSH进阶](10-SSH进阶.md)
+  - [11-运维自动化Ansible](11-运维自动化Ansible.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
