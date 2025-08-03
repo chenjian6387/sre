@@ -1,6 +1,6 @@
 # 3-3-SSH远程安全登录
 
-![image-20220210143224502](http://book.bikongge.com/sre/2024-linux/image-20220210143224502.png)
+![image-20220210143224502](/ajian/image-20220210143224502.png)
 
 # 为什么需要SSH
 
@@ -21,7 +21,7 @@ Secure Shell是Linux系统首选的登录方式，以前使用FTP或telnet登录
 
 由于开发人员有时候需要通过跳板机登录到线上生产环境查看一些业务日志，所以现在需要运维人员针对不同的人员和需求对==账号密码进行统一==管理，并且遵循**权限最小化**原则。
 
-![image-20220210144010049](http://book.bikongge.com/sre/2024-linux/image-20220210144010049.png)
+![image-20220210144010049](/ajian/image-20220210144010049.png)
 
 ## 2、任务要求
 
@@ -39,7 +39,7 @@ Secure Shell是Linux系统首选的登录方式，以前使用FTP或telnet登录
    - 更改默认端口（22=>10086）
 4. 线上生产服务器创建devyu用户，并安装工具来生成随机密码
 
-![image-20220210144727523](http://book.bikongge.com/sre/2024-linux/image-20220210144727523.png)
+![image-20220210144727523](/ajian/image-20220210144727523.png)
 
 ## 4、涉及知识点
 
@@ -65,7 +65,7 @@ Secure Shell是Linux系统首选的登录方式，以前使用FTP或telnet登录
 
 优势：节约开发成本
 
-![image-20220210145103400](http://book.bikongge.com/sre/2024-linux/image-20220210145103400.png)
+![image-20220210145103400](/ajian/image-20220210145103400.png)
 
 ### 2、C/S架构
 
@@ -75,7 +75,7 @@ Secure Shell是Linux系统首选的登录方式，以前使用FTP或telnet登录
 
 优势：安全性较高，一般面向具体的应用
 
-![image-20220210145346035](http://book.bikongge.com/sre/2024-linux/image-20220210145346035.png)
+![image-20220210145346035](/ajian/image-20220210145346035.png)
 
 ### 3、两者区别
 
@@ -108,7 +108,7 @@ https://www.yuchaoit.cn:443
 11176
 ```
 
-![image-20220210150134620](http://book.bikongge.com/sre/2024-linux/image-20220210150134620.png)
+![image-20220210150134620](/ajian/image-20220210150134620.png)
 
 > 你看，这linux默认有11176个默认端口，表示每一个程序，默认启动后，会打开这个端口，提供访问。
 >
@@ -137,13 +137,13 @@ ssh是一种用于安全访问远程服务器的协议，远程管理工具。
 
 #### **①对称加密算法(DES)**
 
-![image-20220210151308351](http://book.bikongge.com/sre/2024-linux/image-20220210151308351.png)
+![image-20220210151308351](/ajian/image-20220210151308351.png)
 
 1.于超想和一个美女，杰西卡打招呼，但是又怕被女朋友发现，因此于超用了一个加密算法，比如通过一个`密钥A`来给打招呼的信息加密，得到一个密文数据，其他人是看不懂的，再发给这位外国美女杰西卡。
 
 2.杰西卡收到消息后，必须通过同样的`密钥A`解密，才能看懂这句话，"交个朋友吧"
 
-![image-20220210151741056](http://book.bikongge.com/sre/2024-linux/image-20220210151741056.png)
+![image-20220210151741056](/ajian/image-20220210151741056.png)
 
 3.加密算法是指通过程序对明文计算处理后，得到一个无法直观看懂的数据。
 
@@ -165,7 +165,7 @@ ssh是一种用于安全访问远程服务器的协议，远程管理工具。
 使用公钥加密后的密文，只能使用对应的私钥才能解开，破解的可能性很低。
 ```
 
-![image-20220210154234611](http://book.bikongge.com/sre/2024-linux/image-20220210154234611.png)
+![image-20220210154234611](/ajian/image-20220210154234611.png)
 
 1.杰西卡生成一对公私钥、其中公钥是可以直接发给任何人的，但是私钥必须杰西卡自己保护好，不得泄露；
 
@@ -216,7 +216,7 @@ ssh是一种用于安全访问远程服务器的协议，远程管理工具。
 
 ### 4、SSH基于用户名密码认证原理（重点）
 
-![image-20220210165927280](http://book.bikongge.com/sre/2024-linux/image-20220210165927280.png)
+![image-20220210165927280](/ajian/image-20220210165927280.png)
 
 1.SSH客户端向SSH服务端发起登录请求
 
@@ -237,7 +237,7 @@ Last login: Thu Feb 10 17:05:25 2022 from 10.96.0.1
 [root@yuchao-linux01 ~]#
 ```
 
-![image-20220210171045467](http://book.bikongge.com/sre/2024-linux/image-20220210171045467.png)
+![image-20220210171045467](/ajian/image-20220210171045467.png)
 
 3.SSH客户端、使用服务端发来的公钥，将超哥输入的密码加密为密文后，再发给SSH服务端；
 
@@ -392,7 +392,7 @@ vim /etc/ssh/sshd_config
 PermitRootLogin no
 ```
 
-![image-20220210173341600](http://book.bikongge.com/sre/2024-linux/image-20220210173341600.png)
+![image-20220210173341600](/ajian/image-20220210173341600.png)
 
 改了配置文件就得重启
 
@@ -413,11 +413,11 @@ netstat -lntp|grep sshd
 systemctl enable sshd
 ```
 
-![image-20220210173506811](http://book.bikongge.com/sre/2024-linux/image-20220210173506811.png)
+![image-20220210173506811](/ajian/image-20220210173506811.png)
 
 只能用普通用户登录
 
-![image-20220210173641671](http://book.bikongge.com/sre/2024-linux/image-20220210173641671.png)
+![image-20220210173641671](/ajian/image-20220210173641671.png)
 
 > 练习结束，为了方便，可以再改回来。
 >
@@ -432,11 +432,11 @@ systemctl enable sshd
 | 10.96.0.146 | jumpserver  | 跳板机         |
 | 10.96.0.149 | real-server | 真实业务服务器 |
 
-![image-20220210175611951](http://book.bikongge.com/sre/2024-linux/image-20220210175611951.png)
+![image-20220210175611951](/ajian/image-20220210175611951.png)
 
 ------
 
-![image-20220210175628992](http://book.bikongge.com/sre/2024-linux/image-20220210175628992.png)
+![image-20220210175628992](/ajian/image-20220210175628992.png)
 
 ### 1、创建用户并授权（跳板机上操作）
 
@@ -502,7 +502,7 @@ drwx-wx-wx 3 root devgroup 18 Feb 10 18:15 /devyu
 drwxrwx--T 2 root devgroup 6 Feb 10 18:15 /devyu/data
 ```
 
-![image-20220211105020225](http://book.bikongge.com/sre/2024-linux/image-20220211105020225.png)
+![image-20220211105020225](/ajian/image-20220211105020225.png)
 
 #### （四）测试结果
 
@@ -514,7 +514,7 @@ drwxrwx--T 2 root devgroup 6 Feb 10 18:15 /devyu/data
 >
 > 然后该目录内的文件，只有属主、以及root才可以删除、移动文件。
 
-![image-20220211111313032](http://book.bikongge.com/sre/2024-linux/image-20220211111313032.png)
+![image-20220211111313032](/ajian/image-20220211111313032.png)
 
 ### 2、禁止root远程登录
 
@@ -566,7 +566,7 @@ tcp6       0      0 :::22122                :::*                    LISTEN      
 [root@jumpserver ~]#
 ```
 
-![image-20220211120640659](http://book.bikongge.com/sre/2024-linux/image-20220211120640659.png)
+![image-20220211120640659](/ajian/image-20220211120640659.png)
 
 ### 4、用户密码随机
 
@@ -661,11 +661,11 @@ Ni3xoh3r ek5Saesh ooRohgh0 eo7ey9Da aiMee3ho ieB1ahM9 OhShai3e ezie3Uoh
 echo eo7ey9Da  |passwd --stdin devyuchao
 ```
 
-# ![image-20220211134757035](http://book.bikongge.com/sre/2024-linux/image-20220211134757035.png)
+# ![image-20220211134757035](/ajian/image-20220211134757035.png)
 
 此时可以用这个随机密码，登录服务器。
 
-![image-20220211134926588](http://book.bikongge.com/sre/2024-linux/image-20220211134926588.png)
+![image-20220211134926588](/ajian/image-20220211134926588.png)
 
 > 随机生成指定风格的密码
 >
@@ -708,11 +708,11 @@ rXn4EojU
 
   > linux下ssh远程登录
 
-![image-20220211135510985](http://book.bikongge.com/sre/2024-linux/image-20220211135510985.png)
+![image-20220211135510985](/ajian/image-20220211135510985.png)
 
 > windows下远程登录
 
-![image-20220211135815672](http://book.bikongge.com/sre/2024-linux/image-20220211135815672.png)
+![image-20220211135815672](/ajian/image-20220211135815672.png)
 
 > 常见参数
 >
@@ -730,11 +730,11 @@ Last login: Fri Feb 11 12:06:10 2022 from 10.96.0.1
 [root@jumpserver ~]#
 ```
 
-![image-20220211140710014](http://book.bikongge.com/sre/2024-linux/image-20220211140710014.png)
+![image-20220211140710014](/ajian/image-20220211140710014.png)
 
 > xshell工具，其实就是帮你执行ssh命令。
 
-![image-20220211142215865](http://book.bikongge.com/sre/2024-linux/image-20220211142215865.png)
+![image-20220211142215865](/ajian/image-20220211142215865.png)
 
 ## 2、踢掉用户下线
 
@@ -747,13 +747,13 @@ w命令
 
 > 看看自己是谁
 
-![image-20220211143446475](http://book.bikongge.com/sre/2024-linux/image-20220211143446475.png)
+![image-20220211143446475](/ajian/image-20220211143446475.png)
 
 > 干掉用户，让他下线。
 >
 > 干掉这个xshell。
 
-![image-20220211143604235](http://book.bikongge.com/sre/2024-linux/image-20220211143604235.png)
+![image-20220211143604235](/ajian/image-20220211143604235.png)
 
 ## 3、免密登录（重点）
 
@@ -798,7 +798,7 @@ w命令
 
 > 服务端的公私钥文件
 
-![image-20220211144617838](http://book.bikongge.com/sre/2024-linux/image-20220211144617838.png)
+![image-20220211144617838](/ajian/image-20220211144617838.png)
 
 ```
 [root@jumpserver ~]# ls -l  /etc/ssh/ssh_host_rsa*
@@ -822,13 +822,13 @@ w命令
 这个文件就存放着，已经连接过的ssh服务端的公钥信息，可以删除，然后需要重新yes确认。
 ```
 
-![image-20220211151613643](http://book.bikongge.com/sre/2024-linux/image-20220211151613643.png)
+![image-20220211151613643](/ajian/image-20220211151613643.png)
 
 ### 2、基于密钥对的认证
 
 **基于密钥对认证，也就是所谓的免密码登录，理解免密登录原理：**
 
-![image-20220211154418278](http://book.bikongge.com/sre/2024-linux/image-20220211154418278.png)
+![image-20220211154418278](/ajian/image-20220211154418278.png)
 
 ### 3、基于密钥对的免密登录（实践）
 
@@ -836,7 +836,7 @@ w命令
 
 其实部署操作很简单。
 
-![image-20220211155415575](http://book.bikongge.com/sre/2024-linux/image-20220211155415575.png)
+![image-20220211155415575](/ajian/image-20220211155415575.png)
 
 实际免密登录过程
 
@@ -892,7 +892,7 @@ Now try logging into the machine, with:   "ssh 'root@10.96.0.149'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
-![image-20220211163945937](http://book.bikongge.com/sre/2024-linux/image-20220211163945937.png)
+![image-20220211163945937](/ajian/image-20220211163945937.png)
 
 此时就可以免密登录了。
 
@@ -907,7 +907,7 @@ Last login: Fri Feb 11 14:56:48 2022 from 10.96.0.1
 [root@yuchao-linux01 ~]#
 ```
 
-![image-20220211165042629](http://book.bikongge.com/sre/2024-linux/image-20220211165042629.png)
+![image-20220211165042629](/ajian/image-20220211165042629.png)
 
 > 超哥这里是教大家用windows免密连接linux
 >
@@ -924,17 +924,17 @@ Last login: Fri Feb 11 14:56:48 2022 from 10.96.0.1
 - des 对称的公钥加密算法,安全低，数据传输速度快；使用同一个秘钥进行加密或解密
 - rsa 非对称的公钥加密算法,安全,数据传输速度慢 ，SSH默认的加密算法
 
-![image-20220211165843700](http://book.bikongge.com/sre/2024-linux/image-20220211165843700.png)
+![image-20220211165843700](/ajian/image-20220211165843700.png)
 
 ### 非对称加密
 
 > 上面的数据是加密了，这个钥匙，如果丢了怎么办？被别人恶意获取到不还是危险吗？
 
-![image-20220211171802522](http://book.bikongge.com/sre/2024-linux/image-20220211171802522.png)
+![image-20220211171802522](/ajian/image-20220211171802522.png)
 
 ### 中间人攻击
 
-![image-20220211172540491](http://book.bikongge.com/sre/2024-linux/image-20220211172540491.png)
+![image-20220211172540491](/ajian/image-20220211172540491.png)
 
 【Client如何保证自己接收到的公钥就是来源于目标Server机器的？】
 
@@ -974,7 +974,7 @@ Are you sure you want to continue connecting (yes/no)?
 256 SHA256:vjyKCLajbwDmNfuX7Ld9ycWYnad8oxxndE/aVLEH13Y no comment (ECDSA)
 ```
 
-![image-20220211173308045](http://book.bikongge.com/sre/2024-linux/image-20220211173308045.png)
+![image-20220211173308045](/ajian/image-20220211173308045.png)
 
 > 3.当你输入yes之后，输入账号密码，正确后，即可登录服务器。
 >
