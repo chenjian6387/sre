@@ -1,16 +1,16 @@
 #  11-运维自动化Ansible
 
-![image-20220429141659639](http://book.bikongge.com/sre/2024-linux/image-20220429141659639.png)
+![image-20220429141659639](/ajian/image-20220429141659639.png)
 
 # 1、ansible介绍
 
 # 运维神器ansible
 
-![image-20220424153608540](http://book.bikongge.com/sre/2024-linux/image-20220424153608540.png)
+![image-20220424153608540](/ajian/image-20220424153608540.png)
 
 一句话，学好ansible，学精ansible，就直接是普通运维、和自动化运维的一个质的飞跃。
 
-![image-20220424153904029](http://book.bikongge.com/sre/2024-linux/image-20220424153904029.png)
+![image-20220424153904029](/ajian/image-20220424153904029.png)
 
 ansible提供了大量的模块、帮助运维完成服务器批量化部署操作，ansible你可以理解为这个是一个工具箱，这个工具是用来解决其他各种问题的。
 
@@ -118,11 +118,11 @@ Ansible基于Python开发，由主要的Paramiko和PyYAML两个关键模块构�
 
 # Anisble架构
 
-![image-20220507102813868](http://book.bikongge.com/sre/2024-linux/image-20220507102813868.png)
+![image-20220507102813868](/ajian/image-20220507102813868.png)
 
 ## Anisble命令语法
 
-![image-20200317135336959](http://book.bikongge.com/sre/2024-linux/image-20200317135336959.png)
+![image-20200317135336959](/ajian/image-20200317135336959.png)
 
 ansible批量管理命令主要涉及6部分
 
@@ -294,7 +294,7 @@ ansible 2.9.27
 
 https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#inventory-basics-formats-hosts-and-groups
 
-![image-20220424190919051](http://book.bikongge.com/sre/2024-linux/image-20220424190919051.png)
+![image-20220424190919051](/ajian/image-20220424190919051.png)
 
 主机清单配置文件
 
@@ -806,7 +806,7 @@ web-8
 
 ### 远程创建文件、查看文件
 
-![image-20220424192142928](http://book.bikongge.com/sre/2024-linux/image-20220424192142928.png)
+![image-20220424192142928](/ajian/image-20220424192142928.png)
 
 ```
 [root@master-61 ~]#ansible web -m command -a "touch /opt/超哥带你学linux.log"
@@ -971,7 +971,7 @@ copy模块是远程推送数据模块，只能把数据推送给远程主机节�
 
 既然是文件拷贝，可用参数也就是围绕文件属性。
 
-![image-20200317155559101](http://book.bikongge.com/sre/2024-linux/image-20200317155559101.png)
+![image-20200317155559101](/ajian/image-20200317155559101.png)
 
 ### copy练习
 
@@ -1290,11 +1290,11 @@ https://docs.ansible.com/ansible/latest/modules/cron_module.html#cron-module
 
 cron模块用于管理定时任务的记录，编写任务
 
-![image-20200317173121859](http://book.bikongge.com/sre/2024-linux/image-20200317173121859.png)
+![image-20200317173121859](/ajian/image-20200317173121859.png)
 
 ### 对比ansible的cron模块，和crontab
 
-![img](http://book.bikongge.com/sre/2024-linux/image-20200317174549652.png)
+![img](/ajian/image-20200317174549652.png)
 
 常见的参数如此，使用ansible编写定时任务，和直接编写是没有什么区别的
 
@@ -1485,11 +1485,11 @@ cc01:x:1777:1777::/home/cc01:/sbin/nologin
 
 yum模块明显就是一个专门用于管理软件的模块。
 
-![image-20200317164841904](http://book.bikongge.com/sre/2024-linux/image-20200317164841904.png)
+![image-20200317164841904](/ajian/image-20200317164841904.png)
 
 ------
 
-![image-20200317165018935](http://book.bikongge.com/sre/2024-linux/image-20200317165018935-20220425190723009.png)
+![image-20200317165018935](/ajian/image-20200317165018935-20220425190723009.png)
 
 ### 官网文档示例用法
 
