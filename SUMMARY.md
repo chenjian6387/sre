@@ -35,6 +35,7 @@
   - [3-18-1-awk进阶](3-18-1-awk进阶.md)
   - [3-18-awk精讲](3-18-awk精讲.md)
   - [3-19-正则练习题](3-19-正则练习题.md)
+  - [3-2-yum精讲](3-2-yum精讲.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
