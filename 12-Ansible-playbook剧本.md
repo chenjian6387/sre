@@ -20,7 +20,7 @@ Ansible Playbooks 提供了一个可重复、可重用、简单的配置管理�
 如果您需要多次使用 Ansible 执行任务，请编写剧本并将其置于源代码控制之下。
 ```
 
-![image-20200318091032790](http://book.bikongge.com/sre/2024-linux/image-20200318091032790.png)
+![image-20200318091032790](/ajian/image-20200318091032790.png)
 
 如果说ansible 模块 是你车间里的工具，那么playbooks 是你的说明书／使用手册，并且资源清单上的主机是你的原材料。
 
@@ -38,7 +38,7 @@ Playbooks可以对任务进行编排，就像我们要安装一个程序，写�
 
 【比如一个电影剧本】
 
-![image-20200318091428772](http://book.bikongge.com/sre/2024-linux/image-20200318091428772.png)
+![image-20200318091428772](/ajian/image-20200318091428772.png)
 
 ```
 电影名
@@ -376,8 +376,6 @@ python
 
 ## Yaml列表
 
-![image-20200318102240082](http://book.luffycity.com/linux-book/%E9%AB%98%E6%80%A7%E8%83%BDWeb%E9%9B%86%E7%BE%A4%E5%AE%9E%E6%88%98/pic/image-20200318102240082.png)
-
 使用"- "(减号加一个或多个空格)作为列表项，也就是json中的数组。
 
 yaml的列表在playbook中极重要，必须得搞清楚它的写法。
@@ -444,7 +442,7 @@ yaml的列表在playbook中极重要，必须得搞清楚它的写法。
 
 ## 什么时候写列表、什么时候写字典?
 
-![image-20220508191242999](http://book.bikongge.com/sre/2024-linux/image-20220508191242999.png)
+![image-20220508191242999](/ajian/image-20220508191242999.png)
 
 - 具体到playbook中，一般虚拟性的如定义一个临时的变量数据，一般都是用`key: value`形式；
 - 而实质性的如找到机器上的一个具体的文件，一般是定义为列表，如多个文件列表（文件列表每一个都是单独的个体）。
@@ -670,7 +668,7 @@ https://www.acgvod.com/
 JSON 又支持各种数据类型，所以JSON常用于我们日常的 HTTP 交互、数据存储等。
 ```
 
-![image-20220426154854130](http://book.bikongge.com/sre/2024-linux/image-20220426154854130.png)
+![image-20220426154854130](/ajian/image-20220426154854130.png)
 
 ## 天气API接口（json数据）
 
@@ -1030,7 +1028,7 @@ https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html#playbook
 
 （就好比你要拍一部枪战片，电源都开拍了，你连道具枪还没准备好）
 
-![image-20220426170107511](http://book.bikongge.com/sre/2024-linux/image-20220426170107511.png)
+![image-20220426170107511](/ajian/image-20220426170107511.png)
 
 剧本执行过程中会产生响应的输出，根据输出的信息可以掌握剧本是否正确执行，根据输出的措施信息，可以掌握剧本中编写的逻辑错误。
 
