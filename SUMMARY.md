@@ -51,6 +51,7 @@
   - [00-淘宝网的十年架构](00-淘宝网的十年架构.md)
   - [01-综合架构开篇](01-综合架构开篇.md)
   - [02-综合架构环境准备](02-综合架构环境准备.md)
+  - [05-备份工具rsync](05-备份工具rsync.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
