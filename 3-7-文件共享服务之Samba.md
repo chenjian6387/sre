@@ -2,7 +2,7 @@
 
 # samba是什么
 
-![image-20220217190352083](http://book.bikongge.com/sre/2024-linux/image-20220217190352083.png)
+![image-20220217190352083](/ajian/image-20220217190352083.png)
 
 我们所了解过的FTP文件传输，的确可以让不同主机之间进行文件传输，此方式特点是`传输文件`，用户想要在客户端直接修改服务器的数据，还是较为麻烦。
 
@@ -388,7 +388,7 @@ tdis           tid            utimes         logoff         ..
 
 > 1.首先打开windows下的smb功能，然后重启windows
 
-![151645101550_.pic](http://book.bikongge.com/sre/2024-linux/151645101550_.pic.jpg)
+![151645101550_.pic](/ajian/151645101550_.pic.jpg)
 
 访问linux的共享文件夹。
 
@@ -396,14 +396,14 @@ tdis           tid            utimes         logoff         ..
 
 > 2.访问smb的方式
 
-![image-20220217211506643](http://book.bikongge.com/sre/2024-linux/image-20220217211506643.png)
+![image-20220217211506643](/ajian/image-20220217211506643.png)
 
 ------
 
-![image-20220217211522721](http://book.bikongge.com/sre/2024-linux/image-20220217211522721.png)
+![image-20220217211522721](/ajian/image-20220217211522721.png)
 
 > 3.正确连接到smb之后，两边可以共享数据了
 
-![image-20220217211546665](http://book.bikongge.com/sre/2024-linux/image-20220217211546665.png)
+![image-20220217211546665](/ajian/image-20220217211546665.png)
 
 samba是用于在局域网内，实现linux+windows之间的共享服务，我们在生产环境下，更多的还是学习NFS服务，实现linux之间的文件共享，网站架构必备NFS。
