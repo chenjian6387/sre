@@ -1,10 +1,10 @@
 #  09-SSH安全登录
 
-![image-20220421180411182](http://book.bikongge.com/sre/2024-linux/image-20220421180411182.png)
+![image-20220421180411182](/ajian/image-20220421180411182.png)
 
 # 机器准备
 
-![image-20220422190745439](http://book.bikongge.com/sre/2024-linux/image-20220422190745439.png)
+![image-20220422190745439](/ajian/image-20220422190745439.png)
 
 # 什么是SSH
 
@@ -105,11 +105,11 @@ systemctl stop firewalld
 
 ## 打开windows的telnet功能
 
-![image-20220125143009439](http://book.bikongge.com/sre/2024-linux/image-20220125143009439.png)
+![image-20220125143009439](/ajian/image-20220125143009439.png)
 
 ------
 
-![image-20220125143039494](http://book.bikongge.com/sre/2024-linux/image-20220125143039494.png)
+![image-20220125143039494](/ajian/image-20220125143039494.png)
 
 ## 修改linux认证
 
@@ -143,15 +143,15 @@ Kernel 3.10.0-862.el7.x86_64 on an x86_64                                       
 
 抓取telnet登录时发出的网络数据包，也就是输入的账号密码信息
 
-![image-20220421192500878](http://book.bikongge.com/sre/2024-linux/image-20220421192500878.png)
+![image-20220421192500878](/ajian/image-20220421192500878.png)
 
 开始捕获后，开始你的telnet登录操作
 
-![image-20220421192903496](http://book.bikongge.com/sre/2024-linux/image-20220421192903496.png)
+![image-20220421192903496](/ajian/image-20220421192903496.png)
 
 ### 试试抓取ssh的密码
 
-![image-20220421200047572](http://book.bikongge.com/sre/2024-linux/image-20220421200047572.png)
+![image-20220421200047572](/ajian/image-20220421200047572.png)
 
 ### 小结
 
@@ -176,7 +176,7 @@ ssh的作用依然只是进行服务器的安全连接
 堡垒机是利用该ssh特性，加大服务器安全而设计的一种服务器集群形式，以后超哥还会再针对堡垒机业务讲解。
 ```
 
-![image-20220422155303302](http://book.bikongge.com/sre/2024-linux/image-20220422155303302.png)
+![image-20220422155303302](/ajian/image-20220422155303302.png)
 
 为了最大程度的保护公司内网服务器的安全，公司内部有一台服务器做跳板机（JumpServer）。
 
@@ -191,7 +191,7 @@ ssh的作用依然只是进行服务器的安全连接
 
 # 部署ssh要求
 
-![image-20220210144727523](http://book.bikongge.com/sre/2024-linux/image-20220210144727523.png)
+![image-20220210144727523](/ajian/image-20220210144727523.png)
 
 1. 跳板机上为开发人员创建用户，及公共目录，供开发人员使用，并做好权限控制
 2. 所有线上生产服务器搭建sshd服务。
@@ -224,7 +224,7 @@ ssh的作用依然只是进行服务器的安全连接
 
 优势：节约开发成本
 
-![image-20220210145103400](http://book.bikongge.com/sre/2024-linux/image-20220210145103400.png)
+![image-20220210145103400](/ajian/image-20220210145103400.png)
 
 ### 2、C/S架构
 
@@ -234,7 +234,7 @@ ssh的作用依然只是进行服务器的安全连接
 
 优势：安全性较高，一般面向具体的应用
 
-![image-20220210145346035](http://book.bikongge.com/sre/2024-linux/image-20220210145346035.png)
+![image-20220210145346035](/ajian/image-20220210145346035.png)
 
 ### 3、两者区别
 
@@ -270,7 +270,7 @@ https://www.yuchaoit.cn:443
 11176
 ```
 
-![image-20220210150134620](http://book.bikongge.com/sre/2024-linux/image-20220210150134620.png)
+![image-20220210150134620](/ajian/image-20220210150134620.png)
 
 你看，这linux默认有11176个默认端口，表示每一个程序，默认启动后，会打开这个端口，提供访问。
 
@@ -312,13 +312,13 @@ https://baike.baidu.com/item/%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3
 - 优点、该算法加密强度大，几乎无法破解
 - 缺点，密钥不能丢失，拿到加密方式，自然源数据就被破解，暴露给别人了。
 
-![image-20220210151308351](http://book.bikongge.com/sre/2024-linux/image-20220210151308351.png)
+![image-20220210151308351](/ajian/image-20220210151308351.png)
 
 1.于超想和一个美女，杰西卡打招呼，但是又怕被女朋友发现，因此于超用了一个加密算法，比如通过一个`密钥A`来给打招呼的信息加密，得到一个密文数据，其他人是看不懂的，再发给这位外国美女杰西卡。
 
 2.杰西卡收到消息后，必须通过同样的`密钥A`解密，才能看懂这句话，"交个朋友吧"
 
-![image-20220210151741056](http://book.bikongge.com/sre/2024-linux/image-20220210151741056.png)
+![image-20220210151741056](/ajian/image-20220210151741056.png)
 
 3.加密算法是指通过程序对明文计算处理后，得到一个无法直观看懂的数据。
 
@@ -340,7 +340,7 @@ https://baike.baidu.com/item/%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3
 使用公钥加密后的密文，只能使用对应的私钥才能解开，破解的可能性很低。
 ```
 
-![image-20220210154234611](http://book.bikongge.com/sre/2024-linux/image-20220210154234611.png)
+![image-20220210154234611](/ajian/image-20220210154234611.png)
 
 1.杰西卡生成一对公私钥、其中公钥是可以直接发给任何人的，但是私钥必须杰西卡自己保护好，不得泄露；
 
@@ -403,7 +403,7 @@ id_rsa      id_rsa.pub
 /etc/ssh/ssh_host_ecdsa_key  /etc/ssh/ssh_host_ecdsa_key.pub
 ```
 
-![image-20220210165927280](http://book.bikongge.com/sre/2024-linux/image-20220210165927280.png)
+![image-20220210165927280](/ajian/image-20220210165927280.png)
 
 1.SSH客户端向SSH服务端发起登录请求
 
@@ -519,7 +519,7 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL/Sx3bA
 
 #### 对比机器指纹
 
-![image-20220422164206176](http://book.bikongge.com/sre/2024-linux/image-20220422164206176.png)
+![image-20220422164206176](/ajian/image-20220422164206176.png)
 
 ## 6、ssh密码认证小结
 
