@@ -31,7 +31,7 @@
 
 ==软件包管理器==，类似360的软件管家
 
-![image-20220207135732339](http://book.bikongge.com/sre/2024-linux/image-20220207135732339.png)
+![image-20220207135732339](/ajian/image-20220207135732339.png)
 
 ### ㈡ yum源的优点
 
@@ -69,7 +69,7 @@ yum仓库不在本地，在==远程==服务器
 
 ##### ① 虚拟光驱装载镜像文件
 
-![image-20220207135938215](http://book.bikongge.com/sre/2024-linux/image-20220207135938215.png)
+![image-20220207135938215](/ajian/image-20220207135938215.png)
 
 ##### ② 将光盘挂载到本地目录
 
@@ -91,7 +91,7 @@ mount -o ro /dev/sr0 /mnt
               rw代表以read/write=>读写的方式进行挂载
 ```
 
-![image-20220207140355472](http://book.bikongge.com/sre/2024-linux/image-20220207140355472.png)
+![image-20220207140355472](/ajian/image-20220207140355472.png)
 
 ##### ③ 开机自动挂载
 
@@ -159,7 +159,7 @@ CentOS-Base.repo.bak  repo.tgz  rpmorphan-1.14-1.noarch.rpm
 
 ##### ② 修改配置文件
 
-![image-20220207141438168](http://book.bikongge.com/sre/2024-linux/image-20220207141438168.png)
+![image-20220207141438168](/ajian/image-20220207141438168.png)
 
 ```
 [root@yuchao-linux01 ~]# ls /etc/yum.repos.d/ -d
@@ -177,7 +177,7 @@ gpgcheck=0
 [root@yuchao-linux01 ~]#
 ```
 
-![image-20220207140938802](http://book.bikongge.com/sre/2024-linux/image-20220207140938802.png)
+![image-20220207140938802](/ajian/image-20220207140938802.png)
 
 > 看看系统给的repo语法是什么
 
@@ -187,7 +187,7 @@ baseurl=http://nginx.org/packages/centos/7/$basearch/
 $basearch表示当前系统cpu架构，如果系统是32位会找32位软件包；如果64位会找64位软件包
 ```
 
-![image-20220207141120922](http://book.bikongge.com/sre/2024-linux/image-20220207141120922.png)
+![image-20220207141120922](/ajian/image-20220207141120922.png)
 
 ##### ③验证本地yum源
 
@@ -236,7 +236,7 @@ Bad id for repo: root@yuchao-linux01 ~, byte = @ 4
 
 > 例如我们挂载的mnt光盘镜像，找不到nginx软件的rmp包。
 
-![image-20220207142847159](http://book.bikongge.com/sre/2024-linux/image-20220207142847159.png)
+![image-20220207142847159](/ajian/image-20220207142847159.png)
 
 因此需要额外配置yum仓库，去寻找我们需要的nginx这个软件包。
 
@@ -248,7 +248,7 @@ Bad id for repo: root@yuchao-linux01 ~, byte = @ 4
 
 ##### ① 特定软件网络源
 
-![image-20220207142024656](http://book.bikongge.com/sre/2024-linux/image-20220207142024656.png)
+![image-20220207142024656](/ajian/image-20220207142024656.png)
 
 ```
 [root@yuchao-linux01 yum.repos.d]# cat nginx.repo 
@@ -260,7 +260,7 @@ enabled=1
 [root@yuchao-linux01 yum.repos.d]#
 ```
 
-![image-20220207143130888](http://book.bikongge.com/sre/2024-linux/image-20220207143130888.png)
+![image-20220207143130888](/ajian/image-20220207143130888.png)
 
 同理，配置mysql的yum源，也是这样。
 
@@ -268,15 +268,15 @@ enabled=1
 
 ##### base源
 
-![image-20220207143420189](http://book.bikongge.com/sre/2024-linux/image-20220207143420189.png)
+![image-20220207143420189](/ajian/image-20220207143420189.png)
 
 > 简易配置方式，直接使用阿里云源
 
-![image-20220207143531873](http://book.bikongge.com/sre/2024-linux/image-20220207143531873.png)
+![image-20220207143531873](/ajian/image-20220207143531873.png)
 
 ------
 
-![image-20220207143555519](http://book.bikongge.com/sre/2024-linux/image-20220207143555519.png)
+![image-20220207143555519](/ajian/image-20220207143555519.png)
 
 ```
 [root@yuchao-linux01 yum.repos.d]# wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
@@ -298,7 +298,7 @@ Saving to: ‘/etc/yum.repos.d/CentOS-Base.repo’
 CentOS-Base.repo  CentOS-Base.repo.bak  local.repo  nginx.repo  repo.tgz  rpmorphan-1.14-1.noarch.rpm
 ```
 
-![image-20220207143716959](http://book.bikongge.com/sre/2024-linux/image-20220207143716959.png)
+![image-20220207143716959](/ajian/image-20220207143716959.png)
 
 ##### epel源
 
@@ -362,7 +362,7 @@ wget https://repo.mysql.com/mysql-community-release-el7.rpm
 rpm -ivh mysql-community-release-el7.rpm
 ```
 
-![image-20220207145631067](http://book.bikongge.com/sre/2024-linux/image-20220207145631067.png)
+![image-20220207145631067](/ajian/image-20220207145631067.png)
 
 > 卸载该软件，repo文件也会自动删除
 
@@ -460,7 +460,7 @@ Sqlite DBs complete
 [root@yuchao-linux01 software]#
 ```
 
-![image-20220207152528219](http://book.bikongge.com/sre/2024-linux/image-20220207152528219.png)
+![image-20220207152528219](/ajian/image-20220207152528219.png)
 
 ```
 5.关闭所有的网络仓库，让yum只能读取自建的yum仓库
@@ -546,7 +546,7 @@ gpgcheck=0
 [root@yuchao-linux01 yum.repos.d]# yum clean all
 ```
 
-![image-20220207153208871](http://book.bikongge.com/sre/2024-linux/image-20220207153208871.png)
+![image-20220207153208871](/ajian/image-20220207153208871.png)
 
 > 看看是否可以安装mysql，请注意我们要求安装的是指定版本
 >
@@ -565,17 +565,17 @@ Error: Nothing to do
 
 如果你直接安装mysql这个名字的软件包，出现如下情况
 
-![image-20220207153715287](http://book.bikongge.com/sre/2024-linux/image-20220207153715287.png)
+![image-20220207153715287](/ajian/image-20220207153715287.png)
 
 > 因此，本地光盘源，这个没法解决问题。
 
 ## 二、使用阿里云提供的yum仓库
 
-![image-20220207154205048](http://book.bikongge.com/sre/2024-linux/image-20220207154205048.png)
+![image-20220207154205048](/ajian/image-20220207154205048.png)
 
 > 发现阿里云yum仓库默认提供的mysql版本，最高也只到了5.5.68，因此也被排除了。
 
-![image-20220207154321387](http://book.bikongge.com/sre/2024-linux/image-20220207154321387.png)
+![image-20220207154321387](/ajian/image-20220207154321387.png)
 
 ## 三、配置mysql官网yum仓库
 
@@ -588,7 +588,7 @@ Error: Nothing to do
 https://dev.mysql.com/downloads/repo/yum/
 ```
 
-![image-20220207154643924](http://book.bikongge.com/sre/2024-linux/image-20220207154643924.png)
+![image-20220207154643924](/ajian/image-20220207154643924.png)
 
 ### 安装mysql官方仓库
 
@@ -624,13 +624,13 @@ bak-repo  mysql80-community-release-el7-5.noarch.rpm  mysql-community.repo  mysq
 [root@yuchao-linux01 yum.repos.d]#
 ```
 
-![image-20220207154954526](http://book.bikongge.com/sre/2024-linux/image-20220207154954526.png)
+![image-20220207154954526](/ajian/image-20220207154954526.png)
 
 ### 修改mysql仓库url
 
 当前这个mysql仓库的地址指向的是8版本，我们得改为合适我们需要的5.6.43版本。
 
-![image-20220207155320149](http://book.bikongge.com/sre/2024-linux/image-20220207155320149.png)
+![image-20220207155320149](/ajian/image-20220207155320149.png)
 
 ```
 [root@yuchao-linux01 yum.repos.d]# head  mysql-community.repo 
@@ -645,7 +645,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 
 并且需要关闭其他的仓库版本。
 
-![image-20220207160333215](http://book.bikongge.com/sre/2024-linux/image-20220207160333215.png)
+![image-20220207160333215](/ajian/image-20220207160333215.png)
 
 ### 安装mysql-5.6.43版本
 
@@ -653,7 +653,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 >
 > 因为mysql安装，依赖一些系统基础库，因此需要加上本地源，做支撑。
 
-![image-20220207160946147](http://book.bikongge.com/sre/2024-linux/image-20220207160946147.png)
+![image-20220207160946147](/ajian/image-20220207160946147.png)
 
 安装过程
 
@@ -661,7 +661,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 [root@yuchao-linux01 ~]#  yum install mysql-community-server-5.6.43
 ```
 
-![image-20220207161213582](http://book.bikongge.com/sre/2024-linux/image-20220207161213582.png)
+![image-20220207161213582](/ajian/image-20220207161213582.png)
 
 ```
 [root@yuchao-linux01 yum.repos.d]# ll
@@ -678,7 +678,7 @@ drwx-wx-wx 2 root root   202 Feb  7 16:08 bak-repo
 
 安装成功
 
-![image-20220207161253875](http://book.bikongge.com/sre/2024-linux/image-20220207161253875.png)
+![image-20220207161253875](/ajian/image-20220207161253875.png)
 
 ## 四、做好离线安装工作
 
@@ -733,7 +733,7 @@ total 84560
 [root@yuchao-linux01 yum.repos.d]# systemctl start mysql
 ```
 
-![image-20220207163527756](http://book.bikongge.com/sre/2024-linux/image-20220207163527756.png)
+![image-20220207163527756](/ajian/image-20220207163527756.png)
 
 # yum扩展补充
 
@@ -769,7 +769,7 @@ gpgcheck=0
 priority=1
 ```
 
-![image-20220207165420819](http://book.bikongge.com/sre/2024-linux/image-20220207165420819.png)
+![image-20220207165420819](/ajian/image-20220207165420819.png)
 
 ## 2、yum缓存软件包
 
@@ -778,7 +778,7 @@ priority=1
 - 只需要开启yum缓存功能即可
 - 通过修改配置文件开启yum缓存功能，如下：
 
-![image-20220207170842158](http://book.bikongge.com/sre/2024-linux/image-20220207170842158.png)
+![image-20220207170842158](/ajian/image-20220207170842158.png)
 
 # 课后复习
 
@@ -892,7 +892,7 @@ rpm -checksig   package.rpm
 
 ## 如何正确获取软件仓库的包名
 
-![5901648714834_.pic](http://book.bikongge.com/sre/2024-linux/5901648714834_.pic.jpg)
+![5901648714834_.pic](/ajian/5901648714834_.pic.jpg)
 
 # 课后作业
 
