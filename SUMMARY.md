@@ -40,6 +40,7 @@
   - [3-21-awk练习题](3-21-awk练习题.md)
   - [3-22-什么是shell](3-22-什么是shell.md)
   - [3-23-Shell快速入门](3-23-Shell快速入门.md)
+  - [3-3-SSH远程安全登录](3-3-SSH远程安全登录.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
