@@ -48,7 +48,7 @@
   - [3-8文件共享服务之NFS](3-8文件共享服务之NFS.md)
   - [3-9-域名管理系统之DNS](3-9-域名管理系统之DNS.md)
 * [03-网站集群架构](03-网站集群架构.md)
-  - [00-淘宝网的十年架构](淘宝网的十年架构.md)
+  - [00-淘宝网的十年架构](00-淘宝网的十年架构.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
