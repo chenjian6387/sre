@@ -53,6 +53,7 @@
   - [02-综合架构环境准备](02-综合架构环境准备.md)
   - [05-备份工具rsync](05-备份工具rsync.md)
   - [06-备份任务实战](06-备份任务实战.md)
+  - [07-共享存储服务NFS](07-共享存储服务NFS.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
