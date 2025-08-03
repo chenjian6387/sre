@@ -25,7 +25,7 @@
 
 # 1.编程语言
 
-![image-20220318195320494](http://book.bikongge.com/sre/2024-linux/image-20220318195320494.png)
+![image-20220318195320494](/ajian/image-20220318195320494.png)
 
 ## 1.1 编译型语言
 
@@ -65,7 +65,7 @@ hello_yc: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked
 于超老师带你学Linux
 ```
 
-![image-20220318200008074](http://book.bikongge.com/sre/2024-linux/image-20220318200008074.png)
+![image-20220318200008074](/ajian/image-20220318200008074.png)
 
 ## 1.2 解释型语言
 
