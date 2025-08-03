@@ -42,6 +42,7 @@
   - [3-23-Shell快速入门](3-23-Shell快速入门.md)
   - [3-3-SSH远程安全登录](3-3-SSH远程安全登录.md)
   - [3-4-Rsync数据同步服务](3-4-Rsync数据同步服务.md)
+  - [3-5-Inotify实时数据同步](3-5-Inotify实时数据同步.md)
 * [03-网站集群架构](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
