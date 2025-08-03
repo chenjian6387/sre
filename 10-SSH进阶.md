@@ -52,7 +52,7 @@ Last login: Fri Apr 22 17:33:13 2022
 
 使用xshell等工具
 
-![image-20220422174637286](http://book.bikongge.com/sre/2024-linux/image-20220422174637286.png)
+![image-20220422174637286](/ajian/image-20220422174637286.png)
 
 ## 2、踢掉用户下线pkill
 
@@ -96,7 +96,7 @@ root       2127   2028  0 17:50 pts/1    00:00:00 grep --color=auto ssh
 2.机器A得发送自己的公钥给机器B
 ```
 
-![公钥免密登录](http://book.bikongge.com/sre/2024-linux/%E5%85%AC%E9%92%A5%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95.png)
+![公钥免密登录](/ajian/%E5%85%AC%E9%92%A5%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95.png)
 
 ```
 1.master-61机器生成一对公私钥
@@ -114,7 +114,7 @@ root       2127   2028  0 17:50 pts/1    00:00:00 grep --color=auto ssh
 
 但是于超老师给你讲清楚原理，了解其背后的通信过程，无论是排错，还是ssh出现安全问题，回头思考这个流程，就能摸索出解决方案。
 
-![image-20220211155415575](http://book.bikongge.com/sre/2024-linux/image-20220211155415575.png)
+![image-20220211155415575](/ajian/image-20220211155415575.png)
 
 ### 免密登录步骤
 
@@ -369,7 +369,7 @@ Last login: Sat Apr 23 17:54:21 2022 from 172.16.1.61
 
 - des 对称的公钥加密算法,安全低，数据传输速度快；使用同一个秘钥进行加密或解密
 
-![image-20220211165843700](http://book.bikongge.com/sre/2024-linux/image-20220211165843700.png)
+![image-20220211165843700](/ajian/image-20220211165843700.png)
 
 ### 非对称加密算法（ssh连接就是非对称加密）
 
@@ -377,11 +377,11 @@ rsa 非对称的公钥加密算法,安全,数据传输速度慢 ，SSH默认的�
 
 上面的数据是加密了，这个钥匙，如果丢了怎么办？被别人恶意获取到不还是危险吗？
 
-![image-20220211171802522](http://book.bikongge.com/sre/2024-linux/image-20220211171802522.png)
+![image-20220211171802522](/ajian/image-20220211171802522.png)
 
 ### 中间人攻击（了解）
 
-![image-20220211172540491](http://book.bikongge.com/sre/2024-linux/image-20220211172540491.png)
+![image-20220211172540491](/ajian/image-20220211172540491.png)
 
 【Client如何保证自己接收到的公钥就是来源于目标Server机器的？】
 
@@ -687,7 +687,7 @@ done
 >
 > 2.手敲部署过程，别复制粘贴，否则你永远搞不清其中每一个命令的语法，可能遇见的坑。
 
-![备份项目综合架构要求](http://book.bikongge.com/sre/2024-linux/%E5%A4%87%E4%BB%BD%E9%A1%B9%E7%9B%AE%E7%BB%BC%E5%90%88%E6%9E%B6%E6%9E%84%E8%A6%81%E6%B1%82.png)
+![备份项目综合架构要求](/ajian/%E5%A4%87%E4%BB%BD%E9%A1%B9%E7%9B%AE%E7%BB%BC%E5%90%88%E6%9E%B6%E6%9E%84%E8%A6%81%E6%B1%82.png)
 
 ## 批量修改sshd配置文件
 
