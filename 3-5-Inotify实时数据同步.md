@@ -4,15 +4,15 @@
 
 网站集群架构中，数据永远是最核心且重要的，数据丢失，将会给企业造成巨大损失
 
-![image-20220215182149454](http://book.bikongge.com/sre/2024-linux/image-20220215182149454.png)
+![image-20220215182149454](/ajian/image-20220215182149454.png)
 
 ------
 
-![image-20220215182202013](http://book.bikongge.com/sre/2024-linux/image-20220215182202013.png)
+![image-20220215182202013](/ajian/image-20220215182202013.png)
 
 ------
 
-![image-20220215182344999](http://book.bikongge.com/sre/2024-linux/image-20220215182344999.png)
+![image-20220215182344999](/ajian/image-20220215182344999.png)
 
 # 数据备份方案
 
@@ -41,11 +41,11 @@
 
 rsync+crond定时备份
 
-![image-20220215182752408](http://book.bikongge.com/sre/2024-linux/image-20220215182752408.png)
+![image-20220215182752408](/ajian/image-20220215182752408.png)
 
 rsync+inotify实时同步
 
-![image-20220215183312201](http://book.bikongge.com/sre/2024-linux/image-20220215183312201.png)
+![image-20220215183312201](/ajian/image-20220215183312201.png)
 
 # 实时同步准备
 
@@ -89,7 +89,7 @@ Inotify机制软件工作流程如下
 >
 > 以rsync守护进程模式部署，且以远程数据同步方式，由client向server推送数据。
 
-![image-20220216102658896](http://book.bikongge.com/sre/2024-linux/image-20220216102658896.png)
+![image-20220216102658896](/ajian/image-20220216102658896.png)
 
 > 我们这里设计的形式是，数据推送
 
@@ -115,7 +115,7 @@ Inotify机制软件工作流程如下
 
 7.设置rsync开机启动
 
-![image-20220216104329862](http://book.bikongge.com/sre/2024-linux/image-20220216104329862.png)
+![image-20220216104329862](/ajian/image-20220216104329862.png)
 
 ### 部署流程
 
@@ -215,7 +215,7 @@ tail -1 /etc/bashrc
 export RSYNC_PASSWORD=chaoge
 ```
 
-![image-20220216112239775](http://book.bikongge.com/sre/2024-linux/image-20220216112239775.png)
+![image-20220216112239775](/ajian/image-20220216112239775.png)
 
 ### Client < Server ，数据拉取
 
@@ -248,7 +248,7 @@ total size is 10  speedup is 0.03
 [root@yuchao-dev01 tmp]#
 ```
 
-![image-20220216113524082](http://book.bikongge.com/sre/2024-linux/image-20220216113524082.png)
+![image-20220216113524082](/ajian/image-20220216113524082.png)
 
 ## 准备部署inotify-tools
 
@@ -413,7 +413,7 @@ IN_MOVE_SELF
 %e：表示发生的事件
 ```
 
-![image-20220216135050901](http://book.bikongge.com/sre/2024-linux/image-20220216135050901.png)
+![image-20220216135050901](/ajian/image-20220216135050901.png)
 
 > 指定事件，上面是默认检测所有的事件
 >
@@ -426,15 +426,15 @@ IN_MOVE_SELF
 -e： 即“–event”， 通过此参数可以指定要监控的事件，常见的事件有modify、delete、create、close_write、move、close、unmount和attrib等
 ```
 
-![image-20220216135548032](http://book.bikongge.com/sre/2024-linux/image-20220216135548032.png)
+![image-20220216135548032](/ajian/image-20220216135548032.png)
 
 命令中只监控了create的事件，并没有检测其他事件，因此也只有create会被inotify监控到 -e： 即“–event”， 通过此参数可以指定要监控的事件，常见的事件有modify、delete、create、close_write、move、close、unmount和attrib等
 
-![image-20220216135707350](http://book.bikongge.com/sre/2024-linux/image-20220216135707350.png)
+![image-20220216135707350](/ajian/image-20220216135707350.png)
 
 ------
 
-![image-20220216140111119](http://book.bikongge.com/sre/2024-linux/image-20220216140111119.png)
+![image-20220216140111119](/ajian/image-20220216140111119.png)
 
 ## 测试delete事件
 
@@ -447,7 +447,7 @@ IN_MOVE_SELF
 /data/ 和超哥学Linux DELETE,ISDIR
 ```
 
-![image-20220216140503144](http://book.bikongge.com/sre/2024-linux/image-20220216140503144.png)
+![image-20220216140503144](/ajian/image-20220216140503144.png)
 
 ## 测试move事件
 
@@ -457,7 +457,7 @@ IN_MOVE_SELF
 [root@yuchao-dev01 data]# inotifywait -mrq --format '%w %f %e' -e move /data
 ```
 
-![image-20220216141029384](http://book.bikongge.com/sre/2024-linux/image-20220216141029384.png)
+![image-20220216141029384](/ajian/image-20220216141029384.png)
 
 > 可以知道，inotiify的作用是，基于不同的事件，检测文件夹中，文件的变化。
 >
@@ -578,7 +578,7 @@ attrib    属性信息
 
 1.在开发服务器上，写入新代码文件
 
-![image-20220216153159358](http://book.bikongge.com/sre/2024-linux/image-20220216153159358.png)
+![image-20220216153159358](/ajian/image-20220216153159358.png)
 
 # 课后作业
 
