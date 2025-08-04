@@ -68,6 +68,7 @@
   - [23-1-nginx虚拟主机实战](23-1-nginx虚拟主机实战.md)
   - [24-nginx高级篇](24-nginx高级篇.md)
   - [25-LNMP黄金架构](25-LNMP黄金架构.md)
+  - [26-网站集群拆分](26-网站集群拆分.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
