@@ -2,7 +2,7 @@
 
 # 基于nginx部署网站
 
-![image-20220507190942536](http://book.bikongge.com/sre/2024-linux/image-20220507190942536.png)
+![image-20220507190942536](/ajian/image-20220507190942536.png)
 
 虚拟主机指的就是一个独立的站点，具有独立的域名，有完整的www服务，例如网站、FTP、邮件等。
 
@@ -79,7 +79,7 @@ server {
 
 ### 查看主页
 
-![image-20220507195944431](http://book.bikongge.com/sre/2024-linux/image-20220507195944431.png)
+![image-20220507195944431](/ajian/image-20220507195944431.png)
 
 ### 静态资源如图片等
 
@@ -89,7 +89,7 @@ wget -O 1.gif https://p5.itc.cn/images01/20210329/1ddda8eb9945487f9bdfe951e75a17
 wget -O 2.gif https://p1.itc.cn/images01/20210329/f9a37ab55ba04ff692bccc61bc1cd829.gif
 ```
 
-![image-20220507204233240](http://book.bikongge.com/sre/2024-linux/image-20220507204233240.png)
+![image-20220507204233240](/ajian/image-20220507204233240.png)
 
 ### 静态文本数据
 
@@ -97,7 +97,7 @@ wget -O 2.gif https://p1.itc.cn/images01/20210329/f9a37ab55ba04ff692bccc61bc1cd8
 
 若是其他类型，nginx提供下载功能；
 
-![image-20220507204355201](http://book.bikongge.com/sre/2024-linux/image-20220507204355201.png)
+![image-20220507204355201](/ajian/image-20220507204355201.png)
 
 ## 2.基于IP多虚拟主机
 
@@ -182,7 +182,7 @@ server {
 
 只需要你单独配置DNS服务器，将主机名对应到正确的IP地址，修改Nginx配置，可以识别到不同的主机即可，这样就可以使得多个虚拟主机用同一个IP，解决了IP不足的隐患。
 
-![image-20220507205303909](http://book.bikongge.com/sre/2024-linux/image-20220507205303909.png)
+![image-20220507205303909](/ajian/image-20220507205303909.png)
 
 ### 需要先做好域名解析
 
@@ -237,7 +237,7 @@ server {
 [root@web-9 /usr/share/nginx/html]#systemctl restart nginx
 ```
 
-![image-20220507210521385](http://book.bikongge.com/sre/2024-linux/image-20220507210521385.png)
+![image-20220507210521385](/ajian/image-20220507210521385.png)
 
 ## 4.基于多端口的虚拟主机
 
@@ -279,7 +279,7 @@ server {
 
 ### 重启查看多端口虚拟主机
 
-![image-20220507210840153](http://book.bikongge.com/sre/2024-linux/image-20220507210840153.png)
+![image-20220507210840153](/ajian/image-20220507210840153.png)
 
 ## 5.虚拟主机配置文件优化(include)
 
@@ -357,7 +357,7 @@ server {
 
 ### 查看页面
 
-![image-20220508114031357](http://book.bikongge.com/sre/2024-linux/image-20220508114031357.png)
+![image-20220508114031357](/ajian/image-20220508114031357.png)
 
 # 二、创建nginx访问日志
 
@@ -394,11 +394,11 @@ $http_x_forwarded_for 可以获取客户端真实IP地址
 
 ## 2.日志格式参考
 
-![image-20220508114914425](http://book.bikongge.com/sre/2024-linux/image-20220508114914425.png)
+![image-20220508114914425](/ajian/image-20220508114914425.png)
 
 ## 3.生成日志
 
-![image-20220508115345194](http://book.bikongge.com/sre/2024-linux/image-20220508115345194.png)
+![image-20220508115345194](/ajian/image-20220508115345194.png)
 
 ```
 1.检测日志
@@ -532,7 +532,7 @@ server {
 
 ## 4.日志记录结果
 
-![image-20220508121048214](http://book.bikongge.com/sre/2024-linux/image-20220508121048214.png)
+![image-20220508121048214](/ajian/image-20220508121048214.png)
 
 # 三、错误日志
 
@@ -647,7 +647,7 @@ error.log   error.www.yuchaoit.log    www.yuchaoit.log
 
 运维可以根据该日志找出当前服务器存在的错误问题，进行修复；
 
-![image-20220508123050035](http://book.bikongge.com/sre/2024-linux/image-20220508123050035.png)
+![image-20220508123050035](/ajian/image-20220508123050035.png)
 
 # 四、404页面优化
 
@@ -665,7 +665,7 @@ error_page 404 https://error.taobao.com/app/tbhome/common/error.html;
 
 默认404页面很丑
 
-![image-20220508124517199](http://book.bikongge.com/sre/2024-linux/image-20220508124517199.png)
+![image-20220508124517199](/ajian/image-20220508124517199.png)
 
 优化之后
 
@@ -697,7 +697,7 @@ server {
 <h1 style='red'>您访问的地址有误，请正确查找 </h1>
 ```
 
-![image-20220508125452027](http://book.bikongge.com/sre/2024-linux/image-20220508125452027.png)
+![image-20220508125452027](/ajian/image-20220508125452027.png)
 
 ## 2.指定另一个url
 
@@ -722,4 +722,4 @@ server {
 ~
 ```
 
-![image-20220508125645085](http://book.bikongge.com/sre/2024-linux/image-20220508125645085.png)
+![image-20220508125645085](/ajian/image-20220508125645085.png)
