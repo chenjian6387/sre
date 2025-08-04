@@ -65,6 +65,7 @@
   - [21-静态资源加速cdn篇](21-静态资源加速cdn篇.md)
   - [22-web通信协议篇](22-web通信协议篇.md)
   - [23-nginx基础篇](23-nginx基础篇.md)
+  - [23-1-nginx虚拟主机实战](23-1-nginx虚拟主机实战.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
