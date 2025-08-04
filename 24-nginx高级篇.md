@@ -111,7 +111,7 @@ Mon May  9 00:00:01 CST 2022
 4.查看备份的日志
 ```
 
-![image-20220508151958104](http://book.bikongge.com/sre/2024-linux/image-20220508151958104.png)
+![image-20220508151958104](/ajian/image-20220508151958104.png)
 
 ## 4.写入定时任务
 
@@ -343,7 +343,7 @@ systemctl restart nginx
 
 ## 3.访问目录索引
 
-![image-20220508161036151](http://book.bikongge.com/sre/2024-linux/image-20220508161036151.png)
+![image-20220508161036151](/ajian/image-20220508161036151.png)
 
 # 四、连接数监控
 
@@ -421,7 +421,7 @@ EOF
 
 ## 4.访问状态
 
-![image-20220508165638886](http://book.bikongge.com/sre/2024-linux/image-20220508165638886.png)
+![image-20220508165638886](/ajian/image-20220508165638886.png)
 
 # 五、基于IP的访问限制
 
@@ -469,11 +469,11 @@ server {
 }
 ```
 
-![image-20220509142730289](http://book.bikongge.com/sre/2024-linux/image-20220509142730289.png)
+![image-20220509142730289](/ajian/image-20220509142730289.png)
 
 但是虚拟机，走内网环境是可以通的。
 
-![image-20220509143126705](http://book.bikongge.com/sre/2024-linux/image-20220509143126705.png)
+![image-20220509143126705](/ajian/image-20220509143126705.png)
 
 ## 3.只允许windows访问，其他人拒绝
 
@@ -503,11 +503,11 @@ server {
 
 windows可访问
 
-![image-20220509143416816](http://book.bikongge.com/sre/2024-linux/image-20220509143416816.png)
+![image-20220509143416816](/ajian/image-20220509143416816.png)
 
 linux不可访问
 
-![image-20220509143455557](http://book.bikongge.com/sre/2024-linux/image-20220509143455557.png)
+![image-20220509143455557](/ajian/image-20220509143455557.png)
 
 # 六、基于用户认证的访问限制
 
@@ -582,11 +582,11 @@ server {
 
 只有www.yuchaoit.cn站点被加了密码。
 
-![image-20220509162007430](http://book.bikongge.com/sre/2024-linux/image-20220509162007430.png)
+![image-20220509162007430](/ajian/image-20220509162007430.png)
 
 其他未设置认证的可以直接访问。
 
-![image-20220509162024150](http://book.bikongge.com/sre/2024-linux/image-20220509162024150.png)
+![image-20220509162024150](/ajian/image-20220509162024150.png)
 
 # 七、nginx请求限制
 
@@ -598,7 +598,7 @@ https://nginx.org/en/docs/http/ngx_http_limit_req_module.html
 
 ## 2.配置语法
 
-![image-20220509164905381](http://book.bikongge.com/sre/2024-linux/image-20220509164905381.png)
+![image-20220509164905381](/ajian/image-20220509164905381.png)
 
 ```
 限速规则语法
@@ -667,7 +667,7 @@ server {
 [root@master-61 ~]#for i in {1..10};do curl -I www.yuchaoit.cn;sleep 1;done
 ```
 
-![image-20220509173510601](http://book.bikongge.com/sre/2024-linux/image-20220509173510601.png)
+![image-20220509173510601](/ajian/image-20220509173510601.png)
 
 ### 超速访问情况
 
@@ -675,7 +675,7 @@ server {
 [root@master-61 ~]#for i in {1..20};do curl -I www.yuchaoit.cn;sleep 0.5 ;done
 ```
 
-![image-20220509173936426](http://book.bikongge.com/sre/2024-linux/image-20220509173936426.png)
+![image-20220509173936426](/ajian/image-20220509173936426.png)
 
 # 八、nginx内置变量
 
@@ -1011,7 +1011,7 @@ location /documents/
 location ^~ /images/
 ```
 
-![image-20220509200857941](http://book.bikongge.com/sre/2024-linux/image-20220509200857941.png)
+![image-20220509200857941](/ajian/image-20220509200857941.png)
 
 ## 5.实际工作使用
 
@@ -1113,7 +1113,7 @@ server {
 
 ## 8.图解root、alias
 
-![image-20220510142114882](http://book.bikongge.com/sre/2024-linux/image-20220510142114882.png)
+![image-20220510142114882](/ajian/image-20220510142114882.png)
 
 ```
 老铁们，我做的对吗？
@@ -1320,7 +1320,7 @@ curl -X method  --data '数据'
 
 测试浏览器、分别用IE浏览器、Chrome测试。
 
-![image-20220510145737680](http://book.bikongge.com/sre/2024-linux/image-20220510145737680.png)
+![image-20220510145737680](/ajian/image-20220510145737680.png)
 
 ------
 
@@ -1423,7 +1423,7 @@ server {
 
 #### 精确匹配访问
 
-![image-20220510155028733](http://book.bikongge.com/sre/2024-linux/image-20220510155028733.png)
+![image-20220510155028733](/ajian/image-20220510155028733.png)
 
 #### 随便输入url，访问错误的内容
 
@@ -1433,7 +1433,7 @@ server {
 默认会跳转301，页面重定向
 ```
 
-![image-20220510155110571](http://book.bikongge.com/sre/2024-linux/image-20220510155110571.png)
+![image-20220510155110571](/ajian/image-20220510155110571.png)
 
 ### 设置访问客户端
 
@@ -1695,7 +1695,7 @@ systemctl restart nginx
 2.新域名的请求提示是304，表示请求正确，但是这个文件没有任何变化
 ```
 
-![image-20220510174454473](http://book.bikongge.com/sre/2024-linux/image-20220510174454473.png)
+![image-20220510174454473](/ajian/image-20220510174454473.png)
 
 ```
 公司的旧网站 www.pythonav.cn依然提供访问，但是用户访问后，自动跳转到了新网站
@@ -1766,7 +1766,7 @@ systemctl restart nginx
 2.浏览器测试
 ```
 
-![image-20220510182106788](http://book.bikongge.com/sre/2024-linux/image-20220510182106788.png)
+![image-20220510182106788](/ajian/image-20220510182106788.png)
 
 ```
 发生了302跳转，表示临时重定向
@@ -1993,7 +1993,7 @@ systemctl restart nginx
 
 默认页面，location匹配返回官网页面。
 
-![image-20220510195620306](http://book.bikongge.com/sre/2024-linux/image-20220510195620306.png)
+![image-20220510195620306](/ajian/image-20220510195620306.png)
 
 访问blog路径
 
@@ -2002,7 +2002,7 @@ http://www.yuchaoit.cn/blog/index.html
 查看是否会跳转
 ```
 
-![image-20220510195916508](http://book.bikongge.com/sre/2024-linux/image-20220510195916508.png)
+![image-20220510195916508](/ajian/image-20220510195916508.png)
 
 ## 6.8 生产rewrite实践（二）
 
@@ -2094,7 +2094,7 @@ hello ,i am www 官网 ~~~~~~~
 http://www.yuchaoit.cn/
 ```
 
-![image-20220510202758586](http://book.bikongge.com/sre/2024-linux/image-20220510202758586.png)
+![image-20220510202758586](/ajian/image-20220510202758586.png)
 
 ------
 
@@ -2102,11 +2102,11 @@ http://www.yuchaoit.cn/
 https://www.yuchaoit.cn/
 ```
 
-![image-20220510202921559](http://book.bikongge.com/sre/2024-linux/image-20220510202921559.png)
+![image-20220510202921559](/ajian/image-20220510202921559.png)
 
 点击高级继续访问
 
-![image-20220510203013088](http://book.bikongge.com/sre/2024-linux/image-20220510203013088.png)
+![image-20220510203013088](/ajian/image-20220510203013088.png)
 
 此时网站已经是支持https的了，但是浏览器并不信任，因此你需要去阿里云购买一个公网信任的证书即可。
 
@@ -2126,7 +2126,7 @@ server {
 
 ### 5.打开无痕浏览器，查看访问
 
-![image-20220510203456644](http://book.bikongge.com/sre/2024-linux/image-20220510203456644.png)
+![image-20220510203456644](/ajian/image-20220510203456644.png)
 
 # 6.9 开启nginxrewrite重写日志功能
 
