@@ -73,6 +73,7 @@
   - [27-1-负载均衡策略](27-1-负载均衡策略.md)
   - [28-HTTPS](28-HTTPS.md)
   - [29-keepalived高可用性负载均衡](29-keepalived高可用性负载均衡.md)
+  - [30-部署Python网站](30-部署Python网站.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
