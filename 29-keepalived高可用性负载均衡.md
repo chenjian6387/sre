@@ -5,11 +5,11 @@
 http://www.keepalived.org/
 ```
 
-![利用KeepAlived 实现3CX 高可用- 58VOIP企业通信博客](http://book.bikongge.com/sre/2024-linux/Keepalived-LOGO280.png)
+![利用KeepAlived 实现3CX 高可用- 58VOIP企业通信博客](/ajian/Keepalived-LOGO280.png)
 
 咱们现在已经进入到期中综合架构的最后一个环节了。
 
-![image-20220517183606616](http://book.bikongge.com/sre/2024-linux/image-20220517183606616.png)
+![image-20220517183606616](/ajian/image-20220517183606616.png)
 
 # 为什么需要keepalived
 
@@ -51,7 +51,7 @@ VRRP将多台设备组成一个虚拟设备，通过配置虚拟设备的IP地�
 
 如下图所示，当Master设备故障时，发往缺省网关的流量将由Backup设备进行转发。
 
-![image-20220517193450919](http://book.bikongge.com/sre/2024-linux/image-20220517193450919.png)
+![image-20220517193450919](/ajian/image-20220517193450919.png)
 
 # VRRP工作原理
 
@@ -67,7 +67,7 @@ VRRP协议中定义了三种状态机：初始状态（Initialize）、活动状
 | Master     | 当VRRP设备处于Master状态时，它将会承担虚拟路由设备的所有转发工作，并定期向整个虚拟内发送VRRP通告报文。 |
 | Backup     | 当VRRP设备处于Backup状态时，它不会承担虚拟路由设备的转发工作，并定期接受Master设备的VRRP通告报文，判断Master的工作状态是否正常。 |
 
-![image-20220517194132287](http://book.bikongge.com/sre/2024-linux/image-20220517194132287.png)
+![image-20220517194132287](/ajian/image-20220517194132287.png)
 
 # VRRP配置前提条件
 
@@ -239,7 +239,7 @@ systemctl start keepalived
 
 # 6.结合nginx测试(两台lb)
 
-![image-20220517205450153](http://book.bikongge.com/sre/2024-linux/image-20220517205450153.png)
+![image-20220517205450153](/ajian/image-20220517205450153.png)
 
 ## 6.1 lb-5
 
@@ -337,7 +337,7 @@ echo '你好，我是web-8，你也是来学linux的吗?'  > /code/index.html
 
 # 7.客户端访问（访问VIP）
 
-![image-20220517211719329](http://book.bikongge.com/sre/2024-linux/image-20220517211719329.png)
+![image-20220517211719329](/ajian/image-20220517211719329.png)
 
 # 8.模拟master故障，查看VIP
 
@@ -442,15 +442,15 @@ backup机器的VIP是否消失。
 
 ## 单播流量走向图
 
-![image-20220518143705130](http://book.bikongge.com/sre/2024-linux/image-20220518143705130.png)
+![image-20220518143705130](/ajian/image-20220518143705130.png)
 
 ## 广播数据流
 
-![image-20220518144103582](http://book.bikongge.com/sre/2024-linux/image-20220518144103582.png)
+![image-20220518144103582](/ajian/image-20220518144103582.png)
 
 ## 组播数据流
 
-![image-20220518144257051](http://book.bikongge.com/sre/2024-linux/image-20220518144257051.png)
+![image-20220518144257051](/ajian/image-20220518144257051.png)
 
 ## keepalived组播地址
 
@@ -464,7 +464,7 @@ keepalived默认使用VRRP虚拟路由器冗余协议，在默认组播224.0.0.1
 
 ## 抓包查看VRRP
 
-![image-20220518144557047](http://book.bikongge.com/sre/2024-linux/image-20220518144557047.png)
+![image-20220518144557047](/ajian/image-20220518144557047.png)
 
 ## 停止master试试
 
@@ -474,11 +474,11 @@ keepalived默认使用VRRP虚拟路由器冗余协议，在默认组播224.0.0.1
 
 ## 心跳切换原理
 
-![image-20220518144931148](http://book.bikongge.com/sre/2024-linux/image-20220518144931148.png)
+![image-20220518144931148](/ajian/image-20220518144931148.png)
 
 ## backup切换原理
 
-![image-20220518145050506](http://book.bikongge.com/sre/2024-linux/image-20220518145050506.png)
+![image-20220518145050506](/ajian/image-20220518145050506.png)
 
 # 抓包工具查看脑裂
 
@@ -506,7 +506,7 @@ tcpdump -nn -i any host 224.0.0.18
 
 开启防火墙后，导致lb-5没法和lb-6正常通信，backup以为master挂了，抢夺VIP资源。
 
-![image-20220519173610788](http://book.bikongge.com/sre/2024-linux/image-20220519173610788.png)
+![image-20220519173610788](/ajian/image-20220519173610788.png)
 
 ## 此时高可用集群就已故障，无法正常漂移切换VIP了。
 
@@ -535,7 +535,7 @@ systemctl restart firewalld
 iptables -I INPUT -i eth0 -d 224.0.0.0/8 -p vrrp -j ACCEPT
 ```
 
-![image-20220519181103252](http://book.bikongge.com/sre/2024-linux/image-20220519181103252.png)
+![image-20220519181103252](/ajian/image-20220519181103252.png)
 
 ## 防止脑裂的脚本开发
 
@@ -630,7 +630,7 @@ systemctl restart keepalived
 [root@lb-6 /etc/keepalived]#systemctl restart firewalld
 ```
 
-![image-20220519184805278](http://book.bikongge.com/sre/2024-linux/image-20220519184805278.png)
+![image-20220519184805278](/ajian/image-20220519184805278.png)
 
 # 情况2：master出现问题
 
@@ -765,4 +765,4 @@ http://tbm-auth.alicdn.com/LLFT8IQamEO30zOTfNw/6AcL8H7yRzRN7AKZ0UN_219932284972_
 老铁们，你学废了吗？~~~~
 ```
 
-![image-20220519192829775](http://book.bikongge.com/sre/2024-linux/image-20220519192829775.png)
+![image-20220519192829775](/ajian/image-20220519192829775.png)
