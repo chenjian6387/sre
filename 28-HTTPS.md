@@ -22,7 +22,7 @@
 
 数据机密性示意图
 
-![image-20220516204458134](http://book.bikongge.com/sre/2024-linux/image-20220516204458134.png)
+![image-20220516204458134](/ajian/image-20220516204458134.png)
 
 ## 数据完整性
 
@@ -30,7 +30,7 @@
 
 将会造成互连通讯双方所表达信息的意义完全不一致。因此，对于不完整的数据信息，接收方应该进行相应判断，如果完整性验证错误，就拒绝接收相应的数据。
 
-![image-20220516205318777](http://book.bikongge.com/sre/2024-linux/image-20220516205318777.png)
+![image-20220516205318777](/ajian/image-20220516205318777.png)
 
 ## 身份验证问题
 
@@ -40,7 +40,7 @@
 
 > 这也是ssh要做的指纹确认的原因。
 
-![image-20220516205817734](http://book.bikongge.com/sre/2024-linux/image-20220516205817734.png)
+![image-20220516205817734](/ajian/image-20220516205817734.png)
 
 # 解决如上问题
 
@@ -60,7 +60,7 @@
 
 ## 对称加密
 
-![image-20200601110851996](http://book.bikongge.com/sre/2024-linux/image-20200601110851996.png)
+![image-20200601110851996](/ajian/image-20200601110851996.png)
 
 ```
 对称加密算法，如其名，就是使用同一个秘钥进行加密和解密。
@@ -74,7 +74,7 @@
 
 ## 非对称加密
 
-![image-20200601111133767](http://book.bikongge.com/sre/2024-linux/image-20200601111133767.png)
+![image-20200601111133767](/ajian/image-20200601111133767.png)
 
 非对称加密，加密，解密，必须使用`一个公开的公钥（public key）`一个必须保护好的`私钥（private key）`。
 
@@ -82,7 +82,7 @@
 
 # HTTPS协议
 
-![img](http://book.bikongge.com/sre/2024-linux/bg2014020501.jpg)
+![img](/ajian/bg2014020501.jpg)
 
 ```
 HTTPS协议不是单独的协议，而是基于HTTP+SSL或者HTTP+TLS的组合协议。
@@ -114,7 +114,7 @@ SSL/TLS协议是为了解决这三大风险而设计的，希望达到：
 
 而且，协议还必须能够经受所有匪夷所思的攻击，这使得SSL/TLS协议变得异常复杂。
 
-![image-20220516211423129](http://book.bikongge.com/sre/2024-linux/image-20220516211423129.png)
+![image-20220516211423129](/ajian/image-20220516211423129.png)
 
 ## 为什么需要HTTPS
 
@@ -140,11 +140,11 @@ SSL/TLS协议是为了解决这三大风险而设计的，希望达到：
 7. 服务端接到这个【公钥加密后的随机数】后，使用自己的随机数解密，确认建立连接，后续的所有数据交互，通过这个随机数实现数据【对称加密】。
 ```
 
-![image-20200601112253019](http://book.bikongge.com/sre/2024-linux/image-20200601112253019-20220516213257252.png)
+![image-20200601112253019](/ajian/image-20200601112253019-20220516213257252.png)
 
 ## 图解
 
-![image-20220516214358182](http://book.bikongge.com/sre/2024-linux/image-20220516214358182.png)
+![image-20220516214358182](/ajian/image-20220516214358182.png)
 
 # HTTPS证书实践
 
@@ -158,23 +158,23 @@ SSL/TLS协议是为了解决这三大风险而设计的，希望达到：
 
 ## 查看其他公司怎么用证书
 
-![image-20220517134500567](http://book.bikongge.com/sre/2024-linux/image-20220517134500567.png)
+![image-20220517134500567](/ajian/image-20220517134500567.png)
 
 ------
 
-![image-20220517134611645](http://book.bikongge.com/sre/2024-linux/image-20220517134611645.png)
+![image-20220517134611645](/ajian/image-20220517134611645.png)
 
 ### 证书详细
 
-![image-20220517134723195](http://book.bikongge.com/sre/2024-linux/image-20220517134723195.png)
+![image-20220517134723195](/ajian/image-20220517134723195.png)
 
 ------
 
-![image-20220517134820041](http://book.bikongge.com/sre/2024-linux/image-20220517134820041.png)
+![image-20220517134820041](/ajian/image-20220517134820041.png)
 
 ## 颁发证书的机构
 
-![image-20220517135236960](http://book.bikongge.com/sre/2024-linux/image-20220517135236960.png)
+![image-20220517135236960](/ajian/image-20220517135236960.png)
 
 ## 证书类型与区别
 
@@ -192,7 +192,7 @@ EV类型证书：中文全称是增强验证型证书，证书审核级别为所
 
 ### 腾讯、OV证书
 
-![image-20220517140447765](http://book.bikongge.com/sre/2024-linux/image-20220517140447765.png)
+![image-20220517140447765](/ajian/image-20220517140447765.png)
 
 ```
 OV SSL是 Organization Validation SSL 的缩写，指需要验证网站所有单位的真实身份的标准型SSL证书，此类证书也就是正常的SSL证书，不仅能起到网站机密信息加密的作用，而且能向用户证明网站的真实身份。所以，推荐在所有电子商务网站使用，因为电子商务需要的是在线信任和在线安全。
@@ -200,11 +200,11 @@ OV SSL是 Organization Validation SSL 的缩写，指需要验证网站所有单
 
 ### 博客园DV证书
 
-![image-20220517140713564](http://book.bikongge.com/sre/2024-linux/image-20220517140713564.png)
+![image-20220517140713564](/ajian/image-20220517140713564.png)
 
 ### 汇丰银行EV证书
 
-![image-20220517141128025](http://book.bikongge.com/sre/2024-linux/image-20220517141128025.png)
+![image-20220517141128025](/ajian/image-20220517141128025.png)
 
 ## 域名匹配类型
 
@@ -240,25 +240,25 @@ OV SSL是 Organization Validation SSL 的缩写，指需要验证网站所有单
 
 ## 创建免费证书
 
-![image-20220517141854404](http://book.bikongge.com/sre/2024-linux/image-20220517141854404.png)
+![image-20220517141854404](/ajian/image-20220517141854404.png)
 
 ## 申请证书
 
-![image-20220517142000234](http://book.bikongge.com/sre/2024-linux/image-20220517142000234.png)
+![image-20220517142000234](/ajian/image-20220517142000234.png)
 
 ------
 
 ## 绑定域名
 
-![image-20220517142117127](http://book.bikongge.com/sre/2024-linux/image-20220517142117127.png)
+![image-20220517142117127](/ajian/image-20220517142117127.png)
 
 ## 填写DNS验证
 
-![image-20220517142215885](http://book.bikongge.com/sre/2024-linux/image-20220517142215885.png)
+![image-20220517142215885](/ajian/image-20220517142215885.png)
 
 ## 提交审核
 
-![image-20220517142254974](http://book.bikongge.com/sre/2024-linux/image-20220517142254974.png)
+![image-20220517142254974](/ajian/image-20220517142254974.png)
 
 ## 下载证书（结合nginx部署）
 
@@ -461,17 +461,17 @@ systemctl restart nginx
 10.0.0.7 www.yuchaoit.cn
 ```
 
-![image-20220517154800787](http://book.bikongge.com/sre/2024-linux/image-20220517154800787.png)
+![image-20220517154800787](/ajian/image-20220517154800787.png)
 
 ------
 
-![image-20220517154921821](http://book.bikongge.com/sre/2024-linux/image-20220517154921821.png)
+![image-20220517154921821](/ajian/image-20220517154921821.png)
 
 # 二、nginx集群配置https（web-7，web-8）
 
 ## 情况1，全站https通信
 
-![image-20220517155923403](http://book.bikongge.com/sre/2024-linux/image-20220517155923403.png)
+![image-20220517155923403](/ajian/image-20220517155923403.png)
 
 ## 1.部署web-8
 
@@ -561,11 +561,11 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 先手动测试web服务器是否可以访问
 
-![image-20220517161401814](http://book.bikongge.com/sre/2024-linux/image-20220517161401814.png)
+![image-20220517161401814](/ajian/image-20220517161401814.png)
 
 测试负载均衡的转发
 
-![image-20220517161633096](http://book.bikongge.com/sre/2024-linux/image-20220517161633096.png)
+![image-20220517161633096](/ajian/image-20220517161633096.png)
 
 ## 情况二：lb负责https外网加密，后端web内网简化无须证书
 
@@ -605,7 +605,7 @@ server {
 
 ## 2.部署web机器组7,8
 
-![image-20220517161902482](http://book.bikongge.com/sre/2024-linux/image-20220517161902482.png)
+![image-20220517161902482](/ajian/image-20220517161902482.png)
 
 web-7
 
@@ -645,17 +645,17 @@ systemctl restart nginx
 
 ## 3.测试访问
 
-![image-20220517162143097](http://book.bikongge.com/sre/2024-linux/image-20220517162143097.png)
+![image-20220517162143097](/ajian/image-20220517162143097.png)
 
 ## 4.测试负载均衡
 
-![image-20220517162353450](http://book.bikongge.com/sre/2024-linux/image-20220517162353450.png)
+![image-20220517162353450](/ajian/image-20220517162353450.png)
 
 # 三、wordpress支持https
 
 需要开启fastcgi转发参数，支持https
 
-![image-20220517172009717](http://book.bikongge.com/sre/2024-linux/image-20220517172009717.png)
+![image-20220517172009717](/ajian/image-20220517172009717.png)
 
 ## 1.lb服务器设置
 
@@ -777,17 +777,17 @@ dns解析
 
 ## 4.访问结果
 
-![image-20220517170255808](http://book.bikongge.com/sre/2024-linux/image-20220517170255808.png)
+![image-20220517170255808](/ajian/image-20220517170255808.png)
 
 ------
 
-![image-20220517170407946](http://book.bikongge.com/sre/2024-linux/image-20220517170407946.png)
+![image-20220517170407946](/ajian/image-20220517170407946.png)
 
 ## 5. 日志检测（两个web机器）
 
 web-7、web-8
 
-![image-20220517170837403](http://book.bikongge.com/sre/2024-linux/image-20220517170837403.png)
+![image-20220517170837403](/ajian/image-20220517170837403.png)
 
 # 四、阿里云https证书免费申请
 
