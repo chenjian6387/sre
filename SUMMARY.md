@@ -74,6 +74,7 @@
   - [28-HTTPS](28-HTTPS.md)
   - [29-keepalived高可用性负载均衡](29-keepalived高可用性负载均衡.md)
   - [30-部署Python网站](30-部署Python网站.md)
+  - [31-jumpserver实战](31-jumpserver实战.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
