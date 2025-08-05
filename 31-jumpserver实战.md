@@ -72,21 +72,21 @@ systemctl restart nginx
 
 ### 启动koko失败
 
-![image-20220523172536013](http://book.bikongge.com/sre/2024-linux/image-20220523172536013.png)
+![image-20220523172536013](/ajian/image-20220523172536013.png)
 
 ### 解决办法
 
-![image-20220523173036987](http://book.bikongge.com/sre/2024-linux/image-20220523173036987.png)
+![image-20220523173036987](/ajian/image-20220523173036987.png)
 
 ------
 
 再次注册终端
 
-![image-20220523173128462](http://book.bikongge.com/sre/2024-linux/image-20220523173128462.png)
+![image-20220523173128462](/ajian/image-20220523173128462.png)
 
 ------
 
-![image-20220523173144610](http://book.bikongge.com/sre/2024-linux/image-20220523173144610.png)
+![image-20220523173144610](/ajian/image-20220523173144610.png)
 
 ### 注意，本次要修改koko配置文件
 
@@ -132,29 +132,29 @@ tcp6       0      0 ::1:25                  :::*                    LISTEN      
 
 # 1.修改密码
 
-![image-20220523173656072](http://book.bikongge.com/sre/2024-linux/image-20220523173656072.png)
+![image-20220523173656072](/ajian/image-20220523173656072.png)
 
 # 2.设置管理员邮箱
 
-![image-20220523184727826](http://book.bikongge.com/sre/2024-linux/image-20220523184727826.png)
+![image-20220523184727826](/ajian/image-20220523184727826.png)
 
-![image-20220523210907176](http://book.bikongge.com/sre/2024-linux/image-20220523210907176.png)
+![image-20220523210907176](/ajian/image-20220523210907176.png)
 
 确保能发出邮件，才是正常。
 
 # 3.设置站点URL
 
-![image-20220523211243771](http://book.bikongge.com/sre/2024-linux/image-20220523211243771.png)
+![image-20220523211243771](/ajian/image-20220523211243771.png)
 
 # 4.jumpserver用户管理
 
-![image-20220523220834712](http://book.bikongge.com/sre/2024-linux/image-20220523220834712.png)
+![image-20220523220834712](/ajian/image-20220523220834712.png)
 
 ## 4.1 jumpserver的平台用户
 
 这里指的是并非服务器上的用户、而是这个平台上的用户。
 
-![image-20220523215230308](http://book.bikongge.com/sre/2024-linux/image-20220523215230308.png)
+![image-20220523215230308](/ajian/image-20220523215230308.png)
 
 ```
 管理员用户
@@ -176,15 +176,15 @@ tcp6       0      0 ::1:25                  :::*                    LISTEN      
 
 #### 4.1.2 平台用户也可以用于登录koko
 
-![image-20220523215523362](http://book.bikongge.com/sre/2024-linux/image-20220523215523362.png)
+![image-20220523215523362](/ajian/image-20220523215523362.png)
 
 登录后的结果，可以实现跳板机功能。
 
-![image-20220523215559524](http://book.bikongge.com/sre/2024-linux/image-20220523215559524.png)
+![image-20220523215559524](/ajian/image-20220523215559524.png)
 
 ## 4.2 用户登录linux机器的用户（资产管理、系统用户）
 
-![image-20220523220102256](http://book.bikongge.com/sre/2024-linux/image-20220523220102256.png)
+![image-20220523220102256](/ajian/image-20220523220102256.png)
 
 ### 4.2.1 特权用户（系统上的sudo用户）
 
@@ -209,7 +209,7 @@ tcp6       0      0 ::1:25                  :::*                    LISTEN      
 
 你可以在服务器上面创建一个普通用户，然后给这个普通用户sudo权限就行。 `NOPASSWD: ALL` sudo 权限的用户
 
-![image-20220523220421891](http://book.bikongge.com/sre/2024-linux/image-20220523220421891.png)
+![image-20220523220421891](/ajian/image-20220523220421891.png)
 
 ```
 特权用户 是资产已存在的, 并且拥有 高级权限 的系统用户， 如 root 或 拥有 `NOPASSWD: ALL` sudo 权限的用户。 JumpServer 使用该用户来 `推送系统用户`、`获取资产硬件信息` 等。
@@ -223,7 +223,7 @@ tcp6       0      0 ::1:25                  :::*                    LISTEN      
 
 3，这个用户你可以不用先在服务器上面创建好。管理用户会帮你去创建的。
 
-![image-20220523221306580](http://book.bikongge.com/sre/2024-linux/image-20220523221306580.png)
+![image-20220523221306580](/ajian/image-20220523221306580.png)
 
 ## 4.3 jumpserver用户实践（重要）
 
@@ -235,7 +235,7 @@ tcp6       0      0 ::1:25                  :::*                    LISTEN      
 
 此时超哥就是管理员，给蔡徐坤创建一个账号用于登录平台。
 
-![image-20220523221717396](http://book.bikongge.com/sre/2024-linux/image-20220523221717396.png)
+![image-20220523221717396](/ajian/image-20220523221717396.png)
 
 此时蔡徐坤可以登录这个平台了。
 
@@ -255,15 +255,15 @@ jinitaimei666
 
 因此先创建系统用户（特权用户，且这个用户在目标服务器上得存在）。
 
-![image-20220523222401765](http://book.bikongge.com/sre/2024-linux/image-20220523222401765.png)
+![image-20220523222401765](/ajian/image-20220523222401765.png)
 
 ------
 
-![image-20220523222556174](http://book.bikongge.com/sre/2024-linux/image-20220523222556174.png)
+![image-20220523222556174](/ajian/image-20220523222556174.png)
 
 接着就可以创建资产了（用这个yuyu01用户去登录这台机器）
 
-![image-20220523222753053](http://book.bikongge.com/sre/2024-linux/image-20220523222753053.png)
+![image-20220523222753053](/ajian/image-20220523222753053.png)
 
 注意，这个yuyu01用户，得在目标机器上存在，jumpserver默认是用ansible，使用这个账密去连接。
 
@@ -275,7 +275,7 @@ passwd: all authentication tokens updated successfully.
 
 还得修改sudo配置
 
-![image-20220523223122006](http://book.bikongge.com/sre/2024-linux/image-20220523223122006.png)
+![image-20220523223122006](/ajian/image-20220523223122006.png)
 
 测试免密sudo
 
@@ -292,11 +292,11 @@ Last login: Mon May 23 22:24:14 CST 2022 from 10.0.0.1 on pts/0
 
 平台上测试，yuyu01该账号，是否可管理该资产（db-52）
 
-![image-20220523223443403](http://book.bikongge.com/sre/2024-linux/image-20220523223443403.png)
+![image-20220523223443403](/ajian/image-20220523223443403.png)
 
 查看资产列表
 
-![image-20220523223645604](http://book.bikongge.com/sre/2024-linux/image-20220523223645604.png)
+![image-20220523223645604](/ajian/image-20220523223645604.png)
 
 ### 4.3.3 创建普通用户（caixukun01）
 
@@ -309,15 +309,15 @@ caixukun01
 jinitaimei
 ```
 
-![image-20220523223831247](http://book.bikongge.com/sre/2024-linux/image-20220523223831247.png)
+![image-20220523223831247](/ajian/image-20220523223831247.png)
 
 ### 4.3.4 资产授权
 
-![image-20220523224138286](http://book.bikongge.com/sre/2024-linux/image-20220523224138286.png)
+![image-20220523224138286](/ajian/image-20220523224138286.png)
 
 查看资产授权情况
 
-![image-20220523224215303](http://book.bikongge.com/sre/2024-linux/image-20220523224215303.png)
+![image-20220523224215303](/ajian/image-20220523224215303.png)
 
 ### 4.3.5 试试让这个开发去管理该资产
 
@@ -327,7 +327,7 @@ jinitaimei
 3.登录资产
 ```
 
-![image-20220523232920229](http://book.bikongge.com/sre/2024-linux/image-20220523232920229.png)
+![image-20220523232920229](/ajian/image-20220523232920229.png)
 
 ### 4.3.6 继续添加资产
 
@@ -336,13 +336,13 @@ jinitaimei
 2.添加资产
 ```
 
-![image-20220523233726600](http://book.bikongge.com/sre/2024-linux/image-20220523233726600.png)
+![image-20220523233726600](/ajian/image-20220523233726600.png)
 
 ```
 注意目标机器，是否创建了 系统用户，否则ansible没法用这个账户去连接web-8
 ```
 
-![image-20220523234301072](http://book.bikongge.com/sre/2024-linux/image-20220523234301072.png)
+![image-20220523234301072](/ajian/image-20220523234301072.png)
 
 还得给这个机器，添加sudo设置，你才能够远程管理它。
 
@@ -352,15 +352,15 @@ root    ALL=(ALL)       ALL
 yuyu01 ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
-![image-20220523234539001](http://book.bikongge.com/sre/2024-linux/image-20220523234539001.png)
+![image-20220523234539001](/ajian/image-20220523234539001.png)
 
 ### 4.3.7 继续给这个开发增加资产管理权限
 
-![image-20220523234846423](http://book.bikongge.com/sre/2024-linux/image-20220523234846423.png)
+![image-20220523234846423](/ajian/image-20220523234846423.png)
 
 ### 4.3.8 让这个开发登录web-8机器
 
-![image-20220523235057401](http://book.bikongge.com/sre/2024-linux/image-20220523235057401.png)
+![image-20220523235057401](/ajian/image-20220523235057401.png)
 
 ```
 因为你给这个资产，添加了 特权用户 yuyu01，因此在web终端上，可以选择使用了。
@@ -368,7 +368,7 @@ yuyu01 ALL=(ALL:ALL) NOPASSWD:ALL
 
 远程批量查看服务器信息，批量执行命令
 
-![image-20220523235228990](http://book.bikongge.com/sre/2024-linux/image-20220523235228990.png)
+![image-20220523235228990](/ajian/image-20220523235228990.png)
 
 ## 4.4 管理员的强大功能
 
@@ -376,34 +376,34 @@ yuyu01 ALL=(ALL:ALL) NOPASSWD:ALL
 
 比如蔡徐坤正在基于web终端，操作服务器，我们可以在后台看到。
 
-![image-20220523235539991](http://book.bikongge.com/sre/2024-linux/image-20220523235539991.png)
+![image-20220523235539991](/ajian/image-20220523235539991.png)
 
 ### 4.4.2 会话监控
 
-![image-20220523235806594](http://book.bikongge.com/sre/2024-linux/image-20220523235806594.png)
+![image-20220523235806594](/ajian/image-20220523235806594.png)
 
 ### 4.4.3 强制下线
 
-![image-20220523235854518](http://book.bikongge.com/sre/2024-linux/image-20220523235854518.png)
+![image-20220523235854518](/ajian/image-20220523235854518.png)
 
 ### 4.4.4 视频回放
 
-![image-20220524000144841](http://book.bikongge.com/sre/2024-linux/image-20220524000144841.png)
+![image-20220524000144841](/ajian/image-20220524000144841.png)
 
 jumpserver提供强大的历史会话功能，查看命令历史，操作视频回放，最大程度定位运维安全。
 
 ### 4.4.5 命令历史记录
 
-![image-20220524000236434](http://book.bikongge.com/sre/2024-linux/image-20220524000236434.png)
+![image-20220524000236434](/ajian/image-20220524000236434.png)
 
 ## 4.5 koko命令行跳板机功能
 
 我们上面都是基于网站平台使用的堡垒机功能，再来看看koko命令行的机器管理。
 
-![image-20220524000631003](http://book.bikongge.com/sre/2024-linux/image-20220524000631003.png)
+![image-20220524000631003](/ajian/image-20220524000631003.png)
 
-![image-20220524000859717](http://book.bikongge.com/sre/2024-linux/image-20220524000859717.png)
+![image-20220524000859717](/ajian/image-20220524000859717.png)
 
 监控会话
 
-![image-20220524001047733](http://book.bikongge.com/sre/2024-linux/image-20220524001047733.png)
+![image-20220524001047733](/ajian/image-20220524001047733.png)
