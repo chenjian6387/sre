@@ -77,6 +77,7 @@
   - [31-jumpserver实战](31-jumpserver实战.md)
   - [32-期中综合架构验收](32-期中综合架构验收.md)
 * [04-shell编程](04-shell编程.md)
+  - [EADME.md](EADME.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
