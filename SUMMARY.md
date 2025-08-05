@@ -76,7 +76,7 @@
   - [30-部署Python网站](30-部署Python网站.md)
   - [31-jumpserver实战](31-jumpserver实战.md)
   - [32-期中综合架构验收](32-期中综合架构验收.md)
-* [Introduction](README.md)
+* [04-shell编程](04-shell编程.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
