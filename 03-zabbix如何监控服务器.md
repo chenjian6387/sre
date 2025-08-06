@@ -2,7 +2,7 @@
 
 # 1.zabbix架构图
 
-![image-20220629141732050](http://book.bikongge.com/sre/2024-linux/image-20220629141732050.png)
+![image-20220629141732050](/ajian/image-20220629141732050.png)
 
 ## zabbix核心概念
 
@@ -50,7 +50,7 @@ Zabbix Proxy 会定时把采集到的数据上报到 Zabbix Server，Zabbix Serv
 
 Zabbix 官方文档给出的描述
 
-![../_images/zabbix_proxy.jpg](http://book.bikongge.com/sre/2024-linux/zabbix_proxy.jpg)
+![../_images/zabbix_proxy.jpg](/ajian/zabbix_proxy.jpg)
 
 ```
 更多更详细的可以看
@@ -125,7 +125,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/zabbix-agent.se
 [root@m-61 ~]#
 ```
 
-![image-20220629161814868](http://book.bikongge.com/sre/2024-linux/image-20220629161814868.png)
+![image-20220629161814868](/ajian/image-20220629161814868.png)
 
 ## 添加主机
 
@@ -135,15 +135,15 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/zabbix-agent.se
 只要监控agent的接口  10.0.0.7:10050 填对了就好
 ```
 
-![image-20220629162058691](http://book.bikongge.com/sre/2024-linux/image-20220629162058691.png)
+![image-20220629162058691](/ajian/image-20220629162058691.png)
 
 ## 添加一个模板
 
-![image-20220629162140966](http://book.bikongge.com/sre/2024-linux/image-20220629162140966.png)
+![image-20220629162140966](/ajian/image-20220629162140966.png)
 
 ## 最终结果
 
-![image-20220629162801826](http://book.bikongge.com/sre/2024-linux/image-20220629162801826.png)
+![image-20220629162801826](/ajian/image-20220629162801826.png)
 
 # 4.更细节的添加操作
 
@@ -162,7 +162,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/zabbix-agent.se
 
 ## 创建主机群组
 
-![image-20220629173241250](http://book.bikongge.com/sre/2024-linux/image-20220629173241250.png)
+![image-20220629173241250](/ajian/image-20220629173241250.png)
 
 ```
 添加一个web组，用于管理一组都属于web组的机器，如web7 web8 web9
@@ -171,15 +171,15 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/zabbix-agent.se
 
 ## 添加主机
 
-![image-20220629173334031](http://book.bikongge.com/sre/2024-linux/image-20220629173334031.png)
+![image-20220629173334031](/ajian/image-20220629173334031.png)
 
 ------
 
-![image-20220629173702551](http://book.bikongge.com/sre/2024-linux/image-20220629173702551.png)
+![image-20220629173702551](/ajian/image-20220629173702551.png)
 
 ## 关联模板
 
-![image-20220629173805887](http://book.bikongge.com/sre/2024-linux/image-20220629173805887.png)
+![image-20220629173805887](/ajian/image-20220629173805887.png)
 
 ```
 主机添加好之后，你就得定义要监考哪些内容了，是监控内存？CPU、磁盘、服务、还是其他？
@@ -198,11 +198,11 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/zabbix-agent.se
 4. 注意要点击添加按钮。
 ```
 
-![image-20220629174636209](http://book.bikongge.com/sre/2024-linux/image-20220629174636209.png)
+![image-20220629174636209](/ajian/image-20220629174636209.png)
 
 ------
 
-![image-20220629174723670](http://book.bikongge.com/sre/2024-linux/image-20220629174723670.png)
+![image-20220629174723670](/ajian/image-20220629174723670.png)
 
 ## 小试牛刀，看看美观的图形
 
@@ -217,8 +217,8 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/zabbix-agent.se
 
 ### cpu图示
 
-![image-20220629175726522](http://book.bikongge.com/sre/2024-linux/image-20220629175726522.png)
+![image-20220629175726522](/ajian/image-20220629175726522.png)
 
 ### 内存图示
 
-![image-20220629180201351](http://book.bikongge.com/sre/2024-linux/image-20220629180201351.png)
+![image-20220629180201351](/ajian/image-20220629180201351.png)
