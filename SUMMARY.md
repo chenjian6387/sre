@@ -86,6 +86,7 @@
   - [07-流程控制之while循环](07-流程控制之while循环.md)
   - [08-循环控制](08-循环控制.md)
   - [09-shell函数](09-shell函数.md)
+  - [10-shell数组](10-shell数组.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
