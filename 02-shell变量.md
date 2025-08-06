@@ -298,7 +298,7 @@ EOF
 
 执行结果
 
-![image-20220615155706152](http://book.bikongge.com/sre/2024-linux/image-20220615155706152.png)
+![image-20220615155706152](/ajian/image-20220615155706152.png)
 
 > 使用场景？
 >
@@ -435,7 +435,7 @@ echo -e "\033[41;33m www.yuchaoit.cn红底黄字 \033[0m"
 echo -e "\033[41;37m www.yuchaoit.cn红底白字 \033[0m"
 ```
 
-![image-20220615164409945](http://book.bikongge.com/sre/2024-linux/image-20220615164409945.png)
+![image-20220615164409945](/ajian/image-20220615164409945.png)
 
 颜色笔记
 
@@ -562,7 +562,7 @@ echo -e "当前网卡配置文件内容是\n$(cat /etc/sysconfig/network-scripts
 EOF
 ```
 
-![image-20220615170941414](http://book.bikongge.com/sre/2024-linux/image-20220615170941414.png)
+![image-20220615170941414](/ajian/image-20220615170941414.png)
 
 ## 5.6 定时任务脚本
 
@@ -799,7 +799,7 @@ done
 
 ### 场景3，位置参数比较特殊
 
-![image-20220615185329880](http://book.bikongge.com/sre/2024-linux/image-20220615185329880.png)
+![image-20220615185329880](/ajian/image-20220615185329880.png)
 
 ```
 [root@master-61 ~]#cat test_all_var.sh 
@@ -827,7 +827,7 @@ done
 先记住语法，以后你会在高级脚本中，看到这个影子的。
 ```
 
-![image-20220615190458908](http://book.bikongge.com/sre/2024-linux/image-20220615190458908.png)
+![image-20220615190458908](/ajian/image-20220615190458908.png)
 
 # 7.常量（了解）
 
@@ -846,11 +846,11 @@ shell设置常量
 通过readonly设置为常量。
 ```
 
-![image-20220615190845585](http://book.bikongge.com/sre/2024-linux/image-20220615190845585.png)
+![image-20220615190845585](/ajian/image-20220615190845585.png)
 
 ------
 
-![image-20220615191026541](http://book.bikongge.com/sre/2024-linux/image-20220615191026541.png)
+![image-20220615191026541](/ajian/image-20220615191026541.png)
 
 # 8. 数据类型
 
@@ -1061,7 +1061,7 @@ awk                    # 支持整数，小数点运算
 
 纯数字计算
 
-![image-20220616112403310](http://book.bikongge.com/sre/2024-linux/image-20220616112403310.png)
+![image-20220616112403310](/ajian/image-20220616112403310.png)
 
 变量运算
 
