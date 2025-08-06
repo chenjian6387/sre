@@ -82,6 +82,7 @@
   - [03-条件判断](03-条件判断.md)
   - [04-流程控制之if](04-流程控制之if.md)
   - [05-流程控制之case](05-流程控制之case.md)
+  - [06-流程控制之for循环结构](06-流程控制之for循环结构.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
