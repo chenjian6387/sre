@@ -91,6 +91,7 @@
 * [05-监控系统](05-监控系统.md)
   - [01-监控体系理论](01-监控体系理论.md)
   - [02-zabbix安装部署](02-zabbix安装部署.md)
+  - [03-zabbix如何监控服务器](03-zabbix如何监控服务器.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
