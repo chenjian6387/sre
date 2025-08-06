@@ -79,6 +79,7 @@
 * [04-shell编程](04-shell编程.md)
   - [01-shell基础概述](01-shell基础概述.md)
   - [02-shell变量](02-shell变量.md)
+  - [03-条件判断](03-条件判断.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
