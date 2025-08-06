@@ -87,6 +87,7 @@
   - [08-循环控制](08-循环控制.md)
   - [09-shell函数](09-shell函数.md)
   - [10-shell数组](10-shell数组.md)
+  - [脚本练习题库](脚本练习题库.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
