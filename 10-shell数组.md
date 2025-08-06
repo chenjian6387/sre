@@ -24,7 +24,7 @@
 数值索引类型的数组中存放的每个元素在内存中连续的，只要知道第一个元素的地址，就能计算出第2个元素地址、第3个元素地址、第N个元素地址。
 ```
 
-![image-20220628095351562](http://book.bikongge.com/sre/2024-linux/image-20220628095351562.png)
+![image-20220628095351562](/ajian/image-20220628095351562.png)
 
 ```
 为了方便访问数组中的每一个元素，shell通过索引（下标）来一一对应每一个元素；
@@ -129,7 +129,7 @@ echo "数组的所有元素个数是：${#stu_list[@]}"
 echo "数组的所有元素个数是：${#stu_list[*]}"
 ```
 
-![image-20220628094304690](http://book.bikongge.com/sre/2024-linux/image-20220628094304690.png)
+![image-20220628094304690](/ajian/image-20220628094304690.png)
 
 ### 支持反向索引查找元素
 
@@ -193,7 +193,7 @@ shell的关联数组，参考python的字典 dict数据类型。
 
 ## 正统的数组，到底长啥样，请看python的。
 
-![image-20220628100916948](http://book.bikongge.com/sre/2024-linux/image-20220628100916948.png)
+![image-20220628100916948](/ajian/image-20220628100916948.png)
 
 ## shell的关联数组
 
@@ -221,7 +221,7 @@ echo "${stu_info[李文杰]}"
 echo "${stu_info[罗兴林]}"
 ```
 
-![image-20220628101352179](http://book.bikongge.com/sre/2024-linux/image-20220628101352179.png)
+![image-20220628101352179](/ajian/image-20220628101352179.png)
 
 ## 提取关联数组所有索引
 
@@ -330,7 +330,7 @@ do
 done
 ```
 
-![image-20220628103249683](http://book.bikongge.com/sre/2024-linux/image-20220628103249683.png)
+![image-20220628103249683](/ajian/image-20220628103249683.png)
 
 # 8.shell数组实践案例
 
@@ -370,7 +370,7 @@ do
 done
 ```
 
-![image-20220628111131978](http://book.bikongge.com/sre/2024-linux/image-20220628111131978.png)
+![image-20220628111131978](/ajian/image-20220628111131978.png)
 
 # 9.使用数组分析Nginx日志
 
@@ -402,7 +402,7 @@ do
 done
 ```
 
-![image-20220628115305732](http://book.bikongge.com/sre/2024-linux/image-20220628115305732.png)
+![image-20220628115305732](/ajian/image-20220628115305732.png)
 
 # 10.建议用awk进行统计处理
 
@@ -442,6 +442,6 @@ sys    0m0.002s            系统内核执行的耗时
 [root@www.yuchaoit.cn /var/log/nginx]#time   awk '{ip_count[$1]++} END{for (item in ip_count) print "IP是：" item, "出现次数：" ip_count[item] }' www.yuchaoit.cn.log
 ```
 
-![image-20220628123748682](http://book.bikongge.com/sre/2024-linux/image-20220628123748682.png)
+![image-20220628123748682](/ajian/image-20220628123748682.png)
 
 > 所以在我们学完了基础语法后，你会发现，未来的路还很长，除了要完成功能，你还要不断学习，优化程序，考虑效率。
