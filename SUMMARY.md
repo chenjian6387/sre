@@ -78,6 +78,7 @@
   - [32-期中综合架构验收](32-期中综合架构验收.md)
 * [04-shell编程](04-shell编程.md)
   - [01-shell基础概述](01-shell基础概述.md)
+  - [02-shell变量](02-shell变量.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
