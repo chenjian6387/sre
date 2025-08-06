@@ -82,7 +82,7 @@ echo "函数外，可以正常的接收位置参数1：" $1
 echo "函数外，可以正常的接收位置参数2：" $2
 ```
 
-![image-20220626204947157](http://book.bikongge.com/sre/2024-linux/image-20220626204947157.png)
+![image-20220626204947157](/ajian/image-20220626204947157.png)
 
 ## 3.2 计算器函数（注意参数语法）
 
@@ -113,7 +113,7 @@ calc(){
 calc $1 $2 $3
 ```
 
-![image-20220626210815691](http://book.bikongge.com/sre/2024-linux/image-20220626210815691.png)
+![image-20220626210815691](/ajian/image-20220626210815691.png)
 
 # 4.函数实战练习
 
@@ -151,7 +151,7 @@ restart)
 esac
 ```
 
-![image-20220626213037705](http://book.bikongge.com/sre/2024-linux/image-20220626213037705.png)
+![image-20220626213037705](/ajian/image-20220626213037705.png)
 
 ## 4.2 多级菜单版
 
