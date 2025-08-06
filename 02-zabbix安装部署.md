@@ -7,7 +7,7 @@
 https://www.zabbix.com/cn/manuals
 ```
 
-![image-20220628172556114](http://book.bikongge.com/sre/2024-linux/image-20220628172556114.png)
+![image-20220628172556114](/ajian/image-20220628172556114.png)
 
 # 2.先装好zabbix服务端再说
 
@@ -94,7 +94,7 @@ systemctl restart httpd
 直接访问对于服务器的80端口的apache服务，已经和zabbix结合了，其实就是一个LAMP架构了而已。
 ```
 
-![image-20220628230704399](http://book.bikongge.com/sre/2024-linux/image-20220628230704399.png)
+![image-20220628230704399](/ajian/image-20220628230704399.png)
 
 删除这个测试文件，然后开始安装你的zabbix吧。
 
@@ -150,11 +150,11 @@ Alias /zabbix /usr/share/zabbix
 
 ## 1.访问zabbix入口
 
-![image-20220628231046619](http://book.bikongge.com/sre/2024-linux/image-20220628231046619.png)
+![image-20220628231046619](/ajian/image-20220628231046619.png)
 
 ## 2.体检，安装环境检查
 
-![image-20220628231133212](http://book.bikongge.com/sre/2024-linux/image-20220628231133212.png)
+![image-20220628231133212](/ajian/image-20220628231133212.png)
 
 ## 3.配置数据库连接
 
@@ -162,21 +162,21 @@ Alias /zabbix /usr/share/zabbix
 根据你自己的数据库信息，填写即可
 ```
 
-![image-20220628231315141](http://book.bikongge.com/sre/2024-linux/image-20220628231315141.png)
+![image-20220628231315141](/ajian/image-20220628231315141.png)
 
 ## 4.配置zabbix服务端的主机端口信息
 
-![image-20220628231453763](http://book.bikongge.com/sre/2024-linux/image-20220628231453763.png)
+![image-20220628231453763](/ajian/image-20220628231453763.png)
 
 ## 5.最终确认
 
 安装前的细节检查
 
-![image-20220628231519666](http://book.bikongge.com/sre/2024-linux/image-20220628231519666.png)
+![image-20220628231519666](/ajian/image-20220628231519666.png)
 
 ## 6.恭喜你安装成功
 
-![image-20220628231651329](http://book.bikongge.com/sre/2024-linux/image-20220628231651329.png)
+![image-20220628231651329](/ajian/image-20220628231651329.png)
 
 ## 7.登录zabbix
 
@@ -187,25 +187,25 @@ Admin
 zabbix
 ```
 
-![image-20220628231738969](http://book.bikongge.com/sre/2024-linux/image-20220628231738969.png)
+![image-20220628231738969](/ajian/image-20220628231738969.png)
 
 ## 8.zabbix首页
 
-![image-20220628231824435](http://book.bikongge.com/sre/2024-linux/image-20220628231824435.png)
+![image-20220628231824435](/ajian/image-20220628231824435.png)
 
 ## 9.修改语言为中文
 
-![image-20220628232348456](http://book.bikongge.com/sre/2024-linux/image-20220628232348456.png)
+![image-20220628232348456](/ajian/image-20220628232348456.png)
 
 ------
 
 还是中文看着舒服呀
 
-![image-20220628232414087](http://book.bikongge.com/sre/2024-linux/image-20220628232414087.png)
+![image-20220628232414087](/ajian/image-20220628232414087.png)
 
 ## 10.修复中文乱码
 
-![image-20220628232638194](http://book.bikongge.com/sre/2024-linux/image-20220628232638194.png)
+![image-20220628232638194](/ajian/image-20220628232638194.png)
 
 ```
 解决办法，这是因为缺少zabbix所需的字体
@@ -218,7 +218,7 @@ zabbix
 cp: overwrite ‘/usr/share/zabbix/assets/fonts/graphfont.ttf’? y
 ```
 
-![image-20220628232953221](http://book.bikongge.com/sre/2024-linux/image-20220628232953221.png)
+![image-20220628232953221](/ajian/image-20220628232953221.png)
 
 # 4.zabbix功能特点
 
@@ -279,4 +279,4 @@ Agent 客户端
 Zabbix Agent 被部署在需要监控主机上，用于采集监控数据并发送到 Zabbix Server 端。
 ```
 
-![image-20220629164335761](http://book.bikongge.com/sre/2024-linux/image-20220629164335761.png)
+![image-20220629164335761](/ajian/image-20220629164335761.png)
