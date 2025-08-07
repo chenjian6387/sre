@@ -99,6 +99,7 @@
   - [06-1-nginx监控](06-1-nginx监控.md)
   - [06-2-php监控](06-2-php监控.md)
   - [06-6-模拟登录之web监控](06-6-模拟登录之web监控.md)
+  - [07-zabbix工作模式](07-zabbix工作模式.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
