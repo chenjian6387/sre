@@ -95,6 +95,7 @@
   - [04-1-微信报警](04-1-微信报警.md)
   - [04-2-钉钉报警](04-2-钉钉报警.md)
   - [04-自定义监控项](04-自定义监控项.md)
+  - [05-自定义监控模板](05-自定义监控模板.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
