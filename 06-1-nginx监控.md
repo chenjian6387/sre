@@ -183,7 +183,7 @@ Invalid arguments
 
 快速克隆即可。
 
-![image-20220704140758558](http://book.bikongge.com/sre/2024-linux/image-20220704140758558.png)
+![image-20220704140758558](/ajian/image-20220704140758558.png)
 
 触发器
 
@@ -191,7 +191,7 @@ Invalid arguments
 测试加一个，当requests请求数到达5万时报警
 ```
 
-![image-20220704141102945](http://book.bikongge.com/sre/2024-linux/image-20220704141102945.png)
+![image-20220704141102945](/ajian/image-20220704141102945.png)
 
 # 6.主机关联模板
 
@@ -199,12 +199,12 @@ Invalid arguments
 分别给web7 和web8 关联模板，使用该监控项
 ```
 
-![image-20220704141151602](http://book.bikongge.com/sre/2024-linux/image-20220704141151602.png)
+![image-20220704141151602](/ajian/image-20220704141151602.png)
 
 # 7.查看最新数据
 
-![image-20220704141339465](http://book.bikongge.com/sre/2024-linux/image-20220704141339465.png)
+![image-20220704141339465](/ajian/image-20220704141339465.png)
 
 # 8.查看nginx_status图形数据
 
-![image-20220704141549564](http://book.bikongge.com/sre/2024-linux/image-20220704141549564.png)
+![image-20220704141549564](/ajian/image-20220704141549564.png)
