@@ -97,6 +97,7 @@
   - [04-自定义监控项](04-自定义监控项.md)
   - [05-自定义监控模板](05-自定义监控模板.md)
   - [06-1-nginx监控](06-1-nginx监控.md)
+  - [06-2-php监控](06-2-php监控.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
