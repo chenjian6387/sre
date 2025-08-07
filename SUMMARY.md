@@ -96,6 +96,7 @@
   - [04-2-钉钉报警](04-2-钉钉报警.md)
   - [04-自定义监控项](04-自定义监控项.md)
   - [05-自定义监控模板](05-自定义监控模板.md)
+  - [06-1-nginx监控](06-1-nginx监控.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
