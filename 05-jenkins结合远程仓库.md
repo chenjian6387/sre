@@ -1,6 +1,6 @@
 # 05-jenkins结合远程仓库
 
-![image-20220711135045265](http://book.bikongge.com/sre/2024-linux/image-20220711135045265.png)
+![image-20220711135045265](/ajian/image-20220711135045265.png)
 
 既然是持续集成，对代码进行构建，我们得获取代码仓库的内容，这里选择我们搭建的gitlab服务器
 
@@ -15,15 +15,15 @@ $ ssh-keygen.exe -t rsa -C 'www.yuchaoit.cn'
 2.添加到代码仓库github/gitlab都玩一玩，公司用这俩居多
 ```
 
-![image-20220711135631351](http://book.bikongge.com/sre/2024-linux/image-20220711135631351.png)
+![image-20220711135631351](/ajian/image-20220711135631351.png)
 
 gitlab上添加该机器的ssh-key允许上传代码，咱这里就不区分多个账户，多个权限了，都先基于root账户，实现部署流程，理解jenkins是怎么工作的。
 
-![image-20220711193730723](http://book.bikongge.com/sre/2024-linux/image-20220711193730723.png)
+![image-20220711193730723](/ajian/image-20220711193730723.png)
 
 # 2.gitlab新建项目
 
-![image-20220711194015936](http://book.bikongge.com/sre/2024-linux/image-20220711194015936.png)
+![image-20220711194015936](/ajian/image-20220711194015936.png)
 
 # 3.开发提交代码
 
@@ -117,18 +117,18 @@ branch 'master' set up to track 'origin/master'.
 
 # 4.检查代gitlab码仓库
 
-![image-20220711195023076](http://book.bikongge.com/sre/2024-linux/image-20220711195023076.png)
+![image-20220711195023076](/ajian/image-20220711195023076.png)
 
 # 5.配置jenkins的job获取代码仓库
 
-![image-20220711195924339](http://book.bikongge.com/sre/2024-linux/image-20220711195924339.png)
+![image-20220711195924339](/ajian/image-20220711195924339.png)
 
 ```
 给jenkins服务器安装git
 [root@jenkins-100 ~]#yum install git -y
 ```
 
-![image-20220711200023661](http://book.bikongge.com/sre/2024-linux/image-20220711200023661.png)
+![image-20220711200023661](/ajian/image-20220711200023661.png)
 
 ```
 添加jenkins服务器的ssh-key到gitlab服务器
@@ -159,21 +159,21 @@ The key's randomart image is:
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDA9C597NnGpdyRYkDtF4zQmTa+bRxXqll3XX7LJDjLfsgfUZbfolj0KwkmdIvpQjecDrKff33bOIhGQQ64okmQlKPyp+iISO6sRCH1p2VhZNFEWOeBRtzA+TFrLX4WeVFJFg2IuOE1cFuKGESBC7pqZZf4H12QaNCunLwWLTrqoUGvfW0+rXOBGaXPW1yNpTMevnPkN81ZKiqhONtUE+suYwwYi8zgi54CXZZBNEcyXhZH2gLLser/hy+16vqYZ65enGBcfPYBNSHt35DcNs/Qs6nLpT/UBxblQwFI5ktq7C6cm6igYVAuVpomDNdD+LCjvRhijQBCbxlvHwXcO9Tl www.yuchaoit.cn
 ```
 
-![image-20220711200204258](http://book.bikongge.com/sre/2024-linux/image-20220711200204258.png)
+![image-20220711200204258](/ajian/image-20220711200204258.png)
 
 添加jenkins的认证凭证，使用自己的私钥即可
 
-![image-20220711200424898](http://book.bikongge.com/sre/2024-linux/image-20220711200424898.png)
+![image-20220711200424898](/ajian/image-20220711200424898.png)
 
 ------
 
-![image-20220711200505101](http://book.bikongge.com/sre/2024-linux/image-20220711200505101.png)
+![image-20220711200505101](/ajian/image-20220711200505101.png)
 
 至此，jenkins就可以下载gitlab的代码了。
 
 试试看能下载什么，点击构建
 
-![image-20220711201921165](http://book.bikongge.com/sre/2024-linux/image-20220711201921165.png)
+![image-20220711201921165](/ajian/image-20220711201921165.png)
 
 # 6.开发脚本实现项目部署
 
@@ -207,11 +207,11 @@ ssh root@10.0.0.7 "pkill python3"
 ssh root@10.0.0.7 "nohup /usr/bin/python3 /opt/my_app.py >/dev/null 2>&1 &"
 ```
 
-![image-20220711203603889](http://book.bikongge.com/sre/2024-linux/image-20220711203603889.png)
+![image-20220711203603889](/ajian/image-20220711203603889.png)
 
 # 7.测试访问web7的flask项目
 
-![image-20220711203652300](http://book.bikongge.com/sre/2024-linux/image-20220711203652300.png)
+![image-20220711203652300](/ajian/image-20220711203652300.png)
 
 # 8.完成项目更新（鼠标一点，自动更新，操心啥啊）
 
@@ -251,4 +251,4 @@ branch 'master' set up to track 'origin/master'.
 
 # 9.鼠标一点，下班下班
 
-![image-20220711204054658](http://book.bikongge.com/sre/2024-linux/image-20220711204054658.png)
+![image-20220711204054658](/ajian/image-20220711204054658.png)
