@@ -18,7 +18,7 @@
 3. 最后将这2人的代码进行合并即可（需要考虑可能存在冲突，手动解决）
 ```
 
-![image-20220706200405397](http://book.bikongge.com/sre/2024-linux/image-20220706200405397.png)
+![image-20220706200405397](/ajian/image-20220706200405397.png)
 
 ## 1.1 分支命令实践
 
@@ -108,7 +108,7 @@ Fast-forward
 hello.sh  hello_world.sh  laoliu.sh
 ```
 
-![image-20220706201506415](http://book.bikongge.com/sre/2024-linux/image-20220706201506415.png)
+![image-20220706201506415](/ajian/image-20220706201506415.png)
 
 ### 分支冲突
 
@@ -286,15 +286,15 @@ Deleted branch zhangsan (was 8396a73).
 
 ## 1.3 码云的分支
 
-![image-20220707170530735](http://book.bikongge.com/sre/2024-linux/image-20220707170530735.png)
+![image-20220707170530735](/ajian/image-20220707170530735.png)
 
 # 2.git标签
 
-![image-20220707170630885](http://book.bikongge.com/sre/2024-linux/image-20220707170630885.png)
+![image-20220707170630885](/ajian/image-20220707170630885.png)
 
 Git仓库内的数据发生变化时，我们经常会打上一个类似于软件版本的标签tag，这样通过标签就可以把版本库中的某个版本给记录下来，便于以后我们可以将特定的数据取出来。
 
-![image-20220707172839124](http://book.bikongge.com/sre/2024-linux/image-20220707172839124.png)
+![image-20220707172839124](/ajian/image-20220707172839124.png)
 
 ## 2.1 为啥用git标签功能
 
@@ -317,7 +317,7 @@ https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%B
 因此tag和branch一般会配合使用
 ```
 
-![image-20220707173251002](http://book.bikongge.com/sre/2024-linux/image-20220707173251002.png)
+![image-20220707173251002](/ajian/image-20220707173251002.png)
 
 ## 2.2 tag标签实践
 
@@ -411,7 +411,7 @@ Deleted tag 'v1.0' (was 2da278c)
 
 ## 3.1 github
 
-![image-20220707182140709](http://book.bikongge.com/sre/2024-linux/image-20220707182140709.png)
+![image-20220707182140709](/ajian/image-20220707182140709.png)
 
 ```
 由于一堵墙，你可能是访问不了的，或者太慢
@@ -425,7 +425,7 @@ Deleted tag 'v1.0' (was 2da278c)
 - Git代码托管平台，首先推荐的是Github，世界范围内的开发者都在使用Github托管代码，可以找到大量优秀的开源项目，缺点就是访问可能会卡一点。
 - 其次选择的就是Gitee，国内的代码托管平台，以及自建Gitlab服务器。
 
-![image-20220707182023950](http://book.bikongge.com/sre/2024-linux/image-20220707182023950.png)
+![image-20220707182023950](/ajian/image-20220707182023950.png)
 
 Gitee 提供免费的 Git 仓库，还集成了代码质量检测、项目演示等功能。
 
@@ -439,11 +439,11 @@ https://gitee.com/
 
 ## 3.3 码云创建空仓库
 
-![image-20220707182555486](http://book.bikongge.com/sre/2024-linux/image-20220707182555486.png)
+![image-20220707182555486](/ajian/image-20220707182555486.png)
 
 创建完毕空仓库后，页面出现如下仓库使用方式，我们可以选择HTTPS和SSH两种协议和该仓库通信。
 
-![image-20220707182702055](http://book.bikongge.com/sre/2024-linux/image-20220707182702055.png)
+![image-20220707182702055](/ajian/image-20220707182702055.png)
 
 到这里，我们仓库就已经创建好了，接着就是要将本地客户端和服务端连接起来，存在于两种情况
 
@@ -497,7 +497,7 @@ git remote add origin https://gitee.com/yuco/yuchaoit.git
 
 ### 查看你推送上去的数据
 
-![image-20220707183727445](http://book.bikongge.com/sre/2024-linux/image-20220707183727445.png)
+![image-20220707183727445](/ajian/image-20220707183727445.png)
 
 ## 3.5 配置ssh免密推送代码
 
@@ -532,7 +532,7 @@ origin    git@gitee.com:yuco/yuchaoit.git (fetch)
 origin    git@gitee.com:yuco/yuchaoit.git (push)
 ```
 
-![image-20220707184105077](http://book.bikongge.com/sre/2024-linux/image-20220707184105077.png)
+![image-20220707184105077](/ajian/image-20220707184105077.png)
 
 测试加点代码，加上tag，然后再推送试试
 
@@ -666,16 +666,16 @@ Branch xiaowang set up to track remote branch xiaowang from origin.
 
 1.网页端合并操作，创建合并的请求
 
-![image-20220709190659107](http://book.bikongge.com/sre/2024-linux/image-20220709190659107.png)
+![image-20220709190659107](/ajian/image-20220709190659107.png)
 
 2.审查提交请求
 
-![image-20220709190854186](http://book.bikongge.com/sre/2024-linux/image-20220709190854186.png)
+![image-20220709190854186](/ajian/image-20220709190854186.png)
 
 3.点击合并，且删除分支
 
-![image-20220709190923453](http://book.bikongge.com/sre/2024-linux/image-20220709190923453.png)
+![image-20220709190923453](/ajian/image-20220709190923453.png)
 
 4.完成合并，分支的代码就被合并到主干线了
 
-![image-20220709191030666](http://book.bikongge.com/sre/2024-linux/image-20220709191030666.png)
+![image-20220709191030666](/ajian/image-20220709191030666.png)
