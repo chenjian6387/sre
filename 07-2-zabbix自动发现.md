@@ -23,11 +23,11 @@ zabbix的自动发现可以基于
 
 # 2.配置zabbix自动发现
 
-![image-20220705163218917](http://book.bikongge.com/sre/2024-linux/image-20220705163218917.png)
+![image-20220705163218917](/ajian/image-20220705163218917.png)
 
 添加新的自动发现规则
 
-![image-20220705163953846](http://book.bikongge.com/sre/2024-linux/image-20220705163953846.png)
+![image-20220705163953846](/ajian/image-20220705163953846.png)
 
 ```
 这里的更新时间，基于测试的环境，可以短一点，方便调试
@@ -36,27 +36,27 @@ zabbix的自动发现可以基于
 
 ## 2.1 自动发现之后的动作
 
-![image-20220705164206093](http://book.bikongge.com/sre/2024-linux/image-20220705164206093.png)
+![image-20220705164206093](/ajian/image-20220705164206093.png)
 
 ------
 
 创建动作，注意选择，【自动发现】
 
-![image-20220705165115672](http://book.bikongge.com/sre/2024-linux/image-20220705165115672.png)
+![image-20220705165115672](/ajian/image-20220705165115672.png)
 
 ------
 
 创建动作的条件
 
-![image-20220705165614246](http://book.bikongge.com/sre/2024-linux/image-20220705165614246.png)
+![image-20220705165614246](/ajian/image-20220705165614246.png)
 
 ------
 
-![image-20220705165744405](http://book.bikongge.com/sre/2024-linux/image-20220705165744405.png)
+![image-20220705165744405](/ajian/image-20220705165744405.png)
 
 ## 2.2 检查自动发现规则
 
-![image-20220705165907373](http://book.bikongge.com/sre/2024-linux/image-20220705165907373.png)
+![image-20220705165907373](/ajian/image-20220705165907373.png)
 
 ## 2.3 新加几个机器试试
 
@@ -97,15 +97,15 @@ netstat -tunlp|grep zabbix
 
 一般要等待几分钟即可自动发现。
 
-![image-20220705173841856](http://book.bikongge.com/sre/2024-linux/image-20220705173841856.png)
+![image-20220705173841856](/ajian/image-20220705173841856.png)
 
 查看zabbix-server日志
 
-![image-20220705173821954](http://book.bikongge.com/sre/2024-linux/image-20220705173821954.png)
+![image-20220705173821954](/ajian/image-20220705173821954.png)
 
 ## 2.5 坑记录,zabbix-server报警
 
-![image-20220705174126960](http://book.bikongge.com/sre/2024-linux/image-20220705174126960.png)
+![image-20220705174126960](/ajian/image-20220705174126960.png)
 
 ```
 [root@m-61 ~/p3-shell]#grep -E '^[a-Z]' /etc/zabbix/zabbix_server.conf 
@@ -130,4 +130,4 @@ LogSlowQueries=3000
 
 测测自动发现
 
-![image-20220705181856450](http://book.bikongge.com/sre/2024-linux/image-20220705181856450.png)
+![image-20220705181856450](/ajian/image-20220705181856450.png)
