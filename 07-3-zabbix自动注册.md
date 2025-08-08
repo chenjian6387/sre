@@ -14,17 +14,17 @@
 
 # 2.配置自动注册
 
-![image-20220705182505297](http://book.bikongge.com/sre/2024-linux/image-20220705182505297.png)
+![image-20220705182505297](/ajian/image-20220705182505297.png)
 
 填写详细信息，自动注册的规则
 
-![image-20220705183320715](http://book.bikongge.com/sre/2024-linux/image-20220705183320715.png)
+![image-20220705183320715](/ajian/image-20220705183320715.png)
 
 ## 2.1 自动注册动作
 
 逻辑就是，先注册上这台机器，注册好之后，要干啥？写动作。
 
-![image-20220705183459660](http://book.bikongge.com/sre/2024-linux/image-20220705183459660.png)
+![image-20220705183459660](/ajian/image-20220705183459660.png)
 
 # 3.修改zabbix-agent配置文件
 
@@ -50,4 +50,4 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 systemctl restart zabbix-agent
 ```
 
-![image-20220705184100308](http://book.bikongge.com/sre/2024-linux/image-20220705184100308.png)
+![image-20220705184100308](/ajian/image-20220705184100308.png)
