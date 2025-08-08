@@ -104,7 +104,7 @@
   - [07-2-zabbix自动发现](07-2-zabbix自动发现.md)
   - [07-3-zabbix自动注册](07-3-zabbix自动注册.md)
   - [08-zabbix分布式proxy](08-zabbix分布式proxy.md)
-* [Introduction](README.md)
+* [06-敏捷开发流水线](06-敏捷开发流水线.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
