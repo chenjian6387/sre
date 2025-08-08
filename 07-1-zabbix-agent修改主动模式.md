@@ -27,7 +27,7 @@ zabbix-agent接收请求的时候，也在响应、发送数据。
 因此这种效率，机器数量一旦多了，被动模式的效率就彻底废了。
 ```
 
-![image-20220705152104941](http://book.bikongge.com/sre/2024-linux/image-20220705152104941.png)
+![image-20220705152104941](/ajian/image-20220705152104941.png)
 
 ## 1.2 主动模式
 
@@ -35,7 +35,7 @@ zabbix-agent接收请求的时候，也在响应、发送数据。
 
 明显agent主动发数据，效率要高得多，很适合监控项非常多，以及机器数量规模较大的场景。
 
-![image-20220705153118815](http://book.bikongge.com/sre/2024-linux/image-20220705153118815.png)
+![image-20220705153118815](/ajian/image-20220705153118815.png)
 
 # 2.zabbix-agent主动模式更改
 
@@ -58,7 +58,7 @@ systemctl restart zabbix-agent
 
 注意agent配置文件的主机名，要和zabbix-UI中的主机名对上。
 
-![image-20220705155807395](http://book.bikongge.com/sre/2024-linux/image-20220705155807395.png)
+![image-20220705155807395](/ajian/image-20220705155807395.png)
 
 # 3.zabbix-UI里修改监控项为主动模式
 
@@ -66,12 +66,12 @@ systemctl restart zabbix-agent
 这里以更通用的内置 template os linux模板的监控项为案例
 ```
 
-![image-20220705154606653](http://book.bikongge.com/sre/2024-linux/image-20220705154606653.png)
+![image-20220705154606653](/ajian/image-20220705154606653.png)
 
 点击批量更新
 
-![image-20220705154756918](http://book.bikongge.com/sre/2024-linux/image-20220705154756918.png)
+![image-20220705154756918](/ajian/image-20220705154756918.png)
 
 ## 3.1查看最新的监控项数据
 
-![image-20220705162307321](http://book.bikongge.com/sre/2024-linux/image-20220705162307321.png)
+![image-20220705162307321](/ajian/image-20220705162307321.png)
