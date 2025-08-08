@@ -54,7 +54,7 @@ git clone https://gitee.com/yuco/springboot-test.git
 
 # 2.项目架构
 
-![image-20220713172046189](http://book.bikongge.com/sre/2024-linux/image-20220713172046189.png)
+![image-20220713172046189](/ajian/image-20220713172046189.png)
 
 ```
 该架构方案是
@@ -205,7 +205,7 @@ OS name: "linux", version: "3.10.0-862.el7.x86_64", arch: "amd64", family: "unix
 
 确保你的jenkins装好了maven插件
 
-![image-20220713175747927](http://book.bikongge.com/sre/2024-linux/image-20220713175747927.png)
+![image-20220713175747927](/ajian/image-20220713175747927.png)
 
 ```
 有很多插件默认就已经安装了，需要我们安装的并不多。
@@ -221,11 +221,11 @@ DingTalk Plugin
 检查这几个插件是不是都有
 ```
 
-![image-20220713175930988](http://book.bikongge.com/sre/2024-linux/image-20220713175930988.png)
+![image-20220713175930988](/ajian/image-20220713175930988.png)
 
 ------
 
-![image-20220713175939544](http://book.bikongge.com/sre/2024-linux/image-20220713175939544.png)
+![image-20220713175939544](/ajian/image-20220713175939544.png)
 
 ------
 
@@ -235,19 +235,19 @@ https://mirrors.tuna.tsinghua.edu.cn/jenkins/plugins/publish-over-ssh/1.19/publi
 这个ssh插件，版本问题直接下载不了，下载低版本然后导入即可
 ```
 
-![image-20220713180447193](http://book.bikongge.com/sre/2024-linux/image-20220713180447193.png)
+![image-20220713180447193](/ajian/image-20220713180447193.png)
 
-![image-20220713180653517](http://book.bikongge.com/sre/2024-linux/image-20220713180653517.png)
+![image-20220713180653517](/ajian/image-20220713180653517.png)
 
 ## 3.4 配置jenkins支持maven
 
 配置jdk
 
-![image-20220713185413113](http://book.bikongge.com/sre/2024-linux/image-20220713185413113.png)
+![image-20220713185413113](/ajian/image-20220713185413113.png)
 
 配置maven
 
-![image-20220713185551158](http://book.bikongge.com/sre/2024-linux/image-20220713185551158.png)
+![image-20220713185551158](/ajian/image-20220713185551158.png)
 
 具体要根据你公司的环境安装即可
 
@@ -263,7 +263,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDA9C597NnGpdyRYkDtF4zQmTa+bRxXqll3XX7LJDjL
 [root@jenkins-100 ~]#for i in 7 8 ;do ssh-copy-id root@10.0.0.$i;done
 ```
 
-![image-20220714172852072](http://book.bikongge.com/sre/2024-linux/image-20220714172852072.png)
+![image-20220714172852072](/ajian/image-20220714172852072.png)
 
 ```
 配置解释
@@ -295,11 +295,11 @@ Timeout (ms)：超时时间（毫秒）默认即可
 首页>新建>输入一个任务名称>构建一个maven项目
 ```
 
-![image-20220713200422803](http://book.bikongge.com/sre/2024-linux/image-20220713200422803.png)
+![image-20220713200422803](/ajian/image-20220713200422803.png)
 
 ## 4.2 勾选丢弃旧的构建
 
-![image-20220713200633613](http://book.bikongge.com/sre/2024-linux/image-20220713200633613.png)
+![image-20220713200633613](/ajian/image-20220713200633613.png)
 
 ## 4.3 git源码管理
 
@@ -309,11 +309,11 @@ Timeout (ms)：超时时间（毫秒）默认即可
 1.这里模拟java开发角色，上传代码到gitlab
 ```
 
-![image-20220713201837102](http://book.bikongge.com/sre/2024-linux/image-20220713201837102.png)
+![image-20220713201837102](/ajian/image-20220713201837102.png)
 
 jenkins设置
 
-![image-20220713201916375](http://book.bikongge.com/sre/2024-linux/image-20220713201916375.png)
+![image-20220713201916375](/ajian/image-20220713201916375.png)
 
 ## 4.4 构建触发器webhook设置
 
@@ -326,11 +326,11 @@ http://10.0.0.100:8080/project/springboot-yuchao
 9eeaf5ccdd6517e84b37d1482910fe44
 ```
 
-![image-20220713202741165](http://book.bikongge.com/sre/2024-linux/image-20220713202741165.png)
+![image-20220713202741165](/ajian/image-20220713202741165.png)
 
 ## 4.5 构建环境设置
 
-![image-20220713203017242](http://book.bikongge.com/sre/2024-linux/image-20220713203017242.png)
+![image-20220713203017242](/ajian/image-20220713203017242.png)
 
 修改maven的build构建参数
 
@@ -342,7 +342,7 @@ http://10.0.0.100:8080/project/springboot-yuchao
 
 ### 4.5.1 体验maven打包
 
-![image-20220713210040446](http://book.bikongge.com/sre/2024-linux/image-20220713210040446.png)
+![image-20220713210040446](/ajian/image-20220713210040446.png)
 
 ```
 [INFO] Building jar: /tmp/chapter1/target/www.yuchaoit.cn-0.0.1.jar
@@ -362,7 +362,7 @@ http://10.0.0.100:8080/project/springboot-yuchao
 [root@jenkins-100 /tmp/chapter1]#
 ```
 
-![image-20220714175041880](http://book.bikongge.com/sre/2024-linux/image-20220714175041880.png)
+![image-20220714175041880](/ajian/image-20220714175041880.png)
 
 ```
 Source files配置：arget/person-0.0.1-SNAPSHOT.jar 项目jar包名
@@ -377,11 +377,11 @@ Exec command：Jenkins-in/build.sh 应用服务器对应的shell脚本
 注意设置ip白名单
 ```
 
-![image-20220713212013297](http://book.bikongge.com/sre/2024-linux/image-20220713212013297.png)
+![image-20220713212013297](/ajian/image-20220713212013297.png)
 
 ------
 
-![image-20220713212116861](http://book.bikongge.com/sre/2024-linux/image-20220713212116861.png)
+![image-20220713212116861](/ajian/image-20220713212116861.png)
 
 # 5.部署脚本开发
 
@@ -458,23 +458,23 @@ EOF
 
 # 6.点击立即构建
 
-![image-20220714175138014](http://book.bikongge.com/sre/2024-linux/image-20220714175138014.png)
+![image-20220714175138014](/ajian/image-20220714175138014.png)
 
 # 7.测试触发push钩子
 
-![image-20220714175414871](http://book.bikongge.com/sre/2024-linux/image-20220714175414871.png)
+![image-20220714175414871](/ajian/image-20220714175414871.png)
 
 已经触发了构建任务
 
-![image-20220714175426759](http://book.bikongge.com/sre/2024-linux/image-20220714175426759.png)
+![image-20220714175426759](/ajian/image-20220714175426759.png)
 
 # 8.钉钉收到消息了吗
 
-![image-20220714180203906](http://book.bikongge.com/sre/2024-linux/image-20220714180203906.png)
+![image-20220714180203906](/ajian/image-20220714180203906.png)
 
 钉钉也看到消息了！！
 
-![image-20220714181047080](http://book.bikongge.com/sre/2024-linux/image-20220714181047080.png)
+![image-20220714181047080](/ajian/image-20220714181047080.png)
 
 ```
 [root@web-7 /usr/local/app]#curl 127.0.0.1:18888
