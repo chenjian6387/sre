@@ -113,6 +113,7 @@
   * [06-自动化发布静态页面](06-自动化发布静态页面.md)
   * [07-SonarQube代码质量扫描工具](07-SonarQube代码质量扫描工具.md)
   * [08-jenkins发布Java项目](08-jenkins发布Java项目.md)
+  * [09-jenkins流水线pipeline](09-jenkins流水线pipeline.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
