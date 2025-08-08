@@ -103,6 +103,7 @@
   - [07-1-zabbix-agent修改主动模式](07-1-zabbix-agent修改主动模式.md)
   - [07-2-zabbix自动发现](07-2-zabbix自动发现.md)
   - [07-3-zabbix自动注册](07-3-zabbix自动注册.md)
+  - [08-zabbix分布式proxy](08-zabbix分布式proxy.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
