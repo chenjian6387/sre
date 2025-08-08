@@ -1,14 +1,14 @@
 # 03-gitlab私有仓库搭建
 
-![image-20200708091136140](http://book.bikongge.com/sre/2024-linux/image-20200708091136140.png)
+![image-20200708091136140](/ajian/image-20200708091136140.png)
 
 ------
 
-![image-20200708091154862](http://book.bikongge.com/sre/2024-linux/image-20200708091154862-20220709193137515.png)
+![image-20200708091154862](/ajian/image-20200708091154862-20220709193137515.png)
 
 ------
 
-![image-20200708091226949](http://book.bikongge.com/sre/2024-linux/image-20200708091226949.png)
+![image-20200708091226949](/ajian/image-20200708091226949.png)
 
 # 1.Gitlab介绍
 
@@ -164,7 +164,7 @@ irb(main):002:0>
 确认下收到邮件吗
 ```
 
-![image-20220709202241363](http://book.bikongge.com/sre/2024-linux/image-20220709202241363.png)
+![image-20220709202241363](/ajian/image-20220709202241363.png)
 
 # 3.gitlab管理命令
 
@@ -262,7 +262,7 @@ gitlab主要配置目录
 
 # 4.访问gitlab
 
-![image-20220709202653618](http://book.bikongge.com/sre/2024-linux/image-20220709202653618.png)
+![image-20220709202653618](/ajian/image-20220709202653618.png)
 
 ```
 登录账密
@@ -275,11 +275,11 @@ www.yuchaoit.cn
 
 我们GItlab是企业级内部私有代码仓库，所有用户都由管理员创建，而非外部注册，我们可以关闭其功能，保障平台安全。
 
-![image-20220709203055319](http://book.bikongge.com/sre/2024-linux/image-20220709203055319.png)
+![image-20220709203055319](/ajian/image-20220709203055319.png)
 
 重新登录之后，注册功能就没了。
 
-![image-20220709203138641](http://book.bikongge.com/sre/2024-linux/image-20220709203138641.png)
+![image-20220709203138641](/ajian/image-20220709203138641.png)
 
 # 6.配置邮件功能
 
@@ -289,33 +289,33 @@ www.yuchaoit.cn
 - 有分支合并请求时，邮件通知
 - 修改密码等操作，邮件通知
 
-![image-20220709203318753](http://book.bikongge.com/sre/2024-linux/image-20220709203318753.png)
+![image-20220709203318753](/ajian/image-20220709203318753.png)
 
 页面添加邮箱
 
-![image-20220709203409716](http://book.bikongge.com/sre/2024-linux/image-20220709203409716.png)
+![image-20220709203409716](/ajian/image-20220709203409716.png)
 
 去邮箱中验证
 
-![image-20220709203502494](http://book.bikongge.com/sre/2024-linux/image-20220709203502494.png)
+![image-20220709203502494](/ajian/image-20220709203502494.png)
 
 ```
 点击链接，确认邮件添加
 ```
 
-![image-20220709203830229](http://book.bikongge.com/sre/2024-linux/image-20220709203830229.png)
+![image-20220709203830229](/ajian/image-20220709203830229.png)
 
 该邮箱以被验证。
 
 # 7.gitlab用户与组管理
 
-![image-20200708135625100](http://book.bikongge.com/sre/2024-linux/image-20200708135625100.png)
+![image-20200708135625100](/ajian/image-20200708135625100.png)
 
 ## 7.1 创建组
 
 Gitlab是通过组（group）的概念来统一管理仓库(project)和用户(user)，通过创建组，在组下创建仓库，再将用户加入组，从而实现用户和仓库的权限管理。
 
-![image-20220709204023796](http://book.bikongge.com/sre/2024-linux/image-20220709204023796.png)
+![image-20220709204023796](/ajian/image-20220709204023796.png)
 
 点击新建群组，在创建组页面中，组路径和名称为必填项，且该两处内容最好一致。
 
@@ -329,11 +329,11 @@ Gitlab是通过组（group）的概念来统一管理仓库(project)和用户(us
 ops运维部门
 ```
 
-![image-20220709204110744](http://book.bikongge.com/sre/2024-linux/image-20220709204110744.png)
+![image-20220709204110744](/ajian/image-20220709204110744.png)
 
 ## 7.2 创建project项目
 
-![image-20220709204254716](http://book.bikongge.com/sre/2024-linux/image-20220709204254716.png)
+![image-20220709204254716](/ajian/image-20220709204254716.png)
 
 ```
 创建项目用于存储你的源代码，以及对该代码仓库做devops系列持续构建。
@@ -341,35 +341,35 @@ ops运维部门
 选择项目所属的组，输入项目名称，项目描述，选择可见级别，完成项目创建。
 ```
 
-![image-20220709204915473](http://book.bikongge.com/sre/2024-linux/image-20220709204915473.png)
+![image-20220709204915473](/ajian/image-20220709204915473.png)
 
 创建完毕
 
-![image-20220709205019783](http://book.bikongge.com/sre/2024-linux/image-20220709205019783.png)
+![image-20220709205019783](/ajian/image-20220709205019783.png)
 
 ## 7.3查看仪表盘
 
-![image-20220709205232540](http://book.bikongge.com/sre/2024-linux/image-20220709205232540.png)
+![image-20220709205232540](/ajian/image-20220709205232540.png)
 
 ## 7.4创建用户
 
-![image-20220709205417253](http://book.bikongge.com/sre/2024-linux/image-20220709205417253.png)
+![image-20220709205417253](/ajian/image-20220709205417253.png)
 
 用户创建后，会收到修改密码的邮件。
 
-![image-20220709205522993](http://book.bikongge.com/sre/2024-linux/image-20220709205522993.png)
+![image-20220709205522993](/ajian/image-20220709205522993.png)
 
 注意，会跳转到你gitlab设置的服务器url里。
 
-![image-20220709205605856](http://book.bikongge.com/sre/2024-linux/image-20220709205605856.png)
+![image-20220709205605856](/ajian/image-20220709205605856.png)
 
 ------
 
-![image-20220709205630714](http://book.bikongge.com/sre/2024-linux/image-20220709205630714.png)
+![image-20220709205630714](/ajian/image-20220709205630714.png)
 
 ## 7.5用普通用户yuchao登录gitlab
 
-![image-20220709205758001](http://book.bikongge.com/sre/2024-linux/image-20220709205758001.png)
+![image-20220709205758001](/ajian/image-20220709205758001.png)
 
 ## 7.6 回到root给yuchao添加到ops组
 
@@ -395,13 +395,13 @@ Public：所有人都能看到
 开源项目和组设置的是Internal
 ```
 
-![image-20220709210114545](http://book.bikongge.com/sre/2024-linux/image-20220709210114545.png)
+![image-20220709210114545](/ajian/image-20220709210114545.png)
 
 点击添加之后，回到yuchao用户，刷新查看权限，以可以看到代码仓库了。
 
 如果是给的如developer权限，那么作为开发人员角色，权限较低，无法对代码仓库做编辑动作了。
 
-![image-20220709210324730](http://book.bikongge.com/sre/2024-linux/image-20220709210324730.png)
+![image-20220709210324730](/ajian/image-20220709210324730.png)
 
 # 8.gitlab仓库代码管理实践
 
@@ -411,7 +411,7 @@ Public：所有人都能看到
 
 我们的仓库是私有的，只有授权的用户才可以访问到该仓库，那么只要将客户端的用户 与我们GitLab的用户绑定，客户端即可访问到GitLab上的仓库，我们建议使用SSH方式实 现客户端与 Gitlab 用户的绑定，具体配置如下。
 
-![image-20220709210534747](http://book.bikongge.com/sre/2024-linux/image-20220709210534747.png)
+![image-20220709210534747](/ajian/image-20220709210534747.png)
 
 ```
 [root@zabbix-server-71 /home]#
@@ -442,11 +442,11 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD6oxC6YMGx/pshLlqk2jhbB05XT858dRrMBEw/o4lp
 [root@zabbix-server-71 /home]#
 ```
 
-![image-20220709210657433](http://book.bikongge.com/sre/2024-linux/image-20220709210657433.png)
+![image-20220709210657433](/ajian/image-20220709210657433.png)
 
 ## 8.2发布halo博客源码实战
 
-![image-20220710110603664](http://book.bikongge.com/sre/2024-linux/image-20220710110603664.png)
+![image-20220710110603664](/ajian/image-20220710110603664.png)
 
 需求
 
@@ -515,11 +515,11 @@ git show v1.5.4
 laoliu用户是开发者  账号laoliu 密码laoliu666
 ```
 
-![image-20220710110959782](http://book.bikongge.com/sre/2024-linux/image-20220710110959782.png)
+![image-20220710110959782](/ajian/image-20220710110959782.png)
 
 ### gitlab项目创建
 
-![image-20220710111037288](http://book.bikongge.com/sre/2024-linux/image-20220710111037288.png)
+![image-20220710111037288](/ajian/image-20220710111037288.png)
 
 设置ssh-key
 
@@ -532,11 +532,11 @@ laoliu用户是开发者  账号laoliu 密码laoliu666
 [root@zabbix-server-71 /home/halo]#git push -u origin --tags
 ```
 
-![image-20220710111605608](http://book.bikongge.com/sre/2024-linux/image-20220710111605608.png)
+![image-20220710111605608](/ajian/image-20220710111605608.png)
 
 ### 保护master分支（不允许开发者提交）
 
-![image-20220710124657344](http://book.bikongge.com/sre/2024-linux/image-20220710124657344.png)
+![image-20220710124657344](/ajian/image-20220710124657344.png)
 
 ### 开发laoliu开始写代码
 
@@ -546,7 +546,7 @@ laoliu用户是开发者  账号laoliu 密码laoliu666
 给web7机器的ssh-key，加入到laoliu的账号里
 ```
 
-![image-20220710131805862](http://book.bikongge.com/sre/2024-linux/image-20220710131805862.png)
+![image-20220710131805862](/ajian/image-20220710131805862.png)
 
 ```
 1. 克隆代码
@@ -663,23 +663,23 @@ Branch laoliu set up to track remote branch laoliu from origin.
 
 ### 查看远程halo仓库的分支代码
 
-![image-20220710133556461](http://book.bikongge.com/sre/2024-linux/image-20220710133556461.png)
+![image-20220710133556461](/ajian/image-20220710133556461.png)
 
 ### 创建合并请求，提交PR
 
-![image-20220710134041940](http://book.bikongge.com/sre/2024-linux/image-20220710134041940.png)
+![image-20220710134041940](/ajian/image-20220710134041940.png)
 
 ### 管理员yuchao去合并代码
 
-![image-20220710134244370](http://book.bikongge.com/sre/2024-linux/image-20220710134244370.png)
+![image-20220710134244370](/ajian/image-20220710134244370.png)
 
 ------
 
-![image-20220710134456207](http://book.bikongge.com/sre/2024-linux/image-20220710134456207.png)
+![image-20220710134456207](/ajian/image-20220710134456207.png)
 
 点击merge小绿灯之后，查看master分支代码
 
-![image-20220710134719947](http://book.bikongge.com/sre/2024-linux/image-20220710134719947.png)
+![image-20220710134719947](/ajian/image-20220710134719947.png)
 
 ### 此时下载最新代码试试，master分支的
 
