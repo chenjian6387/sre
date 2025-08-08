@@ -106,6 +106,7 @@
 * [06-敏捷开发流水线](06-敏捷开发流水线.md)
   * [00-代码版本控制系统](00-代码版本控制系统.md)
   * [01-git工具](01-git工具.md)
+  * [02-git与gitee码云](02-git与gitee码云.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
