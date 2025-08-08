@@ -62,7 +62,7 @@ Jenkins是开源CI&CD软件领导者， 提供超过1000个插件来支持构建
 
 官网：https://jenkins.io/
 
-![image-20220710175227830](http://book.bikongge.com/sre/2024-linux/image-20220710175227830.png)
+![image-20220710175227830](/ajian/image-20220710175227830.png)
 
 ```
 ##### 持续集成和持续交付
@@ -94,7 +94,7 @@ Jenkins 可以轻松地在多台机器上分配工作，帮助更快速地跨多
   * 运维人员使用脚本下载再部署
 ```
 
-![image-20220710175907307](http://book.bikongge.com/sre/2024-linux/image-20220710175907307.png)
+![image-20220710175907307](/ajian/image-20220710175907307.png)
 
 ```
 也正是上一节于超老师让大家部署在gitlab中的halo代码
@@ -108,11 +108,11 @@ Jenkins 可以轻松地在多台机器上分配工作，帮助更快速地跨多
 
 ## 2.2 使用jenkins轻松部署
 
-![image-20220710181416658](http://book.bikongge.com/sre/2024-linux/image-20220710181416658.png)
+![image-20220710181416658](/ajian/image-20220710181416658.png)
 
 使用jenkins会是如何
 
-![image-20220710181733759](http://book.bikongge.com/sre/2024-linux/image-20220710181733759.png)
+![image-20220710181733759](/ajian/image-20220710181733759.png)
 
 ## 2.3 安装jenkins
 
@@ -230,29 +230,29 @@ jenkins核心目录：/var/lib/jenkins
 
 ## 2.6 登录jenkins
 
-![image-20220710204619385](http://book.bikongge.com/sre/2024-linux/image-20220710204619385.png)
+![image-20220710204619385](/ajian/image-20220710204619385.png)
 
 ## 2.7 自定义jenkins插件
 
 别用自带的jenkins社区插件，下载的太累，一般会用以装好的机器，导出的插件，离线导入更高效。
 
-![image-20220710204805136](http://book.bikongge.com/sre/2024-linux/image-20220710204805136.png)
+![image-20220710204805136](/ajian/image-20220710204805136.png)
 
-![image-20220710205214321](http://book.bikongge.com/sre/2024-linux/image-20220710205214321.png)
+![image-20220710205214321](/ajian/image-20220710205214321.png)
 
 ## 2.8 jenkins首页
 
-![image-20220710205306461](http://book.bikongge.com/sre/2024-linux/image-20220710205306461.png)
+![image-20220710205306461](/ajian/image-20220710205306461.png)
 
 ## 2.9 修改admin密码
 
-![image-20220710205345547](http://book.bikongge.com/sre/2024-linux/image-20220710205345547.png)
+![image-20220710205345547](/ajian/image-20220710205345547.png)
 
 ------
 
 修改密码
 
-![image-20220710205420529](http://book.bikongge.com/sre/2024-linux/image-20220710205420529.png)
+![image-20220710205420529](/ajian/image-20220710205420529.png)
 
 ```
 随后会让你重新登录
@@ -311,15 +311,15 @@ systemctl restart jenkins
 需要重启jenkins服务,才能在web界面读取到解压的插件
 ```
 
-![image-20220710210527733](http://book.bikongge.com/sre/2024-linux/image-20220710210527733.png)
+![image-20220710210527733](/ajian/image-20220710210527733.png)
 
 ------
 
-![image-20220710220508791](http://book.bikongge.com/sre/2024-linux/image-20220710220508791.png)
+![image-20220710220508791](/ajian/image-20220710220508791.png)
 
 ------
 
-![image-20220710220528218](http://book.bikongge.com/sre/2024-linux/image-20220710220528218.png)
+![image-20220710220528218](/ajian/image-20220710220528218.png)
 
 ## 3.1 在清华源站下载插件
 
@@ -329,7 +329,7 @@ https://mirrors.tuna.tsinghua.edu.cn/jenkins/plugins/
 下载.hpi文件，然后在jenkins里面导入上传即可，自动安装，重启生效
 ```
 
-![image-20220710220752136](http://book.bikongge.com/sre/2024-linux/image-20220710220752136.png)
+![image-20220710220752136](/ajian/image-20220710220752136.png)
 
 ```
 可以更换插件源为清华的
@@ -365,23 +365,23 @@ jdk-8u181-linux-x64.rpm  jenkins-2.190.1-1.1.noarch.rpm  jenkins_plugins.tar.gz 
 systemctl restart jenkins
 ```
 
-![image-20220710222410044](http://book.bikongge.com/sre/2024-linux/image-20220710222410044.png)
+![image-20220710222410044](/ajian/image-20220710222410044.png)
 
 ------
 
 以改为中文了，nice
 
-![image-20220710222706436](http://book.bikongge.com/sre/2024-linux/image-20220710222706436.png)
+![image-20220710222706436](/ajian/image-20220710222706436.png)
 
 # 4.jenkins配置相关
 
 ## 4.1安装插件后，首页多了些内容
 
-![image-20220710222824353](http://book.bikongge.com/sre/2024-linux/image-20220710222824353.png)
+![image-20220710222824353](/ajian/image-20220710222824353.png)
 
 ------
 
-![image-20220710222853549](http://book.bikongge.com/sre/2024-linux/image-20220710222853549.png)
+![image-20220710222853549](/ajian/image-20220710222853549.png)
 
 ## 4.2 jenkins配置文件目录
 
@@ -458,7 +458,7 @@ root      17847   1488  0 06:34 pts/0    00:00:00 grep --color=auto jenkins
 
 ## 4.5 修改时区
 
-![image-20220710223612767](http://book.bikongge.com/sre/2024-linux/image-20220710223612767.png)
+![image-20220710223612767](/ajian/image-20220710223612767.png)
 
 # 5.jenkins初体验
 
@@ -482,7 +482,7 @@ root      17847   1488  0 06:34 pts/0    00:00:00 grep --color=auto jenkins
 
 ## 5.3 Jenkins创建freestyle项目
 
-![image-20220710223852801](http://book.bikongge.com/sre/2024-linux/image-20220710223852801.png)
+![image-20220710223852801](/ajian/image-20220710223852801.png)
 
 ```
 1.输入任务名字，job名字，定义一个有意义的名字，需要根据业务命名，如slb-nginx
@@ -510,7 +510,7 @@ drwxr-xr-x 2 root root  23 Jul 11 06:38 builds
 
 还有就是最大构建的任务个数，这里是5个
 
-![image-20220710224300582](http://book.bikongge.com/sre/2024-linux/image-20220710224300582.png)
+![image-20220710224300582](/ajian/image-20220710224300582.png)
 
 ```
 丢弃旧的构建提示
@@ -534,19 +534,19 @@ drwxr-xr-x 2 root root  23 Jul 11 06:38 builds
 
 ## 5.4 定义构建步骤
 
-![image-20220710224556444](http://book.bikongge.com/sre/2024-linux/image-20220710224556444.png)
+![image-20220710224556444](/ajian/image-20220710224556444.png)
 
 ## 5.5 执行job，立即构建
 
-![image-20220710224648316](http://book.bikongge.com/sre/2024-linux/image-20220710224648316.png)
+![image-20220710224648316](/ajian/image-20220710224648316.png)
 
 第一次执行的日志记录
 
-![image-20220710224803121](http://book.bikongge.com/sre/2024-linux/image-20220710224803121.png)
+![image-20220710224803121](/ajian/image-20220710224803121.png)
 
 查看日志细节
 
-![image-20220710224837837](http://book.bikongge.com/sre/2024-linux/image-20220710224837837.png)
+![image-20220710224837837](/ajian/image-20220710224837837.png)
 
 ## 5.6 查看jenkins的工作目录与构建结果
 
@@ -569,11 +569,11 @@ job执行的命令也都的确执行了
 
 ## 5.7 第二次构建（修改构建命令）
 
-![image-20220710225258562](http://book.bikongge.com/sre/2024-linux/image-20220710225258562.png)
+![image-20220710225258562](/ajian/image-20220710225258562.png)
 
 多次执行试试，然后查看日志
 
-![image-20220710225557362](http://book.bikongge.com/sre/2024-linux/image-20220710225557362.png)
+![image-20220710225557362](/ajian/image-20220710225557362.png)
 
 ## 5.8 小结gitlab的构建任务
 
