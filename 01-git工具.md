@@ -14,7 +14,7 @@ Git有多种方式使用
 https://git-scm.com/download/win
 ```
 
-![image-20220706164522354](http://book.bikongge.com/sre/2024-linux/image-20220706164522354.png)
+![image-20220706164522354](/ajian/image-20220706164522354.png)
 
 ## 7.2 linux\macos
 
@@ -242,11 +242,11 @@ git的操控命令，就是在这四大工作区，来回切换的！！
 执行git add . 表示添加所有未被git跟踪的文件，用git进行跟踪状态
 ```
 
-![image-20220706171639372](http://book.bikongge.com/sre/2024-linux/image-20220706171639372.png)
+![image-20220706171639372](/ajian/image-20220706171639372.png)
 
 ------
 
-![image-20220706172350543](http://book.bikongge.com/sre/2024-linux/image-20220706172350543.png)
+![image-20220706172350543](/ajian/image-20220706172350543.png)
 
 # 11.git命令实践
 
@@ -620,7 +620,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 > 练一练，完整的提交版本记录的操作
 
-![image-20220706181554951](http://book.bikongge.com/sre/2024-linux/image-20220706181554951.png)
+![image-20220706181554951](/ajian/image-20220706181554951.png)
 
 ### 提交v1版本
 
@@ -810,7 +810,7 @@ nothing to commit, working directory clean
 
 这个就如同我们打游戏时候，保存关卡记录的操作。
 
-![image-20200706162827184](http://book.bikongge.com/sre/2024-linux/image-20200706162827184-20220706195444995.png)
+![image-20200706162827184](/ajian/image-20200706162827184-20220706195444995.png)
 
 在打boss之前，先做一个存档，防止你这个渣渣，被boss一招秒杀，又得从头再来。。。。。
 
@@ -890,7 +890,7 @@ e9547df v3 就玩三次吧
 
 学到这里，超哥想起来那年十八岁，听着周董的《回到过去》。。
 
-![image-20200706174453642](http://book.bikongge.com/sre/2024-linux/image-20200706174453642.png)
+![image-20200706174453642](/ajian/image-20200706174453642.png)
 
 我们已知git commit可以提交代码到本地仓库，如同虚拟机的快照，当也可以进行版本回退。
 
@@ -996,7 +996,7 @@ fb118ba first commit with line 1
 
 git log 原理图
 
-![image-20200706174930054](http://book.bikongge.com/sre/2024-linux/image-20200706174930054.png)
+![image-20200706174930054](/ajian/image-20200706174930054.png)
 
 - 提交后的代码文件，使用`git log`查看当前版本及以前的历史版本。
 - 使用`git reset --hard HEAD^`或者`git reset --hard HEAD^^`实现版本回退。
@@ -1069,4 +1069,4 @@ echo "练一练git撤销命令?"
 
 # 14.git版本控制总结
 
-![image-20220706195415384](http://book.bikongge.com/sre/2024-linux/image-20220706195415384.png)
+![image-20220706195415384](/ajian/image-20220706195415384.png)
