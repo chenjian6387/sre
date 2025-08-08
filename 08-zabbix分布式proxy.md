@@ -6,7 +6,7 @@
 https://www.zabbix.com/documentation/4.0/zh/manual/distributed_monitoring/proxies
 ```
 
-![image-20220705190855504](http://book.bikongge.com/sre/2024-linux/image-20220705190855504.png)
+![image-20220705190855504](/ajian/image-20220705190855504.png)
 
 ```
 zabbix除了前面于超老师讲解的  zabbix-server  / zabbix-agent模式以外
@@ -33,7 +33,7 @@ zabbix-proxy作用就是 临时存储数据，且转发，给zabbix-server，也
 zabbix-agent  > zabbix-proxy > zabbix-server
 ```
 
-![image-20220705191958671](http://book.bikongge.com/sre/2024-linux/image-20220705191958671.png)
+![image-20220705191958671](/ajian/image-20220705191958671.png)
 
 # 3.zabbix-proxy部署
 
@@ -115,22 +115,22 @@ EOF
 到这里也就是配置zabbix-server了，设置zabbix-proxy
 ```
 
-![image-20220705195841915](http://book.bikongge.com/sre/2024-linux/image-20220705195841915.png)
+![image-20220705195841915](/ajian/image-20220705195841915.png)
 
 具体代理配置
 
-![image-20220705195958516](http://book.bikongge.com/sre/2024-linux/image-20220705195958516.png)
+![image-20220705195958516](/ajian/image-20220705195958516.png)
 
 # 6.打开zabbix-UI中的自动注册功能
 
-![image-20220705200319657](http://book.bikongge.com/sre/2024-linux/image-20220705200319657.png)
+![image-20220705200319657](/ajian/image-20220705200319657.png)
 
 注意自动注册的条件。
 
-![image-20220705200614355](http://book.bikongge.com/sre/2024-linux/image-20220705200614355.png)
+![image-20220705200614355](/ajian/image-20220705200614355.png)
 
 # 7.查看zabbix-server是否拿到db-51数据
 
 通过proxy的模式
 
-![image-20220705201825928](http://book.bikongge.com/sre/2024-linux/image-20220705201825928.png)
+![image-20220705201825928](/ajian/image-20220705201825928.png)
