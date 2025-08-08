@@ -22,7 +22,7 @@ jenkins的流水线(pipeline)是一个单独的概念，指的是按顺序连接
 
 理解流水线的最简单方法是可视化一系列阶段，如下所示：
 
-![image-20210225100028272](http://book.bikongge.com/sre/2024-linux/image-20210225100028272.png)
+![image-20210225100028272](/ajian/image-20210225100028272.png)
 
 在这里，你应该看到两个熟悉的概念： *阶段(Stage)*和 *步骤(Step)*。
 
@@ -90,7 +90,7 @@ Groovy是一种基于JVM（Java虚拟机）的敏捷开发语言，它结合了P
 
 这就是流水线的多样性，每条线路都有不同的站点。
 
-![images](http://book.bikongge.com/sre/2024-linux/25087d277f6965d2d30a94f8dce65dc4-20220714200406998.png)
+![images](/ajian/25087d277f6965d2d30a94f8dce65dc4-20220714200406998.png)
 
 ```
 北京地铁=======jenkins
@@ -132,7 +132,7 @@ jenkinsfile 就是一个脚本文件，放在项目的根目录下，能够被je
 jenkinsfile的编写可以参考jenkins官网：https://www.jenkins.io/zh/doc/book/pipeline/syntax/)
 ```
 
-![image-20210225101225848](http://book.bikongge.com/sre/2024-linux/image-20210225101225848.png)
+![image-20210225101225848](/ajian/image-20210225101225848.png)
 
 # 4.安装blue ocean插件
 
@@ -142,8 +142,8 @@ jenkinsfile的编写可以参考jenkins官网：https://www.jenkins.io/zh/doc/bo
 
 该插件超哥已经给大家导入好了，要么就可以自己进行插件管理，在线安装
 
-![image-20220714201405958](http://book.bikongge.com/sre/2024-linux/image-20220714201405958.png)
+![image-20220714201405958](/ajian/image-20220714201405958.png)
 
 ------
 
-![image-20220714201418468](http://book.bikongge.com/sre/2024-linux/image-20220714201418468.png)
+![image-20220714201418468](/ajian/image-20220714201418468.png)
