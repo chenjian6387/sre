@@ -15,7 +15,7 @@
 https://support.huaweicloud.com/reference-devcloud/devcloud_reference_040404.html
 ```
 
-![image-20220713112216236](http://book.bikongge.com/sre/2024-linux/image-20220713112216236.png)
+![image-20220713112216236](/ajian/image-20220713112216236.png)
 
 ```
 前面我们已经基本实现了，基于git+gitlab+jenkins实现了 
@@ -262,7 +262,7 @@ sysctl -p
 http://10.0.0.100:9000/
 ```
 
-![image-20220713145022278](http://book.bikongge.com/sre/2024-linux/image-20220713145022278.png)
+![image-20220713145022278](/ajian/image-20220713145022278.png)
 
 ```
 默认账密
@@ -270,13 +270,13 @@ admin
 admin
 ```
 
-![image-20220713145049065](http://book.bikongge.com/sre/2024-linux/image-20220713145049065.png)
+![image-20220713145049065](/ajian/image-20220713145049065.png)
 
 ## 4.2 生成token
 
 在输入框内输入jenkins，然后点击Generate生成token，需要保存好这个tocken，后面会用到
 
-![image-20220713145227942](http://book.bikongge.com/sre/2024-linux/image-20220713145227942.png)
+![image-20220713145227942](/ajian/image-20220713145227942.png)
 
 ```
 token就是一串字符串数据，用于身份校验
@@ -284,7 +284,7 @@ token就是一串字符串数据，用于身份校验
 输入jenkins，点击生成token
 ```
 
-![image-20220713145206149](http://book.bikongge.com/sre/2024-linux/image-20220713145206149.png)
+![image-20220713145206149](/ajian/image-20220713145206149.png)
 
 ```
 jenkins: 39df5194b5e02606f68d15d34c6e7d4bbd4eab10
@@ -292,11 +292,11 @@ jenkins: 39df5194b5e02606f68d15d34c6e7d4bbd4eab10
 
 ## 4.3 选择项目类型(开发语言)
 
-![image-20220713145416139](http://book.bikongge.com/sre/2024-linux/image-20220713145416139.png)
+![image-20220713145416139](/ajian/image-20220713145416139.png)
 
 ------
 
-![image-20220713145504823](http://book.bikongge.com/sre/2024-linux/image-20220713145504823.png)
+![image-20220713145504823](/ajian/image-20220713145504823.png)
 
 ```
 保存客户端启动命令
@@ -312,11 +312,11 @@ sonar-scanner \
 
 目前已有的一个检测项目（名字是 html）
 
-![image-20220713150146548](http://book.bikongge.com/sre/2024-linux/image-20220713150146548.png)
+![image-20220713150146548](/ajian/image-20220713150146548.png)
 
 安装中文插件
 
-![image-20220713150211653](http://book.bikongge.com/sre/2024-linux/image-20220713150211653.png)
+![image-20220713150211653](/ajian/image-20220713150211653.png)
 
 遗憾貌似装不了，采用离线安装吧
 
@@ -346,13 +346,13 @@ downloads  jdbc-driver  plugins  plugins_bak
 
 再次访问
 
-![image-20220713150728899](http://book.bikongge.com/sre/2024-linux/image-20220713150728899.png)
+![image-20220713150728899](/ajian/image-20220713150728899.png)
 
 # 6.安装客户端
 
 > 架构图
 
-![image-20220713150931234](http://book.bikongge.com/sre/2024-linux/image-20220713150931234.png)
+![image-20220713150931234](/ajian/image-20220713150931234.png)
 
 ```
 sonar-scanner 是专门用于代码检测的命令工具
@@ -397,11 +397,11 @@ sonar-scanner \
   -Dsonar.login=39df5194b5e02606f68d15d34c6e7d4bbd4eab10
 ```
 
-![image-20220713152243354](http://book.bikongge.com/sre/2024-linux/image-20220713152243354.png)
+![image-20220713152243354](/ajian/image-20220713152243354.png)
 
 ## 6.1 代码扫描结果
 
-![image-20220713152442802](http://book.bikongge.com/sre/2024-linux/image-20220713152442802.png)
+![image-20220713152442802](/ajian/image-20220713152442802.png)
 
 ## 6.2 解决报错
 
@@ -433,43 +433,43 @@ EOF
 v12.13.0
 ```
 
-![image-20220713152856065](http://book.bikongge.com/sre/2024-linux/image-20220713152856065.png)
+![image-20220713152856065](/ajian/image-20220713152856065.png)
 
 ## 6.3 测测其他代码试试
 
 简单玩下试试就行，要检测更多其他复杂源码，需要安装插件，做更多学习。
 
-![image-20220713153119494](http://book.bikongge.com/sre/2024-linux/image-20220713153119494.png)
+![image-20220713153119494](/ajian/image-20220713153119494.png)
 
 # 7.SonarQube集成jenkins
 
 ## 7.1 jenkins里添加SonarQube的凭证
 
-![image-20220713154254309](http://book.bikongge.com/sre/2024-linux/image-20220713154254309.png)
+![image-20220713154254309](/ajian/image-20220713154254309.png)
 
 先保存sonar设置，然后再添加sonar凭证
 
-![image-20220713154521871](http://book.bikongge.com/sre/2024-linux/image-20220713154521871.png)
+![image-20220713154521871](/ajian/image-20220713154521871.png)
 
 ------
 
-![image-20220713154611597](http://book.bikongge.com/sre/2024-linux/image-20220713154611597.png)
+![image-20220713154611597](/ajian/image-20220713154611597.png)
 
 ## 7.2 添加Sonar客户端的家目录
 
 也就是代码检测的目录，待会要和jenkins的工作区对应上。
 
-![image-20220713154854647](http://book.bikongge.com/sre/2024-linux/image-20220713154854647.png)
+![image-20220713154854647](/ajian/image-20220713154854647.png)
 
 ------
 
-![image-20220713154946671](http://book.bikongge.com/sre/2024-linux/image-20220713154946671.png)
+![image-20220713154946671](/ajian/image-20220713154946671.png)
 
 ## 7.3 给job添加sonar构建动作
 
 构建的同时进行代码扫描
 
-![image-20220713155452379](http://book.bikongge.com/sre/2024-linux/image-20220713155452379.png)
+![image-20220713155452379](/ajian/image-20220713155452379.png)
 
 ```
 也就是添加三个sonar执行的参数，确保sonnar的命令是在代码目录下执行
@@ -486,7 +486,7 @@ sonar.sources=.
 
 调整jenkins的devops流程构建步骤。
 
-![image-20220713155710605](http://book.bikongge.com/sre/2024-linux/image-20220713155710605.png)
+![image-20220713155710605](/ajian/image-20220713155710605.png)
 
 # 8.最终测试
 
@@ -495,12 +495,12 @@ sonar.sources=.
 2. 构建动作里，先sonnar代码扫描，然后进行脚本发布
 ```
 
-![image-20220713160123821](http://book.bikongge.com/sre/2024-linux/image-20220713160123821.png)
+![image-20220713160123821](/ajian/image-20220713160123821.png)
 
 检查sonarqube
 
-![image-20220713160247274](http://book.bikongge.com/sre/2024-linux/image-20220713160247274.png)
+![image-20220713160247274](/ajian/image-20220713160247274.png)
 
 检查部署结果
 
-![image-20220713160415606](http://book.bikongge.com/sre/2024-linux/image-20220713160415606.png)
+![image-20220713160415606](/ajian/image-20220713160415606.png)
