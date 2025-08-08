@@ -110,6 +110,7 @@
   * [03-gitlab私有仓库搭建](03-gitlab私有仓库搭建.md)
   * [04-jenkins](04-jenkins.md)
   * [05-jenkins结合远程仓库](05-jenkins结合远程仓库.md)
+  * [06-自动化发布静态页面](06-自动化发布静态页面.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
