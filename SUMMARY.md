@@ -108,6 +108,7 @@
   * [01-git工具](01-git工具.md)
   * [02-git与gitee码云](02-git与gitee码云.md)
   * [03-gitlab私有仓库搭建](03-gitlab私有仓库搭建.md)
+  * [04-jenkins](04-jenkins.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
