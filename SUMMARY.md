@@ -114,6 +114,6 @@
   * [07-SonarQube代码质量扫描工具](07-SonarQube代码质量扫描工具.md)
   * [08-jenkins发布Java项目](08-jenkins发布Java项目.md)
   * [09-jenkins流水线pipeline](09-jenkins流水线pipeline.md)
-* [Introduction](README.md)
+* [07-数据库运维](07-数据库运维.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
