@@ -15,7 +15,7 @@ https://redis.io/docs/manual/sentinel/#sentinels-and-replicas-auto-discovery
 >
 > 哨兵的核心功能是主节点的自动故障转移。
 
-![image-20220810184327608](http://book.bikongge.com/sre/2024-linux/image-20220810184327608.png)
+![image-20220810184327608](/ajian/image-20220810184327608.png)
 
 ## 哨兵实现了什么
 
@@ -47,7 +47,7 @@ https://redis.io/docs/manual/sentinel/#sentinels-and-replicas-auto-discovery
 
 ### 哨兵之间的发布订阅
 
-![image-20220810190120135](http://book.bikongge.com/sre/2024-linux/image-20220810190120135.png)
+![image-20220810190120135](/ajian/image-20220810190120135.png)
 
 ```
 这样一来，哨兵2与3，也都建立了连接，形成了集群，通过网络通信。
@@ -84,7 +84,7 @@ Reading messages... (press Ctrl-C to quit)
 (integer) 0
 ```
 
-![image-20220810185508755](http://book.bikongge.com/sre/2024-linux/image-20220810185508755.png)
+![image-20220810185508755](/ajian/image-20220810185508755.png)
 
 ## 哨兵如何监控的redis
 
@@ -96,11 +96,11 @@ Reading messages... (press Ctrl-C to quit)
 
 哨兵 1 和 3 可以通过相同的方法和从库建立连接。
 
-![image-20220810190444780](http://book.bikongge.com/sre/2024-linux/image-20220810190444780.png)
+![image-20220810190444780](/ajian/image-20220810190444780.png)
 
 ## 哨兵如何判定master下线
 
-![image-20220810190831421](http://book.bikongge.com/sre/2024-linux/image-20220810190831421.png)
+![image-20220810190831421](/ajian/image-20220810190831421.png)
 
 ```
 当一个哨兵确认master挂了，给其他哨兵发送 is-master-down-by-addr 命令，命令来询问对方是否认为给定的服务器已下线。
@@ -116,11 +116,11 @@ Reading messages... (press Ctrl-C to quit)
 - 选择`salve-priority`从节点优先级最高（redis.conf）的
 - 选择复制偏移量最大，只复制最完整的从节点.
 
-![image-20220810191419829](http://book.bikongge.com/sre/2024-linux/image-20220810191419829.png)
+![image-20220810191419829](/ajian/image-20220810191419829.png)
 
 ## 故障如何转移原理
 
-![image-20220810191855323](http://book.bikongge.com/sre/2024-linux/image-20220810191855323.png)
+![image-20220810191855323](/ajian/image-20220810191855323.png)
 
 ```
 1. slave1 执行replicaof no one 
@@ -284,7 +284,7 @@ info sentinel
 
 ### 哨兵部署结果
 
-![image-20220810200243145](http://book.bikongge.com/sre/2024-linux/image-20220810200243145.png)
+![image-20220810200243145](/ajian/image-20220810200243145.png)
 
 ### 哨兵注意点
 
@@ -334,25 +334,25 @@ OK 3 usable Sentinels. Quorum and failover authorization can be reached
 
 ## 正常m-s关系
 
-![image-20220810201819388](http://book.bikongge.com/sre/2024-linux/image-20220810201819388.png)
+![image-20220810201819388](/ajian/image-20220810201819388.png)
 
 ## 故障转移
 
-![image-20220810202017969](http://book.bikongge.com/sre/2024-linux/image-20220810202017969.png)
+![image-20220810202017969](/ajian/image-20220810202017969.png)
 
 ## 新主从关系
 
-![image-20220810202141842](http://book.bikongge.com/sre/2024-linux/image-20220810202141842.png)
+![image-20220810202141842](/ajian/image-20220810202141842.png)
 
 ## 查看配置文件
 
 ### redis
 
-![image-20220810202322191](http://book.bikongge.com/sre/2024-linux/image-20220810202322191.png)
+![image-20220810202322191](/ajian/image-20220810202322191.png)
 
 ### sentinel
 
-![image-20220810202707902](http://book.bikongge.com/sre/2024-linux/image-20220810202707902.png)
+![image-20220810202707902](/ajian/image-20220810202707902.png)
 
 ## 修复old_master
 
@@ -382,7 +382,7 @@ aof-use-rdb-preamble yes
 
 一旦启动，自动加入slave角色，无须人为介入了。
 
-![image-20220810203155426](http://book.bikongge.com/sre/2024-linux/image-20220810203155426.png)
+![image-20220810203155426](/ajian/image-20220810203155426.png)
 
 # 提升篇
 
@@ -418,4 +418,4 @@ print(master.set('new_name','chaoge666'))
 print(slave.get('new_name'))
 ```
 
-![image-20220810204350491](http://book.bikongge.com/sre/2024-linux/image-20220810204350491.png)
+![image-20220810204350491](/ajian/image-20220810204350491.png)
