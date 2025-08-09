@@ -140,6 +140,7 @@
 * [09-java运维](09-java运维.md)
   * [01-Tomcat](01-Tomcat.md) 
 * [10-云原生容器编排](10-云原生容器编排.md)
-  * [01_容器docker技术详解](01_容器docker技术详解.md) 
+  * [01_容器docker技术详解](01_容器docker技术详解.md)
+  * [02_docker安装部署](02_docker安装部署.md)
 * 
 * []()
