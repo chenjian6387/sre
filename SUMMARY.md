@@ -144,5 +144,6 @@
   * [02_docker安装部署](02_docker安装部署.md)
   * [03_docker存储与网络](03_docker存储与网络.md)
   * [04_dockerfile构建镜像](04_dockerfile构建镜像.md)
+  * [05-企业级私有仓库Harbor](05-企业级私有仓库Harbor.md)
 * 
 * []()
