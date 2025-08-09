@@ -135,4 +135,5 @@
   * [06-redis高可用哨兵篇](06-redis高可用哨兵篇.md)
   * [07-reids分片技术cluster篇](07-reids分片技术cluster篇.md)
   * [08-redis自动化安装](08-redis自动化安装.md)
+  * [09-redis实战技巧](09-redis实战技巧.md)
 * [Introduction](README.md)
