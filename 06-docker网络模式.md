@@ -51,7 +51,7 @@ Linux 通过在内核中进行数据复制来实现虚拟接口之间的数据�
 
 Docker 容器网络就利用了这项技术。它在本地主机和容器内分别创建一个虚拟接口，并让它们彼此连通（这样的一对接口叫做 `veth pair`）。
 
-![image-20220827135824837](http://book.bikongge.com/sre/2024-linux/image-20220827135824837.png)
+![image-20220827135824837](/ajian/image-20220827135824837.png)
 
 ```
 当 Docker 启动时，会自动在主机上创建一个 docker0 虚拟网桥，实际上是 Linux 的一个 bridge，可以理解为一个软件交换机。它会在挂载到它的网口之间进行转发。
@@ -186,7 +186,7 @@ docker0        8000.02423ecafa2b    no
 
 ### 查看实际容器创建的虚拟网卡
 
-![image-20220827141509086](http://book.bikongge.com/sre/2024-linux/image-20220827141509086.png)
+![image-20220827141509086](/ajian/image-20220827141509086.png)
 
 ```
 [root@docker-200 ~]#ifconfig |grep veth
@@ -197,7 +197,7 @@ vethd661064: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 ## 查看端口映射与防火墙的关系
 
-![image-20220827141653106](http://book.bikongge.com/sre/2024-linux/image-20220827141653106.png)
+![image-20220827141653106](/ajian/image-20220827141653106.png)
 
 # 2.玩一玩bridge模式
 
@@ -212,7 +212,7 @@ vethd661064: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
                     "IPAddress": "172.17.0.2",
 ```
 
-![image-20220827142152456](http://book.bikongge.com/sre/2024-linux/image-20220827142152456.png)
+![image-20220827142152456](/ajian/image-20220827142152456.png)
 
 ## 桥接网络模式特点
 
@@ -228,7 +228,7 @@ vethd661064: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 ### 桥接数据图
 
-![image-20220827143608516](http://book.bikongge.com/sre/2024-linux/image-20220827143608516.png)
+![image-20220827143608516](/ajian/image-20220827143608516.png)
 
 ## 查看bridge模式详细
 
@@ -429,7 +429,7 @@ round-trip min/avg/max = 0.077/0.094/0.112 ms
 
 # 3.玩一玩host模式
 
-![image-20220827152555420](http://book.bikongge.com/sre/2024-linux/image-20220827152555420.png)
+![image-20220827152555420](/ajian/image-20220827152555420.png)
 
 ## 原理（背）
 
@@ -496,11 +496,11 @@ root@docker-200:/# apt install iproute2 net-tools -y
 ifconfig
 ```
 
-![image-20220827151439456](http://book.bikongge.com/sre/2024-linux/image-20220827151439456.png)
+![image-20220827151439456](/ajian/image-20220827151439456.png)
 
 ------
 
-![image-20220827151932653](http://book.bikongge.com/sre/2024-linux/image-20220827151932653.png)
+![image-20220827151932653](/ajian/image-20220827151932653.png)
 
 # 4.container模式
 
@@ -509,11 +509,11 @@ ifconfig
 2. container模式下的网络空间，和宿主机是隔离的
 ```
 
-![image-20220827152807488](http://book.bikongge.com/sre/2024-linux/image-20220827152807488.png)
+![image-20220827152807488](/ajian/image-20220827152807488.png)
 
 ## 实战
 
-![image-20220827153117008](http://book.bikongge.com/sre/2024-linux/image-20220827153117008.png)
+![image-20220827153117008](/ajian/image-20220827153117008.png)
 
 ```
 1.准备一个容器
@@ -552,7 +552,7 @@ Accept-Ranges: bytes
 [root@docker-200 ~]#
 ```
 
-![image-20220827153911584](http://book.bikongge.com/sre/2024-linux/image-20220827153911584.png)
+![image-20220827153911584](/ajian/image-20220827153911584.png)
 
 # 5.查看None模式
 
@@ -703,7 +703,7 @@ ping  busybox2_myself_net  -c 2
 ping  busybox_myself_net  -c 2
 ```
 
-![image-20220827170500839](http://book.bikongge.com/sre/2024-linux/image-20220827170500839.png)
+![image-20220827170500839](/ajian/image-20220827170500839.png)
 
 # 技巧，提取docker容器ip
 
