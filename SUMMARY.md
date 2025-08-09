@@ -133,4 +133,5 @@
   * [04-redis安全篇](04-redis安全篇.md)
   * [05-redis主从复制篇](05-redis主从复制篇.md)
   * [06-redis高可用哨兵篇](06-redis高可用哨兵篇.md)
+  * [07-reids分片技术cluster篇](07-reids分片技术cluster篇.md)
 * [Introduction](README.md)
