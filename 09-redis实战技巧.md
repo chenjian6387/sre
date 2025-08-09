@@ -146,7 +146,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzJpOcTOtHKgkCxL9rN5DWdO72ztU2atrg+jslCuDk
 6.黑客来了！
 ```
 
-![image-20220812172219263](http://book.bikongge.com/sre/2024-linux/image-20220812172219263.png)
+![image-20220812172219263](/ajian/image-20220812172219263.png)
 
 ## 如何防范
 
