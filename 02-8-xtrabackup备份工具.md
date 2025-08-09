@@ -62,11 +62,11 @@ total 1016
 
 mysql支持如下图中的几种引擎
 
-![image-20220725134639610](http://book.bikongge.com/sre/2024-linux/image-20220725134639610.png)
+![image-20220725134639610](/ajian/image-20220725134639610.png)
 
 当前数据库是哪一款引擎
 
-![image-20220725134903663](http://book.bikongge.com/sre/2024-linux/image-20220725134903663.png)
+![image-20220725134903663](/ajian/image-20220725134903663.png)
 
 # 1.安装Xtrabackup工具
 
@@ -110,7 +110,7 @@ innobackupex：是将xtrabackup进行封装的perl脚本，提供了备份myisam
 --copy-back     恢复备份目录
 ```
 
-![image-20210421184633961](http://book.bikongge.com/sre/2024-linux/image-20210421184633961.png)
+![image-20210421184633961](/ajian/image-20210421184633961.png)
 
 Xtrabackup命令是专门用于对InnoDB和XtraDB等事务引擎的数据库热备份的工具，不能用于备份MyISAM等其他类型的引擎数据，其主要特点是备份数据时完全不用锁表。
 
@@ -289,7 +289,7 @@ innobackupex --defaults-file=/etc/my.cnf --copy-back --rsync /xtrabackup_data/fu
 
 的确数据都可以正常查看了
 
-![image-20220726164412029](http://book.bikongge.com/sre/2024-linux/image-20220726164412029.png)
+![image-20220726164412029](/ajian/image-20220726164412029.png)
 
 ### mv恢复
 
@@ -636,7 +636,7 @@ drwxr-x--- 20 root root 4096 Jul 26 17:39 inc3_2022-07-26 # 增量3 的binlog
 4.9M    inc3_2022-07-26
 ```
 
-![image-20220726182259674](http://book.bikongge.com/sre/2024-linux/image-20220726182259674.png)
+![image-20220726182259674](/ajian/image-20220726182259674.png)
 
 ### 合并参数注意
 
@@ -778,7 +778,7 @@ mysql>
 
 #### 恢复思路图解
 
-![image-20220727141632371](http://book.bikongge.com/sre/2024-linux/image-20220727141632371.png)
+![image-20220727141632371](/ajian/image-20220727141632371.png)
 
 ```
 1. 找到inc_3日志的截止点,作为起点
