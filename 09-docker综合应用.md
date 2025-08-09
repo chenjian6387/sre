@@ -7,11 +7,11 @@
 https://docs.docker.com/config/containers/resource_constraints/
 ```
 
-![image-20220829192319338](http://book.bikongge.com/sre/2024-linux/image-20220829192319338.png)
+![image-20220829192319338](/ajian/image-20220829192319338.png)
 
 # 2.docker内存限制
 
-![image-20220829192421969](http://book.bikongge.com/sre/2024-linux/image-20220829192421969.png)
+![image-20220829192421969](/ajian/image-20220829192421969.png)
 
 ```
 -m或者--memory=    容器可以使用的最大内存量。如果设置此选项，则允许的最小值为6m（6 兆字节）。也就是说，您必须将该值设置为至少 6 兆字节。
@@ -51,7 +51,7 @@ Example: stress-ng --cpu 8 --io 4 --vm 2 --vm-bytes 128M --fork 4 --timeout 10s
 
 ### 内存压测结果
 
-![image-20220829194712487](http://book.bikongge.com/sre/2024-linux/image-20220829194712487.png)
+![image-20220829194712487](/ajian/image-20220829194712487.png)
 
 ### 创建容器且限制内存
 
@@ -61,11 +61,11 @@ stress-ng: info: [1] defaulting to a 86400 second run per stressor
 stress-ng: info: [1] dispatching hogs: 2 vm
 ```
 
-![image-20220829194846058](http://book.bikongge.com/sre/2024-linux/image-20220829194846058.png)
+![image-20220829194846058](/ajian/image-20220829194846058.png)
 
 # 3.容器CPU限制
 
-![image-20220829195133706](http://book.bikongge.com/sre/2024-linux/image-20220829195133706.png)
+![image-20220829195133706](/ajian/image-20220829195133706.png)
 
 ```
 https://docs.docker.com/config/containers/resource_constraints/#cpu
@@ -96,7 +96,7 @@ stress-ng: info: [1] defaulting to a 86400 second run per stressor
 stress-ng: info: [1] dispatching hogs: 4 cpu
 ```
 
-![image-20220829195515750](http://book.bikongge.com/sre/2024-linux/image-20220829195515750.png)
+![image-20220829195515750](/ajian/image-20220829195515750.png)
 
 ## 工具指定用2个CPU压测
 
@@ -106,19 +106,19 @@ stress-ng: info: [1] defaulting to a 86400 second run per stressor
 stress-ng: info: [1] dispatching hogs: 2 cpu
 ```
 
-![image-20220829195634811](http://book.bikongge.com/sre/2024-linux/image-20220829195634811.png)
+![image-20220829195634811](/ajian/image-20220829195634811.png)
 
 top查看容器进程状态
 
-![image-20220829195810881](http://book.bikongge.com/sre/2024-linux/image-20220829195810881.png)
+![image-20220829195810881](/ajian/image-20220829195810881.png)
 
 ### docker提供的CPU使用限制
 
-![image-20220829200345697](http://book.bikongge.com/sre/2024-linux/image-20220829200345697.png)
+![image-20220829200345697](/ajian/image-20220829200345697.png)
 
 top查看限制
 
-![image-20220829200445527](http://book.bikongge.com/sre/2024-linux/image-20220829200445527.png)
+![image-20220829200445527](/ajian/image-20220829200445527.png)
 
 # 4.docker资源监控
 
@@ -161,7 +161,7 @@ CAdvisor功能主要有两点，展示Host，容器两个层次的监控数据�
 github地址：https://github.com/prometheus
 ```
 
-![image-20220830141440678](http://book.bikongge.com/sre/2024-linux/image-20220830141440678.png)
+![image-20220830141440678](/ajian/image-20220830141440678.png)
 
 ### 普罗米修斯
 
@@ -192,7 +192,7 @@ Node Exporter 会将收集到的信息转换为 Prometheus 可识别的 Metrics 
 Prometheus 可以从 Node Exporter 中对这些指标进行收集与存储，并且可以根据这些数据的实时变化进行服务器节点资源监控。
 ```
 
-![image-20220830192223900](http://book.bikongge.com/sre/2024-linux/image-20220830192223900.png)
+![image-20220830192223900](/ajian/image-20220830192223900.png)
 
 #### 普罗米修斯工作原理流程
 
@@ -306,7 +306,7 @@ docker-compose -f docker-compose.yml up -d
 
 ### 访问cAdvisor
 
-![image-20220830193259237](http://book.bikongge.com/sre/2024-linux/image-20220830193259237.png)
+![image-20220830193259237](/ajian/image-20220830193259237.png)
 
 #### 可以传递给prometheus的指标
 
@@ -314,11 +314,11 @@ docker-compose -f docker-compose.yml up -d
 http://10.0.0.200:8080/metrics
 ```
 
-![image-20220830193900723](http://book.bikongge.com/sre/2024-linux/image-20220830193900723.png)
+![image-20220830193900723](/ajian/image-20220830193900723.png)
 
 ### 访问node_exporters节点采集
 
-![image-20220830194904618](http://book.bikongge.com/sre/2024-linux/image-20220830194904618.png)
+![image-20220830194904618](/ajian/image-20220830194904618.png)
 
 ## docker-201配置
 
@@ -366,23 +366,23 @@ admin
 www.yuchaoit.cn
 ```
 
-![image-20220830190857476](http://book.bikongge.com/sre/2024-linux/image-20220830190857476.png)
+![image-20220830190857476](/ajian/image-20220830190857476.png)
 
 ### 数据采集架构
 
-![image-20220830191343958](http://book.bikongge.com/sre/2024-linux/image-20220830191343958.png)
+![image-20220830191343958](/ajian/image-20220830191343958.png)
 
 ## 添加数据源
 
-![image-20220830191413061](http://book.bikongge.com/sre/2024-linux/image-20220830191413061.png)
+![image-20220830191413061](/ajian/image-20220830191413061.png)
 
 添加普罗米修斯
 
-![image-20220830195041469](http://book.bikongge.com/sre/2024-linux/image-20220830195041469.png)
+![image-20220830195041469](/ajian/image-20220830195041469.png)
 
 打开数据展示仪表盘
 
-![image-20220830195142594](http://book.bikongge.com/sre/2024-linux/image-20220830195142594.png)
+![image-20220830195142594](/ajian/image-20220830195142594.png)
 
 ### 使用如下模板
 
@@ -390,11 +390,11 @@ www.yuchaoit.cn
 https://grafana.com/grafana/dashboards/8919-1-node-exporter-for-prometheus-dashboard-cn-0413-consulmanager/
 ```
 
-![image-20220830201406759](http://book.bikongge.com/sre/2024-linux/image-20220830201406759.png)
+![image-20220830201406759](/ajian/image-20220830201406759.png)
 
 ### [展示主机数据监控情况](http://book.bikongge.com/sre/10-云原生容器编排/docker-all/(www.yuchaoit.cn))
 
-![image-20220830201638559](http://book.bikongge.com/sre/2024-linux/image-20220830201638559.png)
+![image-20220830201638559](/ajian/image-20220830201638559.png)
 
 ### 继续添加采集容器的数据
 
@@ -412,7 +412,7 @@ ef9e26cec58a7c2f0d97db75a894d22836b7099748028c1eaeeff73e5e9e9515
 [root@docker-201 ~]#ab -c 100 -n 1000000 http://10.0.0.201:81/
 ```
 
-![image-20220830203411039](http://book.bikongge.com/sre/2024-linux/image-20220830203411039.png)
+![image-20220830203411039](/ajian/image-20220830203411039.png)
 
 ```
 至此，就完成了基于Prometheus + grafana完成了对 linux服务器，以及docker容器的数据采集+展示。
