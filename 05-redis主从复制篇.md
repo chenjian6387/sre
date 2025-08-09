@@ -29,7 +29,7 @@
 - 读操作：主库、从库都可以接收；
 - 写操作：首先到主库执行，然后，主库将写操作同步给从库。
 
-![image-20220809175044394](http://book.bikongge.com/sre/2024-linux/image-20220809175044394.png)
+![image-20220809175044394](/ajian/image-20220809175044394.png)
 
 ## 主从复制建立
 
@@ -81,7 +81,7 @@ for i in {1..10000};do redis-cli set k_${i} v_${i} && echo "key --- ${i} is ok."
 
 ## 配置主从关系
 
-![image-20220809184004440](http://book.bikongge.com/sre/2024-linux/image-20220809184004440.png)
+![image-20220809184004440](/ajian/image-20220809184004440.png)
 
 ```
 建立主从关系后，master-slave的数据操作就是实时的了
@@ -196,7 +196,7 @@ repl_backlog_histlen:322
 # slave
 ```
 
-![image-20220809184644282](http://book.bikongge.com/sre/2024-linux/image-20220809184644282.png)
+![image-20220809184644282](/ajian/image-20220809184644282.png)
 
 ## 取消slave身份
 
@@ -211,7 +211,7 @@ OK
 (integer) 10001
 ```
 
-![image-20220809184813544](http://book.bikongge.com/sre/2024-linux/image-20220809184813544.png)
+![image-20220809184813544](/ajian/image-20220809184813544.png)
 
 ## redis主从细节问答
 
@@ -248,4 +248,4 @@ masterauth chaoge888
 replicaof 10.0.0.51 6379
 ```
 
-![image-20220809190220699](http://book.bikongge.com/sre/2024-linux/image-20220809190220699.png)
+![image-20220809190220699](/ajian/image-20220809190220699.png)
