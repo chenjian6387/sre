@@ -42,7 +42,7 @@ mysqld是mysql的核心程序，用于管理mysql的数据库文件，以及用�
 mysqld读取my.cnf中 [mysqld]配置
 ```
 
-![image-20220718201323649](http://book.bikongge.com/sre/2024-linux/image-20220718201323649.png)
+![image-20220718201323649](/ajian/image-20220718201323649.png)
 
 ## 启动命令区别
 
@@ -230,7 +230,7 @@ MySQL [(none)]>
 
 ## navicat图形化访问
 
-![image-20220719204405903](http://book.bikongge.com/sre/2024-linux/image-20220719204405903.png)
+![image-20220719204405903](/ajian/image-20220719204405903.png)
 
 # 6.mysql用户管理
 
@@ -348,7 +348,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 ## 查看授权规则语法
 
-![image-20220719211642035](http://book.bikongge.com/sre/2024-linux/image-20220719211642035.png)
+![image-20220719211642035](/ajian/image-20220719211642035.png)
 
 ## grant授权命令
 
@@ -363,7 +363,7 @@ mysql> help grant;
 grant all privileges on *.* to 'yuchaoit'@'10.0.0.%' identifiedy by 'chaoge666';
 ```
 
-![image-20220719211848445](http://book.bikongge.com/sre/2024-linux/image-20220719211848445.png)
+![image-20220719211848445](/ajian/image-20220719211848445.png)
 
 ## 授权实践
 
