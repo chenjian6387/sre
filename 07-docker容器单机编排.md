@@ -6,7 +6,7 @@
 
 例如一个LNMP的架构，就得部署web服务器，后台程序，数据库，负载均衡等等都需要统一部署在容器里，那么这时候就需要使用统一的容器编排服务`docker-compose`，通过一个单独的`docker-compose.yml`模板文件为一个项目定义一组相关联的应用容器。
 
-![image-20200908163737436](http://book.bikongge.com/sre/2024-linux/image-20200908163737436.png)
+![image-20200908163737436](/ajian/image-20200908163737436.png)
 
 # 什么是docker-compose
 
@@ -14,7 +14,7 @@
 
 之前我们了解可以用dockerfile模板文件让用户方便的定义一个单独的应用容器，然而，如LNMP这样的Web项目，就涉及多个服务之间的配合，如nginx,mysql,php,redis等。
 
-![image-20220827175348006](http://book.bikongge.com/sre/2024-linux/image-20220827175348006.png)
+![image-20220827175348006](/ajian/image-20220827175348006.png)
 
 ```
 1. compose是用于定义和运行多个容器的一个docker内置工具
@@ -259,7 +259,7 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS 
 [root@docker-200 /www.yuchaoit.cn/compose_python_web]#
 ```
 
-![image-20220827202900095](http://book.bikongge.com/sre/2024-linux/image-20220827202900095.png)
+![image-20220827202900095](/ajian/image-20220827202900095.png)
 
 ```
 因此，这里链接两个容器的重点在于，--link参数
@@ -289,7 +289,7 @@ docker-compose up
 这也忒方便了呀！
 ```
 
-![image-20220827203302571](http://book.bikongge.com/sre/2024-linux/image-20220827203302571.png)
+![image-20220827203302571](/ajian/image-20220827203302571.png)
 
 ```
 后台运行
@@ -394,7 +394,7 @@ zabbix
 
 ## 部署结果
 
-![image-20220827204923559](http://book.bikongge.com/sre/2024-linux/image-20220827204923559.png)
+![image-20220827204923559](/ajian/image-20220827204923559.png)
 
 ```
 并且zabbix的数据，持久化在了 
@@ -501,7 +501,7 @@ binlog.000002  ca.pem        #ib_16384_0.dblwr  ibdata1            ibtmp1       
 
 ## 可以查看wordpress网桥
 
-![image-20220827210759642](http://book.bikongge.com/sre/2024-linux/image-20220827210759642.png)
+![image-20220827210759642](/ajian/image-20220827210759642.png)
 
 ```
 [root@docker-200 ~]#ifconfig |grep e4c
@@ -520,7 +520,7 @@ e4c43c08251f   compose_wordpress_default   bridge    local
 
 ## 图解结果
 
-![image-20220827211053881](http://book.bikongge.com/sre/2024-linux/image-20220827211053881.png)
+![image-20220827211053881](/ajian/image-20220827211053881.png)
 
 # 4.docker部署cicd系统
 
@@ -586,7 +586,7 @@ f98ffbce63934147a035b24665ce2715
 生产下，还是为了方便运维维护，自行决定构建centos+jenkins
 ```
 
-![image-20220828113035058](http://book.bikongge.com/sre/2024-linux/image-20220828113035058.png)
+![image-20220828113035058](/ajian/image-20220828113035058.png)
 
 ## gitlab+jenkins
 
@@ -678,15 +678,15 @@ Password: 5HwWiUBz/OkkUB27+On6MA6pYyR3UswPw0p0mwfVcOY=
 root@www:/#
 ```
 
-![image-20220828113912693](http://book.bikongge.com/sre/2024-linux/image-20220828113912693.png)
+![image-20220828113912693](/ajian/image-20220828113912693.png)
 
 ### 访问jenkins
 
-![image-20220828114017756](http://book.bikongge.com/sre/2024-linux/image-20220828114017756.png)
+![image-20220828114017756](/ajian/image-20220828114017756.png)
 
 ### 测试gitlab和jenkins互通
 
-![image-20220828114410727](http://book.bikongge.com/sre/2024-linux/image-20220828114410727.png)
+![image-20220828114410727](/ajian/image-20220828114410727.png)
 
 # 5.小结
 
