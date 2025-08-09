@@ -2,7 +2,7 @@
 
 ## 服务器防火墙介绍
 
-![image-20200109152152185](http://book.bikongge.com/sre/2024-linux/image-20200109152152185.png)
+![image-20200109152152185](/ajian/image-20200109152152185.png)
 
 ## 防火墙是什么
 
@@ -122,7 +122,7 @@ target     prot opt source               destination
 
 会发现这里有3个chain，表示三个链，链是干啥的？
 
-![image-20220814172218458](http://book.bikongge.com/sre/2024-linux/image-20220814172218458.png)
+![image-20220814172218458](/ajian/image-20220814172218458.png)
 
 ### 什么是netfilter
 
@@ -189,7 +189,7 @@ nginx > client ，数据要从nginx 到达 客户端的目标地址。
 
 ### 图解五链
 
-![image-20220814174926034](http://book.bikongge.com/sre/2024-linux/image-20220814174926034.png)
+![image-20220814174926034](/ajian/image-20220814174926034.png)
 
 ```
 也就是说，我们打开iptables防火墙后，数据报文会按如图的走向，数据报文经过不同的链的规则，产生不同的动作
@@ -208,7 +208,7 @@ nginx > client ，数据要从nginx 到达 客户端的目标地址。
 
 ### 链的作用
 
-![image-20220814175553217](http://book.bikongge.com/sre/2024-linux/image-20220814175553217.png)
+![image-20220814175553217](/ajian/image-20220814175553217.png)
 
 ```
 关卡为什么会被称作链
@@ -238,11 +238,11 @@ raw表，取消链路跟踪
 
 ## 4.图解数据包经过防火墙的完整流程
 
-![image-20220814180802336](http://book.bikongge.com/sre/2024-linux/image-20220814180802336.png)
+![image-20220814180802336](/ajian/image-20220814180802336.png)
 
 ## 5.解释表与链的作用
 
-![image-20220815143426802](http://book.bikongge.com/sre/2024-linux/image-20220815143426802.png)
+![image-20220815143426802](/ajian/image-20220815143426802.png)
 
 ### filter表
 
@@ -283,7 +283,7 @@ filer表有三个链，控制服务器防火墙功能
 
 ## 6.一张图，搞清楚iptables的作用
 
-![image-20220815160131192](http://book.bikongge.com/sre/2024-linux/image-20220815160131192.png)
+![image-20220815160131192](/ajian/image-20220815160131192.png)
 
 ## 7.简单理解防火墙规则（链的作用）
 
@@ -310,7 +310,7 @@ filer表有三个链，控制服务器防火墙功能
 
 现在有一个学生要进去校园，两条规则都不符合，如果默认规则是放行，学生则可以直接进入校园。
 
-![image-20220815161030301](http://book.bikongge.com/sre/2024-linux/image-20220815161030301.png)
+![image-20220815161030301](/ajian/image-20220815161030301.png)
 
 ## 8.匹配规则后的动作
 
@@ -326,7 +326,7 @@ filer表有三个链，控制服务器防火墙功能
 
 ### 【drop和reject区别】
 
-![image-20200109213101307](http://book.bikongge.com/sre/2024-linux/image-20200109213101307.png)
+![image-20200109213101307](/ajian/image-20200109213101307.png)
 
 例如小明在家里，忽然有陌生人敲门，发现是自己的朋友来找自己出去玩，但是不想去，因此拒绝了他们（这就是reject）
 
@@ -334,7 +334,7 @@ filer表有三个链，控制服务器防火墙功能
 
 ## 9.linux路由表查看
 
-![image-20220815162555973](http://book.bikongge.com/sre/2024-linux/image-20220815162555973.png)
+![image-20220815162555973](/ajian/image-20220815162555973.png)
 
 ### 主机路由
 
