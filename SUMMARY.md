@@ -124,5 +124,6 @@
   * [02-7-mysql备份实战](02-7-mysql备份实战.md)
   * [02-8-xtrabackup备份工具](02-8-xtrabackup备份工具.md)
   * [02-9-主从复制架构](02-9-主从复制架构.md)
+  * [02-10-主从复制高级](02-10-主从复制高级.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
