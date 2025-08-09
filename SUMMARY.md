@@ -120,5 +120,6 @@
   * [02-3-mysql运维核心基础](02-3-mysql运维核心基础.md)
   * [02-4-SQL语句一](02-4-SQL语句一.md)
   * [02-5-SQL语句二](02-5-SQL语句二.md)
+  * [02-6-mysql备份方案](02-6-mysql备份方案.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
