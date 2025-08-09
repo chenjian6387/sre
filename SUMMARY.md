@@ -118,5 +118,6 @@
   * [02-1-数据库基础知识](02-1-数据库基础知识.md)
   * [02-2-mysql基础实践](02-2-mysql基础实践.md)
   * [02-3-mysql运维核心基础](02-3-mysql运维核心基础.md)
+  * [02-4-SQL语句一](02-4-SQL语句一.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
