@@ -76,7 +76,7 @@ redis-cli --cluster help
 redis-cli --cluster create 10.0.0.51:6380 10.0.0.52:6380 10.0.0.53:6380 10.0.0.51:6381 10.0.0.52:6381 10.0.0.53:6381 --cluster-replicas 1
 ```
 
-![image-20220812164503332](http://book.bikongge.com/sre/2024-linux/image-20220812164503332.png)
+![image-20220812164503332](/ajian/image-20220812164503332.png)
 
 ## 使用集群测试
 
