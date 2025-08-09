@@ -115,6 +115,7 @@
   * [08-jenkins发布Java项目](08-jenkins发布Java项目.md)
   * [09-jenkins流水线pipeline](09-jenkins流水线pipeline.md)
 * [07-数据库运维](07-数据库运维.md)
-  * [02-1-数据库基础知识](02-1-数据库基础知识.md) 
+  * [02-1-数据库基础知识](02-1-数据库基础知识.md)
+  * [02-2-mysql基础实践](02-2-mysql基础实践.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
