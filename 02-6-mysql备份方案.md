@@ -1,10 +1,10 @@
 # 02-6-mysql备份方案
 
-![image-20210420155627487](http://book.bikongge.com/sre/2024-linux/image-20210420155627487.png)
+![image-20210420155627487](/ajian/image-20210420155627487.png)
 
 \--
 
-![image-20210420155649324](http://book.bikongge.com/sre/2024-linux/image-20210420155649324.png)
+![image-20210420155649324](/ajian/image-20210420155649324.png)
 
 > 为什么于超老师要给大家讲mysql备份？
 >
@@ -43,7 +43,7 @@
 
 # 3.备份工具
 
-![image-20220721171427623](http://book.bikongge.com/sre/2024-linux/image-20220721171427623.png)
+![image-20220721171427623](/ajian/image-20220721171427623.png)
 
 ## 逻辑备份
 
@@ -580,7 +580,7 @@ mysql> show binlog events in 'mysql-bin.000003';
 11 rows in set (0.00 sec)
 ```
 
-![image-20220721185835134](http://book.bikongge.com/sre/2024-linux/image-20220721185835134.png)
+![image-20220721185835134](/ajian/image-20220721185835134.png)
 
 ### 解密查看binlog日志
 
@@ -588,7 +588,7 @@ mysql> show binlog events in 'mysql-bin.000003';
 [root@db-51 /mysql_backup]#mysqlbinlog /www.yuchaoit.cn/mysql_3306/logs/mysql-bin.000003
 ```
 
-![image-20220721191347919](http://book.bikongge.com/sre/2024-linux/image-20220721191347919.png)
+![image-20220721191347919](/ajian/image-20220721191347919.png)
 
 解密日志查看
 
@@ -596,7 +596,7 @@ mysql> show binlog events in 'mysql-bin.000003';
 [root@db-51 /mysql_backup]#mysqlbinlog --base64-output=decode-rows -vv /www.yuchaoit.cn/mysql_3306/logs/mysql-bin.000003
 ```
 
-![image-20220721191604385](http://book.bikongge.com/sre/2024-linux/image-20220721191604385.png)
+![image-20220721191604385](/ajian/image-20220721191604385.png)
 
 ## binlog日志截取与恢复实践
 
@@ -707,7 +707,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 #### 图解binlog截取
 
-![image-20220724104657473](http://book.bikongge.com/sre/2024-linux/image-20220724104657473.png)
+![image-20220724104657473](/ajian/image-20220724104657473.png)
 
 # 6.恢复更复杂的场景
 
@@ -824,7 +824,7 @@ mysql> show master status;
 
 ### 恢复思路图解
 
-![image-20220724112934442](http://book.bikongge.com/sre/2024-linux/image-20220724112934442.png)
+![image-20220724112934442](/ajian/image-20220724112934442.png)
 
 ### 恢复步骤
 
@@ -864,7 +864,7 @@ mysql> show binlog events in 'mysql-bin.000006';
 
 ### 检查恢复结果
 
-![image-20220724120829277](http://book.bikongge.com/sre/2024-linux/image-20220724120829277.png)
+![image-20220724120829277](/ajian/image-20220724120829277.png)
 
 ```
 我们要恢复的逻辑是
@@ -999,7 +999,7 @@ TRANSACTION 事务
 
 > 超哥转账500给了表弟，表弟也收到钱了，这件事就结束了，真实生效了。
 
-![image-20220724181144508](http://book.bikongge.com/sre/2024-linux/image-20220724181144508.png)
+![image-20220724181144508](/ajian/image-20220724181144508.png)
 
 ### 正确事务执行
 
@@ -1153,7 +1153,7 @@ mysql> show variables like '%GTID%';
 
 开启GTID功能
 
-![image-20210426142007479](http://book.bikongge.com/sre/2024-linux/image-20210426142007479.png)
+![image-20210426142007479](/ajian/image-20210426142007479.png)
 
 ```
 vim /etc/my.cnf 加入
@@ -1246,7 +1246,7 @@ mysql> show master status;
 show binlog events in 'mysql-bin.000008';
 ```
 
-![image-20220724185434653](http://book.bikongge.com/sre/2024-linux/image-20220724185434653.png)
+![image-20220724185434653](/ajian/image-20220724185434653.png)
 
 ## 7.6 基于GTID截取日志
 
@@ -1342,7 +1342,7 @@ set GLOBAL expire_logs_days=7;
 
 # 8.mysql日志管理
 
-![image-20210422091953228](http://book.bikongge.com/sre/2024-linux/image-20210422091953228.png)
+![image-20210422091953228](/ajian/image-20210422091953228.png)
 
 > 日志的作用，不说大家应该都知道，可以收集、检测我们程序的健康状况
 
@@ -1360,7 +1360,7 @@ set GLOBAL expire_logs_days=7;
 
 5、能从主服务器中二进制文件取的事件等等。
 
-![image-20210422092051565](http://book.bikongge.com/sre/2024-linux/image-20210422092051565.png)
+![image-20210422092051565](/ajian/image-20210422092051565.png)
 
 ## 普通日志
 
@@ -1431,7 +1431,7 @@ binlog是记录数据库被修改的SQL语句，对数据造成影响了。
 
 ### 慢日志参数
 
-![image-20210422135740493](http://book.bikongge.com/sre/2024-linux/image-20210422135740493.png)
+![image-20210422135740493](/ajian/image-20210422135740493.png)
 
 ```
 慢查询参数调整，是数据库SQL优化重要手段
