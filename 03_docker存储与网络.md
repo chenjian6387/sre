@@ -56,11 +56,11 @@ db6d922331ad   nginx:1.17.9   "nginx -g 'daemon of…"   3 seconds ago        Up
 # 并且随机端口有一个弊端，重启后，端口会变化
 ```
 
-![image-20220822152522099](http://book.bikongge.com/sre/2024-linux/image-20220822152522099.png)
+![image-20220822152522099](/ajian/image-20220822152522099.png)
 
 ### 重启导致随机端口变化
 
-![image-20220822152635824](http://book.bikongge.com/sre/2024-linux/image-20220822152635824.png)
+![image-20220822152635824](/ajian/image-20220822152635824.png)
 
 ## 查看容器端口映射情况
 
@@ -73,7 +73,7 @@ db6d922331ad   nginx:1.17.9   "nginx -g 'daemon of…"   3 seconds ago        Up
 
 ## 访问容器nginx
 
-![image-20220822152814892](http://book.bikongge.com/sre/2024-linux/image-20220822152814892.png)
+![image-20220822152814892](/ajian/image-20220822152814892.png)
 
 ## 修改容器内nginx页面
 
@@ -89,11 +89,11 @@ root@73f3488a8ab9:/# echo 'www.yuchaoit.cn 666~~' > /usr/share/nginx/html/index.
 [root@docker-01 ~]#
 ```
 
-![image-20220822152919659](http://book.bikongge.com/sre/2024-linux/image-20220822152919659.png)
+![image-20220822152919659](/ajian/image-20220822152919659.png)
 
 ------
 
-![image-20220822153233254](http://book.bikongge.com/sre/2024-linux/image-20220822153233254.png)
+![image-20220822153233254](/ajian/image-20220822153233254.png)
 
 # 2.配置docker数据目录管理
 
@@ -153,7 +153,7 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS   
 b48c4d5249a5   nginx:1.17.9   "nginx -g 'daemon of…"   2 seconds ago   Up 1 second   0.0.0.0:80->80/tcp, :::80->80/tcp   xiaonao-web
 ```
 
-![image-20220822154325674](http://book.bikongge.com/sre/2024-linux/image-20220822154325674.png)
+![image-20220822154325674](/ajian/image-20220822154325674.png)
 
 # 3.容器多目录映射
 
@@ -165,7 +165,7 @@ b48c4d5249a5   nginx:1.17.9   "nginx -g 'daemon of…"   2 seconds ago   Up 1 se
 - nginx配置都从宿主机挂载
 ```
 
-![image-20220822160148619](http://book.bikongge.com/sre/2024-linux/image-20220822160148619.png)
+![image-20220822160148619](/ajian/image-20220822160148619.png)
 
 ```
 1.准备好宿主机代码
@@ -217,7 +217,7 @@ docker run  \
 [root@docker-01 /www.yuchaoit.cn]#docker logs -f  jd_xiaoniao_web
 ```
 
-![image-20220822161758436](http://book.bikongge.com/sre/2024-linux/image-20220822161758436.png)
+![image-20220822161758436](/ajian/image-20220822161758436.png)
 
 ## 查看容器的数据卷
 
@@ -304,7 +304,7 @@ docker run -d -p 8099:8099 --name www.yuchaoit.cn_game my_game:1.1 nginx -g 'dae
 7.访问
 ```
 
-![image-20220823121934912](http://book.bikongge.com/sre/2024-linux/image-20220823121934912.png)
+![image-20220823121934912](/ajian/image-20220823121934912.png)
 
 ## 导出镜像，发给测试组
 
@@ -514,4 +514,4 @@ sha256:bca14295af671c83d24da11c248b4013d2d15b82db9f8d7f37ecbd539fd07aa8
 15.修改容器内数据
 ```
 
-![image-20220823135149114](http://book.bikongge.com/sre/2024-linux/image-20220823135149114.png)
+![image-20220823135149114](/ajian/image-20220823135149114.png)
