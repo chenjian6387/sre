@@ -29,7 +29,7 @@ https://help.aliyun.com/product/26340.html
 当然，可能还会遇到其他问题，你还通过静态页面缓存页面、cdn加速、甚至负载均衡这些方法提高系统并发量。
 ```
 
-![image-20220806145725322](http://book.bikongge.com/sre/2024-linux/image-20220806145725322.png)
+![image-20220806145725322](/ajian/image-20220806145725322.png)
 
 ## 使用redis缓存架构
 
@@ -58,7 +58,7 @@ https://help.aliyun.com/product/26340.html
 所以对于像样的，有点规模的网站，缓存是很必要的，而Redis无疑是最好的选择之一。
 ```
 
-![image-20220806150414622](http://book.bikongge.com/sre/2024-linux/image-20220806150414622.png)
+![image-20220806150414622](/ajian/image-20220806150414622.png)
 
 ```
 但是使用缓存，也要注意诸多问题，多引入了一个环节，必然会引发更多问题
