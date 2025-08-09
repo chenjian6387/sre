@@ -122,5 +122,6 @@
   * [02-5-SQL语句二](02-5-SQL语句二.md)
   * [02-6-mysql备份方案](02-6-mysql备份方案.md)
   * [02-7-mysql备份实战](02-7-mysql备份实战.md)
+  * [02-8-xtrabackup备份工具](02-8-xtrabackup备份工具.md)
 * [Introduction](README.md)
 * [Introduction](README.md)
