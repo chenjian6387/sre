@@ -130,4 +130,5 @@
   * [01-redis部署与数据类型](01-redis部署与数据类型.md)
   * [02-redis数据类型篇](02-redis数据类型篇.md)
   * [03-redis数据持久化篇](03-redis数据持久化篇.md)
+  * [04-redis安全篇](04-redis安全篇.md)
 * [Introduction](README.md)
