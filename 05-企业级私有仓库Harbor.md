@@ -114,7 +114,7 @@ For more details, please visit https://github.com/goharbor/harbor .
 检查harbor进程
 ```
 
-![image-20220827121948992](http://book.bikongge.com/sre/2024-linux/image-20220827121948992.png)
+![image-20220827121948992](/ajian/image-20220827121948992.png)
 
 登录信息
 
@@ -123,11 +123,11 @@ admin
 www.yuchaoit.cn
 ```
 
-![image-20220827122047517](http://book.bikongge.com/sre/2024-linux/image-20220827122047517.png)
+![image-20220827122047517](/ajian/image-20220827122047517.png)
 
 ## 创建项目
 
-![image-20220827122228236](http://book.bikongge.com/sre/2024-linux/image-20220827122228236.png)
+![image-20220827122228236](/ajian/image-20220827122228236.png)
 
 ## 修改docker配置，信任自建仓库
 
@@ -187,7 +187,7 @@ b60e5c3bcef2: Pushed
 
 ### 检查harbor镜像
 
-![image-20220827122758564](http://book.bikongge.com/sre/2024-linux/image-20220827122758564.png)
+![image-20220827122758564](/ajian/image-20220827122758564.png)
 
 ### 下载harbor镜像
 
