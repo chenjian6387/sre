@@ -7,7 +7,7 @@
 
 ## dockerfile简介
 
-![image-20200904144208292](http://book.bikongge.com/sre/2024-linux/image-20200904144208292.png)
+![image-20200904144208292](/ajian/image-20200904144208292.png)
 
 镜像是多层存储，每一层在前一层的基础上进行修改；
 
@@ -418,11 +418,11 @@ Centos-7.repo  Dockerfile  epel-7.repo
 
 ### 构建结果
 
-![image-20220826141100913](http://book.bikongge.com/sre/2024-linux/image-20220826141100913.png)
+![image-20220826141100913](/ajian/image-20220826141100913.png)
 
 最终的build构建镜像结果
 
-![image-20220826141650874](http://book.bikongge.com/sre/2024-linux/image-20220826141650874.png)
+![image-20220826141650874](/ajian/image-20220826141650874.png)
 
 ### 运行自定义镜像
 
@@ -511,7 +511,7 @@ e8036584b38d   centos7_nginx:1.20.1   "nginx -g 'daemon of…"   35 minutes ago 
 [root@docker-200 /www.yuchaoit.cn/test_dockerfile/flask_web]#
 ```
 
-![image-20220826145435738](http://book.bikongge.com/sre/2024-linux/image-20220826145435738.png)
+![image-20220826145435738](/ajian/image-20220826145435738.png)
 
 # 3.Dockerfile分段构建优化（面试背）
 
@@ -621,7 +621,7 @@ cbef5959b2f6   supervisor_flask   "/usr/bin/supervisor…"   15 seconds ago   Up
 hello docker,i am come from www.yuchaoit.cn~
 ```
 
-![image-20220826182452351](http://book.bikongge.com/sre/2024-linux/image-20220826182452351.png)
+![image-20220826182452351](/ajian/image-20220826182452351.png)
 
 # 4.Dockerfile优化(官网翻译)
 
@@ -805,7 +805,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 7.最终目录
 ```
 
-![image-20220827103652080](http://book.bikongge.com/sre/2024-linux/image-20220827103652080.png)
+![image-20220827103652080](/ajian/image-20220827103652080.png)
 
 ## 5.3 构建tomcat镜像
 
@@ -873,7 +873,7 @@ tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      
 [root@9a14249e435b /]#
 ```
 
-![image-20220827110406673](http://book.bikongge.com/sre/2024-linux/image-20220827110406673.png)
+![image-20220827110406673](/ajian/image-20220827110406673.png)
 
 ## 5.4 构建业务镜像
 
@@ -939,7 +939,7 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS  
 [root@docker-200 /www.yuchaoit.cn/test_dockerfile/tomcat_web/web_base]#
 ```
 
-![image-20220827114011458](http://book.bikongge.com/sre/2024-linux/image-20220827114011458.png)
+![image-20220827114011458](/ajian/image-20220827114011458.png)
 
 > 至此确保你多阶段构建的tomcat已经可以用了，还差一个数据库。
 >
