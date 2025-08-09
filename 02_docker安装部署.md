@@ -321,13 +321,13 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 5.访问容器中的nginx 1.17.9
 ```
 
-![image-20220821170534211](http://book.bikongge.com/sre/2024-linux/image-20220821170534211.png)
+![image-20220821170534211](/ajian/image-20220821170534211.png)
 
 > 看到这个页面，就说明你正确安装了docker，且运行了第一个nginx容器服务。
 
 # 3.一张图玩懂docker操作
 
-![image-20220821171918134](http://book.bikongge.com/sre/2024-linux/image-20220821171918134.png)
+![image-20220821171918134](/ajian/image-20220821171918134.png)
 
 # 4.docker镜像详解
 
@@ -430,7 +430,7 @@ Linux version 3.10.0-862.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc versi
 
 从这个过程，我们可以感觉出这是一层一层的添加的，docker镜像的层级概念就出来了，底层是centos镜像，上层是mysql镜像，centos镜像层属于父镜像。
 
-![image-20220821175036741](http://book.bikongge.com/sre/2024-linux/image-20220821175036741.png)
+![image-20220821175036741](/ajian/image-20220821175036741.png)
 
 ### 为什么要有docker镜像
 
@@ -446,7 +446,7 @@ Linux version 3.10.0-862.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc versi
 
 这种方式是最为推荐的方式包括我们以后去企业当中去实践应用的时候也是推荐这种方式。
 
-![image-20220821173006481](http://book.bikongge.com/sre/2024-linux/image-20220821173006481.png)
+![image-20220821173006481](/ajian/image-20220821173006481.png)
 
 ### docker commit
 
@@ -473,11 +473,11 @@ IMAGE          CREATED       CREATED BY                                      SIZ
 
 命令查看镜像的分层关系
 
-![image-20220821175353123](http://book.bikongge.com/sre/2024-linux/image-20220821175353123.png)
+![image-20220821175353123](/ajian/image-20220821175353123.png)
 
 ------
 
-![image-20220821180246854](http://book.bikongge.com/sre/2024-linux/image-20220821180246854.png)
+![image-20220821180246854](/ajian/image-20220821180246854.png)
 
 ## base镜像
 
@@ -509,7 +509,7 @@ BUG_REPORT_URL="https://bugs.alpinelinux.org/"
 
 > 即使多个容器共享一个base镜像，某个容器修改了base镜像的内容，例如修改/etc/下配置文件，其他容器的/etc/下内容是不会被修改的，修改动作只限制在单个容器内，这就是容器的写入时复制特性（Copy-on-write）。
 
-![image-20220821181523881](http://book.bikongge.com/sre/2024-linux/image-20220821181523881.png)
+![image-20220821181523881](/ajian/image-20220821181523881.png)
 
 ## 联合文件系统UnionFS
 
@@ -533,7 +533,7 @@ Status: Downloaded newer image for mysql:5.7
 docker.io/library/mysql:5.7
 ```
 
-![image-20220821182726794](http://book.bikongge.com/sre/2024-linux/image-20220821182726794.png)
+![image-20220821182726794](/ajian/image-20220821182726794.png)
 
 # 5.docker镜像实践操作
 
