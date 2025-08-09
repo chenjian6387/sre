@@ -132,4 +132,5 @@
   * [03-redis数据持久化篇](03-redis数据持久化篇.md)
   * [04-redis安全篇](04-redis安全篇.md)
   * [05-redis主从复制篇](05-redis主从复制篇.md)
+  * [06-redis高可用哨兵篇](06-redis高可用哨兵篇.md)
 * [Introduction](README.md)
