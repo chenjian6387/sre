@@ -2,7 +2,7 @@
 
 ELK 是elastic公司提供的**一套完整的日志收集以及展示的解决方案**，是三个产品的首字母缩写，分别是ElasticSearch、Logstash 和 Kibana。该组合版本会统一发布。
 
-![image-20221204103213383](http://book.bikongge.com/sre/2024-linux/image-20221204103213383.png)
+![image-20221204103213383](/ajian/image-20221204103213383.png)
 
 ElasticSearch简称ES，它是一个实时的分布式搜索和分析引擎，它可以用于全文搜索，结构化搜索以及分析。
 
@@ -50,7 +50,7 @@ Filebeat隶属于Beats。
 
 目前Beats包含四种工具：Packetbeat（搜集网络流量数据）Topbeat（搜集系统、进程和文件系统级别的 CPU 和内存使用情况等数据）Filebeat（搜集文件数据）Winlogbeat（搜集 Windows 事件日志数据）
 
-![image-20221204105846188](http://book.bikongge.com/sre/2024-linux/image-20221204105846188.png)
+![image-20221204105846188](/ajian/image-20221204105846188.png)
 
 # 3.ELK的用途
 
@@ -76,7 +76,7 @@ Splunk 是日志分析领域的领导者。日志分析并不仅仅包括系统�
 升级logstash集群，ES集群
 ```
 
-![image-20221204104329413](http://book.bikongge.com/sre/2024-linux/image-20221204104329413.png)
+![image-20221204104329413](/ajian/image-20221204104329413.png)
 
 ## 工作ELK日常
 
@@ -202,13 +202,13 @@ Updating / installing...
 [root@es-node2 ~]#cp /etc/filebeat/filebeat.yml{,.bak}
 ```
 
-![image-20221204131205095](http://book.bikongge.com/sre/2024-linux/image-20221204131205095.png)
+![image-20221204131205095](/ajian/image-20221204131205095.png)
 
 ## 配置文件
 
 ### 输入
 
-![image-20221204131459418](http://book.bikongge.com/sre/2024-linux/image-20221204131459418.png)
+![image-20221204131459418](/ajian/image-20221204131459418.png)
 
 ```
 1.装在client
@@ -234,7 +234,7 @@ Updating / installing...
 
 ### 输出
 
-![image-20221204131627700](http://book.bikongge.com/sre/2024-linux/image-20221204131627700.png)
+![image-20221204131627700](/ajian/image-20221204131627700.png)
 
 ```
 146 # ---------------------------- Elasticsearch Output ----------------------------
@@ -268,7 +268,7 @@ root       1911      1  2 13:23 ?        00:00:00 /usr/share/filebeat/bin/filebe
 
 ### 启动检查filebeat数据
 
-![image-20221204132848894](http://book.bikongge.com/sre/2024-linux/image-20221204132848894.png)
+![image-20221204132848894](/ajian/image-20221204132848894.png)
 
 ### 检查filebeat日志
 
@@ -298,11 +298,11 @@ GET /filebeat-7.9.1-2022.12.04-000001/_search
 3.filebeat会持续性收集目标日志，10s一次
 ```
 
-![image-20221204141244876](http://book.bikongge.com/sre/2024-linux/image-20221204141244876.png)
+![image-20221204141244876](/ajian/image-20221204141244876.png)
 
 ### es-head查看es
 
-![image-20221204141613229](http://book.bikongge.com/sre/2024-linux/image-20221204141613229.png)
+![image-20221204141613229](/ajian/image-20221204141613229.png)
 
 ### kibana查询nginx日志
 
@@ -311,15 +311,15 @@ GET /filebeat-7.9.1-2022.12.04-000001/_search
 2. 查看es索引，查询nginx日志
 ```
 
-![image-20221204141855662](http://book.bikongge.com/sre/2024-linux/image-20221204141855662.png)
+![image-20221204141855662](/ajian/image-20221204141855662.png)
 
 ### 添加时间排序规则
 
-![image-20221204141940088](http://book.bikongge.com/sre/2024-linux/image-20221204141940088.png)
+![image-20221204141940088](/ajian/image-20221204141940088.png)
 
 ### discover查看日志
 
-![image-20221204142159636](http://book.bikongge.com/sre/2024-linux/image-20221204142159636.png)
+![image-20221204142159636](/ajian/image-20221204142159636.png)
 
 ## 查看ELK持续收集日志
 
@@ -330,19 +330,19 @@ GET /filebeat-7.9.1-2022.12.04-000001/_search
 
 ### 2.看es
 
-![image-20221204142839537](http://book.bikongge.com/sre/2024-linux/image-20221204142839537.png)
+![image-20221204142839537](/ajian/image-20221204142839537.png)
 
 ### 3.看kibana
 
-![image-20221204142932155](http://book.bikongge.com/sre/2024-linux/image-20221204142932155.png)
+![image-20221204142932155](/ajian/image-20221204142932155.png)
 
 ### 4.设置时间区间
 
-![image-20221204143309208](http://book.bikongge.com/sre/2024-linux/image-20221204143309208.png)
+![image-20221204143309208](/ajian/image-20221204143309208.png)
 
 ### 5.解读kibana面板
 
-![image-20221204144145370](http://book.bikongge.com/sre/2024-linux/image-20221204144145370.png)
+![image-20221204144145370](/ajian/image-20221204144145370.png)
 
 ```
 es原始日志数据，字段是message。
@@ -350,19 +350,19 @@ es原始日志数据，字段是message。
 
 ### 6.过滤kibana面板字段
 
-![image-20221204144401561](http://book.bikongge.com/sre/2024-linux/image-20221204144401561.png)
+![image-20221204144401561](/ajian/image-20221204144401561.png)
 
 #### 再加一个字段
 
-![image-20221204144511515](http://book.bikongge.com/sre/2024-linux/image-20221204144511515.png)
+![image-20221204144511515](/ajian/image-20221204144511515.png)
 
 #### 移动字段，排序
 
-![image-20221204145751387](http://book.bikongge.com/sre/2024-linux/image-20221204145751387.png)
+![image-20221204145751387](/ajian/image-20221204145751387.png)
 
 ### 7.注意通配符添加
 
-![image-20230213171931808](http://book.bikongge.com/sre/2024-linux/image-20230213171931808.png)
+![image-20230213171931808](/ajian/image-20230213171931808.png)
 
 ## 重启filebeat
 
@@ -381,7 +381,7 @@ es原始日志数据，字段是message。
 
 如下图，可以明显的看出，收集过来的日志信息都是在一块的，不能够根据某一项内容进行查询。
 
-![image-20221204163751482](http://book.bikongge.com/sre/2024-linux/image-20221204163751482.png)
+![image-20221204163751482](/ajian/image-20221204163751482.png)
 
 因此就需要让filebeat收集json格式日志内容，把日志内容分成不同的字段，也就是Key/value，这样我们就可以根据一个字段去统计这个字段的相关内容了
 
@@ -441,7 +441,7 @@ $http_x_forwarded_for：-
 3.重启查看新日志nginx格式
 ```
 
-![image-20230213174323147](http://book.bikongge.com/sre/2024-linux/image-20230213174323147.png)
+![image-20230213174323147](/ajian/image-20230213174323147.png)
 
 > 但是此时es能正确拿到filebeat数据吗？注意删掉旧的filebeat索引，重新查看。
 
@@ -462,11 +462,11 @@ $http_x_forwarded_for：-
 [root@es-node1 ~]#curl 127.0.0.1
 ```
 
-![image-20230213174956904](http://book.bikongge.com/sre/2024-linux/image-20230213174956904.png)
+![image-20230213174956904](/ajian/image-20230213174956904.png)
 
 > es并没有正常的解析json数据，只是构造了一个整体message数据字符串，不好处理。
 
-![image-20230213175123267](http://book.bikongge.com/sre/2024-linux/image-20230213175123267.png)
+![image-20230213175123267](/ajian/image-20230213175123267.png)
 
 ## 3.修改filebeat配置
 
@@ -500,7 +500,7 @@ curl 10.0.0.18 # 确保正确日志 记录
 
 ## 4.最终es解析nginx(json)
 
-![image-20230213175928002](http://book.bikongge.com/sre/2024-linux/image-20230213175928002.png)
+![image-20230213175928002](/ajian/image-20230213175928002.png)
 
 ## 5.kibana重新加索引
 
@@ -512,7 +512,7 @@ filebeat采集数据，输入数据的文档
 
 https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-log.html
 
-![1676537150966](http://book.bikongge.com/sre/2024-linux/1676537150966.png)
+![1676537150966](/ajian/1676537150966.png)
 
 ## 需求：期望修改filebeat输入格式
 
@@ -571,7 +571,7 @@ Feb 16 17:05:08 es-node1 systemd[1]: Starting Filebeat sends log files to Logsta
 # 别忘记给nginx发请求，让filebeat有东西收集！！有输入才能有索引！！
 ```
 
-![1676539764953](http://book.bikongge.com/sre/2024-linux/1676539764953.png)
+![1676539764953](/ajian/1676539764953.png)
 
 查看索引数据
 
@@ -623,7 +623,7 @@ Feb 16 17:05:08 es-node1 systemd[1]: Starting Filebeat sends log files to Logsta
 }
 ```
 
-![1676539887862](http://book.bikongge.com/sre/2024-linux/1676539887862.png)
+![1676539887862](/ajian/1676539887862.png)
 
 ## 火坑记录
 
