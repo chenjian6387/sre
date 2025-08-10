@@ -194,3 +194,4 @@
   * [05-阿里云Redis](05-阿里云Redis.md)
   * [06-阿里云ACK](06-阿里云ACK.md)
   * [07-阿里云ACK实践部署](07-阿里云ACK实践部署.md)
+  * [08-阿里云ACK部署mysql](08-阿里云ACK部署mysql.md)
