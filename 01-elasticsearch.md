@@ -10,7 +10,7 @@ https://www.elastic.co/cn/elastic-stack/
 2. 需要配置日志分析架构，配置ELK技术栈
 ```
 
-![image-20221118150556733](http://book.bikongge.com/sre/2024-linux/image-20221118150556733.png)
+![image-20221118150556733](/ajian/image-20221118150556733.png)
 
 ## lucene搜索引擎库
 
@@ -23,7 +23,7 @@ Apache Lucene™ 是一个完全用 Java 编写的高性能、全功能搜索引
 简单说，以前要做日志搜索，需要写很多java代码，操作lucene这个库，需要深入理解索引原理。
 ```
 
-![image-20221118153347850](http://book.bikongge.com/sre/2024-linux/image-20221118153347850.png)
+![image-20221118153347850](/ajian/image-20221118153347850.png)
 
 ## 理解索引
 
@@ -36,7 +36,7 @@ Apache Lucene™ 是一个完全用 Java 编写的高性能、全功能搜索引
 好比有一本书，我们可以根据目录，找到页码，但是如果我要找的内容，不清楚在哪一个章节，这咋办呢。
 ```
 
-![image-20221118151816546](http://book.bikongge.com/sre/2024-linux/image-20221118151816546.png)
+![image-20221118151816546](/ajian/image-20221118151816546.png)
 
 ## 倒排索引
 
@@ -74,7 +74,7 @@ elastic 的含义是灵活的，有弹性的。
 
 [Lucene](https://lucene.apache.org/) 是一个基于 **Java** 语言的搜索引擎库，它由 **Doug Cutting** 创建于 1995 年，并于 2005 年成为 **Apache** 顶级开源项目。
 
-![Doug Cutting](http://book.bikongge.com/sre/2024-linux/20210113115113985.png)
+![Doug Cutting](/ajian/20210113115113985.png)
 
 （上图为 `Doug Cutting` ）
 
@@ -84,7 +84,7 @@ elastic 的含义是灵活的，有弹性的。
 
 ES 的创始人 **Shay Banon** 在 2004 年，基于 Lucene 创建了一个开源项目 **Compass**，后于 2010 年改名为 `ElasticSearch`。
 
-![在这里插入图片描述](http://book.bikongge.com/sre/2024-linux/20210113115706180.png)
+![在这里插入图片描述](/ajian/20210113115706180.png)
 
 （上图为 `Shay Banon` ）
 
@@ -122,7 +122,7 @@ Elastic 公司围绕 ElasticSearch，有着丰富的产品家族，叫作 [ELK S
 
 这四款产品的层级关系如下：
 
-![在这里插入图片描述](http://book.bikongge.com/sre/2024-linux/20210110200111863.png)
+![在这里插入图片描述](/ajian/20210110200111863.png)
 
 ## ES 使用架构
 
@@ -138,13 +138,13 @@ ES 作为一个**现代化的搜索引擎**，它本身除了拥有**检索功�
 
 因此，在一个不复杂的项目中，可以将 ES 作为唯一的后端来使用。
 
-![在这里插入图片描述](http://book.bikongge.com/sre/2024-linux/20210110203540462.png)
+![在这里插入图片描述](/ajian/20210110203540462.png)
 
 ***ES 与数据库系统配合\***
 
 在比较复杂的项目中，ES 无法提供传统数据库的所有功能（比如**事务处理**），因此需要将 ES 和传统数据库来配合使用。
 
-![在这里插入图片描述](http://book.bikongge.com/sre/2024-linux/20210110204254115.png)
+![在这里插入图片描述](/ajian/20210110204254115.png)
 
 ## ES 的应用
 
@@ -154,7 +154,7 @@ ES 支持丰富的 [Clients 接口](https://www.elastic.co/guide/en/elasticsearc
 
 ***ES 企业应用\***
 
-![在这里插入图片描述](http://book.bikongge.com/sre/2024-linux/20210203100125589.png)
+![在这里插入图片描述](/ajian/20210203100125589.png)
 
 目前你所熟知的[很多应用](https://www.elastic.co/cn/customers/)都使用了 ES 来提供搜索功能，比如 GitHub，Wikipedia 等。
 
@@ -170,7 +170,7 @@ ES 支持丰富的 [Clients 接口](https://www.elastic.co/guide/en/elasticsearc
 5. 社区强大
 ```
 
-![image-20221118153600700](http://book.bikongge.com/sre/2024-linux/image-20221118153600700.png)
+![image-20221118153600700](/ajian/image-20221118153600700.png)
 
 ```
 基于ES实现的搜索功能，你输入了关键字，自动已经去ES里搜索了
@@ -331,15 +331,15 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-system-s
 # author: www.yuchaoit.cn
 ```
 
-![image-20221118161702646](http://book.bikongge.com/sre/2024-linux/image-20221118161702646.png)
+![image-20221118161702646](/ajian/image-20221118161702646.png)
 
 ## 正确重启ES
 
-![image-20221118161736109](http://book.bikongge.com/sre/2024-linux/image-20221118161736109.png)
+![image-20221118161736109](/ajian/image-20221118161736109.png)
 
 ## 浏览器访问
 
-![image-20221118162032017](http://book.bikongge.com/sre/2024-linux/image-20221118162032017.png)
+![image-20221118162032017](/ajian/image-20221118162032017.png)
 
 修改es内存占用
 
@@ -381,11 +381,11 @@ docker run -p 9100:9100 mobz/elasticsearch-head:7
 3. google浏览器装插件（用这个）
 ```
 
-![image-20221118180524697](http://book.bikongge.com/sre/2024-linux/image-20221118180524697.png)
+![image-20221118180524697](/ajian/image-20221118180524697.png)
 
 ------
 
-![image-20221118180618628](http://book.bikongge.com/sre/2024-linux/image-20221118180618628.png)
+![image-20221118180618628](/ajian/image-20221118180618628.png)
 
 # 4.kibana部署
 
@@ -393,20 +393,20 @@ docker run -p 9100:9100 mobz/elasticsearch-head:7
 
 好比之前超哥讲解mongodb，也要对比mysql去理解，更简单些。
 
-![image-20221118182529194](http://book.bikongge.com/sre/2024-linux/image-20221118182529194.png)
+![image-20221118182529194](/ajian/image-20221118182529194.png)
 
 ```
 官网的es数据写入
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html
 ```
 
-![image-20221118182955181](http://book.bikongge.com/sre/2024-linux/image-20221118182955181.png)
+![image-20221118182955181](/ajian/image-20221118182955181.png)
 
 ## 安装kibana
 
 https://www.elastic.co/cn/what-is/kibana
 
-![image-20221118183534850](http://book.bikongge.com/sre/2024-linux/image-20221118183534850.png)
+![image-20221118183534850](/ajian/image-20221118183534850.png)
 
 ```
 [root@devops01 /opt]#ls kibana-7.9.1-x86_64.rpm 
@@ -455,15 +455,15 @@ Swap:          3967           0        3967
 
 必须确保es后端正确启动，kibana才能工作。
 
-![image-20221121103251133](http://book.bikongge.com/sre/2024-linux/image-20221121103251133.png)
+![image-20221121103251133](/ajian/image-20221121103251133.png)
 
 ### 在kibana的控制台里，读写es
 
-![image-20221121103700150](http://book.bikongge.com/sre/2024-linux/image-20221121103700150.png)
+![image-20221121103700150](/ajian/image-20221121103700150.png)
 
 ### GET方法
 
-![image-20221121103736259](http://book.bikongge.com/sre/2024-linux/image-20221121103736259.png)
+![image-20221121103736259](/ajian/image-20221121103736259.png)
 
 ```
 GET /linux/_doc/1
@@ -472,15 +472,15 @@ GET /linux/_search
 
 ### 检查es
 
-![image-20221121104231377](http://book.bikongge.com/sre/2024-linux/image-20221121104231377.png)
+![image-20221121104231377](/ajian/image-20221121104231377.png)
 
 ### 管理es索引
 
-![image-20221121104357793](http://book.bikongge.com/sre/2024-linux/image-20221121104357793.png)
+![image-20221121104357793](/ajian/image-20221121104357793.png)
 
 删除索引
 
-![image-20221121104624024](http://book.bikongge.com/sre/2024-linux/image-20221121104624024.png)
+![image-20221121104624024](/ajian/image-20221121104624024.png)
 
 # 5.kibana数据CRUD
 
@@ -490,7 +490,7 @@ GET /linux/_search
 https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-index.html
 ```
 
-![image-20221121105646164](http://book.bikongge.com/sre/2024-linux/image-20221121105646164.png)
+![image-20221121105646164](/ajian/image-20221121105646164.png)
 
 类似于mongodb，直接插入数据，自动创建索引（库）
 
@@ -527,7 +527,7 @@ POST linux_yu/_doc/
 
 ### 查询数据
 
-![image-20221121110512638](http://book.bikongge.com/sre/2024-linux/image-20221121110512638.png)
+![image-20221121110512638](/ajian/image-20221121110512638.png)
 
 ```
 [root@devops01 ~]#curl -X GET 'http://10.0.0.18:9200/linux_yu/_doc/1'
@@ -539,7 +539,7 @@ POST linux_yu/_doc/
 GET linux_yu/_doc/1
 ```
 
-![image-20221121110956147](http://book.bikongge.com/sre/2024-linux/image-20221121110956147.png)
+![image-20221121110956147](/ajian/image-20221121110956147.png)
 
 ### 图解mysql理解es数据
 
@@ -561,11 +561,11 @@ POST linux_yu/_doc/2
 }
 ```
 
-![image-20221121114330244](http://book.bikongge.com/sre/2024-linux/image-20221121114330244.png)
+![image-20221121114330244](/ajian/image-20221121114330244.png)
 
 ### 推荐写法
 
-![image-20221121115411038](http://book.bikongge.com/sre/2024-linux/image-20221121115411038.png)
+![image-20221121115411038](/ajian/image-20221121115411038.png)
 
 ```
 ES官网推荐ID使用随机id
@@ -602,7 +602,7 @@ POST linux_yu/_doc/
 
 测试数据
 
-![image-20221121122624170](http://book.bikongge.com/sre/2024-linux/image-20221121122624170.png)
+![image-20221121122624170](/ajian/image-20221121122624170.png)
 
 ```
 POST /t1/_doc/
@@ -679,11 +679,11 @@ POST /t1/_doc/
 
 全选批量执行
 
-![image-20221121120525471](http://book.bikongge.com/sre/2024-linux/image-20221121120525471.png)
+![image-20221121120525471](/ajian/image-20221121120525471.png)
 
 ### 插件检查数据
 
-![image-20221121122637823](http://book.bikongge.com/sre/2024-linux/image-20221121122637823.png)
+![image-20221121122637823](/ajian/image-20221121122637823.png)
 
 ### 查询ES数据
 
@@ -794,19 +794,19 @@ GET t1/_search
 
 ### 找出ops人员
 
-![image-20221121133603481](http://book.bikongge.com/sre/2024-linux/image-20221121133603481.png)
+![image-20221121133603481](/ajian/image-20221121133603481.png)
 
 ### 找出ops且在北京的
 
-![image-20221121133644745](http://book.bikongge.com/sre/2024-linux/image-20221121133644745.png)
+![image-20221121133644745](/ajian/image-20221121133644745.png)
 
 ### 找出ops且年龄大于20的
 
-![image-20221121133747577](http://book.bikongge.com/sre/2024-linux/image-20221121133747577.png)
+![image-20221121133747577](/ajian/image-20221121133747577.png)
 
 ### 显示ES查询语句
 
-![image-20221121133826341](http://book.bikongge.com/sre/2024-linux/image-20221121133826341.png)
+![image-20221121133826341](/ajian/image-20221121133826341.png)
 
 ```
 {"query":{"bool":{"must":[{"term":{"job.keyword":"ops"}},{"range":{"age.keyword":{"gt":"20"}}}],"must_not":[],"should":[]}},"from":0,"size":10,"sort":[],"aggs":{}}
@@ -814,23 +814,23 @@ GET t1/_search
 
 ### kibana格式化json
 
-![image-20221121133957297](http://book.bikongge.com/sre/2024-linux/image-20221121133957297.png)
+![image-20221121133957297](/ajian/image-20221121133957297.png)
 
 ### 找出北京的dev
 
-![image-20221121134303492](http://book.bikongge.com/sre/2024-linux/image-20221121134303492.png)
+![image-20221121134303492](/ajian/image-20221121134303492.png)
 
 ### 数据浏览过滤
 
-![image-20221121135807632](http://book.bikongge.com/sre/2024-linux/image-20221121135807632.png)
+![image-20221121135807632](/ajian/image-20221121135807632.png)
 
 ## kibana导入ES数据
 
-![image-20221121134406369](http://book.bikongge.com/sre/2024-linux/image-20221121134406369.png)
+![image-20221121134406369](/ajian/image-20221121134406369.png)
 
 kibana关联es的索引数据。
 
-![image-20221121134536706](http://book.bikongge.com/sre/2024-linux/image-20221121134536706.png)
+![image-20221121134536706](/ajian/image-20221121134536706.png)
 
 ```
 可以输入索引名 如 t1
@@ -839,23 +839,23 @@ kibana关联es的索引数据。
 
 ### 创建索引模式
 
-![image-20221121134824783](http://book.bikongge.com/sre/2024-linux/image-20221121134824783.png)
+![image-20221121134824783](/ajian/image-20221121134824783.png)
 
 ### 点击discover
 
-![image-20221121134903959](http://book.bikongge.com/sre/2024-linux/image-20221121134903959.png)
+![image-20221121134903959](/ajian/image-20221121134903959.png)
 
 ### kibana搜索es数据
 
-![image-20221121135112530](http://book.bikongge.com/sre/2024-linux/image-20221121135112530.png)
+![image-20221121135112530](/ajian/image-20221121135112530.png)
 
 ### 添加过滤器filter
 
-![image-20221121135227824](http://book.bikongge.com/sre/2024-linux/image-20221121135227824.png)
+![image-20221121135227824](/ajian/image-20221121135227824.png)
 
 ### 临时关闭条件，或者re-enable
 
-![image-20221121135553159](http://book.bikongge.com/sre/2024-linux/image-20221121135553159.png)
+![image-20221121135553159](/ajian/image-20221121135553159.png)
 
 ## ES更新命令
 
@@ -894,11 +894,11 @@ PUT t1/_doc/1
 
 更新随机id
 
-![image-20221123173124291](http://book.bikongge.com/sre/2024-linux/image-20221123173124291.png)
+![image-20221123173124291](/ajian/image-20221123173124291.png)
 
 更新固定id，状态是updated
 
-![image-20221123174407235](http://book.bikongge.com/sre/2024-linux/image-20221123174407235.png)
+![image-20221123174407235](/ajian/image-20221123174407235.png)
 
 ## 获取随机ID
 
@@ -971,6 +971,6 @@ DELETE t2/
 # 暂时无须了解
 ```
 
-![image-20221123180152935](http://book.bikongge.com/sre/2024-linux/image-20221123180152935.png)
+![image-20221123180152935](/ajian/image-20221123180152935.png)
 
 [ES工作里的应用，运维较多是协助开发人员，查询数据。](http://yuchaoit.cn/)
