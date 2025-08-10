@@ -80,15 +80,15 @@ logging.to_files: true
 # 重启filebeat
 ```
 
-![image-20230219135514917](http://book.bikongge.com/sre/2024-linux/image-20230219135514917.png)
+![image-20230219135514917](/ajian/image-20230219135514917.png)
 
 ## 查看kibana（pipeline）
 
-![image-20230219135631053](http://book.bikongge.com/sre/2024-linux/image-20230219135631053.png)
+![image-20230219135631053](/ajian/image-20230219135631053.png)
 
 ## kibana展示es
 
-![image-20230219140042517](http://book.bikongge.com/sre/2024-linux/image-20230219140042517.png)
+![image-20230219140042517](/ajian/image-20230219140042517.png)
 
 # 2.filebeat收集tomcat日志
 
@@ -183,7 +183,7 @@ Filebeat.yml
 [root@es-node1 /opt/jdk8]#systemctl restart filebeat.service
 ```
 
-![image-20230219210009872](http://book.bikongge.com/sre/2024-linux/image-20230219210009872.png)
+![image-20230219210009872](/ajian/image-20230219210009872.png)
 
 # 3.小结
 
