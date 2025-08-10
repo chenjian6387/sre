@@ -51,7 +51,7 @@ MongoDB通过使用副本集来实现复制。
 
 显示了MongoDB复制的典型图，客户端应用程序始终与主节点进行交互，然后主节点将数据复制到辅助节点。
 
-![image-20221017163522651](http://book.bikongge.com/sre/2024-linux/image-20221017163522651.png)
+![image-20221017163522651](/ajian/image-20221017163522651.png)
 
 # 部署副本集
 
@@ -135,7 +135,7 @@ rs.initiate(
 )
 ```
 
-![image-20221017165420685](http://book.bikongge.com/sre/2024-linux/image-20221017165420685.png)
+![image-20221017165420685](/ajian/image-20221017165420685.png)
 
 ```
 该方法是官网推荐的模式，存在选举时间
@@ -148,7 +148,7 @@ rs.status()
 # rs是管理集群的命令
 ```
 
-![image-20221017165648697](http://book.bikongge.com/sre/2024-linux/image-20221017165648697.png)
+![image-20221017165648697](/ajian/image-20221017165648697.png)
 
 ## 从库开启slve
 
@@ -207,7 +207,7 @@ dba:PRIMARY>
 
 从库只读权限
 
-![image-20221017171522450](http://book.bikongge.com/sre/2024-linux/image-20221017171522450.png)
+![image-20221017171522450](/ajian/image-20221017171522450.png)
 
 ## 副本集常用命令
 
@@ -260,11 +260,11 @@ rs.config()
 3.查看新的复制关系
 ```
 
-![image-20221017172240152](http://book.bikongge.com/sre/2024-linux/image-20221017172240152.png)
+![image-20221017172240152](/ajian/image-20221017172240152.png)
 
 新的主从关系
 
-![image-20221017180117142](http://book.bikongge.com/sre/2024-linux/image-20221017180117142.png)
+![image-20221017180117142](/ajian/image-20221017180117142.png)
 
 # 从库权重调整
 
@@ -305,4 +305,4 @@ rs.add("10.0.0.17:28010")
 rs.remove("10.0.0.17:28010")
 ```
 
-![image-20221017181922124](http://book.bikongge.com/sre/2024-linux/image-20221017181922124.png)
+![image-20221017181922124](/ajian/image-20221017181922124.png)
