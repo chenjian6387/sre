@@ -2,7 +2,7 @@
 
 https://help.aliyun.com/product/85222.html
 
-![image-20230225183806366](http://book.bikongge.com/sre/2024-linux/image-20230225183806366.png)
+![image-20230225183806366](/ajian/image-20230225183806366.png)
 
 # 为什么花钱买ACK？
 
@@ -42,7 +42,7 @@ DevOps的目的是构建一种文化和环境，使构建、测试、发布软�
 
 本方案使用云效完成容器应用（小程序后端服务）的自动化构建和持续部署。
 
-![image-20230225184245061](http://book.bikongge.com/sre/2024-linux/image-20230225184245061.png)
+![image-20230225184245061](/ajian/image-20230225184245061.png)
 
 ## ACK Pro版集群计费说明
 
@@ -52,7 +52,7 @@ https://help.aliyun.com/document_detail/462280.html
 
 ## 多种ACK套餐
 
-![image-20230225184750059](http://book.bikongge.com/sre/2024-linux/image-20230225184750059.png)
+![image-20230225184750059](/ajian/image-20230225184750059.png)
 
 > 托管版
 
@@ -95,11 +95,11 @@ ACK边缘托管版
 
 ## 图解
 
-![image-20230225190554868](http://book.bikongge.com/sre/2024-linux/image-20230225190554868.png)
+![image-20230225190554868](/ajian/image-20230225190554868.png)
 
 ## 购买ACK托管版(master)
 
-![image-20230225190811623](http://book.bikongge.com/sre/2024-linux/image-20230225190811623.png)
+![image-20230225190811623](/ajian/image-20230225190811623.png)
 
 > pro版和标准版
 >
@@ -109,11 +109,11 @@ ACK边缘托管版
 >
 > Pro版本用于公司商业运行
 
-![image-20230225190955388](http://book.bikongge.com/sre/2024-linux/image-20230225190955388.png)
+![image-20230225190955388](/ajian/image-20230225190955388.png)
 
 ### 创建ACK标准模板
 
-![image-20230225213122846](http://book.bikongge.com/sre/2024-linux/image-20230225213122846.png)
+![image-20230225213122846](/ajian/image-20230225213122846.png)
 
 ### ACK标准版配置
 
@@ -121,13 +121,13 @@ ACK边缘托管版
 
 ### docker容器运行时
 
-![image-20230225213914759](http://book.bikongge.com/sre/2024-linux/image-20230225213914759.png)
+![image-20230225213914759](/ajian/image-20230225213914759.png)
 
 ### 暴露ACK到公网（EIP）
 
 > 暴露api-server地址到公网，即可远程管理ACK集群。
 
-![image-20230226113107805](http://book.bikongge.com/sre/2024-linux/image-20230226113107805.png)
+![image-20230226113107805](/ajian/image-20230226113107805.png)
 
 ### ACK连接RDS
 
@@ -136,13 +136,13 @@ ACK边缘托管版
 
 ### ACK安全组
 
-![image-20230226123602418](http://book.bikongge.com/sre/2024-linux/image-20230226123602418.png)
+![image-20230226123602418](/ajian/image-20230226123602418.png)
 
 只要你的ACK，ECS，RDS使用阿里云创建的VPC，默认都可以互通。
 
 ### 高级选项
 
-![image-20230226123727251](http://book.bikongge.com/sre/2024-linux/image-20230226123727251.png)
+![image-20230226123727251](/ajian/image-20230226123727251.png)
 
 ## Worker节点配置购买
 
@@ -156,37 +156,37 @@ k8s集群有最低运行要求，并且费用计算还是（ECS+ACK+EIP+SLB）
 Yuchao123 密码
 ```
 
-![image-20230226124615089](http://book.bikongge.com/sre/2024-linux/image-20230226124615089.png)
+![image-20230226124615089](/ajian/image-20230226124615089.png)
 
 ## K8S其他组件配置
 
 ### ingress-nginx
 
-![image-20230226125225658](http://book.bikongge.com/sre/2024-linux/image-20230226125225658.png)
+![image-20230226125225658](/ajian/image-20230226125225658.png)
 
 ## 购买订单检查
 
-![image-20230226125350394](http://book.bikongge.com/sre/2024-linux/image-20230226125350394.png)
+![image-20230226125350394](/ajian/image-20230226125350394.png)
 
 ### 修改后
 
-![image-20230226130052213](http://book.bikongge.com/sre/2024-linux/image-20230226130052213.png)
+![image-20230226130052213](/ajian/image-20230226130052213.png)
 
 ## ACK创建中
 
-![image-20230226130156315](http://book.bikongge.com/sre/2024-linux/image-20230226130156315.png)
+![image-20230226130156315](/ajian/image-20230226130156315.png)
 
 ## ACK集群运行中
 
-![image-20230226131144384](http://book.bikongge.com/sre/2024-linux/image-20230226131144384.png)
+![image-20230226131144384](/ajian/image-20230226131144384.png)
 
 ### 类似dashboard
 
-![image-20230226135726395](http://book.bikongge.com/sre/2024-linux/image-20230226135726395.png)
+![image-20230226135726395](/ajian/image-20230226135726395.png)
 
 ### 通过kubectl操作ACK(本地>阿里云)
 
-![image-20230226135800448](http://book.bikongge.com/sre/2024-linux/image-20230226135800448.png)
+![image-20230226135800448](/ajian/image-20230226135800448.png)
 
 > 可以通过你本地机器，走api-server提供的公网地址，进行远程管理
 >
@@ -223,7 +223,7 @@ cn-beijing.192.168.0.31   Ready    <none>   60m   v1.22.15-aliyun.1
 cn-beijing.192.168.0.32   Ready    <none>   60m   v1.22.15-aliyun.1
 ```
 
-![image-20230226141020199](http://book.bikongge.com/sre/2024-linux/image-20230226141020199.png)
+![image-20230226141020199](/ajian/image-20230226141020199.png)
 
 > 非常好用
 
@@ -241,33 +241,33 @@ source <(kubectl completion bash)
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
 
-![image-20230226141944864](http://book.bikongge.com/sre/2024-linux/image-20230226141944864.png)
+![image-20230226141944864](/ajian/image-20230226141944864.png)
 
 ## 更安全的ECS内网连接ACK
 
 同一个VPC下的ECS，都可以连接ACK
 
-![image-20230226142211603](http://book.bikongge.com/sre/2024-linux/image-20230226142211603.png)
+![image-20230226142211603](/ajian/image-20230226142211603.png)
 
 # ACK节点管理
 
-![image-20230226142248268](http://book.bikongge.com/sre/2024-linux/image-20230226142248268.png)
+![image-20230226142248268](/ajian/image-20230226142248268.png)
 
 ## 节点详细
 
-![image-20230226142410996](http://book.bikongge.com/sre/2024-linux/image-20230226142410996.png)
+![image-20230226142410996](/ajian/image-20230226142410996.png)
 
 ## 工作负载（namespace）
 
-![image-20230226142449114](http://book.bikongge.com/sre/2024-linux/image-20230226142449114.png)
+![image-20230226142449114](/ajian/image-20230226142449114.png)
 
 ## Service管理
 
-![image-20230226142610272](http://book.bikongge.com/sre/2024-linux/image-20230226142610272.png)
+![image-20230226142610272](/ajian/image-20230226142610272.png)
 
 ## ACK提供可视化k8s管理
 
-![image-20230226142644964](http://book.bikongge.com/sre/2024-linux/image-20230226142644964.png)
+![image-20230226142644964](/ajian/image-20230226142644964.png)
 
 # ACK监控
 
@@ -275,4 +275,4 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc
 >
 > 统一ACK解决了所有问题，只需要招聘懂kubernetes的运维，即可维护ACK上的公司技术业务。
 
-![image-20230226142849179](http://book.bikongge.com/sre/2024-linux/image-20230226142849179.png)
+![image-20230226142849179](/ajian/image-20230226142849179.png)
