@@ -99,7 +99,7 @@ mongo
 for (i=0;i<100000;i++){db.users.insert({"id":i,"name":"www.yuchaoit.cn","date":new Date()});}
 ```
 
-![image-20221018113358942](http://book.bikongge.com/sre/2024-linux/image-20221018113358942.png)
+![image-20221018113358942](/ajian/image-20221018113358942.png)
 
 ## zabbix自带mongo的监控模板
 
