@@ -165,5 +165,5 @@
   * [07-k8s配置文件管理](07-k8s配置文件管理.md)
   * [08-dashboard](08-dashboard.md)
   * [09-prometheus](09-prometheus.md)
-* 
+* [11-mongodb](11-mongodb.md)
 * []()
