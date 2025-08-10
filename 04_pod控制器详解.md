@@ -113,11 +113,11 @@ nginx-rs-vvdsr   1/1     Running   0          101s   10.2.2.22   k8s-node-12   <
 试试访问4个POD的ip
 ```
 
-![image-20220909163658871](http://book.bikongge.com/sre/2024-linux/image-20220909163658871.png)
+![image-20220909163658871](/ajian/image-20220909163658871.png)
 
 ## 删除POD试试？
 
-![image-20220909163953649](http://book.bikongge.com/sre/2024-linux/image-20220909163953649.png)
+![image-20220909163953649](/ajian/image-20220909163953649.png)
 
 再查查最新的POD
 
@@ -151,7 +151,7 @@ replicaset.apps/nginx-rs configured
 
 ### 查看RS控制器更新结果
 
-![image-20220909170102573](http://book.bikongge.com/sre/2024-linux/image-20220909170102573.png)
+![image-20220909170102573](/ajian/image-20220909170102573.png)
 
 ```
 [root@k8s-master-10 ~]#kubectl get pod -owide -l app=nginx
@@ -177,7 +177,7 @@ replicaset.apps/nginx-rs edited
 
 ### 查看rs控制器结果
 
-![image-20220909170343370](http://book.bikongge.com/sre/2024-linux/image-20220909170343370.png)
+![image-20220909170343370](/ajian/image-20220909170343370.png)
 
 ```
 [root@k8s-master-10 ~]#kubectl get pod -owide -l app=nginx
@@ -236,7 +236,7 @@ Pod是Kubernetes创建或部署的最小单位，但是Pod是被设计为相对�
 
 Kubernetes提供了Controller（控制器）来管理Pod，Controller可以创建和管理多个Pod，提供副本管理、滚动升级和自愈能力，其中最为常用的就是Deployment。
 
-![image-20220911094510595](http://book.bikongge.com/sre/2024-linux/image-20220911094510595.png)
+![image-20220911094510595](/ajian/image-20220911094510595.png)
 
 一个Deployment可以包含一个或多个Pod副本，每个Pod副本的角色相同，所以系统会自动为Deployment的多个Pod副本分发请求。
 
@@ -323,11 +323,11 @@ nginx-deployment   2/2     2            2           6m33s
 
 ## 图解POD描述信息
 
-![image-20220911100317626](http://book.bikongge.com/sre/2024-linux/image-20220911100317626.png)
+![image-20220911100317626](/ajian/image-20220911100317626.png)
 
 ## 图解Deployment描述信息
 
-![image-20220911101154367](http://book.bikongge.com/sre/2024-linux/image-20220911101154367.png)
+![image-20220911101154367](/ajian/image-20220911101154367.png)
 
 ## deployment如何控制pod
 
@@ -353,13 +353,13 @@ nginx-deployment-64bcc7b77f-nth5x   1/1     Running   0          22m
 nginx-deployment-64bcc7b77f-vt4kp   1/1     Running   0          17s
 ```
 
-![image-20220911103317035](http://book.bikongge.com/sre/2024-linux/image-20220911103317035.png)
+![image-20220911103317035](/ajian/image-20220911103317035.png)
 
 ## 
 
 ## deployment和RS和pod关系
 
-![image-20220911103622566](http://book.bikongge.com/sre/2024-linux/image-20220911103622566.png)
+![image-20220911103622566](/ajian/image-20220911103622566.png)
 
 ## pod版本更新⭐️⭐️
 
@@ -428,7 +428,7 @@ Controlled By:  ReplicaSet/nginx-deployment-5b78bc88d4
 
 ### deployment更新镜像原理图
 
-![image-20220911104957942](http://book.bikongge.com/sre/2024-linux/image-20220911104957942.png)
+![image-20220911104957942](/ajian/image-20220911104957942.png)
 
 ```
 默认是滚动更新，逐步创建新pod、然后删除旧pod.
@@ -456,7 +456,7 @@ deployment "nginx-deployment" successfully rolled out
 
 ### 蓝绿更新原理
 
-![image-20220911110455835](http://book.bikongge.com/sre/2024-linux/image-20220911110455835.png)
+![image-20220911110455835](/ajian/image-20220911110455835.png)
 
 ### 其他更新镜像命令
 
@@ -477,7 +477,7 @@ deployment.apps/nginx-deployment image updated
 
 ### 依然是滚动更新过程
 
-![image-20220911112052718](http://book.bikongge.com/sre/2024-linux/image-20220911112052718.png)
+![image-20220911112052718](/ajian/image-20220911112052718.png)
 
 ### 访问最新版本
 
@@ -633,7 +633,7 @@ DaemonSet是这样一种对象（守护进程），它在集群的每个节点�
 或容器监控的客户端。
 ```
 
-![image-20220911134923976](http://book.bikongge.com/sre/2024-linux/image-20220911134923976.png)
+![image-20220911134923976](/ajian/image-20220911134923976.png)
 
 ## yaml示例
 
@@ -674,7 +674,7 @@ Pod模板中有个nodeSelector，指定了只在有“daemon=need”的节点上
 
 如果需要在每一个节点上创建Pod可以删除该标签。
 
-![image-20220911140734298](http://book.bikongge.com/sre/2024-linux/image-20220911140734298.png)
+![image-20220911140734298](/ajian/image-20220911140734298.png)
 
 ## 创建ds控制器
 
@@ -699,7 +699,7 @@ daemon=need
 
 查看所有机器的标签信息
 
-![image-20220911140936289](http://book.bikongge.com/sre/2024-linux/image-20220911140936289.png)
+![image-20220911140936289](/ajian/image-20220911140936289.png)
 
 ### 给机器加上标签
 
