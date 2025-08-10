@@ -2,7 +2,7 @@
 
 iptables命令语法顺序
 
-![image-20220815163833389](http://book.bikongge.com/sre/2024-linux/image-20220815163833389.png)
+![image-20220815163833389](/ajian/image-20220815163833389.png)
 
 ```
 -L  
@@ -53,7 +53,7 @@ modprobe ipt_state
 查看已加载的模块
 ```
 
-![image-20220815164016198](http://book.bikongge.com/sre/2024-linux/image-20220815164016198.png)
+![image-20220815164016198](/ajian/image-20220815164016198.png)
 
 ## 3.启动防火墙
 
@@ -212,7 +212,7 @@ PONG
 iptables -t filter -A INPUT -p tcp --dport 22 -j DROP
 ```
 
-![image-20220815170537292](http://book.bikongge.com/sre/2024-linux/image-20220815170537292.png)
+![image-20220815170537292](/ajian/image-20220815170537292.png)
 
 ## 2.禁止某个ip访问具体网卡
 
@@ -251,7 +251,7 @@ target     prot opt source               destination
 [root@db-51 ~]#iptables -A INPUT -p tcp ! -s 10.0.0.53 -i ens33 -j DROP
 ```
 
-![image-20220815173430833](http://book.bikongge.com/sre/2024-linux/image-20220815173430833.png)
+![image-20220815173430833](/ajian/image-20220815173430833.png)
 
 ```
 [root@db-53 ~]#ssh root@10.0.0.51
@@ -285,7 +285,7 @@ target     prot opt source               destination
 iptables -A INPUT -p tcp ! -s 10.0.0.0/24 -i ens33 -j DROP
 ```
 
-![image-20220815174817309](http://book.bikongge.com/sre/2024-linux/image-20220815174817309.png)
+![image-20220815174817309](/ajian/image-20220815174817309.png)
 
 ```
 发现规则的加载顺序，因此想让这个规则有用，还得删除2号规则
@@ -306,7 +306,7 @@ num  target     prot opt source               destination
 [root@db-51 ~]#iptables -D INPUT 2
 ```
 
-![image-20220815175215735](http://book.bikongge.com/sre/2024-linux/image-20220815175215735.png)
+![image-20220815175215735](/ajian/image-20220815175215735.png)
 
 ## 5.实现堡垒机登录唯一入口
 
@@ -322,7 +322,7 @@ tcp        0      0 10.0.0.51:22            10.0.0.61:44198         ESTABLISHED
 [root@db-51 ~]#
 ```
 
-![image-20220815184310722](http://book.bikongge.com/sre/2024-linux/image-20220815184310722.png)
+![image-20220815184310722](/ajian/image-20220815184310722.png)
 
 ## 6.匹配端口范围
 
@@ -377,7 +377,7 @@ iptables -A INPUT -p icmp --icmp-type 8 -s 0/0 -j REJECT
 iptables -A INPUT -p icmp --icmp-type 8 -j REJECT
 ```
 
-![image-20220815195333469](http://book.bikongge.com/sre/2024-linux/image-20220815195333469.png)
+![image-20220815195333469](/ajian/image-20220815195333469.png)
 
 ## 8.服务器禁ping，请求直接丢弃
 
@@ -387,7 +387,7 @@ iptables -A INPUT -p icmp --icmp-type 8 -j REJECT
 iptables -A INPUT -p icmp --icmp-type 8 -s 0/0 -j DROP
 ```
 
-![image-20220815195517982](http://book.bikongge.com/sre/2024-linux/image-20220815195517982.png)
+![image-20220815195517982](/ajian/image-20220815195517982.png)
 
 ```
 所以很明显，REJECT动作更绅士，提供了一定的排错思路。
@@ -510,7 +510,7 @@ iptables -P OUTPUT ACCEPT
 iptables -nL
 ```
 
-![image-20220816150030011](http://book.bikongge.com/sre/2024-linux/image-20220816150030011.png)
+![image-20220816150030011](/ajian/image-20220816150030011.png)
 
 ## 3.2 局域网共享上网
 
@@ -592,15 +592,15 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 ### 图解网络流量转发
 
-![image-20220816161458381](http://book.bikongge.com/sre/2024-linux/image-20220816161458381.png)
+![image-20220816161458381](/ajian/image-20220816161458381.png)
 
 ### 添加iptables规则的转发数据包
 
-![image-20220816162746020](http://book.bikongge.com/sre/2024-linux/image-20220816162746020.png)
+![image-20220816162746020](/ajian/image-20220816162746020.png)
 
 ### 图解iptables配置原理
 
-![image-20220816163502364](http://book.bikongge.com/sre/2024-linux/image-20220816163502364.png)
+![image-20220816163502364](/ajian/image-20220816163502364.png)
 
 ## 3.3 本地端口映射
 
@@ -629,7 +629,7 @@ target     prot opt source               destination
 
 ### 测试映射效果
 
-![image-20220816164636325](http://book.bikongge.com/sre/2024-linux/image-20220816164636325.png)
+![image-20220816164636325](/ajian/image-20220816164636325.png)
 
 # 4.保存规则记录
 
