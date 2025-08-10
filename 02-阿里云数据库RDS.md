@@ -2,7 +2,7 @@
 
 https://help.aliyun.com/document_detail/55665.html?spm=5176.rdsbuy.0.204.108a752fB6RnA0
 
-![1677056319533](http://book.bikongge.com/sre/2024-linux/1677056319533.png)
+![1677056319533](/ajian/1677056319533.png)
 
 # ECS部署java
 
@@ -29,13 +29,13 @@ tcp6       0      0 :::8080                 :::*                    LISTEN      
 
 选择RDS页面
 
-![1677058146264](http://book.bikongge.com/sre/2024-linux/1677058146264.png)
+![1677058146264](/ajian/1677058146264.png)
 
 按量付费购买数据库产品，和之前学的数据库架构一样
 
 理解下，不通规格，架构的数据库，使用的生产场景
 
-![1677059743161](http://book.bikongge.com/sre/2024-linux/1677059743161.png)
+![1677059743161](/ajian/1677059743161.png)
 
 主从复制、MHA、高可用也不需要你搭建了，只需要花钱买即可。
 
@@ -47,7 +47,7 @@ https://help.aliyun.com/document_detail/96047.html RDS mysql部分
 
 https://help.aliyun.com/document_detail/26092.html RDS架构
 
-![1677059938796](http://book.bikongge.com/sre/2024-linux/1677059938796.png)
+![1677059938796](/ajian/1677059938796.png)
 
 ## 购买RDS（穷人版）
 
@@ -61,17 +61,17 @@ mysql5.7
 1c 2GB内存  20GB磁盘
 ```
 
-![1677060669533](http://book.bikongge.com/sre/2024-linux/1677060669533.png)
+![1677060669533](/ajian/1677060669533.png)
 
 mysql优化阿里云也以最优标准，制作好了标准模板。
 
 ## 最终RDS-mysql标准
 
-![1677061034624](http://book.bikongge.com/sre/2024-linux/1677061034624.png)
+![1677061034624](/ajian/1677061034624.png)
 
 RDS-mysql创建中
 
-![1677061066869](http://book.bikongge.com/sre/2024-linux/1677061066869.png)
+![1677061066869](/ajian/1677061066869.png)
 
 # 启动jpress（阿里云版）
 
@@ -91,23 +91,23 @@ tcp6       0      0 :::8080                 :::*                    LISTEN      
 
 打开安全组
 
-![1677132120894](http://book.bikongge.com/sre/2024-linux/1677132120894.png)
+![1677132120894](/ajian/1677132120894.png)
 
 添加允许tomcat访问
 
-![1677132157982](http://book.bikongge.com/sre/2024-linux/1677132157982.png)
+![1677132157982](/ajian/1677132157982.png)
 
 访问jpress
 
-![1677132209496](http://book.bikongge.com/sre/2024-linux/1677132209496.png)
+![1677132209496](/ajian/1677132209496.png)
 
 ## 如何连接RDS-MySQL
 
-![1677132440757](http://book.bikongge.com/sre/2024-linux/1677132440757.png)
+![1677132440757](/ajian/1677132440757.png)
 
 ### 打开RDS外网连接
 
-![1677132473966](http://book.bikongge.com/sre/2024-linux/1677132473966.png)
+![1677132473966](/ajian/1677132473966.png)
 
 ### 设置RDS外网白名单
 
@@ -117,17 +117,17 @@ tcp6       0      0 :::8080                 :::*                    LISTEN      
 
 ### 设置内网RDS白名单
 
-![1677132597847](http://book.bikongge.com/sre/2024-linux/1677132597847.png)
+![1677132597847](/ajian/1677132597847.png)
 
 查看白名单网段规则
 
-![1677132647427](http://book.bikongge.com/sre/2024-linux/1677132647427.png)
+![1677132647427](/ajian/1677132647427.png)
 
 ### 填入你的ECS网段
 
 允许你自己的ECS，走内网，连接RDS
 
-![1677132713676](http://book.bikongge.com/sre/2024-linux/1677132713676.png)
+![1677132713676](/ajian/1677132713676.png)
 
 ### 测试ECS访问RDS数据库
 
@@ -156,7 +156,7 @@ ERROR 1045 (28000): Access denied for user 'root'@'192.168.0.19' (using password
 
 创建业务库，jpress
 
-![1677133244094](http://book.bikongge.com/sre/2024-linux/1677133244094.png)
+![1677133244094](/ajian/1677133244094.png)
 
 ### RDS-Mysql账户管理
 
@@ -167,11 +167,11 @@ Jpress123@@@
 只允许读写jpress库
 ```
 
-![1677133166566](http://book.bikongge.com/sre/2024-linux/1677133166566.png)
+![1677133166566](/ajian/1677133166566.png)
 
 数据库授权
 
-![1677133366100](http://book.bikongge.com/sre/2024-linux/1677133366100.png)
+![1677133366100](/ajian/1677133366100.png)
 
 ### 成功登录RDS数据库(内网DNS)
 
@@ -212,24 +212,24 @@ MySQL [(none)]>
 
 ## RDS-Mysql提供的访问架构图
 
-![1677133030525](http://book.bikongge.com/sre/2024-linux/1677133030525.png)
+![1677133030525](/ajian/1677133030525.png)
 
 ## 继续创建jpress应用
 
-![1677133593499](http://book.bikongge.com/sre/2024-linux/1677133593499.png)
+![1677133593499](/ajian/1677133593499.png)
 
 ## 大功告成
 
-![1677133743517](http://book.bikongge.com/sre/2024-linux/1677133743517.png)
+![1677133743517](/ajian/1677133743517.png)
 
 ## RDS检查jpress网站数据
 
-![1677133815535](http://book.bikongge.com/sre/2024-linux/1677133815535.png)
+![1677133815535](/ajian/1677133815535.png)
 
 ## DMS数据库管理
 
-![1677133906500](http://book.bikongge.com/sre/2024-linux/1677133906500.png)
+![1677133906500](/ajian/1677133906500.png)
 
 ## java上云迁移架构图
 
-![1677134301434](http://book.bikongge.com/sre/2024-linux/1677134301434.png)
+![1677134301434](/ajian/1677134301434.png)
