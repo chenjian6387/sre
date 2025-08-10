@@ -172,5 +172,6 @@
   * [04-副本集replicaSet](04-副本集replicaSet.md)
   * [05-mongodb备份恢复](05-mongodb备份恢复.md)
 * [12-zookeeper](12-zookeeper.md)
-  * [01-zookeeper](01-zookeeper.md) 
+  * [01-zookeeper](01-zookeeper.md)
+  * [02-zk实践操作](02-zk实践操作.md)
 * []()
