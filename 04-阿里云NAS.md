@@ -8,11 +8,11 @@
 
 https://nasnext.console.aliyun.com/introduction
 
-![image-20230225105146001](http://book.bikongge.com/sre/2024-linux/image-20230225105146001.png)
+![image-20230225105146001](/ajian/image-20230225105146001.png)
 
 # 如何选项购买
 
-![image-20230225105238792](http://book.bikongge.com/sre/2024-linux/image-20230225105238792.png)
+![image-20230225105238792](/ajian/image-20230225105238792.png)
 
 ## 购买通用型NAS
 
@@ -20,19 +20,19 @@ https://nasnext.console.aliyun.com/overview
 
 https://nasnext.console.aliyun.com/introduction
 
-![image-20230225105925462](http://book.bikongge.com/sre/2024-linux/image-20230225105925462.png)
+![image-20230225105925462](/ajian/image-20230225105925462.png)
 
 ## 性能型/容量型
 
-![image-20230225110119109](http://book.bikongge.com/sre/2024-linux/image-20230225110119109.png)
+![image-20230225110119109](/ajian/image-20230225110119109.png)
 
 ## NAS详细
 
-![image-20230225110153222](http://book.bikongge.com/sre/2024-linux/image-20230225110153222.png)
+![image-20230225110153222](/ajian/image-20230225110153222.png)
 
 ## ECS挂载NAS
 
-![image-20230225110207499](http://book.bikongge.com/sre/2024-linux/image-20230225110207499.png)
+![image-20230225110207499](/ajian/image-20230225110207499.png)
 
 ```bash
 sudo mount -t nfs -o vers=3,nolock,proto=tcp,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport 178774ade0-vbc65.cn-beijing.nas.aliyuncs.com:/ /mnt
@@ -71,7 +71,7 @@ tmpfs                                           176M     0  176M   0% /run/user/
 
 ## 上云NFS架构
 
-![image-20230225110732589](http://book.bikongge.com/sre/2024-linux/image-20230225110732589.png)
+![image-20230225110732589](/ajian/image-20230225110732589.png)
 
 ## 多台ECS共享NAS数据
 
@@ -81,25 +81,25 @@ Web01、web02共享
 sudo mount -t nfs -o vers=3,nolock,proto=tcp,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport 178774ade0-vbc65.cn-beijing.nas.aliyuncs.com:/ /test-nas
 ```
 
-![image-20230225111100836](http://book.bikongge.com/sre/2024-linux/image-20230225111100836.png)
+![image-20230225111100836](/ajian/image-20230225111100836.png)
 
 ## NAS运维
 
-![image-20230225111136627](http://book.bikongge.com/sre/2024-linux/image-20230225111136627.png)
+![image-20230225111136627](/ajian/image-20230225111136627.png)
 
 ## NAS备份服务
 
-![image-20230225111326994](http://book.bikongge.com/sre/2024-linux/image-20230225111326994.png)
+![image-20230225111326994](/ajian/image-20230225111326994.png)
 
 ## NAS备份、恢复实践
 
 ### 创建备份
 
-![image-20230225111518200](http://book.bikongge.com/sre/2024-linux/image-20230225111518200.png)
+![image-20230225111518200](/ajian/image-20230225111518200.png)
 
 ### 立即执行备份任务
 
-![image-20230225111558390](http://book.bikongge.com/sre/2024-linux/image-20230225111558390.png)
+![image-20230225111558390](/ajian/image-20230225111558390.png)
 
 ### 模拟删除、恢复
 
@@ -116,8 +116,8 @@ sudo mount -t nfs -o vers=3,nolock,proto=tcp,rsize=1048576,wsize=1048576,hard,ti
 
 恢复
 
-![image-20230225111718816](http://book.bikongge.com/sre/2024-linux/image-20230225111718816.png)
+![image-20230225111718816](/ajian/image-20230225111718816.png)
 
 ### 确认恢复
 
-![image-20230225111831991](http://book.bikongge.com/sre/2024-linux/image-20230225111831991.png)
+![image-20230225111831991](/ajian/image-20230225111831991.png)
