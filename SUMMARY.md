@@ -182,4 +182,5 @@
   * [01-elasticsearch](01-elasticsearch.md)
   * [02-ES集群](02-ES集群.md)
   * [03-ES进阶](03-ES进阶.md)
+  * [04-ES备份恢复](04-ES备份恢复.md)
 * []()
