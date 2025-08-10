@@ -4,7 +4,7 @@
 
 学习背景：access.log，error.log目前日志混杂在一个es索引下。
 
-![1676541430330](http://book.bikongge.com/sre/2024-linux/1676541430330.png)
+![1676541430330](/ajian/1676541430330.png)
 
 改进filebeat配置
 
@@ -12,7 +12,7 @@ https://www.elastic.co/guide/en/beats/filebeat/current/elasticsearch-output.html
 
 加上日志输入文件的判断，采用不同的索引
 
-![1676629181782](http://book.bikongge.com/sre/2024-linux/1676629181782.png)
+![1676629181782](/ajian/1676629181782.png)
 
 ```yml
   1 filebeat.inputs:
@@ -55,15 +55,15 @@ https://www.elastic.co/guide/en/beats/filebeat/current/elasticsearch-output.html
 
 查看es数据
 
-![1676629280380](http://book.bikongge.com/sre/2024-linux/1676629280380.png)
+![1676629280380](/ajian/1676629280380.png)
 
 ## access.log
 
-![1676629304101](http://book.bikongge.com/sre/2024-linux/1676629304101.png)
+![1676629304101](/ajian/1676629304101.png)
 
 ## error.log
 
-![1676629334116](http://book.bikongge.com/sre/2024-linux/1676629334116.png)
+![1676629334116](/ajian/1676629334116.png)
 
 ## 完成nginx日志拆分index
 
@@ -72,7 +72,7 @@ curl 127.0.0.1/laoliu
 curl 127.0.0.1/laoliu
 ```
 
-![1676629500226](http://book.bikongge.com/sre/2024-linux/1676629500226.png)
+![1676629500226](/ajian/1676629500226.png)
 
 # 2.Kibana图形化定制
 
@@ -80,27 +80,27 @@ curl 127.0.0.1/laoliu
 
 选择可视化
 
-![1676637530113](http://book.bikongge.com/sre/2024-linux/1676637530113.png)
+![1676637530113](/ajian/1676637530113.png)
 
 选择图形模式
 
-![1676637566959](http://book.bikongge.com/sre/2024-linux/1676637566959.png)
+![1676637566959](/ajian/1676637566959.png)
 
 柱状图、x、y轴图形数据
 
-![1676638183851](http://book.bikongge.com/sre/2024-linux/1676638183851.png)
+![1676638183851](/ajian/1676638183851.png)
 
 多个客户端，记得点击save，保存图形
 
-![1676638321876](http://book.bikongge.com/sre/2024-linux/1676638321876.png)
+![1676638321876](/ajian/1676638321876.png)
 
 ## data table
 
-![1676639039439](http://book.bikongge.com/sre/2024-linux/1676639039439.png)
+![1676639039439](/ajian/1676639039439.png)
 
 ## 可视化存档
 
-![1676639374548](http://book.bikongge.com/sre/2024-linux/1676639374548.png)
+![1676639374548](/ajian/1676639374548.png)
 
 ## 饼图
 
@@ -108,11 +108,11 @@ curl 127.0.0.1/laoliu
 - 操作系统类型
 - http状态码
 
-![1676639993950](http://book.bikongge.com/sre/2024-linux/1676639993950.png)
+![1676639993950](/ajian/1676639993950.png)
 
 ## 编辑dashboard
 
-![1676640799248](http://book.bikongge.com/sre/2024-linux/1676640799248.png)
+![1676640799248](/ajian/1676640799248.png)
 
 # 3.使用ES预处理节点转换Nginx日志
 
@@ -136,7 +136,7 @@ curl 127.0.0.1
 cat /var/log/nginx/access.log
 ```
 
-![1676778810704](http://book.bikongge.com/sre/2024-linux/1676778810704.png)
+![1676778810704](/ajian/1676778810704.png)
 
 ```
 nginx基础日志
@@ -156,11 +156,11 @@ https://help.aliyun.com/document_detail/129387.html
 
 https://developer.qiniu.com/insight/4759/grok-parser
 
-![1676778949316](http://book.bikongge.com/sre/2024-linux/1676778949316.png)
+![1676778949316](/ajian/1676778949316.png)
 
 测试
 
-![1676780294388](http://book.bikongge.com/sre/2024-linux/1676780294388.png)
+![1676780294388](/ajian/1676780294388.png)
 
 ## grok转换语法
 
@@ -177,7 +177,7 @@ https://developer.qiniu.com/insight/4759/grok-parser
 "-"                                    ==> "(-|%{IP:clientip})"
 ```
 
-![image-20230219122958715](http://book.bikongge.com/sre/2024-linux/image-20230219122958715.png)
+![image-20230219122958715](/ajian/image-20230219122958715.png)
 
 ### 字符对应grok模式
 
@@ -187,11 +187,11 @@ https://developer.qiniu.com/insight/4759/grok-parser
 
 转换结果
 
-![image-20230219123212958](http://book.bikongge.com/sre/2024-linux/image-20230219123212958.png)
+![image-20230219123212958](/ajian/image-20230219123212958.png)
 
 ## 1.创建pipeline
 
-![image-20230219123744346](http://book.bikongge.com/sre/2024-linux/image-20230219123744346.png)
+![image-20230219123744346](/ajian/image-20230219123744346.png)
 
 ```go
 GET _ingest/pipeline
@@ -213,11 +213,11 @@ PUT  _ingest/pipeline/pipeline-nginx-access
 }
 ```
 
-![image-20230219123838882](http://book.bikongge.com/sre/2024-linux/image-20230219123838882.png)
+![image-20230219123838882](/ajian/image-20230219123838882.png)
 
 ## 2.修改filebeat
 
-![image-20230219124337756](http://book.bikongge.com/sre/2024-linux/image-20230219124337756.png)
+![image-20230219124337756](/ajian/image-20230219124337756.png)
 
 ```go
 filebeat.inputs:
@@ -263,7 +263,7 @@ logging.to_files: true
 
 例如删除如下字段
 
-![image-20230219124500790](http://book.bikongge.com/sre/2024-linux/image-20230219124500790.png)
+![image-20230219124500790](/ajian/image-20230219124500790.png)
 
 ## 3.测试pipeline转换的nginx日志
 
@@ -284,14 +284,14 @@ logging.to_files: true
 [root@es-node1 ~]#curl 127.0.0.1
 ```
 
-![image-20230219125242245](http://book.bikongge.com/sre/2024-linux/image-20230219125242245.png)
+![image-20230219125242245](/ajian/image-20230219125242245.png)
 
 ## 4.kibana可视化新格式es数据
 
-![image-20230219131156727](http://book.bikongge.com/sre/2024-linux/image-20230219131156727.png)
+![image-20230219131156727](/ajian/image-20230219131156727.png)
 
 ## 5.小结
 
 只有专门维护ELK的高级工程师，只维护ELK，需要大量且复杂的维护日志系统，需要手工写grok转换规则。
 
-![image-20230219131755490](http://book.bikongge.com/sre/2024-linux/image-20230219131755490.png)
+![image-20230219131755490](/ajian/image-20230219131755490.png)
