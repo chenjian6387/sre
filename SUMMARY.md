@@ -174,4 +174,5 @@
 * [12-zookeeper](12-zookeeper.md)
   * [01-zookeeper](01-zookeeper.md)
   * [02-zk实践操作](02-zk实践操作.md)
+  * [03-python-API开发zk客户端](03-python-API开发zk客户端.md)
 * []()
