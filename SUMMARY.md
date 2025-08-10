@@ -179,5 +179,6 @@
   * [01-kafka基础](01-kafka基础.md)
   * [02-kafka集群](02-kafka集群.md)
 * [14-ELK](14-ELK.md)
-  * [01-elasticsearch](01-elasticsearch.md) 
+  * [01-elasticsearch](01-elasticsearch.md)
+  * [02-ES集群](02-ES集群.md)
 * []()
