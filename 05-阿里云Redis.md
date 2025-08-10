@@ -8,27 +8,27 @@ https://kvstore.console.aliyun.com/Redis/dashboard/cn-beijing
 
 https://help.aliyun.com/document_detail/52228.html?spm=5176.15153210.0.0.247d778bD6tGaL
 
-![image-20230225131738952](http://book.bikongge.com/sre/2024-linux/image-20230225131738952.png)
+![image-20230225131738952](/ajian/image-20230225131738952.png)
 
 # 购买云redis
 
-![image-20230225131833724](http://book.bikongge.com/sre/2024-linux/image-20230225131833724.png)
+![image-20230225131833724](/ajian/image-20230225131833724.png)
 
 # 使用云redis
 
-![image-20230225131953043](http://book.bikongge.com/sre/2024-linux/image-20230225131953043.png)
+![image-20230225131953043](/ajian/image-20230225131953043.png)
 
 ## 登录云redis
 
-![image-20230225132710307](http://book.bikongge.com/sre/2024-linux/image-20230225132710307.png)
+![image-20230225132710307](/ajian/image-20230225132710307.png)
 
 ## 添加白名单
 
-![image-20230225133211020](http://book.bikongge.com/sre/2024-linux/image-20230225133211020.png)
+![image-20230225133211020](/ajian/image-20230225133211020.png)
 
 ## 连接云redis地址
 
-![image-20230225133303302](http://book.bikongge.com/sre/2024-linux/image-20230225133303302.png)
+![image-20230225133303302](/ajian/image-20230225133303302.png)
 
 ```bash
 重置密码
@@ -53,19 +53,19 @@ r-2zer39tpnae1r366rs.redis.rds.aliyuncs.com:6379>
 
 在线动态升级
 
-![image-20230225133815825](http://book.bikongge.com/sre/2024-linux/image-20230225133815825.png)
+![image-20230225133815825](/ajian/image-20230225133815825.png)
 
 ## DMS系统管理redis
 
-![image-20230225133936293](http://book.bikongge.com/sre/2024-linux/image-20230225133936293.png)
+![image-20230225133936293](/ajian/image-20230225133936293.png)
 
 ### 需要添加DMS系统至Redis白名单
 
-![image-20230225134035890](http://book.bikongge.com/sre/2024-linux/image-20230225134035890.png)
+![image-20230225134035890](/ajian/image-20230225134035890.png)
 
 ### DMS操作redis
 
-![image-20230225134149318](http://book.bikongge.com/sre/2024-linux/image-20230225134149318.png)
+![image-20230225134149318](/ajian/image-20230225134149318.png)
 
 # 购买云MongoDB
 
@@ -76,23 +76,23 @@ root
 Yuchao123
 ```
 
-![image-20230225134312243](http://book.bikongge.com/sre/2024-linux/image-20230225134312243.png)
+![image-20230225134312243](/ajian/image-20230225134312243.png)
 
 ## 云MongoDB创建中
 
 https://mongodb.console.aliyun.com/replicate/cn-beijing/
 
-![image-20230225134426748](http://book.bikongge.com/sre/2024-linux/image-20230225134426748.png)
+![image-20230225134426748](/ajian/image-20230225134426748.png)
 
 ## 连接云mongodb
 
 添加白名单
 
-![image-20230225153512625](http://book.bikongge.com/sre/2024-linux/image-20230225153512625.png)
+![image-20230225153512625](/ajian/image-20230225153512625.png)
 
 加载ECS内网
 
-![image-20230225153611876](http://book.bikongge.com/sre/2024-linux/image-20230225153611876.png)
+![image-20230225153611876](/ajian/image-20230225153611876.png)
 
 ## 登录mongodb
 
@@ -154,7 +154,7 @@ mgset-66566824:PRIMARY> db.tb1.find()
 { "_id" : ObjectId("63f9c2153969e4576da9c226"), "name" : "www.yuchaoit.cn" }
 ```
 
-![image-20230225155512106](http://book.bikongge.com/sre/2024-linux/image-20230225155512106.png)
+![image-20230225155512106](/ajian/image-20230225155512106.png)
 
 # 购买云ELK
 
@@ -166,51 +166,51 @@ https://elasticsearch.console.aliyun.com/cn-beijing/home
 
 ## 基础配置
 
-![image-20230225161459955](http://book.bikongge.com/sre/2024-linux/image-20230225161459955.png)
+![image-20230225161459955](/ajian/image-20230225161459955.png)
 
 ## 集群配置
 
-![image-20230225161616419](http://book.bikongge.com/sre/2024-linux/image-20230225161616419.png)
+![image-20230225161616419](/ajian/image-20230225161616419.png)
 
 ## 网络配置
 
-![image-20230225161655911](http://book.bikongge.com/sre/2024-linux/image-20230225161655911.png)
+![image-20230225161655911](/ajian/image-20230225161655911.png)
 
 ## 购买ES集群确认
 
-![image-20230225161720875](http://book.bikongge.com/sre/2024-linux/image-20230225161720875.png)
+![image-20230225161720875](/ajian/image-20230225161720875.png)
 
 ## ES控制台
 
 ES控制台，https://elasticsearch.console.aliyun.com/cn-beijing/home
 
-![image-20230225161824116](http://book.bikongge.com/sre/2024-linux/image-20230225161824116.png)
+![image-20230225161824116](/ajian/image-20230225161824116.png)
 
 ### 管理es界面
 
-![image-20230225161954824](http://book.bikongge.com/sre/2024-linux/image-20230225161954824.png)
+![image-20230225161954824](/ajian/image-20230225161954824.png)
 
 ### ES首次创建时间较久
 
 > 得ES创建结束后，可以使用ELK功能
 
-![image-20230225163246819](http://book.bikongge.com/sre/2024-linux/image-20230225163246819.png)
+![image-20230225163246819](/ajian/image-20230225163246819.png)
 
 估计30分钟
 
-![image-20230225165510801](http://book.bikongge.com/sre/2024-linux/image-20230225165510801.png)
+![image-20230225165510801](/ajian/image-20230225165510801.png)
 
 ## logstash控制台
 
 logstash控制台，https://elasticsearch.console.aliyun.com/cn-hangzhou/logstashes
 
-![image-20230225161833945](http://book.bikongge.com/sre/2024-linux/image-20230225161833945.png)
+![image-20230225161833945](/ajian/image-20230225161833945.png)
 
 ## 日志采集Beats中心
 
 ### 采集ECS数据
 
-![image-20230225162043012](http://book.bikongge.com/sre/2024-linux/image-20230225162043012.png)
+![image-20230225162043012](/ajian/image-20230225162043012.png)
 
 ### 采集器设置
 
@@ -220,27 +220,27 @@ elastic
 Yuchao123
 ```
 
-![image-20230225171359344](http://book.bikongge.com/sre/2024-linux/image-20230225171359344.png)
+![image-20230225171359344](/ajian/image-20230225171359344.png)
 
 ### 采集器添加成功
 
-![image-20230225172320374](http://book.bikongge.com/sre/2024-linux/image-20230225172320374.png)
+![image-20230225172320374](/ajian/image-20230225172320374.png)
 
 ### kibana访问设置
 
-![image-20230225162823183](http://book.bikongge.com/sre/2024-linux/image-20230225162823183.png)
+![image-20230225162823183](/ajian/image-20230225162823183.png)
 
 可视化控制
 
-![image-20230225165534200](http://book.bikongge.com/sre/2024-linux/image-20230225165534200.png)
+![image-20230225165534200](/ajian/image-20230225165534200.png)
 
 kibana私网访问
 
-![image-20230225171219724](http://book.bikongge.com/sre/2024-linux/image-20230225171219724.png)
+![image-20230225171219724](/ajian/image-20230225171219724.png)
 
 ### kibana公网白名单
 
-![image-20230225171627277](http://book.bikongge.com/sre/2024-linux/image-20230225171627277.png)
+![image-20230225171627277](/ajian/image-20230225171627277.png)
 
 ### kibana公网登录
 
