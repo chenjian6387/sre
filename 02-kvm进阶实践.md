@@ -89,7 +89,7 @@ total 0
 配置文件也被删了
 ```
 
-![image-20220818171230028](http://book.bikongge.com/sre/2024-linux/image-20220818171230028.png)
+![image-20220818171230028](/ajian/image-20220818171230028.png)
 
 # 2.虚拟机克隆
 
@@ -179,7 +179,7 @@ tcp        0      0 0.0.0.0:12999           0.0.0.0:*               LISTEN      
 Domain www.yuchaoit.cn-kvm01 d from /etc/libvirt/qemu/www.yuchaoit.cn-kvm01.xml
 ```
 
-![image-20220818173400670](http://book.bikongge.com/sre/2024-linux/image-20220818173400670.png)
+![image-20220818173400670](/ajian/image-20220818173400670.png)
 
 # 3.虚拟机网络
 
@@ -200,7 +200,7 @@ Domain www.yuchaoit.cn-kvm01 d from /etc/libvirt/qemu/www.yuchaoit.cn-kvm01.xml
 Serving HTTP on 0.0.0.0 port 8000 ...
 ```
 
-![image-20220818174401715](http://book.bikongge.com/sre/2024-linux/image-20220818174401715.png)
+![image-20220818174401715](/ajian/image-20220818174401715.png)
 
 因此，我们得配置虚机网络，否则虚机也就没有意义了
 
@@ -376,11 +376,11 @@ PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.
 # 虚拟机运行个服务试试
 ```
 
-![image-20220818182155478](http://book.bikongge.com/sre/2024-linux/image-20220818182155478.png)
+![image-20220818182155478](/ajian/image-20220818182155478.png)
 
 # 4.图解KVM网络模式
 
-![image-20220818183518680](http://book.bikongge.com/sre/2024-linux/image-20220818183518680.png)
+![image-20220818183518680](/ajian/image-20220818183518680.png)
 
 # 5.kvm热添加技术
 
@@ -499,7 +499,7 @@ DNS1=223.5.5.5
 [root@localhost network-scripts]#
 ```
 
-![image-20220818204936293](http://book.bikongge.com/sre/2024-linux/image-20220818204936293.png)
+![image-20220818204936293](/ajian/image-20220818204936293.png)
 
 ## 5.3 热添加CPU
 
@@ -533,11 +533,11 @@ virsh undefine db51
 [root@kvm01 data]# virsh setvcpus db51 --count=3
 ```
 
-![image-20220818211408964](http://book.bikongge.com/sre/2024-linux/image-20220818211408964.png)
+![image-20220818211408964](/ajian/image-20220818211408964.png)
 
 动态设置后的结果
 
-![image-20220818211853998](http://book.bikongge.com/sre/2024-linux/image-20220818211853998.png)
+![image-20220818211853998](/ajian/image-20220818211853998.png)
 
 ## 5.4 动态添加内存
 
@@ -567,8 +567,8 @@ Domain creation completed.
 virsh setmem db51 4G --config
 ```
 
-![image-20220818214307580](http://book.bikongge.com/sre/2024-linux/image-20220818214307580.png)
+![image-20220818214307580](/ajian/image-20220818214307580.png)
 
 添加后的结果
 
-![image-20220818215034113](http://book.bikongge.com/sre/2024-linux/image-20220818215034113.png)
+![image-20220818215034113](/ajian/image-20220818215034113.png)
