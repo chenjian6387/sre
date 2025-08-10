@@ -32,7 +32,7 @@ docker pull kubeguide/tomcat-app:v1
 
 创建mysql控制器，更严谨的事`mysql statefulSet`，练习时可以继续用deployment
 
-![image-20230227145531544](http://book.bikongge.com/sre/2024-linux/image-20230227145531544.png)
+![image-20230227145531544](/ajian/image-20230227145531544.png)
 
 ### k8s引入私有仓库镜像(yml)
 
@@ -79,7 +79,7 @@ spec:
 
 > 这里稍有难度的就是，k8s使用自建私有仓库的镜像下载。
 
-![image-20230227145659011](http://book.bikongge.com/sre/2024-linux/image-20230227145659011.png)
+![image-20230227145659011](/ajian/image-20230227145659011.png)
 
 ## Mysql-svc.yml
 
@@ -101,7 +101,7 @@ spec:
     targetPort: 3306
 ```
 
-![image-20230227145847871](http://book.bikongge.com/sre/2024-linux/image-20230227145847871.png)
+![image-20230227145847871](/ajian/image-20230227145847871.png)
 
 > 去ECS上访问SVC，登录mysql-pod
 >
@@ -163,7 +163,7 @@ spec:
           value: mysql-svc
 ```
 
-![image-20230227151427919](http://book.bikongge.com/sre/2024-linux/image-20230227151427919.png)
+![image-20230227151427919](/ajian/image-20230227151427919.png)
 
 ## tomcat-svc.yml
 
@@ -184,11 +184,11 @@ spec:
   type: LoadBalancer
 ```
 
-![image-20230227151703988](http://book.bikongge.com/sre/2024-linux/image-20230227151703988.png)
+![image-20230227151703988](/ajian/image-20230227151703988.png)
 
 ## 测试tomcat
 
-![image-20230227153341838](http://book.bikongge.com/sre/2024-linux/image-20230227153341838.png)
+![image-20230227153341838](/ajian/image-20230227153341838.png)
 
 ## ACK小结
 
