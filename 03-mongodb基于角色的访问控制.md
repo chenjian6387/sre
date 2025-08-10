@@ -18,7 +18,7 @@ https://www.mongodb.com/docs/manual/reference/configuration-options/#security-op
 
 ## mongodb不设密码的危险
 
-![image-20221017112159858](http://book.bikongge.com/sre/2024-linux/image-20221017112159858.png)
+![image-20221017112159858](/ajian/image-20221017112159858.png)
 
 ## 认证授权命令
 
@@ -54,7 +54,7 @@ db.updateRole() 更新用户定义的角色
 2.三要素，用户是在哪个库下的认证账号。
 ```
 
-![image-20221017112924373](http://book.bikongge.com/sre/2024-linux/image-20221017112924373.png)
+![image-20221017112924373](/ajian/image-20221017112924373.png)
 
 ```
 注意顺序、先创建用户、再修改配置文件开启认证功能，反了就错了。
