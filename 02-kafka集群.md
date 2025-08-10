@@ -35,11 +35,11 @@ advertised.listeners=PLAINTEXT://10.0.0.20:9092
 netstat -tunlp|grep 9092
 ```
 
-![image-20221117153553666](http://book.bikongge.com/sre/2024-linux/image-20221117153553666.png)
+![image-20221117153553666](/ajian/image-20221117153553666.png)
 
 验证进程jps
 
-![image-20221117154342327](http://book.bikongge.com/sre/2024-linux/image-20221117154342327.png)
+![image-20221117154342327](/ajian/image-20221117154342327.png)
 
 默认参数解释
 
@@ -91,7 +91,7 @@ Kafka 是有主题概念的，而每个主题又进一步划分成若干个分�
 
 从这张图中，我们可以看到，主题 1 分区 0 的 3 个副本分散在 3 台 Broker 上，其他主题分区的副本也都散落在不同的 Broker 上，从而实现数据冗余。
 
-![img](http://book.bikongge.com/sre/2024-linux/1577453-20191216153618536-9298334.png)
+![img](/ajian/1577453-20191216153618536-9298334.png)
 
 ## 测试副本集集群
 
@@ -114,7 +114,7 @@ Kafka 是有主题概念的，而每个主题又进一步划分成若干个分�
 /opt/kafka_2.11-2.4.0/bin/kafka-console-consumer.sh --bootstrap-server 10.0.0.19:9092 --topic replica-yu1 --from-beginning
 ```
 
-![image-20221117172447838](http://book.bikongge.com/sre/2024-linux/image-20221117172447838.png)
+![image-20221117172447838](/ajian/image-20221117172447838.png)
 
 ## python客户端
 
@@ -157,7 +157,7 @@ for msg in consumer:
     print('*'*100)
 ```
 
-![image-20221117173720521](http://book.bikongge.com/sre/2024-linux/image-20221117173720521.png)
+![image-20221117173720521](/ajian/image-20221117173720521.png)
 
 # 集群原理
 
@@ -167,7 +167,7 @@ for msg in consumer:
 3. follower，备份消息数据
 ```
 
-![image-20221117203849834](http://book.bikongge.com/sre/2024-linux/image-20221117203849834.png)
+![image-20221117203849834](/ajian/image-20221117203849834.png)
 
 # 集群细节功能
 
