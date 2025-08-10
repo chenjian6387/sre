@@ -1,0 +1,179 @@
+# 03-阿里云负载均衡SLB
+
+七层--http、基于Url的代理，如nginx+tomcat
+
+四层---tcp、基于ip、port的代理，如mysql代理
+
+# 基于ECS创建实例镜像
+
+公司需要创建多个ECS模板，可以走镜像功能
+
+![1677135854314](http://book.bikongge.com/sre/2024-linux/1677135854314.png)
+
+## 开通快照功能
+
+![1677135897682](http://book.bikongge.com/sre/2024-linux/1677135897682.png)
+
+## 快照、镜像是收费服务
+
+阿里云不会无故帮你存储数据，占人家存储服务，也是收费的。
+
+![1677135956979](http://book.bikongge.com/sre/2024-linux/1677135956979.png)
+
+# 购买相同实例ECS
+
+- 创建相同配置的ECS
+- 镜像选择`自定义镜像`，你创建的模板即可
+
+![1677136205412](http://book.bikongge.com/sre/2024-linux/1677136205412.png)
+
+## 修改自定义镜像
+
+![1677136367848](http://book.bikongge.com/sre/2024-linux/1677136367848.png)
+
+## 修改密码、主机名
+
+![1677136461854](http://book.bikongge.com/sre/2024-linux/1677136461854.png)
+
+## 对比配置
+
+![1677136478366](http://book.bikongge.com/sre/2024-linux/1677136478366.png)
+
+## 创建第二台ECS
+
+![1677136534132](http://book.bikongge.com/sre/2024-linux/1677136534132.png)
+
+## 登录devops-web02（内网）
+
+![1677136980992](http://book.bikongge.com/sre/2024-linux/1677136980992.png)
+
+## 登录devops-web02（外网）
+
+解绑devops01，弹性ip
+
+![1677138289449](http://book.bikongge.com/sre/2024-linux/1677138289449.png)
+
+绑定devops02
+
+![1677138324728](http://book.bikongge.com/sre/2024-linux/1677138324728.png)
+
+走公网登录devops02
+
+![1677138355891](http://book.bikongge.com/sre/2024-linux/1677138355891.png)
+
+## 访问新机器web02的服务
+
+```bash
+1.检测日志
+[root@devops-web02 ~]# tail -f /usr/share/tomcat/logs/localhost_access_log.2023-02-23.txt 
+
+
+2.访问EIP，试试新绑定的web02
+http://47.94.220.78:8080/jpress/admin/login
+
+3.注意坑，你的rds，是有白名单的！是否允许web02的ip访问
+```
+
+# 为什么需要负载均衡
+
+![1677139178547](http://book.bikongge.com/sre/2024-linux/1677139178547.png)
+
+## 阿里云负载均衡文档
+
+![1677139454980](http://book.bikongge.com/sre/2024-linux/1677139454980.png)
+
+## 四层+七层架构图
+
+![1677146371671](http://book.bikongge.com/sre/2024-linux/1677146371671.png)
+
+## 购买ALB
+
+![1677148004093](http://book.bikongge.com/sre/2024-linux/1677148004093.png)
+
+### 必须创建2个可用区
+
+因此得创建2个可用区的交换机
+
+![1677148256427](http://book.bikongge.com/sre/2024-linux/1677148256427.png)
+
+### 创建虚拟交换机
+
+![1677148403175](http://book.bikongge.com/sre/2024-linux/1677148403175.png)
+
+### 创建ALB关联的后端机器
+
+![1677148551472](http://book.bikongge.com/sre/2024-linux/1677148551472.png)
+
+## 查看ALB（公网类型）
+
+![1677148789979](http://book.bikongge.com/sre/2024-linux/1677148789979.png)
+
+### 查看ALB的公网IP
+
+这就是需要你将域名绑定到的网站入口，负载均衡入口。
+
+![1677148911775](http://book.bikongge.com/sre/2024-linux/1677148911775.png)
+
+## 创建监听
+
+![1677148997393](http://book.bikongge.com/sre/2024-linux/1677148997393.png)
+
+也就是你负载均衡入口，提供端口
+
+![1677149116212](http://book.bikongge.com/sre/2024-linux/1677149116212.png)
+
+创建监听结果
+
+![1677149159269](http://book.bikongge.com/sre/2024-linux/1677149159269.png)
+
+## 创建服务器组（upstream）
+
+![1677149238495](http://book.bikongge.com/sre/2024-linux/1677149238495.png)
+
+### 添加服务器组节点
+
+![1677149268015](http://book.bikongge.com/sre/2024-linux/1677149268015.png)
+
+添加web01 , web02
+
+![1677149296564](http://book.bikongge.com/sre/2024-linux/1677149296564.png)
+
+配置权重，与代理端口
+
+![1677149397682](http://book.bikongge.com/sre/2024-linux/1677149397682.png)
+
+## 监听-后端组
+
+![1677149495975](http://book.bikongge.com/sre/2024-linux/1677149495975.png)
+
+## 理解ALB的DNS
+
+![1677149681797](http://book.bikongge.com/sre/2024-linux/1677149681797.png)
+
+比如将你自己的网站域名，加个CNAME解析到ALB的DNS就好
+
+```
+www.yuchaoit.cn
+```
+
+## 修改健康检查规则
+
+> 这一步，根据业务去调整，也可以选择直接关闭健康检查
+>
+> 否则健康检查不通过，流量不会转发给后端，导致502。
+
+![1677150356491](http://book.bikongge.com/sre/2024-linux/1677150356491.png)
+
+## 访问ALb入口（负载均衡）
+
+![1677150485011](http://book.bikongge.com/sre/2024-linux/1677150485011.png)
+
+```
+停止一个后端试试效果，查看负载均衡效果
+```
+
+![1677150806564](http://book.bikongge.com/sre/2024-linux/1677150806564.png)
+
+## 阿里云ALB架构图总结
+
+![1677151081382](http://book.bikongge.com/sre/2024-linux/1677151081382.png)
