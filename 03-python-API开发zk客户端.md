@@ -113,7 +113,7 @@ zk.stop()
 zk.close()
 ```
 
-![image-20221114151206987](http://book.bikongge.com/sre/2024-linux/image-20221114151206987.png)
+![image-20221114151206987](/ajian/image-20221114151206987.png)
 
 ## 增删改查
 
