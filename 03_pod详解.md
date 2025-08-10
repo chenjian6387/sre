@@ -9,7 +9,7 @@ Pod使用主要分为两种方式：
 - Pod中运行一个容器。这是Kubernetes最常见的用法，您可以将Pod视为单个封装的容器，但是Kubernetes是直接管理Pod而不是容器。
 - Pod中运行多个需要耦合在一起工作、需要共享资源的容器。通常这种场景下应用包含一个主容器和几个辅助容器（SideCar Container），如[图1](https://support.huaweicloud.com/basics-cce/kubernetes_0006.html#kubernetes_0006__fig347141918551)所示，例如主容器为一个web服务器，从一个固定目录下对外提供文件服务，而辅助容器周期性的从外部下载文件存到这个固定目录下。
 
-![img](http://book.bikongge.com/sre/2024-linux/zh-cn_image_0258392378.png)
+![img](/ajian/zh-cn_image_0258392378.png)
 
 实际使用中很少直接创建Pod，而是使用Kubernetes中称为Controller的抽象层来管理Pod实例，例如Deployment和Job。
 
@@ -319,7 +319,7 @@ kubernetes 中的 pause 容器主要为每个业务容器提供以下功能：
 启用 pid 命名空间，开启 init 进程。
 ```
 
-![image-20220906171448834](http://book.bikongge.com/sre/2024-linux/image-20220906171448834.png)
+![image-20220906171448834](/ajian/image-20220906171448834.png)
 
 ## pod内共享网络空间
 
@@ -401,7 +401,7 @@ spec:
 
 ### 图解多容器pod
 
-![image-20220906193611022](http://book.bikongge.com/sre/2024-linux/image-20220906193611022.png)
+![image-20220906193611022](/ajian/image-20220906193611022.png)
 
 ```
 [root@k8s-master-10 ~]#kubectl create ns yuchao-linux
@@ -430,7 +430,7 @@ two-nginx   2/2     Running   0          89m   10.2.2.8   k8s-node-12   <none>  
 
 ### 图解多容器下的日志访问与映射
 
-![image-20220906193129408](http://book.bikongge.com/sre/2024-linux/image-20220906193129408.png)
+![image-20220906193129408](/ajian/image-20220906193129408.png)
 
 # 2.pod生命周期
 
@@ -438,7 +438,7 @@ two-nginx   2/2     Running   0          89m   10.2.2.8   k8s-node-12   <none>  
 
 ## 2.1 pod运行状态
 
-![image-20220906203105869](http://book.bikongge.com/sre/2024-linux/image-20220906203105869.png)
+![image-20220906203105869](/ajian/image-20220906203105869.png)
 
 [Pod的状态如下表所示：](http://book.bikongge.com/sre/10-云原生容器编排/k8s-all/www.yuchaoit.cn)
 
@@ -473,11 +473,11 @@ Kubernetes提供了[容器生命周期钩子](https://kubernetes.io/docs/concept
 
 实际使用时，只需配置Pod的lifecycle.postStart或lifecycle.preStop参数，如下所示。
 
-![image-20220906204928768](http://book.bikongge.com/sre/2024-linux/image-20220906204928768.png)
+![image-20220906204928768](/ajian/image-20220906204928768.png)
 
 ## 2.3 pod生命周期完整示意
 
-![image-20220906205352738](http://book.bikongge.com/sre/2024-linux/image-20220906205352738.png)
+![image-20220906205352738](/ajian/image-20220906205352738.png)
 
 ### 文字详解pod生命周期
 
@@ -521,13 +521,13 @@ https://jimmysong.io/kubernetes-handbook/concepts/pause-container.html
 
 ## 图解POD部署思路
 
-![image-20220907143255022](http://book.bikongge.com/sre/2024-linux/image-20220907143255022.png)
+![image-20220907143255022](/ajian/image-20220907143255022.png)
 
 很明显，应用和数据库绑在一起，要升级，要迁移，牵一发动全身。
 
 拆开应用与数据库要灵活地多。
 
-![image-20220907143715518](http://book.bikongge.com/sre/2024-linux/image-20220907143715518.png)
+![image-20220907143715518](/ajian/image-20220907143715518.png)
 
 ## 小结
 
@@ -752,7 +752,7 @@ nginx-init       1/1     Running   0          4h3m   10.2.2.10   k8s-node-12   <
 
 ### 干掉停止pod
 
-![image-20220907190504681](http://book.bikongge.com/sre/2024-linux/image-20220907190504681.png)
+![image-20220907190504681](/ajian/image-20220907190504681.png)
 
 # 6.Pod健康探针
 
@@ -772,7 +772,7 @@ Kubernetes支持如下三种探测机制。
 
 ## 存活探针、liveness probe
 
-![img](http://book.bikongge.com/sre/2024-linux/livenessprobe.webp)
+![img](/ajian/livenessprobe.webp)
 
 ```
 用来检测容器内的应用程序是否正常工作中、如果应用都无法提供访问，容器也没意义了、
@@ -857,7 +857,7 @@ nginx-init       1/1     Running   0          4h33m   10.2.2.10   k8s-node-12   
 [root@k8s-master-10 ~]#kubectl -n yuchaoit get po -owide
 ```
 
-![image-20220907193307551](http://book.bikongge.com/sre/2024-linux/image-20220907193307551.png)
+![image-20220907193307551](/ajian/image-20220907193307551.png)
 
 ## HTTP GET探针
 
@@ -922,7 +922,7 @@ nginx-init          1/1     Running   0          4h41m   10.2.2.10   k8s-node-12
 [root@k8s-master-10 ~]#
 ```
 
-![image-20220907193854625](http://book.bikongge.com/sre/2024-linux/image-20220907193854625.png)
+![image-20220907193854625](/ajian/image-20220907193854625.png)
 
 ### 参数解释
 
@@ -959,7 +959,7 @@ nginx-init          1/1     Running   0          4h41m   10.2.2.10   k8s-node-12
 
 这些是创建时默认设置的，您也可以手动配置，如下所示。
 
-![image-20220907194327415](http://book.bikongge.com/sre/2024-linux/image-20220907194327415.png)
+![image-20220907194327415](/ajian/image-20220907194327415.png)
 
 initialDelaySeconds一般要设置大于0，这是由于很多情况下容器虽然启动成功，但应用就绪也需要一定的时间，需要等就绪时间之后才能返回成功，否则就会导致probe经常失败。
 
@@ -979,7 +979,7 @@ initialDelaySeconds一般要设置大于0，这是由于很多情况下容器虽
 
 # 7.就绪探针
 
-![img](http://book.bikongge.com/sre/2024-linux/readnessprobe.webp)
+![img](/ajian/readnessprobe.webp)
 
 https://support.huaweicloud.com/basics-cce/kubernetes_0026.html
 
@@ -1076,7 +1076,7 @@ readiness-http-pod   0/1     Running   0          21s   10.2.2.20   k8s-node-12 
 [root@k8s-master-10 ~]#
 ```
 
-![image-20220907202250677](http://book.bikongge.com/sre/2024-linux/image-20220907202250677.png)
+![image-20220907202250677](/ajian/image-20220907202250677.png)
 
 ### 让pod就绪
 
@@ -1106,7 +1106,7 @@ readiness-http-pod   1/1     Running   0          6m13s   10.2.2.20   k8s-node-1
 
 ### 就绪结果describe
 
-![image-20220907202610759](http://book.bikongge.com/sre/2024-linux/image-20220907202610759.png)
+![image-20220907202610759](/ajian/image-20220907202610759.png)
 
 # 8.Pod资源限制
 
@@ -1167,7 +1167,7 @@ limit-pod   1/1     Running   0          22s   10.2.1.9   k8s-node-11   <none>  
 [root@k8s-master-10 ~]#kubectl  -n yuchaoit describe pod limit-pod
 ```
 
-![image-20220908145628920](http://book.bikongge.com/sre/2024-linux/image-20220908145628920.png)
+![image-20220908145628920](/ajian/image-20220908145628920.png)
 
 ## 查看容器动态信息
 
@@ -1183,7 +1183,7 @@ limit-pod   1/1     Running   0          22s   10.2.1.9   k8s-node-11   <none>  
 20000
 ```
 
-![image-20220908150216403](http://book.bikongge.com/sre/2024-linux/image-20220908150216403.png)
+![image-20220908150216403](/ajian/image-20220908150216403.png)
 
 ------
 
@@ -1191,4 +1191,4 @@ limit-pod   1/1     Running   0          22s   10.2.1.9   k8s-node-11   <none>  
 docker stats
 ```
 
-![image-20220908150308623](http://book.bikongge.com/sre/2024-linux/image-20220908150308623.png)
+![image-20220908150308623](/ajian/image-20220908150308623.png)
