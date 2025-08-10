@@ -412,4 +412,4 @@ replicaset.apps/prometheus-7d6799c84c   1         1         1       2m3s   prome
 10.0.0.10 prometheus.yuchaoit.com
 ```
 
-![image-20220917200710848](http://book.bikongge.com/sre/2024-linux/image-20220917200710848.png)
+![image-20220917200710848](/ajian/image-20220917200710848.png)
