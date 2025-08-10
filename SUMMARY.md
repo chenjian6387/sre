@@ -170,4 +170,5 @@
   * [02-mongodb增删改查](02-mongodb增删改查.md)
   * [03-mongodb基于角色的访问控制](03-mongodb基于角色的访问控制.md)
   * [04-副本集replicaSet](04-副本集replicaSet.md)
+  * [05-mongodb备份恢复](05-mongodb备份恢复.md)
 * []()
