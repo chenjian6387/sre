@@ -176,6 +176,6 @@
   * [02-zk实践操作](02-zk实践操作.md)
   * [03-python-API开发zk客户端](03-python-API开发zk客户端.md)
 * [13-kafka](13-kafka.md)
-  * []() 
+  * [01-kafka基础](01-kafka基础.md) 
 * []()
 * []()
