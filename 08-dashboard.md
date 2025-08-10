@@ -154,8 +154,8 @@ token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IlVkbVBNMno1UXQ5NXE2YTQxYWljeGRkT0JoZTdZ
 
 # 7.登录dashboard
 
-![image-20220917145639183](http://book.bikongge.com/sre/2024-linux/image-20220917145639183.png)
+![image-20220917145639183](/ajian/image-20220917145639183.png)
 
 ## 页面化管理集群资源
 
-![image-20220917145920423](http://book.bikongge.com/sre/2024-linux/image-20220917145920423.png)
+![image-20220917145920423](/ajian/image-20220917145920423.png)
