@@ -487,7 +487,7 @@ docker ps|grep flannel
 kubectl get pods -n kube-system
 ```
 
-![image-20220904153219134](http://book.bikongge.com/sre/2024-linux/image-20220904153219134.png)
+![image-20220904153219134](/ajian/image-20220904153219134.png)
 
 ## k8s-node加入k8s-master集群（node执行）
 
@@ -538,7 +538,7 @@ k8s-node-12     Ready    <none>   5m6s    v1.19.3   10.0.0.12     <none>        
 [root@k8s-master-10 ~/flannel-master/Documentation]#
 ```
 
-![image-20220904154028551](http://book.bikongge.com/sre/2024-linux/image-20220904154028551.png)
+![image-20220904154028551](/ajian/image-20220904154028551.png)
 
 ## 配置k8S命令补全
 
